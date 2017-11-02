@@ -1,0 +1,9 @@
+<?php
+$this->pageTitle=Yii::app()->name . ' - document';
+$this->breadcrumbs=array(
+	'document',
+);
+?>
+<h1>Document</h1>
+
+<p>This is the "about" page for my blog site.</p>

@@ -7,7 +7,7 @@
 // CWebApplication properties can be configured here.
 return array(
 	'basePath'=>dirname(__FILE__).DIRECTORY_SEPARATOR.'..',
-	'name'=>'Yii Blog Demo',
+	'name'=>'Nghe Nhin',
 
 	// preloading 'log' component
 	'preload'=>array('log'),
@@ -26,12 +26,12 @@ return array(
 			// enable cookie-based authentication
 			'allowAutoLogin'=>true,
 		),
-		'db'=>array(
-			'connectionString' => 'sqlite:protected/data/blog.db',
-			'tablePrefix' => 'tbl_',
-		),
+		// 'db'=>array(
+		// 	'connectionString' => 'sqlite:protected/data/blog.db',
+		// 	'tablePrefix' => 'tbl_',
+		// ),
 		// uncomment the following to use a MySQL database
-		/*
+		
 		'db'=>array(
 			'connectionString' => 'mysql:host=localhost;dbname=blog',
 			'emulatePrepare' => true,
@@ -40,7 +40,7 @@ return array(
 			'charset' => 'utf8',
 			'tablePrefix' => 'tbl_',
 		),
-		*/
+		
 		'errorHandler'=>array(
 			// use 'site/error' action to display errors
 			'errorAction'=>'site/error',
@@ -69,6 +69,9 @@ return array(
 			),
 		),
 	),
+	'request' => [
+		'baseUrl' => '/'
+	],
 
 	// application-level parameters that can be accessed
 	// using Yii::app()->params['paramName']
