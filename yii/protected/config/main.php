@@ -18,7 +18,7 @@ return array(
 		'application.components.*',
 	),
 
-	'defaultController'=>'post',
+	'defaultController'=>'site',
 
 	// application components
 	'components'=>array(
@@ -69,9 +69,6 @@ return array(
 			),
 		),
 	),
-	'request' => [
-		'baseUrl' => '/'
-	],
 
 	// application-level parameters that can be accessed
 	// using Yii::app()->params['paramName']

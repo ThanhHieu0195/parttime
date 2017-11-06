@@ -164,3 +164,16 @@ div.wide form .errorMessage
 {
 	margin: 0 0 0 110px;
 }
+
+.form-post .bock-form-categories label {
+	display: inline-block;
+}
+
+.form-post #Post_categories {
+	display: block;
+	padding: 10px;
+	background: #e4e4e4;
+	max-height: 200px;
+	overflow-y: scroll;
+	border: 1px solid #c7c7c7;
+}

@@ -4,6 +4,9 @@ class SiteController extends Controller
 {
 	public $layout='column1';
 
+	public function ActionIndex() {
+		$this->render('pages/home');
+	}
 	/**
 	 * Declares class-based actions.
 	 */

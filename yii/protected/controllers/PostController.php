@@ -63,6 +63,9 @@ class PostController extends Controller
 		$model=new Post;
 		if(isset($_POST['Post']))
 		{
+			if (isset($_POST['Post']['categories'])) {
+				$_POST['Post']['categories'] = implode(',', $_POST['Post']['categories']) ;
+ 			}
 			$model->attributes=$_POST['Post'];
 			if($model->save())
 				$this->redirect(array('view','id'=>$model->id));

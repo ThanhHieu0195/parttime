@@ -1,4 +1,10 @@
-<div class="form">
+<?php
+/**
+ * @var \CActiveForm $form
+ * @var \PostController $this
+ */
+?>
+<div class="form form-post">
 
 <?php $form=$this->beginWidget('CActiveForm'); ?>
 
@@ -18,6 +24,18 @@
 		<p class="hint">You may use <a target="_blank" href="http://daringfireball.net/projects/markdown/syntax">Markdown syntax</a>.</p>
 		<?php echo $form->error($model,'content'); ?>
 	</div>
+
+    <div class="row bock-form-categories">
+		<?php echo $form->labelEx($model,'categories'); ?>
+        <?php
+        $categories = Category::model()->getAllOption();
+        if (isset($categories) && !empty($categories)) {
+            echo $form->checkBoxList($model, 'categories', $categories);
+        }
+        ?>
+        <p class="hint">Please separate different tags with commas.</p>
+		<?php echo $form->error($model,'tags'); ?>
+    </div>
 
 	<div class="row">
 		<?php echo $form->labelEx($model,'tags'); ?>
