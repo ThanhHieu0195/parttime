@@ -1789,3 +1789,264 @@ Stack trace:
 REQUEST_URI=/yii/index.php/product/create
 HTTP_REFERER=http://localhost/yii/index.php/site/dashboard
 ---
+2017/11/07 03:08:00 [warning] [application] Failed to set unsafe attribute "config" of "Product".
+2017/11/07 03:08:00 [error] [exception.CException] exception 'CException' with message 'Property "Product.detail" is not defined.' in /home/hieutct/syn/parttime/yii/framework/base/CComponent.php:130
+Stack trace:
+#0 /home/hieutct/syn/parttime/yii/framework/db/ar/CActiveRecord.php(145): CComponent->__get('detail')
+#1 /home/hieutct/syn/parttime/yii/framework/validators/CRequiredValidator.php(58): CActiveRecord->__get('detail')
+#2 /home/hieutct/syn/parttime/yii/framework/validators/CValidator.php(201): CRequiredValidator->validateAttribute(Object(Product), 'detail')
+#3 /home/hieutct/syn/parttime/yii/framework/base/CModel.php(159): CValidator->validate(Object(Product), NULL)
+#4 /home/hieutct/syn/parttime/yii/framework/db/ar/CActiveRecord.php(810): CModel->validate(NULL)
+#5 /home/hieutct/syn/parttime/yii/protected/controllers/ProductController.php(52): CActiveRecord->save()
+#6 /home/hieutct/syn/parttime/yii/framework/web/actions/CInlineAction.php(49): ProductController->actionCreate()
+#7 /home/hieutct/syn/parttime/yii/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#8 /home/hieutct/syn/parttime/yii/framework/web/filters/CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#9 /home/hieutct/syn/parttime/yii/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#10 /home/hieutct/syn/parttime/yii/framework/web/CController.php(1148): CFilter->filter(Object(CFilterChain))
+#11 /home/hieutct/syn/parttime/yii/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#12 /home/hieutct/syn/parttime/yii/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#13 /home/hieutct/syn/parttime/yii/framework/web/CController.php(291): CFilterChain->run()
+#14 /home/hieutct/syn/parttime/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#15 /home/hieutct/syn/parttime/yii/framework/web/CWebApplication.php(282): CController->run('create')
+#16 /home/hieutct/syn/parttime/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('product/create')
+#17 /home/hieutct/syn/parttime/yii/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#18 /home/hieutct/syn/parttime/yii/index.php(11): CApplication->run()
+#19 {main}
+REQUEST_URI=/yii/index.php/product/create
+HTTP_REFERER=http://localhost/yii/index.php/product/create
+---
+2017/11/07 03:26:34 [warning] [application] Failed to set unsafe attribute "config" of "Product".
+2017/11/07 03:26:34 [error] [exception.CException] exception 'CException' with message 'Property "Product.detail" is not defined.' in /home/hieutct/syn/parttime/yii/framework/base/CComponent.php:130
+Stack trace:
+#0 /home/hieutct/syn/parttime/yii/framework/db/ar/CActiveRecord.php(145): CComponent->__get('detail')
+#1 /home/hieutct/syn/parttime/yii/framework/validators/CRequiredValidator.php(58): CActiveRecord->__get('detail')
+#2 /home/hieutct/syn/parttime/yii/framework/validators/CValidator.php(201): CRequiredValidator->validateAttribute(Object(Product), 'detail')
+#3 /home/hieutct/syn/parttime/yii/framework/base/CModel.php(159): CValidator->validate(Object(Product), NULL)
+#4 /home/hieutct/syn/parttime/yii/framework/db/ar/CActiveRecord.php(810): CModel->validate(NULL)
+#5 /home/hieutct/syn/parttime/yii/protected/controllers/ProductController.php(52): CActiveRecord->save()
+#6 /home/hieutct/syn/parttime/yii/framework/web/actions/CInlineAction.php(49): ProductController->actionCreate()
+#7 /home/hieutct/syn/parttime/yii/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#8 /home/hieutct/syn/parttime/yii/framework/web/filters/CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#9 /home/hieutct/syn/parttime/yii/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#10 /home/hieutct/syn/parttime/yii/framework/web/CController.php(1148): CFilter->filter(Object(CFilterChain))
+#11 /home/hieutct/syn/parttime/yii/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#12 /home/hieutct/syn/parttime/yii/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#13 /home/hieutct/syn/parttime/yii/framework/web/CController.php(291): CFilterChain->run()
+#14 /home/hieutct/syn/parttime/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#15 /home/hieutct/syn/parttime/yii/framework/web/CWebApplication.php(282): CController->run('create')
+#16 /home/hieutct/syn/parttime/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('product/create')
+#17 /home/hieutct/syn/parttime/yii/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#18 /home/hieutct/syn/parttime/yii/index.php(11): CApplication->run()
+#19 {main}
+REQUEST_URI=/yii/index.php/product/create
+HTTP_REFERER=http://localhost/yii/index.php/product/create
+---
+2017/11/07 03:26:38 [warning] [application] Failed to set unsafe attribute "config" of "Product".
+2017/11/07 03:26:38 [error] [exception.CException] exception 'CException' with message 'Property "Product.detail" is not defined.' in /home/hieutct/syn/parttime/yii/framework/base/CComponent.php:130
+Stack trace:
+#0 /home/hieutct/syn/parttime/yii/framework/db/ar/CActiveRecord.php(145): CComponent->__get('detail')
+#1 /home/hieutct/syn/parttime/yii/framework/validators/CRequiredValidator.php(58): CActiveRecord->__get('detail')
+#2 /home/hieutct/syn/parttime/yii/framework/validators/CValidator.php(201): CRequiredValidator->validateAttribute(Object(Product), 'detail')
+#3 /home/hieutct/syn/parttime/yii/framework/base/CModel.php(159): CValidator->validate(Object(Product), NULL)
+#4 /home/hieutct/syn/parttime/yii/framework/db/ar/CActiveRecord.php(810): CModel->validate(NULL)
+#5 /home/hieutct/syn/parttime/yii/protected/controllers/ProductController.php(52): CActiveRecord->save()
+#6 /home/hieutct/syn/parttime/yii/framework/web/actions/CInlineAction.php(49): ProductController->actionCreate()
+#7 /home/hieutct/syn/parttime/yii/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#8 /home/hieutct/syn/parttime/yii/framework/web/filters/CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#9 /home/hieutct/syn/parttime/yii/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#10 /home/hieutct/syn/parttime/yii/framework/web/CController.php(1148): CFilter->filter(Object(CFilterChain))
+#11 /home/hieutct/syn/parttime/yii/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#12 /home/hieutct/syn/parttime/yii/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#13 /home/hieutct/syn/parttime/yii/framework/web/CController.php(291): CFilterChain->run()
+#14 /home/hieutct/syn/parttime/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#15 /home/hieutct/syn/parttime/yii/framework/web/CWebApplication.php(282): CController->run('create')
+#16 /home/hieutct/syn/parttime/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('product/create')
+#17 /home/hieutct/syn/parttime/yii/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#18 /home/hieutct/syn/parttime/yii/index.php(11): CApplication->run()
+#19 {main}
+REQUEST_URI=/yii/index.php/product/create
+HTTP_REFERER=http://localhost/yii/index.php/product/create
+---
+2017/11/07 03:26:57 [warning] [application] Failed to set unsafe attribute "config" of "Product".
+2017/11/07 03:26:57 [error] [exception.CException] exception 'CException' with message 'Property "Product.detail" is not defined.' in /home/hieutct/syn/parttime/yii/framework/base/CComponent.php:130
+Stack trace:
+#0 /home/hieutct/syn/parttime/yii/framework/db/ar/CActiveRecord.php(145): CComponent->__get('detail')
+#1 /home/hieutct/syn/parttime/yii/framework/validators/CRequiredValidator.php(58): CActiveRecord->__get('detail')
+#2 /home/hieutct/syn/parttime/yii/framework/validators/CValidator.php(201): CRequiredValidator->validateAttribute(Object(Product), 'detail')
+#3 /home/hieutct/syn/parttime/yii/framework/base/CModel.php(159): CValidator->validate(Object(Product), NULL)
+#4 /home/hieutct/syn/parttime/yii/framework/db/ar/CActiveRecord.php(810): CModel->validate(NULL)
+#5 /home/hieutct/syn/parttime/yii/protected/controllers/ProductController.php(52): CActiveRecord->save()
+#6 /home/hieutct/syn/parttime/yii/framework/web/actions/CInlineAction.php(49): ProductController->actionCreate()
+#7 /home/hieutct/syn/parttime/yii/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#8 /home/hieutct/syn/parttime/yii/framework/web/filters/CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#9 /home/hieutct/syn/parttime/yii/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#10 /home/hieutct/syn/parttime/yii/framework/web/CController.php(1148): CFilter->filter(Object(CFilterChain))
+#11 /home/hieutct/syn/parttime/yii/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#12 /home/hieutct/syn/parttime/yii/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#13 /home/hieutct/syn/parttime/yii/framework/web/CController.php(291): CFilterChain->run()
+#14 /home/hieutct/syn/parttime/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#15 /home/hieutct/syn/parttime/yii/framework/web/CWebApplication.php(282): CController->run('create')
+#16 /home/hieutct/syn/parttime/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('product/create')
+#17 /home/hieutct/syn/parttime/yii/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#18 /home/hieutct/syn/parttime/yii/index.php(11): CApplication->run()
+#19 {main}
+REQUEST_URI=/yii/index.php/product/create
+HTTP_REFERER=http://localhost/yii/index.php/product/create
+---
+2017/11/07 03:27:06 [warning] [application] Failed to set unsafe attribute "config" of "Product".
+2017/11/07 05:13:59 [warning] [application] Failed to set unsafe attribute "config" of "Product".
+2017/11/07 05:13:59 [warning] [application] Failed to set unsafe attribute "thumnail" of "Product".
+2017/11/07 14:14:59 [warning] [application] Failed to set unsafe attribute "config" of "Product".
+2017/11/07 14:14:59 [warning] [application] Failed to set unsafe attribute "thumnail" of "Product".
+2017/11/07 14:16:55 [warning] [application] Failed to set unsafe attribute "config" of "Product".
+2017/11/07 14:16:55 [warning] [application] Failed to set unsafe attribute "thumnail" of "Product".
+2017/11/07 14:17:23 [warning] [application] Failed to set unsafe attribute "config" of "Product".
+2017/11/07 14:17:23 [warning] [application] Failed to set unsafe attribute "thumnail" of "Product".
+2017/11/07 14:18:21 [warning] [application] Failed to set unsafe attribute "config" of "Product".
+2017/11/07 14:18:21 [warning] [application] Failed to set unsafe attribute "thumnail" of "Product".
+2017/11/07 14:26:29 [error] [php] include(CFile.php): failed to open stream: No such file or directory (/home/hieutct/syn/parttime/yii/framework/YiiBase.php:432)
+Stack trace:
+#0 /home/hieutct/syn/parttime/yii/protected/controllers/ProductController.php(53): spl_autoload_call()
+#1 /home/hieutct/syn/parttime/yii/framework/web/actions/CInlineAction.php(49): ProductController->actionCreate()
+#2 /home/hieutct/syn/parttime/yii/framework/web/CController.php(308): CInlineAction->runWithParams()
+#3 /home/hieutct/syn/parttime/yii/framework/web/filters/CFilterChain.php(134): ProductController->runAction()
+#4 /home/hieutct/syn/parttime/yii/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#5 /home/hieutct/syn/parttime/yii/framework/web/CController.php(1148): CAccessControlFilter->filter()
+#6 /home/hieutct/syn/parttime/yii/framework/web/filters/CInlineFilter.php(58): ProductController->filterAccessControl()
+#7 /home/hieutct/syn/parttime/yii/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter()
+#8 /home/hieutct/syn/parttime/yii/framework/web/CController.php(291): CFilterChain->run()
+#9 /home/hieutct/syn/parttime/yii/framework/web/CController.php(265): ProductController->runActionWithFilters()
+#10 /home/hieutct/syn/parttime/yii/framework/web/CWebApplication.php(282): ProductController->run()
+#11 /home/hieutct/syn/parttime/yii/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#12 /home/hieutct/syn/parttime/yii/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#13 /home/hieutct/syn/parttime/yii/index.php(11): CWebApplication->run()
+REQUEST_URI=/yii/index.php/product/create
+2017/11/07 14:28:04 [error] [php] fopen(/yii/uploads/demo.jpg): failed to open stream: No such file or directory (/home/hieutct/syn/parttime/yii/protected/controllers/ProductController.php:54)
+Stack trace:
+#0 /home/hieutct/syn/parttime/yii/framework/web/CController.php(308): CInlineAction->runWithParams()
+#1 /home/hieutct/syn/parttime/yii/framework/web/filters/CFilterChain.php(134): ProductController->runAction()
+#2 /home/hieutct/syn/parttime/yii/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#3 /home/hieutct/syn/parttime/yii/framework/web/CController.php(1148): CAccessControlFilter->filter()
+#4 /home/hieutct/syn/parttime/yii/framework/web/filters/CInlineFilter.php(58): ProductController->filterAccessControl()
+#5 /home/hieutct/syn/parttime/yii/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter()
+#6 /home/hieutct/syn/parttime/yii/framework/web/CController.php(291): CFilterChain->run()
+#7 /home/hieutct/syn/parttime/yii/framework/web/CController.php(265): ProductController->runActionWithFilters()
+#8 /home/hieutct/syn/parttime/yii/framework/web/CWebApplication.php(282): ProductController->run()
+#9 /home/hieutct/syn/parttime/yii/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#10 /home/hieutct/syn/parttime/yii/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#11 /home/hieutct/syn/parttime/yii/index.php(11): CWebApplication->run()
+REQUEST_URI=/yii/index.php/product/create
+2017/11/07 14:29:57 [error] [php] fopen(/opt/lampp/htdocs/yii/uploads/demo.jpg): failed to open stream: Permission denied (/home/hieutct/syn/parttime/yii/protected/controllers/ProductController.php:55)
+Stack trace:
+#0 /home/hieutct/syn/parttime/yii/framework/web/CController.php(308): CInlineAction->runWithParams()
+#1 /home/hieutct/syn/parttime/yii/framework/web/filters/CFilterChain.php(134): ProductController->runAction()
+#2 /home/hieutct/syn/parttime/yii/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#3 /home/hieutct/syn/parttime/yii/framework/web/CController.php(1148): CAccessControlFilter->filter()
+#4 /home/hieutct/syn/parttime/yii/framework/web/filters/CInlineFilter.php(58): ProductController->filterAccessControl()
+#5 /home/hieutct/syn/parttime/yii/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter()
+#6 /home/hieutct/syn/parttime/yii/framework/web/CController.php(291): CFilterChain->run()
+#7 /home/hieutct/syn/parttime/yii/framework/web/CController.php(265): ProductController->runActionWithFilters()
+#8 /home/hieutct/syn/parttime/yii/framework/web/CWebApplication.php(282): ProductController->run()
+#9 /home/hieutct/syn/parttime/yii/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#10 /home/hieutct/syn/parttime/yii/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#11 /home/hieutct/syn/parttime/yii/index.php(11): CWebApplication->run()
+REQUEST_URI=/yii/index.php/product/create
+2017/11/07 14:34:35 [error] [php] copy(/opt/lampp/htdocs/yii/uploads/1510061675.jpg): failed to open stream: Permission denied (/home/hieutct/syn/parttime/yii/protected/controllers/ProductController.php:57)
+Stack trace:
+#0 /home/hieutct/syn/parttime/yii/framework/web/CController.php(308): CInlineAction->runWithParams()
+#1 /home/hieutct/syn/parttime/yii/framework/web/filters/CFilterChain.php(134): ProductController->runAction()
+#2 /home/hieutct/syn/parttime/yii/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#3 /home/hieutct/syn/parttime/yii/framework/web/CController.php(1148): CAccessControlFilter->filter()
+#4 /home/hieutct/syn/parttime/yii/framework/web/filters/CInlineFilter.php(58): ProductController->filterAccessControl()
+#5 /home/hieutct/syn/parttime/yii/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter()
+#6 /home/hieutct/syn/parttime/yii/framework/web/CController.php(291): CFilterChain->run()
+#7 /home/hieutct/syn/parttime/yii/framework/web/CController.php(265): ProductController->runActionWithFilters()
+#8 /home/hieutct/syn/parttime/yii/framework/web/CWebApplication.php(282): ProductController->run()
+#9 /home/hieutct/syn/parttime/yii/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#10 /home/hieutct/syn/parttime/yii/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#11 /home/hieutct/syn/parttime/yii/index.php(11): CWebApplication->run()
+REQUEST_URI=/yii/index.php/product/create
+2017/11/07 14:50:15 [error] [php] date() expects at least 1 parameter, 0 given (/home/hieutct/syn/parttime/yii/protected/controllers/ProductController.php:55)
+Stack trace:
+#0 /home/hieutct/syn/parttime/yii/framework/web/CController.php(308): CInlineAction->runWithParams()
+#1 /home/hieutct/syn/parttime/yii/framework/web/filters/CFilterChain.php(134): ProductController->runAction()
+#2 /home/hieutct/syn/parttime/yii/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#3 /home/hieutct/syn/parttime/yii/framework/web/CController.php(1148): CAccessControlFilter->filter()
+#4 /home/hieutct/syn/parttime/yii/framework/web/filters/CInlineFilter.php(58): ProductController->filterAccessControl()
+#5 /home/hieutct/syn/parttime/yii/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter()
+#6 /home/hieutct/syn/parttime/yii/framework/web/CController.php(291): CFilterChain->run()
+#7 /home/hieutct/syn/parttime/yii/framework/web/CController.php(265): ProductController->runActionWithFilters()
+#8 /home/hieutct/syn/parttime/yii/framework/web/CWebApplication.php(282): ProductController->run()
+#9 /home/hieutct/syn/parttime/yii/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#10 /home/hieutct/syn/parttime/yii/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#11 /home/hieutct/syn/parttime/yii/index.php(11): CWebApplication->run()
+REQUEST_URI=/yii/index.php/product/create
+2017/11/07 14:51:02 [error] [php] Object of class DateTime could not be converted to string (/home/hieutct/syn/parttime/yii/protected/controllers/ProductController.php:57)
+Stack trace:
+#0 /home/hieutct/syn/parttime/yii/framework/web/filters/CFilterChain.php(134): ProductController->runAction()
+#1 /home/hieutct/syn/parttime/yii/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#2 /home/hieutct/syn/parttime/yii/framework/web/CController.php(1148): CAccessControlFilter->filter()
+#3 /home/hieutct/syn/parttime/yii/framework/web/filters/CInlineFilter.php(58): ProductController->filterAccessControl()
+#4 /home/hieutct/syn/parttime/yii/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter()
+#5 /home/hieutct/syn/parttime/yii/framework/web/CController.php(291): CFilterChain->run()
+#6 /home/hieutct/syn/parttime/yii/framework/web/CController.php(265): ProductController->runActionWithFilters()
+#7 /home/hieutct/syn/parttime/yii/framework/web/CWebApplication.php(282): ProductController->run()
+#8 /home/hieutct/syn/parttime/yii/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#9 /home/hieutct/syn/parttime/yii/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#10 /home/hieutct/syn/parttime/yii/index.php(11): CWebApplication->run()
+REQUEST_URI=/yii/index.php/product/create
+2017/11/07 14:57:36 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "view".' in /home/hieutct/syn/parttime/yii/framework/web/CController.php:486
+Stack trace:
+#0 /home/hieutct/syn/parttime/yii/framework/web/CController.php(270): CController->missingAction('view')
+#1 /home/hieutct/syn/parttime/yii/framework/web/CWebApplication.php(282): CController->run('view')
+#2 /home/hieutct/syn/parttime/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('product/view')
+#3 /home/hieutct/syn/parttime/yii/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#4 /home/hieutct/syn/parttime/yii/index.php(11): CApplication->run()
+#5 {main}
+REQUEST_URI=/yii/index.php/product/view?id=1
+HTTP_REFERER=http://localhost/yii/index.php/product/create
+---
+2017/11/07 14:59:57 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "view".' in /home/hieutct/syn/parttime/yii/framework/web/CController.php:486
+Stack trace:
+#0 /home/hieutct/syn/parttime/yii/framework/web/CController.php(270): CController->missingAction('view')
+#1 /home/hieutct/syn/parttime/yii/framework/web/CWebApplication.php(282): CController->run('view')
+#2 /home/hieutct/syn/parttime/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('product/view')
+#3 /home/hieutct/syn/parttime/yii/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#4 /home/hieutct/syn/parttime/yii/index.php(11): CApplication->run()
+#5 {main}
+REQUEST_URI=/yii/index.php/product/view?id=2
+HTTP_REFERER=http://localhost/yii/index.php/product/create
+---
+2017/11/07 15:00:59 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "view".' in /home/hieutct/syn/parttime/yii/framework/web/CController.php:486
+Stack trace:
+#0 /home/hieutct/syn/parttime/yii/framework/web/CController.php(270): CController->missingAction('view')
+#1 /home/hieutct/syn/parttime/yii/framework/web/CWebApplication.php(282): CController->run('view')
+#2 /home/hieutct/syn/parttime/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('product/view')
+#3 /home/hieutct/syn/parttime/yii/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#4 /home/hieutct/syn/parttime/yii/index.php(11): CApplication->run()
+#5 {main}
+REQUEST_URI=/yii/index.php/product/view?id=3
+HTTP_REFERER=http://localhost/yii/index.php/product/create
+---
+2017/11/07 15:01:41 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "view".' in /home/hieutct/syn/parttime/yii/framework/web/CController.php:486
+Stack trace:
+#0 /home/hieutct/syn/parttime/yii/framework/web/CController.php(270): CController->missingAction('view')
+#1 /home/hieutct/syn/parttime/yii/framework/web/CWebApplication.php(282): CController->run('view')
+#2 /home/hieutct/syn/parttime/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('product/view')
+#3 /home/hieutct/syn/parttime/yii/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#4 /home/hieutct/syn/parttime/yii/index.php(11): CApplication->run()
+#5 {main}
+REQUEST_URI=/yii/index.php/product/view?id=4
+HTTP_REFERER=http://localhost/yii/index.php/product/create
+---
+2017/11/07 15:02:03 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "view".' in /home/hieutct/syn/parttime/yii/framework/web/CController.php:486
+Stack trace:
+#0 /home/hieutct/syn/parttime/yii/framework/web/CController.php(270): CController->missingAction('view')
+#1 /home/hieutct/syn/parttime/yii/framework/web/CWebApplication.php(282): CController->run('view')
+#2 /home/hieutct/syn/parttime/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('product/view')
+#3 /home/hieutct/syn/parttime/yii/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#4 /home/hieutct/syn/parttime/yii/index.php(11): CApplication->run()
+#5 {main}
+REQUEST_URI=/yii/index.php/product/view?id=5
+HTTP_REFERER=http://localhost/yii/index.php/product/create
+---

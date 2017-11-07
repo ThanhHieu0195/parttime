@@ -44,9 +44,37 @@ class ProductController extends Controller
 		$model=new Product();
 		if(isset($_POST['Product']))
 		{
-			print_r($_POST);
-			print_r($_FILES);die;
+			if ( isset($_POST['Product']['config']) ) {
+				$_POST['Product']['config'] = json_encode($_POST['Product']['config']);
+			}
+
+//			upload file
+			$webroot = Yii::getPathOfAlias('webroot');
+			$date=new DateTime(); //this returns the current date time
+			$current_date = $date->format('Y-m-d');
+
+			$local_thumnail_url = $model->attributes['thumnail'];
+			$pathfile = '/uploads/' . $current_date;
+			$server_thumnail_url = $webroot . $pathfile;
+			$dirname = $_POST['uploadfile'];
+			if ( !is_dir($server_thumnail_url) ) {
+				mkdir($server_thumnail_url);
+			}
+
+			$server_thumnail_url .= '/' . $dirname;
+			if ( !file_exists($server_thumnail_url) ) {
+				copy($local_thumnail_url, $server_thumnail_url);
+			}
+
+			$is_upload = file_exists($server_thumnail_url);
+
+			if ($is_upload) {
+				$_POST['Product']['thumnail'] = $pathfile . '/' . $dirname;
+			}
+//			endupload
+
 			$model->attributes=$_POST['Product'];
+
 			if($model->save())
 				$this->redirect(array('view','id'=>$model->id));
 		}

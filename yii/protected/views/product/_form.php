@@ -96,6 +96,7 @@ Yii::app()->clientScript->registerScript("get-option", "
         reader.readAsDataURL(file);
         reader.onloadend = function () {
             imgURL = reader.result;
+            console.log(imgURL);
             $('#Product_thumnail').val(imgURL);
         }
     });    

@@ -43,13 +43,11 @@ class Product extends CActiveRecord
 		// NOTE: you should only define rules for those attributes that
 		// will receive user inputs.
 		return array(
-			array('title, content, detail, status', 'required'),
+			array('title, content, status', 'required'),
 			array('status', 'in', 'range'=>array(1,2,3)),
 			array('title', 'length', 'max'=>128),
-			array('thumnail', 'length', 'max'=>128),
-			array('detail', 'length', 'max'=>128),
 			array('category', 'length', 'max'=>128),
-			array('title, status', 'safe', 'on'=>'search'),
+			array('config, thumnail', 'safe')
 		);
 	}
 
@@ -75,7 +73,6 @@ class Product extends CActiveRecord
 			'title' => 'Title',
 			'content' => 'Content',
 			'config' => 'config',
-			'detail' => 'Detail',
 			'category' => 'category',
 			'status' => 'Status',
 			'create_time' => 'Create Time',

@@ -17,6 +17,8 @@
 					array('label'=>'Tham gia binh chon', 'url'=>array('site/page', 'view'=>'about')),
 					array('label'=>'Doc gia danh gia', 'url'=>array('site/contact')),
 					array('label'=>'Thong tin san pham', 'url'=>array('site/contact')),
+					array('label'=>'Login', 'url'=>array('site/login'), 'visible'=>Yii::app()->user->isGuest),
+					array('label'=>'Dashboard ('.Yii::app()->user->name.')', 'url'=>array('site/dashboard'), 'visible'=>!Yii::app()->user->isGuest),
 					array('label'=>'Logout ('.Yii::app()->user->name.')', 'url'=>array('site/logout'), 'visible'=>!Yii::app()->user->isGuest)
 				),
 			)); ?>
