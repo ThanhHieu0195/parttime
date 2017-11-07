@@ -78,4 +78,12 @@ class Category extends CActiveRecord
 		}
 		return $arr;
 	}
+
+	public function getType($category_id) {
+		$model = $this->findByPk($category_id);
+		if (isset($model->parent) && $model->parent) {
+			return $model->parent;
+		}
+		return '';
+	}
 }

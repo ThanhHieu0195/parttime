@@ -28,9 +28,13 @@
     <div class="row" id="field-type">
 		<?php echo CHtml::label('Type', 'type'); ?>
         <?php
-        $types = Category::model()->getOptionByParent();
+		$types = Category::model()->getOptionByParent();
+		$typleselected = key($types);
+		if (isset($model->category) && $model->category) {
+		    $typleselected = Category::model()->getType($model->category);
+        }
         if (isset($types) && !empty($types)) {
-            echo CHtml::dropDownList('type', '', $types);
+            echo CHtml::dropDownList('type', $typleselected, $types);
         }
         ?>
     </div>
@@ -38,8 +42,7 @@
     <div class="row" id="field-cat">
 		<?php echo $form->labelEx($model,'category'); ?>
 		<?php
-        $key = key($types);
-		$categories = Category::model()->getOptionByParent($key);
+		$categories = Category::model()->getOptionByParent($typleselected);
 		if (isset($categories) && !empty($categories)) {
 			echo $form->dropDownList($model, 'category', $categories);
 		}
@@ -50,7 +53,19 @@
     <div class="row" id="field-config">
 		<?php echo $form->labelEx($model,'Configs'); ?>
         <table>
-            <tr><th>Key</th><th>Value</th></tr>
+            <tr><th>Key</th><th>Value</th><th></th></tr>
+	        <?php
+                if (isset($model->config) && $model->config) {
+                    $configs = json_decode($model->config, true);
+	                $keys = $configs['key'];
+	                $vals = $configs['value'];
+	                for ($i=0; $i<count($keys); $i++) {
+	                    if ($keys[$i] ) {
+		                    $this->renderPartial('config-field/row', array('key' => $keys[$i], 'value' => $vals[$i]));
+                        }
+                    }
+                }
+	        ?>
             <?php $this->renderPartial('config-field/row') ?>
         </table>
         <?php echo CHtml::button('Add Row', array('id' => 'add-field-config')) ?>
@@ -58,9 +73,16 @@
     </div>
 
     <div class="row">
-		<?php echo $form->labelEx($model,'thumnail'); ?>
-		<?php echo CHtml::fileField('uploadfile'); ?>
-		<?php echo $form->hiddenField($model, 'thumnail', $categories); ?>
+		<?php echo $form->labelEx($model,'thumnail', array('for' => 'uploadfile')); ?>
+        <?php
+        $urlThumnail = $model->getUrlThumnail();
+        if (empty($urlThumnail)) {
+	        $urlThumnail = Helper::getThumnailDefault();
+        }
+        echo CHtml::tag('label', array('id' => 'thumnail-block', 'for' => 'uploadfile'), CHtml::image($urlThumnail, 'thumnail'));
+        ?>
+		<?php echo CHtml::fileField('Product[uploadfile]', '', array('id' => 'uploadfile', 'class' => 'hidden')); ?>
+		<?php echo $form->hiddenField($model, 'thumnail'); ?>
 		<?php echo $form->error($model,'thumnail'); ?>
     </div>
 
@@ -74,7 +96,40 @@
 	</div>
     <?php  ?>
 <?php $this->endWidget(); ?>
+    <style>
+        #field-config table {
+            width: 50%;
+        }
+        #field-config table tr.item:not(:first-child) .btn-remove{
+            position: relative;
+        }
+        #field-config table tr.item:not(:first-child) .btn-remove:hover:after {
+            color: #ff0000;
+        }
+        #field-config table tr.item:not(:first-child) .btn-remove:after {
+            content: 'x';
+            background: black;
+            color: white;
+            border-radius: 50%;
+            padding: 2px 6px;
+        }
 
+        #thumnail-block {
+            display: inline-block;
+            border: 3px solid #d5d5d5;
+        }
+
+        #thumnail-block:hover {
+            border-color: #0c97ed;
+        }
+        #thumnail-block img {
+            max-height: 200px;
+        }
+
+        .hidden {
+            display: none;
+        }
+    </style>
 </div><!-- form -->
 <?php
 Yii::app()->clientScript->registerScript("get-option", "
@@ -95,10 +150,14 @@ Yii::app()->clientScript->registerScript("get-option", "
         var reader = new FileReader();
         reader.readAsDataURL(file);
         reader.onloadend = function () {
-            imgURL = reader.result;
-            console.log(imgURL);
+            var imgURL = reader.result;
             $('#Product_thumnail').val(imgURL);
+            $('#thumnail-block img').attr('src',imgURL);
         }
-    });    
+    });  
+    
+    $('#field-config tr.item .btn-remove').on('click', function(){
+         $(this).parents('tr.item').remove();
+    });  
 ");
 ?>

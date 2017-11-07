@@ -108,4 +108,11 @@ class Product extends CActiveRecord
 		else
 			return false;
 	}
+
+	public function getUrlThumnail() {
+		if (isset($this->thumnail) && $this->thumnail) {
+			return Helper::getPathUpload() . $this->thumnail;
+		}
+		return '';
+	}
 }

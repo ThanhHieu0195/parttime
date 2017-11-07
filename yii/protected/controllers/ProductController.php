@@ -44,16 +44,17 @@ class ProductController extends Controller
 		$model=new Product();
 		if(isset($_POST['Product']))
 		{
-			if ( isset($_POST['Product']['config']) ) {
-				$_POST['Product']['config'] = json_encode($_POST['Product']['config']);
+			$product = $_POST['Product'];
+			if ( isset($product['config']) ) {
+				$product['config'] = json_encode($product['config']);
 			}
 
-			if (isset($_POST['Product']['thumnail']) && isset($_POST['Product']['uploadfile'])) {
-				$file_path = Helper::UploadFile($_POST['Product']['thumnail'], $_POST['Product']['uploadfile']);
-				$_POST['Product']['thumnail'] = $file_path;
+			if (isset($product['thumnail']) && isset($product['uploadfile'])) {
+				$file_path = Helper::UploadFile($product['thumnail'], $product['uploadfile']);
+				$product['thumnail'] = $file_path;
 			}
 
-			$model->attributes=$_POST['Product'];
+			$model->attributes=$product;
 
 			if($model->save())
 				$this->redirect(array('view','id'=>$model->id));
@@ -74,6 +75,24 @@ class ProductController extends Controller
 
 	public function actionUpdate() {
 		if ( isset($_GET['id']) ) {
+			$product_id = $_GET['id'];
+		}
+		if ( isset($_POST['Product']) && isset($product_id)) {
+			$product = $_POST['Product'];
+			$model = Product::model()->findByPk($product_id);
+			if ( isset($product['config']) ) {
+				$product['config'] = json_encode($product['config']);
+			}
+
+			if ($product['thumnail'] !== $model->thumnail) {
+				$file_path = Helper::UploadFile($product['thumnail'], $product['uploadfile']);
+				$product['thumnail'] = $file_path;
+			}
+			$model->attributes = $product;
+			$model->save();
+		}
+
+		if ( isset($product_id) ) {
 			$product_id = $_GET['id'];
 			$model = Product::model()->findByPk($product_id);
 			$this->render('update', ['model' => $model]);
