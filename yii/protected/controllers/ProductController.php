@@ -48,30 +48,10 @@ class ProductController extends Controller
 				$_POST['Product']['config'] = json_encode($_POST['Product']['config']);
 			}
 
-//			upload file
-			$webroot = Yii::getPathOfAlias('webroot');
-			$date=new DateTime(); //this returns the current date time
-			$current_date = $date->format('Y-m-d');
-
-			$local_thumnail_url = $model->attributes['thumnail'];
-			$pathfile = '/uploads/' . $current_date;
-			$server_thumnail_url = $webroot . $pathfile;
-			$dirname = $_POST['uploadfile'];
-			if ( !is_dir($server_thumnail_url) ) {
-				mkdir($server_thumnail_url);
+			if (isset($_POST['Product']['thumnail']) && isset($_POST['Product']['uploadfile'])) {
+				$file_path = Helper::UploadFile($_POST['Product']['thumnail'], $_POST['Product']['uploadfile']);
+				$_POST['Product']['thumnail'] = $file_path;
 			}
-
-			$server_thumnail_url .= '/' . $dirname;
-			if ( !file_exists($server_thumnail_url) ) {
-				copy($local_thumnail_url, $server_thumnail_url);
-			}
-
-			$is_upload = file_exists($server_thumnail_url);
-
-			if ($is_upload) {
-				$_POST['Product']['thumnail'] = $pathfile . '/' . $dirname;
-			}
-//			endupload
 
 			$model->attributes=$_POST['Product'];
 
@@ -82,6 +62,22 @@ class ProductController extends Controller
 		$this->render('create',array(
 			'model'=>$model,
 		));
+	}
+
+	public function actionView() {
+		if ( isset($_GET['id']) ) {
+			$product_id = $_GET['id'];
+			$model = Product::model()->findByPk($product_id);
+			$this->render('view', ['model' => $model]);
+		}
+	}
+
+	public function actionUpdate() {
+		if ( isset($_GET['id']) ) {
+			$product_id = $_GET['id'];
+			$model = Product::model()->findByPk($product_id);
+			$this->render('update', ['model' => $model]);
+		}
 	}
 
 	public function actionAjax() {
