@@ -25,18 +25,6 @@
 		<?php echo $form->error($model,'content'); ?>
 	</div>
 
-    <div class="row bock-form-categories">
-		<?php echo $form->labelEx($model,'categories'); ?>
-        <?php
-        $categories = Category::model()->getAllOption();
-        if (isset($categories) && !empty($categories)) {
-            echo $form->checkBoxList($model, 'categories', $categories);
-        }
-        ?>
-        <p class="hint">Please separate different tags with commas.</p>
-		<?php echo $form->error($model,'tags'); ?>
-    </div>
-
 	<div class="row">
 		<?php echo $form->labelEx($model,'tags'); ?>
 		<?php $this->widget('CAutoComplete', array(

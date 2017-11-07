@@ -89,6 +89,10 @@ class SiteController extends Controller
 		$this->render('login',array('model'=>$model));
 	}
 
+	public function actionDashboard() {
+		$this->render('dashboard',array());
+	}
+
 	/**
 	 * Logs out the current user and redirect to homepage.
 	 */

@@ -34,8 +34,8 @@ class Category extends CActiveRecord
 		// will receive user inputs.
 		return array(
 			array('name', 'required'),
-			array('count', 'numerical', 'integerOnly'=>true),
 			array('name', 'length', 'max'=>128),
+			array('content', 'length', 'max'=>128),
 		);
 	}
 
@@ -58,7 +58,7 @@ class Category extends CActiveRecord
 		return array(
 			'id' => 'Id',
 			'name' => 'Name',
-			'count' => 'Count',
+			'content' => 'Content',
 			'parent' => 'Parent',
 		);
 	}
@@ -66,8 +66,12 @@ class Category extends CActiveRecord
 	/**
 	 * @return array
 	 */
-	public function getAllOption() {
-		$categories = $this->findAll();
+	public function getOptionByParent($parent=null) {
+		if (empty($parent)) {
+			$categories = $this->findAll('parent is :parent', array('parent' => null ));
+		} else {
+			$categories = $this->findAll('parent =:parent', array('parent' => $parent ));
+		}
 		$arr = [];
 		for ($i=0; $i<count($categories); $i++) {
 			$arr[$categories[$i]->id] = $categories[$i]->name;

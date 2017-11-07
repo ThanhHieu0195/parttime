@@ -46,7 +46,6 @@ class Post extends CActiveRecord
 			array('title, content, status', 'required'),
 			array('status', 'in', 'range'=>array(1,2,3)),
 			array('title', 'length', 'max'=>128),
-			array('categories', 'length', 'max'=>128),
 			array('tags', 'match', 'pattern'=>'/^[\w\s,]+$/', 'message'=>'Tags can only contain word characters.'),
 			array('tags', 'normalizeTags'),
 
@@ -77,7 +76,6 @@ class Post extends CActiveRecord
 			'id' => 'Id',
 			'title' => 'Title',
 			'content' => 'Content',
-			'categories' => 'Categories',
 			'tags' => 'Tags',
 			'status' => 'Status',
 			'create_time' => 'Create Time',
@@ -106,13 +104,6 @@ class Post extends CActiveRecord
 		foreach(Tag::string2array($this->tags) as $tag)
 			$links[]=CHtml::link(CHtml::encode($tag), array('post/index', 'tag'=>$tag));
 		return $links;
-	}
-
-	public function getDataCategories() {
-		return array(
-			1 => 'mobile',
-			2 => 'laptop'
-		);
 	}
 
 	/**

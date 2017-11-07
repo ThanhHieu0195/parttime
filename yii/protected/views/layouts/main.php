@@ -15,8 +15,8 @@
     <link rel="stylesheet" type="text/css" href="<?php echo Yii::app()->request->baseUrl; ?>/css/form.css" />
     <link rel="stylesheet" type="text/css" href="<?php echo Yii::app()->request->baseUrl; ?>/css/menu.css" />
 
-    <link rel="stylesheet" type="text/css" href="<?php echo Yii::app()->request->baseUrl; ?>/libs/bootstrap/css/bootstrap.css" />
-    <script src="<?php echo Yii::app()->request->baseUrl; ?>/libs/bootstrap/js/bootstrap.js"></script>
+<!--    <link rel="stylesheet" type="text/css" href="--><?php //echo Yii::app()->request->baseUrl; ?><!--/libs/bootstrap/css/bootstrap.css" />-->
+<!--    <script src="--><?php //echo Yii::app()->request->baseUrl; ?><!--/libs/bootstrap/js/bootstrap.js"></script>-->
     <?php if ( method_exists($this, 'getAssets') ) $this->getAssets() ?>
     <title><?php echo CHtml::encode($this->pageTitle); ?></title>
 </head>
