@@ -115,4 +115,24 @@ class Product extends CActiveRecord
 		}
 		return '';
 	}
+
+	/**
+	 * Retrieves the list of posts based on the current search/filter conditions.
+	 * @return CActiveDataProvider the data provider that can return the needed posts.
+	 */
+	public function search()
+	{
+		$criteria=new CDbCriteria;
+
+		$criteria->compare('title',$this->title,true);
+
+		$criteria->compare('status',$this->status);
+
+		return new CActiveDataProvider('product', array(
+			'criteria'=>$criteria,
+			'sort'=>array(
+				'defaultOrder'=>'status, update_time DESC',
+			),
+		));
+	}
 }

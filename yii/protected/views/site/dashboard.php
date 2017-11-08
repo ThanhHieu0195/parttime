@@ -4,4 +4,5 @@ $this->breadcrumbs=array(
 	'Dashboard',
 );
 ?>
-<?php if(!Yii::app()->user->isGuest) $this->widget('UserMenu'); ?>
+<?php if(!Yii::app()->user->isGuest) $this->widget( 'ProductMenu' ); ?>
+<?php if(!Yii::app()->user->isGuest) $this->widget( 'PostMenu' ); ?>

@@ -1,8 +1,7 @@
 <?php
 
-class ProductController extends Controller
-{
-	public $layout='column2';
+class ProductController extends Controller {
+	public $layout = 'column2';
 
 	/**
 	 * @var CActiveRecord the currently loaded data model instance.
@@ -12,8 +11,7 @@ class ProductController extends Controller
 	/**
 	 * @return array action filters
 	 */
-	public function filters()
-	{
+	public function filters() {
 		return array(
 			'accessControl', // perform access control for CRUD operations
 		);
@@ -24,93 +22,127 @@ class ProductController extends Controller
 	 * This method is used by the 'accessControl' filter.
 	 * @return array access control rules
 	 */
-	public function accessRules()
-	{
+	public function accessRules() {
 		return array(
-			array('allow',  // allow all users to access 'index' and 'view' actions.
-				'actions'=>array('index','view'),
-				'users'=>array('*'),
-			),
-			array('allow', // allow authenticated users to access all actions
+			array(
+				'allow',
+				'actions' => ['create', 'update', 'admin'],
 				'users'=>array('@'),
+				'expression'=>'Yii::app()->user->isAdmin()',
+			),
+			array(
+				'allow',
+				'actions' => ['view'],
+				'users' => array('*')
 			),
 			array('deny',  // deny all users
-				'users'=>array('*'),
+				'users' => array('*'),
+				'deniedCallback' => array($this, 'accessDenied'),
 			),
 		);
 	}
 
+	public function accessDenied()
+	{
+		$this->render('//site/info', array(
+			'message' => 'You not permission access to page'
+		));
+		Yii::app()->end(); // not really neccessary
+	}
+
+//	action
 	public function actionCreate() {
-		$model=new Product();
-		if(isset($_POST['Product']))
-		{
+		$model = new Product();
+		if ( isset( $_POST['Product'] ) ) {
 			$product = $_POST['Product'];
-			if ( isset($product['config']) ) {
-				$product['config'] = json_encode($product['config']);
+			if ( isset( $product['config'] ) ) {
+				$product['config'] = json_encode( $product['config'] );
 			}
 
-			if (isset($product['thumnail']) && isset($product['uploadfile'])) {
-				$file_path = Helper::UploadFile($product['thumnail'], $product['uploadfile']);
+			if ( isset( $product['thumnail'] ) && isset( $product['uploadfile'] ) ) {
+				$file_path           = Helper::UploadFile( $product['thumnail'], $product['uploadfile'] );
 				$product['thumnail'] = $file_path;
 			}
 
-			$model->attributes=$product;
+			$model->attributes = $product;
 
-			if($model->save())
-				$this->redirect(array('view','id'=>$model->id));
+			if ( $model->save() ) {
+				$this->redirect( array( 'view', 'id' => $model->id ) );
+			}
 		}
 
-		$this->render('create',array(
-			'model'=>$model,
-		));
+		$this->render( 'create', array(
+			'model' => $model,
+		) );
 	}
 
 	public function actionView() {
-		if ( isset($_GET['id']) ) {
+		if ( isset( $_GET['id'] ) ) {
 			$product_id = $_GET['id'];
-			$model = Product::model()->findByPk($product_id);
-			$this->render('view', ['model' => $model]);
+			$model      = Product::model()->findByPk( $product_id );
+			$this->render( 'view', [ 'model' => $model ] );
 		}
 	}
 
 	public function actionUpdate() {
-		if ( isset($_GET['id']) ) {
+		if ( isset( $_GET['id'] ) ) {
 			$product_id = $_GET['id'];
 		}
-		if ( isset($_POST['Product']) && isset($product_id)) {
+		if ( isset( $_POST['Product'] ) && isset( $product_id ) ) {
 			$product = $_POST['Product'];
-			$model = Product::model()->findByPk($product_id);
-			if ( isset($product['config']) ) {
-				$product['config'] = json_encode($product['config']);
+			$model   = Product::model()->findByPk( $product_id );
+			if ( isset( $product['config'] ) ) {
+				$product['config'] = json_encode( $product['config'] );
 			}
 
-			if ($product['thumnail'] !== $model->thumnail) {
-				$file_path = Helper::UploadFile($product['thumnail'], $product['uploadfile']);
+			if ( $product['thumnail'] !== $model->thumnail ) {
+				$file_path           = Helper::UploadFile( $product['thumnail'], $product['uploadfile'] );
 				$product['thumnail'] = $file_path;
 			}
 			$model->attributes = $product;
 			$model->save();
 		}
 
-		if ( isset($product_id) ) {
+		if ( isset( $product_id ) ) {
 			$product_id = $_GET['id'];
-			$model = Product::model()->findByPk($product_id);
-			$this->render('update', ['model' => $model]);
+			$model      = Product::model()->findByPk( $product_id );
+			$this->render( 'update', [ 'model' => $model ] );
 		}
 	}
 
+	public function actionAdmin() {
+		$model = new Product( 'search' );
+		if ( isset( $_GET['Product'] ) ) {
+			$model->attributes = $_GET['Product'];
+		}
+		$this->render( 'admin', array(
+			'model' => $model,
+		) );
+	}
+
+//	ajax
 	public function actionAjax() {
-		if ( isset($_POST['action']) ) {
-			switch ($_POST['action']) {
+		if ( isset( $_POST['action'] ) ) {
+			switch ( $_POST['action'] ) {
 				case 'get_option':
-					$id = $_POST['id'];
-					$option = Category::model()->getOptionByParent($id);
-					$form = new CActiveForm();
-					$content = $form->dropDownList(Product::model(), 'category', $option);
+					$id      = $_POST['id'];
+					$option  = Category::model()->getOptionByParent( $id );
+					$form    = new CActiveForm();
+					$content = $form->dropDownList( Product::model(), 'category', $option );
 					echo $content;
 					break;
 			}
 		}
 		exit;
+	}
+
+	public function actionDelete() {
+		if ( isset( $_GET['id'] ) ) {
+			$product_id = $_GET['id'];
+
+			return Product::model()->deleteByPk( $product_id );
+		}
+
+		return false;
 	}
 }

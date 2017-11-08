@@ -10,6 +10,10 @@
  */
 class User extends CActiveRecord
 {
+	const ROLE_ADMIN = 1;
+	const ROLE_MEMBER = 2;
+
+	private $_user;
 	/**
 	 * Returns the static model of the specified AR class.
 	 * @return static the static model class
@@ -37,6 +41,7 @@ class User extends CActiveRecord
 		return array(
 			array('username, password, email', 'required'),
 			array('username, password, email', 'length', 'max'=>128),
+			array('role', 'in', array(self::ROLE_ADMIN, self::ROLE_MEMBER)),
 			array('profile', 'safe'),
 		);
 	}
