@@ -16,8 +16,6 @@ class Product extends CActiveRecord
 	const STATUS_PUBLISHED=2;
 	const STATUS_ARCHIVED=3;
 
-	private $_oldTags;
-
 	/**
 	 * Returns the static model of the specified AR class.
 	 * @return static the static model class
@@ -109,11 +107,11 @@ class Product extends CActiveRecord
 			return false;
 	}
 
-	public function getUrlThumnail() {
+	public function getUrlThumnail($default_url='') {
 		if (isset($this->thumnail) && $this->thumnail) {
 			return Helper::getPathUpload() . $this->thumnail;
 		}
-		return '';
+		return $default_url;
 	}
 
 	/**

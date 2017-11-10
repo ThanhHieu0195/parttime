@@ -43,6 +43,11 @@
 		<?php echo Yii::powered(); ?>
 	</div><!-- footer -->
 
+    <!--    modal-->
+    <div id="modal-controller">
+        <div id="modal-form"></div>
+        <div id="background"></div>
+    </div>
 </div><!-- page -->
 
 </body>

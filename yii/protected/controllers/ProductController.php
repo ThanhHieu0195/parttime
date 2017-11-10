@@ -32,7 +32,7 @@ class ProductController extends Controller {
 			),
 			array(
 				'allow',
-				'actions' => ['view'],
+				'actions' => ['view', 'index'],
 				'users' => array('*')
 			),
 			array('deny',  // deny all users
@@ -144,5 +144,21 @@ class ProductController extends Controller {
 		}
 
 		return false;
+	}
+
+	public function actionIndex() {
+		$criteria=new CDbCriteria(array(
+			'condition'=>'status='.Product::STATUS_PUBLISHED,
+			'order'=>'update_time DESC',
+		));
+		$dataProvider=new CActiveDataProvider('Product', array(
+			'pagination'=>array(
+				'pageSize'=>Yii::app()->params['postsPerPage'],
+			),
+			'criteria'=>$criteria,
+		));
+		$this->render('index',array(
+			'dataProvider'=>$dataProvider,
+		));
 	}
 }

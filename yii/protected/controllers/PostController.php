@@ -63,10 +63,17 @@ class PostController extends Controller
 		$model=new Post;
 		if(isset($_POST['Post']))
 		{
-			if (isset($_POST['Post']['categories'])) {
-				$_POST['Post']['categories'] = implode(',', $_POST['Post']['categories']) ;
+			$post = $_POST['Post'];
+			if (isset($post['categories'])) {
+				$post['categories'] = implode(',', $post['categories']) ;
  			}
-			$model->attributes=$_POST['Post'];
+
+			if ( isset( $post['thumnail'] ) && isset( $post['uploadfile'] ) ) {
+				$file_path           = Helper::UploadFile( $post['thumnail'], $post['uploadfile'] );
+				$post['thumnail'] = $file_path;
+			}
+
+			$model->attributes=$post;
 			if($model->save())
 				$this->redirect(array('view','id'=>$model->id));
 		}
@@ -122,10 +129,7 @@ class PostController extends Controller
 		$criteria=new CDbCriteria(array(
 			'condition'=>'status='.Post::STATUS_PUBLISHED,
 			'order'=>'update_time DESC',
-			'with'=>'commentCount',
 		));
-		if(isset($_GET['tag']))
-			$criteria->addSearchCondition('tags',$_GET['tag']);
 
 		$dataProvider=new CActiveDataProvider('Post', array(
 			'pagination'=>array(
@@ -133,7 +137,6 @@ class PostController extends Controller
 			),
 			'criteria'=>$criteria,
 		));
-
 		$this->render('index',array(
 			'dataProvider'=>$dataProvider,
 		));
@@ -150,20 +153,6 @@ class PostController extends Controller
 		$this->render('admin',array(
 			'model'=>$model,
 		));
-	}
-
-	/**
-	 * Suggests tags based on the current user input.
-	 * This is called via AJAX when the user is entering the tags input.
-	 */
-	public function actionSuggestTags()
-	{
-		if(isset($_GET['q']) && ($keyword=trim($_GET['q']))!=='')
-		{
-			$tags=Tag::model()->suggestTags($keyword);
-			if($tags!==array())
-				echo implode("\n",$tags);
-		}
 	}
 
 	/**
