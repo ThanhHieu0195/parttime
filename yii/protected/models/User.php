@@ -97,4 +97,22 @@ class User extends CActiveRecord
 		$this->role = self::ROLE_MEMBER;
 		$this->password = $this->hashPassword($this->password);
 	}
+
+	public function checkEmail($email) {
+		$user = User::find('email=?', [$email]);
+		if ( !empty($user) ) {
+			return true;
+		}
+		return false;
+	}
+
+
+	public function resetPassword($email, $newPassWord) {
+		$user = User::model()->find('email=?', [$email]);
+		if ( !empty($user) ) {
+			/** @var  $user User */
+			return $user->saveAttributes(array('password' => $newPassWord));
+		}
+		return 0;
+	}
 }

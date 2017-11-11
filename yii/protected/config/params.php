@@ -16,4 +16,11 @@ return array(
 	'commentNeedApproval'=>true,
 	// the copyright information displayed in the footer section
 	'copyrightInfo'=>'Copyright &copy; 2009 by My Company.',
+	'mail' => array(
+		'host' => 'ssl://smtp.gmail.com',
+		'username' => 'thanhhieu0195@gmail.com',
+		'password' => 'TH0906677470',
+		'port' => '465'
+	),
+	'lentPassword' => 10
 );

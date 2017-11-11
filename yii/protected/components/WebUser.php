@@ -19,7 +19,7 @@ class WebUser extends CWebUser {
 	}
 
 	// Load user model.
-	protected function loadUser($id=null)
+	public function loadUser($id=null)
 	{
 		if ( $id == null ) {
 			$id = Yii::app()->user->id;
