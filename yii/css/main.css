@@ -1,3 +1,4 @@
+@import "./base.css";
 body
 {
 	margin: 0;
@@ -5,14 +6,12 @@ body
 	color: #555;
 	font: normal 10pt Arial,Helvetica,sans-serif;
 	background: #EFEFEF;
+	font-family: 'Roboto', sans-serif;
 }
 
 #page
 {
-	margin-top: 5px;
-	margin-bottom: 5px;
 	background: white;
-	border: 1px solid #C9E0ED;
 }
 
 #header
@@ -24,7 +23,7 @@ body
 
 #content
 {
-	padding: 20px;
+	padding: 0px;
 }
 
 #sidebar
@@ -35,10 +34,8 @@ body
 #footer
 {
 	padding: 10px;
-	margin: 10px 20px;
 	font-size: 0.8em;
 	text-align: center;
-	border-top: 1px solid #C9E0ED;
 }
 
 #logo
@@ -56,22 +53,21 @@ body
 #mainmenu ul li
 {
 	display: inline;
+	padding:5px 8px;
 }
 
 #mainmenu ul li a
 {
 	color:#ffffff;
 	background-color:transparent;
-	font-size:12px;
-	font-weight:bold;
+	font-size:14px;
 	text-decoration:none;
-	padding:5px 8px;
 }
 
 #mainmenu ul li a:hover, #mainmenu ul li.active a
 {
-	color: #6399cd;
-	background-color:#EFF4FA;
+	color: #fff;
+	background-color:transparent;
 	text-decoration:none;
 }
 
@@ -121,6 +117,7 @@ div.flash-success a
 div.form .rememberMe label
 {
 	display: inline;
+	vertical-align: text-top;
 }
 
 div.view
@@ -132,8 +129,11 @@ div.view
 
 div.breadcrumbs
 {
-	font-size: 0.9em;
+	font-size: 25px;
 	padding: 5px 20px;
+}
+div.breadcrumbs a {
+	text-decoration: none;
 }
 
 div.breadcrumbs span

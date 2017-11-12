@@ -5593,3 +5593,53 @@ Stack trace:
 REQUEST_URI=/yii/index.php/user/view
 HTTP_REFERER=http://localhost/yii/index.php/user/form?type=login
 ---
+2017/11/11 17:19:27 [error] [exception.CHttpException.404] CHttpException: The system is unable to find the requested action "ratio". in C:\xampp\htdocs\project\parttime\yii\framework\web\CController.php:486
+Stack trace:
+#0 C:\xampp\htdocs\project\parttime\yii\framework\web\CController.php(270): CController->missingAction('ratio')
+#1 C:\xampp\htdocs\project\parttime\yii\framework\web\CWebApplication.php(282): CController->run('ratio')
+#2 C:\xampp\htdocs\project\parttime\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/ratio')
+#3 C:\xampp\htdocs\project\parttime\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\project\parttime\yii\index.php(11): CApplication->run()
+#5 {main}
+REQUEST_URI=/project/parttime/yii/index.php/site/ratio
+HTTP_REFERER=http://localhost/project/parttime/yii/index.php/site/contact
+---
+2017/11/11 17:20:34 [error] [exception.CHttpException.404] CHttpException: The system is unable to find the requested action "ratio". in C:\xampp\htdocs\project\parttime\yii\framework\web\CController.php:486
+Stack trace:
+#0 C:\xampp\htdocs\project\parttime\yii\framework\web\CController.php(270): CController->missingAction('ratio')
+#1 C:\xampp\htdocs\project\parttime\yii\framework\web\CWebApplication.php(282): CController->run('ratio')
+#2 C:\xampp\htdocs\project\parttime\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/ratio')
+#3 C:\xampp\htdocs\project\parttime\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\project\parttime\yii\index.php(11): CApplication->run()
+#5 {main}
+REQUEST_URI=/project/parttime/yii/index.php/site/ratio
+---
+2017/11/12 06:24:57 [error] [php] Cannot use a scalar value as an array (C:\xampp\htdocs\project\parttime\yii\framework\zii\widgets\CMenu.php:273)
+Stack trace:
+#0 C:\xampp\htdocs\project\parttime\yii\framework\web\CBaseController.php(147): CMenu->init()
+#1 C:\xampp\htdocs\project\parttime\yii\framework\web\CBaseController.php(181): SiteController->createWidget()
+#2 C:\xampp\htdocs\project\parttime\yii\protected\views\layouts\menu.php(28): SiteController->widget()
+#3 C:\xampp\htdocs\project\parttime\yii\framework\web\CBaseController.php(130): require()
+#4 C:\xampp\htdocs\project\parttime\yii\framework\web\CBaseController.php(95): SiteController->renderInternal()
+#5 C:\xampp\htdocs\project\parttime\yii\protected\views\layouts\main.php(38): SiteController->renderFile()
+#6 C:\xampp\htdocs\project\parttime\yii\framework\web\CBaseController.php(126): require()
+#7 C:\xampp\htdocs\project\parttime\yii\framework\web\CBaseController.php(95): SiteController->renderInternal()
+#8 C:\xampp\htdocs\project\parttime\yii\framework\web\widgets\CContentDecorator.php(76): SiteController->renderFile()
+#9 C:\xampp\htdocs\project\parttime\yii\framework\web\widgets\CContentDecorator.php(54): CContentDecorator->decorate()
+#10 C:\xampp\htdocs\project\parttime\yii\framework\web\widgets\COutputProcessor.php(44): CContentDecorator->processOutput()
+#11 C:\xampp\htdocs\project\parttime\yii\framework\web\CBaseController.php(215): CContentDecorator->run()
+#12 C:\xampp\htdocs\project\parttime\yii\framework\web\CBaseController.php(309): SiteController->endWidget()
+#13 C:\xampp\htdocs\project\parttime\yii\protected\views\layouts\column1.php(7): SiteController->endContent()
+#14 C:\xampp\htdocs\project\parttime\yii\framework\web\CBaseController.php(126): require()
+#15 C:\xampp\htdocs\project\parttime\yii\framework\web\CBaseController.php(95): SiteController->renderInternal()
+#16 C:\xampp\htdocs\project\parttime\yii\framework\web\CController.php(787): SiteController->renderFile()
+#17 C:\xampp\htdocs\project\parttime\yii\framework\web\actions\CViewAction.php(140): SiteController->render()
+#18 C:\xampp\htdocs\project\parttime\yii\framework\web\actions\CAction.php(76): CViewAction->run()
+#19 C:\xampp\htdocs\project\parttime\yii\framework\web\CController.php(308): CViewAction->runWithParams()
+#20 C:\xampp\htdocs\project\parttime\yii\framework\web\CController.php(286): SiteController->runAction()
+#21 C:\xampp\htdocs\project\parttime\yii\framework\web\CController.php(265): SiteController->runActionWithFilters()
+#22 C:\xampp\htdocs\project\parttime\yii\framework\web\CWebApplication.php(282): SiteController->run()
+#23 C:\xampp\htdocs\project\parttime\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#24 C:\xampp\htdocs\project\parttime\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#25 C:\xampp\htdocs\project\parttime\yii\index.php(11): CWebApplication->run()
+REQUEST_URI=/project/parttime/yii/index.php/site/page?view=ratio

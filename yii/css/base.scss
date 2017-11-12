@@ -1,0 +1,87 @@
+
+@mixin border-radius($param) {
+  -webkit-border-radius: $param;
+  -moz-border-radius: $param;
+  border-radius: $param;
+}
+
+@mixin box-shadow($param...) {
+  -webkit-box-shadow: $param;
+  -moz-box-shadow: $param;
+  box-shadow: $param;
+}
+
+@mixin transition($param...) {
+  -webkit-transition: $param;
+  -moz-transition: $param;
+  -o-transition: $param;
+  transition: $param;
+}
+
+@mixin transition-delay($param) {
+  -webkit-transition-delay: $param;
+  -moz-transition-delay: $param;
+  -o-transition-delay: $param;
+  transition-delay: $param;
+}
+
+@mixin animation($param) {
+  -webkit-animation: $param;
+  -moz-animation: $param;
+  -o-animation: $param;
+  animation: $param;
+}
+
+@mixin transform-origin($param) {
+  -webkit-transform-origin: $param;
+  -moz-transform-origin: $param;
+  -ms-transform-origin: $param;
+  -o-transform-origin: $param;
+  transform-origin: $param;
+}
+
+@mixin transform($param...) {
+  -webkit-transform: $param;
+  -moz-transform: $param;
+  -o-transform: $param;
+  transform: $param;
+}
+
+@mixin background-gradient($param...) {
+  background: -webkit-linear-gradient($param);
+  background: -moz-linear-gradient($param);
+  background: -o-linear-gradient($param);
+  background: linear-gradient($param);
+}
+
+@mixin l-height($param) {
+  height: $param;
+  line-height: $param;
+}
+
+@mixin filter($param) {
+  -webkit-filter: $param;
+  filter: $param;
+}
+
+@mixin column-n($property, $expression, $expression_pa ) {
+  #{$property} {
+    &.list-news-tweet {
+      .recent-post {
+        width: -moz-calc(#{$expression});
+        width: -webkit-calc(#{$expression});
+        width: calc(#{$expression});
+        display: inline-block;
+        vertical-align: top;
+        margin: $expression_pa;
+
+      }
+    }
+  }
+}
+
+@mixin calc($property, $expression) {
+  #{$property}: -webkit-calc(#{$expression});
+  #{$property}: -moz-calc(#{$expression});
+  #{$property}: calc(#{$expression});
+}
