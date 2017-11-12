@@ -28,14 +28,13 @@ $ajaxUrl = $this->createUrl('ajaxform');
 Yii::app()->clientScript->registerScript("get-option", "
     $('#form-vote form').on('submit', function(){
         var current = $(this);
-//        current.find('input').prop('disabled', true);
-//        current.find('textarea').prop('readonly', true);
+        current.find('input').prop('disabled', true);
+        current.find('textarea').prop('readonly', true);
         var product_id = current.find('input[name=product_id]').val();
         var content = current.find('#Vote_content').val();
         var data = {action:'createVote', data:{product:product_id, content:content}};
         $.post('{$ajaxUrl}', data, function(res){
-             console.log(res);
-            //$('#form-vote').replaceWith(res);
+            $('#form-vote').replaceWith(res);
         })
         return false;
     });

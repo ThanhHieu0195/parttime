@@ -39,8 +39,8 @@ class User extends CActiveRecord
 		// NOTE: you should only define rules for those attributes that
 		// will receive user inputs.
 		return array(
-			array('username, password, email', 'required'),
-			array('username, password, email', 'length', 'max'=>128),
+			array('password, email', 'required'),
+			array('password, email', 'length', 'max'=>128),
 			array('role', 'in', 'range' => array(self::ROLE_ADMIN, self::ROLE_MEMBER)),
 			array('profile', 'safe'),
 		);
@@ -96,6 +96,12 @@ class User extends CActiveRecord
 	public function beforeSave() {
 		$this->role = self::ROLE_MEMBER;
 		$this->password = $this->hashPassword($this->password);
+
+		if ( empty($this->username ) ) {
+			$arr = explode('@', $this->email);
+			$this->username = $arr[0];
+		}
+		return true;
 	}
 
 	public function checkEmail($email) {
@@ -111,8 +117,29 @@ class User extends CActiveRecord
 		$user = User::model()->find('email=?', [$email]);
 		if ( !empty($user) ) {
 			/** @var  $user User */
-			return $user->saveAttributes(array('password' => $newPassWord));
+			return $user->saveAttributes( array('password' => CPasswordHelper::hashPassword($newPassWord)) );
 		}
 		return 0;
+	}
+
+	public function getChildProfile($key='') {
+		if ($this->profile) {
+			$arr = json_decode($this->profile, true);
+			if ( key_exists($key, $arr) ) {
+				return $arr[$key];
+			}
+		}
+		return '';
+	}
+
+	public function getAllOptionUser() {
+		$objects = $this->findAll('role=:role', ['role' => self::ROLE_MEMBER]);
+		$arr = [];
+		if (!empty($objects)) {
+			foreach ($objects as $object) {
+				$arr[$object->id] = $object->username;
+			}
+		}
+		return $arr;
 	}
 }

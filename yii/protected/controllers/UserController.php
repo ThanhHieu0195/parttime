@@ -41,7 +41,7 @@ class UserController extends Controller {
 			$user = $_POST['User'];
 			$model->attributes = $user;
 			$is_check = 1;
-			if ( $user['password'] === $user['repassword'] ) {
+			if ( $user['password'] != $user['repassword'] ) {
 				$is_check = 0;
 				$model->addError('password', 'Mật khẩu không trùng');
 			}
@@ -53,20 +53,14 @@ class UserController extends Controller {
 
 			if ($is_check) {
 				if ( $model->save() ) {
-					$this->redirect( array( 'create', 'id' => $model->id ) );
+					$this->renderPartial('_successCreate', ['data' => $model]);
+					exit();
 				}
 			}
 		}
 		$this->render('create', ['model' => $model]);
 	}
 
-	public function view() {
-		if ( isset($_GET['id']) ) {
-			$user_id = $_GET['id'];
-			$model = $this->loadUser($user_id);
-			$this->render('view', ['model' => $model]);
-		}
- 	}
 // 	action
 	public function actionForm() {
 
@@ -125,6 +119,43 @@ class UserController extends Controller {
 		$this->render('resetMail', ['model' => $model]);
 	}
 
+	public function actionUpdate() {
+		/** @var  $model User */
+		$model = new User();
+		if ( !Yii::app()->user->isGuest ) {
+			$model = $this->loadUser();
+			if ( isset($_GET['action']) && isset($_POST['Profile']) && $_GET['action'] == 'profile' ) {
+				$profile = $_POST['Profile'];
+				if ( isset($profile['username']) && $profile['username']) {
+					$model->username = $profile['username'];
+				}
+				$model->profile = json_encode($profile);
+				$model->save();
+			}
+
+			$messagePasswrord = '';
+			if ( isset($_GET['action']) && isset($_POST['Password']) && $_GET['action'] == 'password' ) {
+				$password = $_POST['Password'];
+				$is_check = 1;
+				if ( $password['oldpassword'] == $model->password ) {
+					$messagePasswrord = 'Mat khau khong dung';
+					$is_check = 0;
+				}
+
+				if ($password['repassword'] != $password['password']) {
+					$messagePasswrord = 'Khong trung mat khau';
+					$is_check = 0;
+				}
+
+				if ($is_check) {
+					if ($model->resetPassword($model->email, $password['password'])) {
+						$messagePasswrord = 'Cap nhat thanh cong';
+					}
+				}
+			}
+			$this->render('update', ['model' => $model, 'msgPassword' => $messagePasswrord]);
+		}
+	}
 // 	extra
 
 	public function loadUser($user_id = null) {

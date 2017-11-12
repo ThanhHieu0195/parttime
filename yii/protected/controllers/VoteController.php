@@ -1,5 +1,7 @@
 <?php
 class VoteController extends Controller {
+	const PRODUCT_EMPTY = -1;
+
 	public function filters() {
 		return array(
 			'accessControl'
@@ -12,6 +14,10 @@ class VoteController extends Controller {
 				'actions' => array(),
 				'users' => array('@')
 			),
+			array('allow',
+				'actions' => array('index'),
+				'users' => array('*')
+			),
 			array('deny',  // deny all users
 				'users' => array('*'),
 				'deniedCallback' => function() {
@@ -20,13 +26,68 @@ class VoteController extends Controller {
 			),
 		);
 	}
-	public function actionIndex() {
-		if ( isset($_GET['id']) ) {
-			$id = $_GET['id'];
-			$product = Product::model()->findByPk($id);
+
+	public function actionCreate() {
+		if ( isset($_GET['product_id']) ) {
+			$product_id = $_GET['product_id'];
+			$product = Product::model()->findByPk($product_id);
 			$model = Vote::model();
 			$this->render('create', ['model' => $model, 'product' => $product]);
 		}
+	}
+
+	public function actionDashboard() {
+		$criteria=new CDbCriteria(array(
+			'condition' => 'author='.Yii::app()->user->id,
+			'order'=>'id DESC',
+		));
+
+		$dataProvider=new CActiveDataProvider('Vote', array(
+			'pagination'=>array(
+				'pageSize'=>Yii::app()->params['postsPerPage'],
+			),
+			'criteria'=>$criteria,
+		));
+		$this->render('index',array(
+			'dataProvider'=>$dataProvider,
+		));
+	}
+
+	public function actionIndex() {
+		$condition = '';
+		if ( isset($_GET['cat']) ) {
+			$id_cat = $_GET['cat'];
+			/** @var  $command CDbCommand */
+			$command = Yii::app()->db->createCommand()
+				->select('id')
+				->from('tbl_product')
+				->where('category=:category', array(
+					':category' => $id_cat
+				));
+			$products_id = $command->queryColumn();
+
+//			not result
+			if ( empty($products_id) ) {
+				$products_id[] = self::PRODUCT_EMPTY;
+			}
+
+			$condition = 'product in ('.implode(',', $products_id).')';
+		}
+
+		$criteria=new CDbCriteria(array(
+			'condition' => $condition,
+			'order'=>'id DESC',
+		));
+
+		$dataProvider=new CActiveDataProvider('Vote', array(
+			'pagination'=>array(
+				'pageSize'=>Yii::app()->params['postsPerPage'],
+			),
+			'criteria'=>$criteria,
+		));
+		$this->render('index',array(
+			'dataProvider'=>$dataProvider,
+		));
 	}
 
 	public function actionAjaxForm() {
@@ -36,10 +97,14 @@ class VoteController extends Controller {
 				case 'createVote':
 					if ( isset($_POST['data']) ) {
 						$data = $_POST['data'];
-						$model = Vote::model();
+						$model = new Vote();
 						$model->attributes = $data;
 						$result = $model->save();
-						echo $result;
+						if ( $result ) {
+							echo $this->renderPartial('_createSuccess', ['code' => $model->code]);
+						}else {
+							echo $this->renderPartial('_createFail');
+						}
 					}
 					break;
 			}

@@ -1,6 +1,6 @@
-<h1>Danh sách sản phẩm</h1>
+<h1><D></D>anh sách bình chọn</h1>
 <?php $this->widget('zii.widgets.CListView', array(
 	'dataProvider'=>$dataProvider,
-	'itemView'=>'_view',
+	'itemView'=>'_itemIndex',
 	'template'=>"{items}\n{pager}",
 )); ?>

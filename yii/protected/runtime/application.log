@@ -7816,3 +7816,1090 @@ Stack trace:
 REQUEST_URI=/yii/index.php/vote/ajaxform
 HTTP_REFERER=http://localhost/yii/index.php/vote?id=4
 ---
+2017/11/11 17:13:21 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "index".' in /home/hieutct/syn/parttime/yii/framework/web/CController.php:486
+Stack trace:
+#0 /home/hieutct/syn/parttime/yii/framework/web/CController.php(270): CController->missingAction('')
+#1 /home/hieutct/syn/parttime/yii/framework/web/CWebApplication.php(282): CController->run('')
+#2 /home/hieutct/syn/parttime/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('vote')
+#3 /home/hieutct/syn/parttime/yii/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#4 /home/hieutct/syn/parttime/yii/index.php(11): CApplication->run()
+#5 {main}
+REQUEST_URI=/yii/index.php/vote
+---
+2017/11/11 17:32:21 [error] [php] Missing argument 1 for CController::createUrl(), called in /home/hieutct/syn/parttime/yii/protected/views/product/view.php on line 4 and defined (/home/hieutct/syn/parttime/yii/framework/web/CController.php:962)
+Stack trace:
+#0 /home/hieutct/syn/parttime/yii/framework/web/CBaseController.php(95): ProductController->renderInternal()
+#1 /home/hieutct/syn/parttime/yii/framework/web/CController.php(872): ProductController->renderFile()
+#2 /home/hieutct/syn/parttime/yii/framework/web/CController.php(785): ProductController->renderPartial()
+#3 /home/hieutct/syn/parttime/yii/protected/controllers/ProductController.php(81): ProductController->render()
+#4 /home/hieutct/syn/parttime/yii/framework/web/actions/CInlineAction.php(49): ProductController->actionView()
+#5 /home/hieutct/syn/parttime/yii/framework/web/CController.php(308): CInlineAction->runWithParams()
+#6 /home/hieutct/syn/parttime/yii/framework/web/filters/CFilterChain.php(134): ProductController->runAction()
+#7 /home/hieutct/syn/parttime/yii/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#8 /home/hieutct/syn/parttime/yii/framework/web/CController.php(1148): CAccessControlFilter->filter()
+#9 /home/hieutct/syn/parttime/yii/framework/web/filters/CInlineFilter.php(58): ProductController->filterAccessControl()
+#10 /home/hieutct/syn/parttime/yii/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter()
+#11 /home/hieutct/syn/parttime/yii/framework/web/CController.php(291): CFilterChain->run()
+#12 /home/hieutct/syn/parttime/yii/framework/web/CController.php(265): ProductController->runActionWithFilters()
+#13 /home/hieutct/syn/parttime/yii/framework/web/CWebApplication.php(282): ProductController->run()
+#14 /home/hieutct/syn/parttime/yii/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#15 /home/hieutct/syn/parttime/yii/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#16 /home/hieutct/syn/parttime/yii/index.php(11): CWebApplication->run()
+REQUEST_URI=/yii/index.php/Product/view?id=4&title=Samsung+Galaxy+S7+edge
+2017/11/12 03:15:43 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "index".' in /home/hieutct/syn/parttime/yii/framework/web/CController.php:486
+Stack trace:
+#0 /home/hieutct/syn/parttime/yii/framework/web/CController.php(270): CController->missingAction('')
+#1 /home/hieutct/syn/parttime/yii/framework/web/CWebApplication.php(282): CController->run('')
+#2 /home/hieutct/syn/parttime/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('vote')
+#3 /home/hieutct/syn/parttime/yii/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#4 /home/hieutct/syn/parttime/yii/index.php(11): CApplication->run()
+#5 {main}
+REQUEST_URI=/yii/index.php/vote
+---
+2017/11/12 03:15:50 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "index".' in /home/hieutct/syn/parttime/yii/framework/web/CController.php:486
+Stack trace:
+#0 /home/hieutct/syn/parttime/yii/framework/web/CController.php(270): CController->missingAction('')
+#1 /home/hieutct/syn/parttime/yii/framework/web/CWebApplication.php(282): CController->run('')
+#2 /home/hieutct/syn/parttime/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('vote')
+#3 /home/hieutct/syn/parttime/yii/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#4 /home/hieutct/syn/parttime/yii/index.php(11): CApplication->run()
+#5 {main}
+REQUEST_URI=/yii/index.php/vote?id=4
+---
+2017/11/12 03:20:50 [warning] [application] Failed to set unsafe attribute "repassword" of "User".
+2017/11/12 03:20:55 [warning] [application] Failed to set unsafe attribute "repassword" of "User".
+2017/11/12 03:21:01 [warning] [application] Failed to set unsafe attribute "repassword" of "User".
+2017/11/12 03:21:29 [warning] [application] Failed to set unsafe attribute "repassword" of "User".
+2017/11/12 03:21:43 [warning] [application] Failed to set unsafe attribute "repassword" of "User".
+2017/11/12 03:21:52 [warning] [application] Failed to set unsafe attribute "repassword" of "User".
+2017/11/12 03:22:34 [warning] [application] Failed to set unsafe attribute "repassword" of "User".
+2017/11/12 03:23:17 [warning] [application] Failed to set unsafe attribute "repassword" of "User".
+2017/11/12 03:23:48 [warning] [application] Failed to set unsafe attribute "repassword" of "User".
+2017/11/12 03:26:04 [warning] [application] Failed to set unsafe attribute "repassword" of "User".
+2017/11/12 03:27:35 [warning] [application] Failed to set unsafe attribute "repassword" of "User".
+2017/11/12 03:29:20 [warning] [application] Failed to set unsafe attribute "repassword" of "User".
+2017/11/12 03:29:34 [warning] [application] Failed to set unsafe attribute "repassword" of "User".
+2017/11/12 03:29:47 [warning] [application] Failed to set unsafe attribute "repassword" of "User".
+2017/11/12 03:30:01 [warning] [application] Failed to set unsafe attribute "repassword" of "User".
+2017/11/12 03:30:16 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "view".' in /home/hieutct/syn/parttime/yii/framework/web/CController.php:486
+Stack trace:
+#0 /home/hieutct/syn/parttime/yii/framework/web/CController.php(270): CController->missingAction('view')
+#1 /home/hieutct/syn/parttime/yii/framework/web/CWebApplication.php(282): CController->run('view')
+#2 /home/hieutct/syn/parttime/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('user/view')
+#3 /home/hieutct/syn/parttime/yii/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#4 /home/hieutct/syn/parttime/yii/index.php(11): CApplication->run()
+#5 {main}
+REQUEST_URI=/yii/index.php/user/view?id=4
+---
+2017/11/12 03:32:49 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "view".' in /home/hieutct/syn/parttime/yii/framework/web/CController.php:486
+Stack trace:
+#0 /home/hieutct/syn/parttime/yii/framework/web/CController.php(270): CController->missingAction('view')
+#1 /home/hieutct/syn/parttime/yii/framework/web/CWebApplication.php(282): CController->run('view')
+#2 /home/hieutct/syn/parttime/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('user/view')
+#3 /home/hieutct/syn/parttime/yii/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#4 /home/hieutct/syn/parttime/yii/index.php(11): CApplication->run()
+#5 {main}
+REQUEST_URI=/yii/index.php/user/view?id=4
+---
+2017/11/12 03:32:54 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "view".' in /home/hieutct/syn/parttime/yii/framework/web/CController.php:486
+Stack trace:
+#0 /home/hieutct/syn/parttime/yii/framework/web/CController.php(270): CController->missingAction('view')
+#1 /home/hieutct/syn/parttime/yii/framework/web/CWebApplication.php(282): CController->run('view')
+#2 /home/hieutct/syn/parttime/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('user/view')
+#3 /home/hieutct/syn/parttime/yii/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#4 /home/hieutct/syn/parttime/yii/index.php(11): CApplication->run()
+#5 {main}
+REQUEST_URI=/yii/index.php/user/view
+---
+2017/11/12 03:33:03 [warning] [application] Failed to set unsafe attribute "repassword" of "User".
+2017/11/12 03:33:04 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "_successCreate".' in /home/hieutct/syn/parttime/yii/framework/web/CController.php:486
+Stack trace:
+#0 /home/hieutct/syn/parttime/yii/framework/web/CController.php(270): CController->missingAction('_successCreate')
+#1 /home/hieutct/syn/parttime/yii/framework/web/CWebApplication.php(282): CController->run('_successCreate')
+#2 /home/hieutct/syn/parttime/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('user/_successCr...')
+#3 /home/hieutct/syn/parttime/yii/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#4 /home/hieutct/syn/parttime/yii/index.php(11): CApplication->run()
+#5 {main}
+REQUEST_URI=/yii/index.php/user/_successCreate?0=tcthanhhieu%40gmail.com
+HTTP_REFERER=http://localhost/yii/index.php/user/create
+---
+2017/11/12 03:34:59 [warning] [application] Failed to set unsafe attribute "repassword" of "User".
+2017/11/12 03:38:09 [warning] [application] Failed to set unsafe attribute "repassword" of "User".
+2017/11/12 03:39:19 [error] [php] Trying to get property of non-object (/home/hieutct/syn/parttime/yii/protected/views/vote/_form.php:13)
+Stack trace:
+#0 /home/hieutct/syn/parttime/yii/framework/web/CController.php(872): VoteController->renderFile()
+#1 /home/hieutct/syn/parttime/yii/protected/views/vote/create.php(8): VoteController->renderPartial()
+#2 /home/hieutct/syn/parttime/yii/framework/web/CBaseController.php(126): require()
+#3 /home/hieutct/syn/parttime/yii/framework/web/CBaseController.php(95): VoteController->renderInternal()
+#4 /home/hieutct/syn/parttime/yii/framework/web/CController.php(872): VoteController->renderFile()
+#5 /home/hieutct/syn/parttime/yii/framework/web/CController.php(785): VoteController->renderPartial()
+#6 /home/hieutct/syn/parttime/yii/protected/controllers/VoteController.php(33): VoteController->render()
+#7 /home/hieutct/syn/parttime/yii/framework/web/actions/CInlineAction.php(49): VoteController->actionCreate()
+#8 /home/hieutct/syn/parttime/yii/framework/web/CController.php(308): CInlineAction->runWithParams()
+#9 /home/hieutct/syn/parttime/yii/framework/web/filters/CFilterChain.php(134): VoteController->runAction()
+#10 /home/hieutct/syn/parttime/yii/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#11 /home/hieutct/syn/parttime/yii/framework/web/CController.php(1148): CAccessControlFilter->filter()
+#12 /home/hieutct/syn/parttime/yii/framework/web/filters/CInlineFilter.php(58): VoteController->filterAccessControl()
+#13 /home/hieutct/syn/parttime/yii/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter()
+#14 /home/hieutct/syn/parttime/yii/framework/web/CController.php(291): CFilterChain->run()
+#15 /home/hieutct/syn/parttime/yii/framework/web/CController.php(265): VoteController->runActionWithFilters()
+#16 /home/hieutct/syn/parttime/yii/framework/web/CWebApplication.php(282): VoteController->run()
+#17 /home/hieutct/syn/parttime/yii/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#18 /home/hieutct/syn/parttime/yii/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#19 /home/hieutct/syn/parttime/yii/index.php(11): CWebApplication->run()
+REQUEST_URI=/yii/index.php/vote/create?id=5
+2017/11/12 03:53:35 [error] [system.db.CDbCommand] CDbCommand::execute() failed: SQLSTATE[HY093]: Invalid parameter number: no parameters were bound. The SQL statement executed was: SELECT `id`
+FROM `tbl_product`
+WHERE category=:category.
+2017/11/12 03:53:35 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to execute the SQL statement: SQLSTATE[HY093]: Invalid parameter number: no parameters were bound. The SQL statement executed was: SELECT `id`
+FROM `tbl_product`
+WHERE category=:category' in /home/hieutct/syn/parttime/yii/framework/db/CDbCommand.php:358
+Stack trace:
+#0 /home/hieutct/syn/parttime/yii/protected/controllers/VoteController.php(65): CDbCommand->execute()
+#1 /home/hieutct/syn/parttime/yii/framework/web/actions/CInlineAction.php(49): VoteController->actionIndex()
+#2 /home/hieutct/syn/parttime/yii/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#3 /home/hieutct/syn/parttime/yii/framework/web/filters/CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#4 /home/hieutct/syn/parttime/yii/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#5 /home/hieutct/syn/parttime/yii/framework/web/CController.php(1148): CFilter->filter(Object(CFilterChain))
+#6 /home/hieutct/syn/parttime/yii/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#7 /home/hieutct/syn/parttime/yii/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#8 /home/hieutct/syn/parttime/yii/framework/web/CController.php(291): CFilterChain->run()
+#9 /home/hieutct/syn/parttime/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#10 /home/hieutct/syn/parttime/yii/framework/web/CWebApplication.php(282): CController->run('')
+#11 /home/hieutct/syn/parttime/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('vote')
+#12 /home/hieutct/syn/parttime/yii/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#13 /home/hieutct/syn/parttime/yii/index.php(11): CApplication->run()
+#14 {main}
+REQUEST_URI=/yii/index.php/vote?cat=4
+---
+2017/11/12 03:53:43 [error] [system.db.CDbCommand] CDbCommand::execute() failed: SQLSTATE[HY093]: Invalid parameter number: no parameters were bound. The SQL statement executed was: SELECT `id`
+FROM `tbl_product`
+WHERE category=:category.
+2017/11/12 03:53:43 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to execute the SQL statement: SQLSTATE[HY093]: Invalid parameter number: no parameters were bound. The SQL statement executed was: SELECT `id`
+FROM `tbl_product`
+WHERE category=:category' in /home/hieutct/syn/parttime/yii/framework/db/CDbCommand.php:358
+Stack trace:
+#0 /home/hieutct/syn/parttime/yii/protected/controllers/VoteController.php(65): CDbCommand->execute()
+#1 /home/hieutct/syn/parttime/yii/framework/web/actions/CInlineAction.php(49): VoteController->actionIndex()
+#2 /home/hieutct/syn/parttime/yii/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#3 /home/hieutct/syn/parttime/yii/framework/web/filters/CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#4 /home/hieutct/syn/parttime/yii/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#5 /home/hieutct/syn/parttime/yii/framework/web/CController.php(1148): CFilter->filter(Object(CFilterChain))
+#6 /home/hieutct/syn/parttime/yii/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#7 /home/hieutct/syn/parttime/yii/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#8 /home/hieutct/syn/parttime/yii/framework/web/CController.php(291): CFilterChain->run()
+#9 /home/hieutct/syn/parttime/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#10 /home/hieutct/syn/parttime/yii/framework/web/CWebApplication.php(282): CController->run('')
+#11 /home/hieutct/syn/parttime/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('vote')
+#12 /home/hieutct/syn/parttime/yii/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#13 /home/hieutct/syn/parttime/yii/index.php(11): CApplication->run()
+#14 {main}
+REQUEST_URI=/yii/index.php/vote?cat=4
+---
+2017/11/12 03:53:44 [error] [system.db.CDbCommand] CDbCommand::execute() failed: SQLSTATE[HY093]: Invalid parameter number: no parameters were bound. The SQL statement executed was: SELECT `id`
+FROM `tbl_product`
+WHERE category=:category.
+2017/11/12 03:53:44 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to execute the SQL statement: SQLSTATE[HY093]: Invalid parameter number: no parameters were bound. The SQL statement executed was: SELECT `id`
+FROM `tbl_product`
+WHERE category=:category' in /home/hieutct/syn/parttime/yii/framework/db/CDbCommand.php:358
+Stack trace:
+#0 /home/hieutct/syn/parttime/yii/protected/controllers/VoteController.php(65): CDbCommand->execute()
+#1 /home/hieutct/syn/parttime/yii/framework/web/actions/CInlineAction.php(49): VoteController->actionIndex()
+#2 /home/hieutct/syn/parttime/yii/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#3 /home/hieutct/syn/parttime/yii/framework/web/filters/CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#4 /home/hieutct/syn/parttime/yii/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#5 /home/hieutct/syn/parttime/yii/framework/web/CController.php(1148): CFilter->filter(Object(CFilterChain))
+#6 /home/hieutct/syn/parttime/yii/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#7 /home/hieutct/syn/parttime/yii/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#8 /home/hieutct/syn/parttime/yii/framework/web/CController.php(291): CFilterChain->run()
+#9 /home/hieutct/syn/parttime/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#10 /home/hieutct/syn/parttime/yii/framework/web/CWebApplication.php(282): CController->run('')
+#11 /home/hieutct/syn/parttime/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('vote')
+#12 /home/hieutct/syn/parttime/yii/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#13 /home/hieutct/syn/parttime/yii/index.php(11): CApplication->run()
+#14 {main}
+REQUEST_URI=/yii/index.php/vote?cat=4
+---
+2017/11/12 04:00:17 [error] [system.db.CDbCommand] CDbCommand::fetchColumn() failed: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '[1,2,3,4]' at line 1. The SQL statement executed was: SELECT COUNT(*) FROM `tbl_vote` `t` WHERE product in [1,2,3,4].
+2017/11/12 04:00:17 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to execute the SQL statement: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '[1,2,3,4]' at line 1. The SQL statement executed was: SELECT COUNT(*) FROM `tbl_vote` `t` WHERE product in [1,2,3,4]' in /home/hieutct/syn/parttime/yii/framework/db/CDbCommand.php:543
+Stack trace:
+#0 /home/hieutct/syn/parttime/yii/framework/db/CDbCommand.php(433): CDbCommand->queryInternal('fetchColumn', 0, Array)
+#1 /home/hieutct/syn/parttime/yii/framework/db/ar/CActiveRecord.php(1609): CDbCommand->queryScalar()
+#2 /home/hieutct/syn/parttime/yii/framework/web/CActiveDataProvider.php(228): CActiveRecord->count(Object(CDbCriteria))
+#3 /home/hieutct/syn/parttime/yii/framework/web/CDataProvider.php(224): CActiveDataProvider->calculateTotalItemCount()
+#4 /home/hieutct/syn/parttime/yii/framework/web/CActiveDataProvider.php(178): CDataProvider->getTotalItemCount()
+#5 /home/hieutct/syn/parttime/yii/framework/web/CDataProvider.php(168): CActiveDataProvider->fetchData()
+#6 /home/hieutct/syn/parttime/yii/framework/zii/widgets/CBaseListView.php(125): CDataProvider->getData()
+#7 /home/hieutct/syn/parttime/yii/framework/zii/widgets/CListView.php(211): CBaseListView->init()
+#8 /home/hieutct/syn/parttime/yii/framework/web/CBaseController.php(147): CListView->init()
+#9 /home/hieutct/syn/parttime/yii/framework/web/CBaseController.php(181): CBaseController->createWidget('zii.widgets.CLi...', Array)
+#10 /home/hieutct/syn/parttime/yii/protected/views/vote/index.php(6): CBaseController->widget('zii.widgets.CLi...', Array)
+#11 /home/hieutct/syn/parttime/yii/framework/web/CBaseController.php(126): require('/home/hieutct/s...')
+#12 /home/hieutct/syn/parttime/yii/framework/web/CBaseController.php(95): CBaseController->renderInternal('/home/hieutct/s...', Array, true)
+#13 /home/hieutct/syn/parttime/yii/framework/web/CController.php(872): CBaseController->renderFile('/home/hieutct/s...', Array, true)
+#14 /home/hieutct/syn/parttime/yii/framework/web/CController.php(785): CController->renderPartial('index', Array, true)
+#15 /home/hieutct/syn/parttime/yii/protected/controllers/VoteController.php(81): CController->render('index', Array)
+#16 /home/hieutct/syn/parttime/yii/framework/web/actions/CInlineAction.php(49): VoteController->actionIndex()
+#17 /home/hieutct/syn/parttime/yii/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#18 /home/hieutct/syn/parttime/yii/framework/web/filters/CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#19 /home/hieutct/syn/parttime/yii/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#20 /home/hieutct/syn/parttime/yii/framework/web/CController.php(1148): CFilter->filter(Object(CFilterChain))
+#21 /home/hieutct/syn/parttime/yii/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#22 /home/hieutct/syn/parttime/yii/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#23 /home/hieutct/syn/parttime/yii/framework/web/CController.php(291): CFilterChain->run()
+#24 /home/hieutct/syn/parttime/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#25 /home/hieutct/syn/parttime/yii/framework/web/CWebApplication.php(282): CController->run('')
+#26 /home/hieutct/syn/parttime/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('vote')
+#27 /home/hieutct/syn/parttime/yii/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#28 /home/hieutct/syn/parttime/yii/index.php(11): CApplication->run()
+#29 {main}
+REQUEST_URI=/yii/index.php/vote?cat=6
+---
+2017/11/12 04:01:44 [error] [system.db.CDbCommand] CDbCommand::fetchColumn() failed: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ')' at line 1. The SQL statement executed was: SELECT COUNT(*) FROM `tbl_vote` `t` WHERE product in ().
+2017/11/12 04:01:44 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to execute the SQL statement: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ')' at line 1. The SQL statement executed was: SELECT COUNT(*) FROM `tbl_vote` `t` WHERE product in ()' in /home/hieutct/syn/parttime/yii/framework/db/CDbCommand.php:543
+Stack trace:
+#0 /home/hieutct/syn/parttime/yii/framework/db/CDbCommand.php(433): CDbCommand->queryInternal('fetchColumn', 0, Array)
+#1 /home/hieutct/syn/parttime/yii/framework/db/ar/CActiveRecord.php(1609): CDbCommand->queryScalar()
+#2 /home/hieutct/syn/parttime/yii/framework/web/CActiveDataProvider.php(228): CActiveRecord->count(Object(CDbCriteria))
+#3 /home/hieutct/syn/parttime/yii/framework/web/CDataProvider.php(224): CActiveDataProvider->calculateTotalItemCount()
+#4 /home/hieutct/syn/parttime/yii/framework/web/CActiveDataProvider.php(178): CDataProvider->getTotalItemCount()
+#5 /home/hieutct/syn/parttime/yii/framework/web/CDataProvider.php(168): CActiveDataProvider->fetchData()
+#6 /home/hieutct/syn/parttime/yii/framework/zii/widgets/CBaseListView.php(125): CDataProvider->getData()
+#7 /home/hieutct/syn/parttime/yii/framework/zii/widgets/CListView.php(211): CBaseListView->init()
+#8 /home/hieutct/syn/parttime/yii/framework/web/CBaseController.php(147): CListView->init()
+#9 /home/hieutct/syn/parttime/yii/framework/web/CBaseController.php(181): CBaseController->createWidget('zii.widgets.CLi...', Array)
+#10 /home/hieutct/syn/parttime/yii/protected/views/vote/index.php(6): CBaseController->widget('zii.widgets.CLi...', Array)
+#11 /home/hieutct/syn/parttime/yii/framework/web/CBaseController.php(126): require('/home/hieutct/s...')
+#12 /home/hieutct/syn/parttime/yii/framework/web/CBaseController.php(95): CBaseController->renderInternal('/home/hieutct/s...', Array, true)
+#13 /home/hieutct/syn/parttime/yii/framework/web/CController.php(872): CBaseController->renderFile('/home/hieutct/s...', Array, true)
+#14 /home/hieutct/syn/parttime/yii/framework/web/CController.php(785): CController->renderPartial('index', Array, true)
+#15 /home/hieutct/syn/parttime/yii/protected/controllers/VoteController.php(81): CController->render('index', Array)
+#16 /home/hieutct/syn/parttime/yii/framework/web/actions/CInlineAction.php(49): VoteController->actionIndex()
+#17 /home/hieutct/syn/parttime/yii/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#18 /home/hieutct/syn/parttime/yii/framework/web/filters/CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#19 /home/hieutct/syn/parttime/yii/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#20 /home/hieutct/syn/parttime/yii/framework/web/CController.php(1148): CFilter->filter(Object(CFilterChain))
+#21 /home/hieutct/syn/parttime/yii/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#22 /home/hieutct/syn/parttime/yii/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#23 /home/hieutct/syn/parttime/yii/framework/web/CController.php(291): CFilterChain->run()
+#24 /home/hieutct/syn/parttime/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#25 /home/hieutct/syn/parttime/yii/framework/web/CWebApplication.php(282): CController->run('')
+#26 /home/hieutct/syn/parttime/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('vote')
+#27 /home/hieutct/syn/parttime/yii/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#28 /home/hieutct/syn/parttime/yii/index.php(11): CApplication->run()
+#29 {main}
+REQUEST_URI=/yii/index.php/vote?cat=2
+---
+2017/11/12 04:13:46 [error] [exception.CException] exception 'CException' with message 'UserController cannot find the requested view "_formUpdate".' in /home/hieutct/syn/parttime/yii/framework/web/CController.php:881
+Stack trace:
+#0 /home/hieutct/syn/parttime/yii/protected/views/user/update.php(12): CController->renderPartial('_formUpdate', Array)
+#1 /home/hieutct/syn/parttime/yii/framework/web/CBaseController.php(126): require('/home/hieutct/s...')
+#2 /home/hieutct/syn/parttime/yii/framework/web/CBaseController.php(95): CBaseController->renderInternal('/home/hieutct/s...', Array, true)
+#3 /home/hieutct/syn/parttime/yii/framework/web/CController.php(872): CBaseController->renderFile('/home/hieutct/s...', Array, true)
+#4 /home/hieutct/syn/parttime/yii/framework/web/CController.php(785): CController->renderPartial('update', Array, true)
+#5 /home/hieutct/syn/parttime/yii/protected/controllers/UserController.php(126): CController->render('update', Array)
+#6 /home/hieutct/syn/parttime/yii/framework/web/actions/CInlineAction.php(49): UserController->actionUpdate()
+#7 /home/hieutct/syn/parttime/yii/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#8 /home/hieutct/syn/parttime/yii/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#9 /home/hieutct/syn/parttime/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#10 /home/hieutct/syn/parttime/yii/framework/web/CWebApplication.php(282): CController->run('update')
+#11 /home/hieutct/syn/parttime/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('user/update')
+#12 /home/hieutct/syn/parttime/yii/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#13 /home/hieutct/syn/parttime/yii/index.php(11): CApplication->run()
+#14 {main}
+REQUEST_URI=/yii/index.php/user/update
+---
+2017/11/12 04:25:39 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "profile".' in /home/hieutct/syn/parttime/yii/framework/web/CController.php:486
+Stack trace:
+#0 /home/hieutct/syn/parttime/yii/framework/web/CController.php(270): CController->missingAction('profile')
+#1 /home/hieutct/syn/parttime/yii/framework/web/CWebApplication.php(282): CController->run('profile')
+#2 /home/hieutct/syn/parttime/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('user/profile')
+#3 /home/hieutct/syn/parttime/yii/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#4 /home/hieutct/syn/parttime/yii/index.php(11): CApplication->run()
+#5 {main}
+REQUEST_URI=/yii/index.php/user/profile
+HTTP_REFERER=http://localhost/yii/index.php/user/update
+---
+2017/11/12 04:25:49 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "profile".' in /home/hieutct/syn/parttime/yii/framework/web/CController.php:486
+Stack trace:
+#0 /home/hieutct/syn/parttime/yii/framework/web/CController.php(270): CController->missingAction('profile')
+#1 /home/hieutct/syn/parttime/yii/framework/web/CWebApplication.php(282): CController->run('profile')
+#2 /home/hieutct/syn/parttime/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('user/profile')
+#3 /home/hieutct/syn/parttime/yii/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#4 /home/hieutct/syn/parttime/yii/index.php(11): CApplication->run()
+#5 {main}
+REQUEST_URI=/yii/index.php/user/profile
+HTTP_REFERER=http://localhost/yii/index.php/user/update
+---
+2017/11/12 04:34:38 [error] [php] Illegal offset type (/home/hieutct/syn/parttime/yii/protected/controllers/UserController.php:129)
+Stack trace:
+#0 /home/hieutct/syn/parttime/yii/framework/web/CController.php(286): UserController->runAction()
+#1 /home/hieutct/syn/parttime/yii/framework/web/CController.php(265): UserController->runActionWithFilters()
+#2 /home/hieutct/syn/parttime/yii/framework/web/CWebApplication.php(282): UserController->run()
+#3 /home/hieutct/syn/parttime/yii/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#4 /home/hieutct/syn/parttime/yii/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#5 /home/hieutct/syn/parttime/yii/index.php(11): CWebApplication->run()
+REQUEST_URI=/yii/index.php/user/update?action=profile
+2017/11/12 04:34:56 [error] [php] Illegal offset type (/home/hieutct/syn/parttime/yii/protected/controllers/UserController.php:129)
+Stack trace:
+#0 /home/hieutct/syn/parttime/yii/framework/web/CController.php(286): UserController->runAction()
+#1 /home/hieutct/syn/parttime/yii/framework/web/CController.php(265): UserController->runActionWithFilters()
+#2 /home/hieutct/syn/parttime/yii/framework/web/CWebApplication.php(282): UserController->run()
+#3 /home/hieutct/syn/parttime/yii/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#4 /home/hieutct/syn/parttime/yii/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#5 /home/hieutct/syn/parttime/yii/index.php(11): CWebApplication->run()
+REQUEST_URI=/yii/index.php/user/update?action=profile
+2017/11/12 04:34:58 [error] [php] Illegal offset type (/home/hieutct/syn/parttime/yii/protected/controllers/UserController.php:129)
+Stack trace:
+#0 /home/hieutct/syn/parttime/yii/framework/web/CController.php(286): UserController->runAction()
+#1 /home/hieutct/syn/parttime/yii/framework/web/CController.php(265): UserController->runActionWithFilters()
+#2 /home/hieutct/syn/parttime/yii/framework/web/CWebApplication.php(282): UserController->run()
+#3 /home/hieutct/syn/parttime/yii/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#4 /home/hieutct/syn/parttime/yii/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#5 /home/hieutct/syn/parttime/yii/index.php(11): CWebApplication->run()
+REQUEST_URI=/yii/index.php/user/update?action=profile
+2017/11/12 04:34:58 [error] [php] Illegal offset type (/home/hieutct/syn/parttime/yii/protected/controllers/UserController.php:129)
+Stack trace:
+#0 /home/hieutct/syn/parttime/yii/framework/web/CController.php(286): UserController->runAction()
+#1 /home/hieutct/syn/parttime/yii/framework/web/CController.php(265): UserController->runActionWithFilters()
+#2 /home/hieutct/syn/parttime/yii/framework/web/CWebApplication.php(282): UserController->run()
+#3 /home/hieutct/syn/parttime/yii/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#4 /home/hieutct/syn/parttime/yii/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#5 /home/hieutct/syn/parttime/yii/index.php(11): CWebApplication->run()
+REQUEST_URI=/yii/index.php/user/update?action=profile
+2017/11/12 04:35:58 [error] [php] in_array() expects parameter 2 to be array, object given (/home/hieutct/syn/parttime/yii/protected/models/User.php:128)
+Stack trace:
+#0 /home/hieutct/syn/parttime/yii/framework/web/CBaseController.php(126): require()
+#1 /home/hieutct/syn/parttime/yii/framework/web/CBaseController.php(95): UserController->renderInternal()
+#2 /home/hieutct/syn/parttime/yii/framework/web/CController.php(872): UserController->renderFile()
+#3 /home/hieutct/syn/parttime/yii/protected/views/user/update.php(12): UserController->renderPartial()
+#4 /home/hieutct/syn/parttime/yii/framework/web/CBaseController.php(126): require()
+#5 /home/hieutct/syn/parttime/yii/framework/web/CBaseController.php(95): UserController->renderInternal()
+#6 /home/hieutct/syn/parttime/yii/framework/web/CController.php(872): UserController->renderFile()
+#7 /home/hieutct/syn/parttime/yii/framework/web/CController.php(785): UserController->renderPartial()
+#8 /home/hieutct/syn/parttime/yii/protected/controllers/UserController.php(131): UserController->render()
+#9 /home/hieutct/syn/parttime/yii/framework/web/actions/CInlineAction.php(49): UserController->actionUpdate()
+#10 /home/hieutct/syn/parttime/yii/framework/web/CController.php(308): CInlineAction->runWithParams()
+#11 /home/hieutct/syn/parttime/yii/framework/web/CController.php(286): UserController->runAction()
+#12 /home/hieutct/syn/parttime/yii/framework/web/CController.php(265): UserController->runActionWithFilters()
+#13 /home/hieutct/syn/parttime/yii/framework/web/CWebApplication.php(282): UserController->run()
+#14 /home/hieutct/syn/parttime/yii/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#15 /home/hieutct/syn/parttime/yii/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#16 /home/hieutct/syn/parttime/yii/index.php(11): CWebApplication->run()
+REQUEST_URI=/yii/index.php/user/update?action=profile
+2017/11/12 04:36:48 [error] [php] in_array() expects parameter 2 to be array, object given (/home/hieutct/syn/parttime/yii/protected/models/User.php:128)
+Stack trace:
+#0 /home/hieutct/syn/parttime/yii/framework/web/CBaseController.php(126): require()
+#1 /home/hieutct/syn/parttime/yii/framework/web/CBaseController.php(95): UserController->renderInternal()
+#2 /home/hieutct/syn/parttime/yii/framework/web/CController.php(872): UserController->renderFile()
+#3 /home/hieutct/syn/parttime/yii/protected/views/user/update.php(12): UserController->renderPartial()
+#4 /home/hieutct/syn/parttime/yii/framework/web/CBaseController.php(126): require()
+#5 /home/hieutct/syn/parttime/yii/framework/web/CBaseController.php(95): UserController->renderInternal()
+#6 /home/hieutct/syn/parttime/yii/framework/web/CController.php(872): UserController->renderFile()
+#7 /home/hieutct/syn/parttime/yii/framework/web/CController.php(785): UserController->renderPartial()
+#8 /home/hieutct/syn/parttime/yii/protected/controllers/UserController.php(131): UserController->render()
+#9 /home/hieutct/syn/parttime/yii/framework/web/actions/CInlineAction.php(49): UserController->actionUpdate()
+#10 /home/hieutct/syn/parttime/yii/framework/web/CController.php(308): CInlineAction->runWithParams()
+#11 /home/hieutct/syn/parttime/yii/framework/web/CController.php(286): UserController->runAction()
+#12 /home/hieutct/syn/parttime/yii/framework/web/CController.php(265): UserController->runActionWithFilters()
+#13 /home/hieutct/syn/parttime/yii/framework/web/CWebApplication.php(282): UserController->run()
+#14 /home/hieutct/syn/parttime/yii/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#15 /home/hieutct/syn/parttime/yii/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#16 /home/hieutct/syn/parttime/yii/index.php(11): CWebApplication->run()
+REQUEST_URI=/yii/index.php/user/update?action=profile
+2017/11/12 04:38:14 [error] [php] Undefined index: Profile (/home/hieutct/syn/parttime/yii/protected/controllers/UserController.php:128)
+Stack trace:
+#0 /home/hieutct/syn/parttime/yii/framework/web/CController.php(286): UserController->runAction()
+#1 /home/hieutct/syn/parttime/yii/framework/web/CController.php(265): UserController->runActionWithFilters()
+#2 /home/hieutct/syn/parttime/yii/framework/web/CWebApplication.php(282): UserController->run()
+#3 /home/hieutct/syn/parttime/yii/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#4 /home/hieutct/syn/parttime/yii/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#5 /home/hieutct/syn/parttime/yii/index.php(11): CWebApplication->run()
+REQUEST_URI=/yii/index.php/user/update?action=profile
+2017/11/12 05:03:58 [error] [php] Undefined index: Profile (/home/hieutct/syn/parttime/yii/protected/controllers/UserController.php:128)
+Stack trace:
+#0 /home/hieutct/syn/parttime/yii/framework/web/CController.php(286): UserController->runAction()
+#1 /home/hieutct/syn/parttime/yii/framework/web/CController.php(265): UserController->runActionWithFilters()
+#2 /home/hieutct/syn/parttime/yii/framework/web/CWebApplication.php(282): UserController->run()
+#3 /home/hieutct/syn/parttime/yii/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#4 /home/hieutct/syn/parttime/yii/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#5 /home/hieutct/syn/parttime/yii/index.php(11): CWebApplication->run()
+REQUEST_URI=/yii/index.php/user/update?action=profile
+2017/11/12 05:11:32 [error] [php] Undefined index: password (/home/hieutct/syn/parttime/yii/protected/controllers/UserController.php:138)
+Stack trace:
+#0 /home/hieutct/syn/parttime/yii/framework/web/CController.php(286): UserController->runAction()
+#1 /home/hieutct/syn/parttime/yii/framework/web/CController.php(265): UserController->runActionWithFilters()
+#2 /home/hieutct/syn/parttime/yii/framework/web/CWebApplication.php(282): UserController->run()
+#3 /home/hieutct/syn/parttime/yii/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#4 /home/hieutct/syn/parttime/yii/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#5 /home/hieutct/syn/parttime/yii/index.php(11): CWebApplication->run()
+REQUEST_URI=/yii/index.php/user/update?action=password
+2017/11/12 05:11:58 [error] [php] Undefined variable: messagePasswrod (/home/hieutct/syn/parttime/yii/protected/views/user/_formUpdate.php:32)
+Stack trace:
+#0 /home/hieutct/syn/parttime/yii/framework/web/CController.php(872): UserController->renderFile()
+#1 /home/hieutct/syn/parttime/yii/protected/views/user/update.php(12): UserController->renderPartial()
+#2 /home/hieutct/syn/parttime/yii/framework/web/CBaseController.php(126): require()
+#3 /home/hieutct/syn/parttime/yii/framework/web/CBaseController.php(95): UserController->renderInternal()
+#4 /home/hieutct/syn/parttime/yii/framework/web/CController.php(872): UserController->renderFile()
+#5 /home/hieutct/syn/parttime/yii/framework/web/CController.php(785): UserController->renderPartial()
+#6 /home/hieutct/syn/parttime/yii/protected/controllers/UserController.php(156): UserController->render()
+#7 /home/hieutct/syn/parttime/yii/framework/web/actions/CInlineAction.php(49): UserController->actionUpdate()
+#8 /home/hieutct/syn/parttime/yii/framework/web/CController.php(308): CInlineAction->runWithParams()
+#9 /home/hieutct/syn/parttime/yii/framework/web/CController.php(286): UserController->runAction()
+#10 /home/hieutct/syn/parttime/yii/framework/web/CController.php(265): UserController->runActionWithFilters()
+#11 /home/hieutct/syn/parttime/yii/framework/web/CWebApplication.php(282): UserController->run()
+#12 /home/hieutct/syn/parttime/yii/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#13 /home/hieutct/syn/parttime/yii/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#14 /home/hieutct/syn/parttime/yii/index.php(11): CWebApplication->run()
+REQUEST_URI=/yii/index.php/user/update?action=password
+2017/11/12 05:12:26 [error] [php] Undefined variable: messagePasswrod (/home/hieutct/syn/parttime/yii/protected/views/user/_formUpdate.php:32)
+Stack trace:
+#0 /home/hieutct/syn/parttime/yii/framework/web/CController.php(872): UserController->renderFile()
+#1 /home/hieutct/syn/parttime/yii/protected/views/user/update.php(12): UserController->renderPartial()
+#2 /home/hieutct/syn/parttime/yii/framework/web/CBaseController.php(126): require()
+#3 /home/hieutct/syn/parttime/yii/framework/web/CBaseController.php(95): UserController->renderInternal()
+#4 /home/hieutct/syn/parttime/yii/framework/web/CController.php(872): UserController->renderFile()
+#5 /home/hieutct/syn/parttime/yii/framework/web/CController.php(785): UserController->renderPartial()
+#6 /home/hieutct/syn/parttime/yii/protected/controllers/UserController.php(156): UserController->render()
+#7 /home/hieutct/syn/parttime/yii/framework/web/actions/CInlineAction.php(49): UserController->actionUpdate()
+#8 /home/hieutct/syn/parttime/yii/framework/web/CController.php(308): CInlineAction->runWithParams()
+#9 /home/hieutct/syn/parttime/yii/framework/web/CController.php(286): UserController->runAction()
+#10 /home/hieutct/syn/parttime/yii/framework/web/CController.php(265): UserController->runActionWithFilters()
+#11 /home/hieutct/syn/parttime/yii/framework/web/CWebApplication.php(282): UserController->run()
+#12 /home/hieutct/syn/parttime/yii/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#13 /home/hieutct/syn/parttime/yii/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#14 /home/hieutct/syn/parttime/yii/index.php(11): CWebApplication->run()
+REQUEST_URI=/yii/index.php/user/update?action=password
+2017/11/12 05:12:48 [error] [php] Undefined variable: msgPassword (/home/hieutct/syn/parttime/yii/protected/views/user/_formUpdate.php:32)
+Stack trace:
+#0 /home/hieutct/syn/parttime/yii/framework/web/CController.php(872): UserController->renderFile()
+#1 /home/hieutct/syn/parttime/yii/protected/views/user/update.php(12): UserController->renderPartial()
+#2 /home/hieutct/syn/parttime/yii/framework/web/CBaseController.php(126): require()
+#3 /home/hieutct/syn/parttime/yii/framework/web/CBaseController.php(95): UserController->renderInternal()
+#4 /home/hieutct/syn/parttime/yii/framework/web/CController.php(872): UserController->renderFile()
+#5 /home/hieutct/syn/parttime/yii/framework/web/CController.php(785): UserController->renderPartial()
+#6 /home/hieutct/syn/parttime/yii/protected/controllers/UserController.php(156): UserController->render()
+#7 /home/hieutct/syn/parttime/yii/framework/web/actions/CInlineAction.php(49): UserController->actionUpdate()
+#8 /home/hieutct/syn/parttime/yii/framework/web/CController.php(308): CInlineAction->runWithParams()
+#9 /home/hieutct/syn/parttime/yii/framework/web/CController.php(286): UserController->runAction()
+#10 /home/hieutct/syn/parttime/yii/framework/web/CController.php(265): UserController->runActionWithFilters()
+#11 /home/hieutct/syn/parttime/yii/framework/web/CWebApplication.php(282): UserController->run()
+#12 /home/hieutct/syn/parttime/yii/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#13 /home/hieutct/syn/parttime/yii/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#14 /home/hieutct/syn/parttime/yii/index.php(11): CWebApplication->run()
+REQUEST_URI=/yii/index.php/user/update?action=password
+2017/11/12 07:54:29 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "index".' in /home/hieutct/syn/parttime/yii/framework/web/CController.php:486
+Stack trace:
+#0 /home/hieutct/syn/parttime/yii/framework/web/CController.php(270): CController->missingAction('')
+#1 /home/hieutct/syn/parttime/yii/framework/web/CWebApplication.php(282): CController->run('')
+#2 /home/hieutct/syn/parttime/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('prize')
+#3 /home/hieutct/syn/parttime/yii/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#4 /home/hieutct/syn/parttime/yii/index.php(11): CApplication->run()
+#5 {main}
+REQUEST_URI=/yii/index.php/prize
+---
+2017/11/12 07:55:34 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "index".' in /home/hieutct/syn/parttime/yii/framework/web/CController.php:486
+Stack trace:
+#0 /home/hieutct/syn/parttime/yii/framework/web/CController.php(270): CController->missingAction('')
+#1 /home/hieutct/syn/parttime/yii/framework/web/CWebApplication.php(282): CController->run('')
+#2 /home/hieutct/syn/parttime/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('prize')
+#3 /home/hieutct/syn/parttime/yii/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#4 /home/hieutct/syn/parttime/yii/index.php(11): CApplication->run()
+#5 {main}
+REQUEST_URI=/yii/index.php/prize
+---
+2017/11/12 08:32:03 [error] [php] Illegal string offset 'url' (/home/hieutct/syn/parttime/yii/framework/web/helpers/CHtml.php:1362)
+Stack trace:
+#0 /home/hieutct/syn/parttime/yii/framework/web/widgets/CActiveForm.php(808): activeSearchField()
+#1 /home/hieutct/syn/parttime/yii/protected/views/prize/_miniForm.php(11): CActiveForm->searchField()
+#2 /home/hieutct/syn/parttime/yii/framework/web/CBaseController.php(126): require()
+#3 /home/hieutct/syn/parttime/yii/framework/web/CBaseController.php(95): PrizeController->renderInternal()
+#4 /home/hieutct/syn/parttime/yii/framework/web/CController.php(872): PrizeController->renderFile()
+#5 /home/hieutct/syn/parttime/yii/protected/views/prize/create.php(12): PrizeController->renderPartial()
+#6 /home/hieutct/syn/parttime/yii/framework/web/CBaseController.php(126): require()
+#7 /home/hieutct/syn/parttime/yii/framework/web/CBaseController.php(95): PrizeController->renderInternal()
+#8 /home/hieutct/syn/parttime/yii/framework/web/CController.php(872): PrizeController->renderFile()
+#9 /home/hieutct/syn/parttime/yii/framework/web/CController.php(785): PrizeController->renderPartial()
+#10 /home/hieutct/syn/parttime/yii/protected/controllers/PrizeController.php(28): PrizeController->render()
+#11 /home/hieutct/syn/parttime/yii/framework/web/actions/CInlineAction.php(49): PrizeController->actionCreate()
+#12 /home/hieutct/syn/parttime/yii/framework/web/CController.php(308): CInlineAction->runWithParams()
+#13 /home/hieutct/syn/parttime/yii/framework/web/filters/CFilterChain.php(134): PrizeController->runAction()
+#14 /home/hieutct/syn/parttime/yii/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#15 /home/hieutct/syn/parttime/yii/framework/web/CController.php(1148): CAccessControlFilter->filter()
+#16 /home/hieutct/syn/parttime/yii/framework/web/filters/CInlineFilter.php(58): PrizeController->filterAccessControl()
+#17 /home/hieutct/syn/parttime/yii/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter()
+#18 /home/hieutct/syn/parttime/yii/framework/web/CController.php(291): CFilterChain->run()
+#19 /home/hieutct/syn/parttime/yii/framework/web/CController.php(265): PrizeController->runActionWithFilters()
+#20 /home/hieutct/syn/parttime/yii/framework/web/CWebApplication.php(282): PrizeController->run()
+#21 /home/hieutct/syn/parttime/yii/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#22 /home/hieutct/syn/parttime/yii/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#23 /home/hieutct/syn/parttime/yii/index.php(11): CWebApplication->run()
+REQUEST_URI=/yii/index.php/prize/create?action=_miniForm
+2017/11/12 08:32:19 [error] [php] Illegal string offset 'url' (/home/hieutct/syn/parttime/yii/framework/web/helpers/CHtml.php:1362)
+Stack trace:
+#0 /home/hieutct/syn/parttime/yii/framework/web/widgets/CActiveForm.php(808): activeSearchField()
+#1 /home/hieutct/syn/parttime/yii/protected/views/prize/_miniForm.php(11): CActiveForm->searchField()
+#2 /home/hieutct/syn/parttime/yii/framework/web/CBaseController.php(126): require()
+#3 /home/hieutct/syn/parttime/yii/framework/web/CBaseController.php(95): PrizeController->renderInternal()
+#4 /home/hieutct/syn/parttime/yii/framework/web/CController.php(872): PrizeController->renderFile()
+#5 /home/hieutct/syn/parttime/yii/protected/views/prize/create.php(12): PrizeController->renderPartial()
+#6 /home/hieutct/syn/parttime/yii/framework/web/CBaseController.php(126): require()
+#7 /home/hieutct/syn/parttime/yii/framework/web/CBaseController.php(95): PrizeController->renderInternal()
+#8 /home/hieutct/syn/parttime/yii/framework/web/CController.php(872): PrizeController->renderFile()
+#9 /home/hieutct/syn/parttime/yii/framework/web/CController.php(785): PrizeController->renderPartial()
+#10 /home/hieutct/syn/parttime/yii/protected/controllers/PrizeController.php(28): PrizeController->render()
+#11 /home/hieutct/syn/parttime/yii/framework/web/actions/CInlineAction.php(49): PrizeController->actionCreate()
+#12 /home/hieutct/syn/parttime/yii/framework/web/CController.php(308): CInlineAction->runWithParams()
+#13 /home/hieutct/syn/parttime/yii/framework/web/filters/CFilterChain.php(134): PrizeController->runAction()
+#14 /home/hieutct/syn/parttime/yii/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#15 /home/hieutct/syn/parttime/yii/framework/web/CController.php(1148): CAccessControlFilter->filter()
+#16 /home/hieutct/syn/parttime/yii/framework/web/filters/CInlineFilter.php(58): PrizeController->filterAccessControl()
+#17 /home/hieutct/syn/parttime/yii/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter()
+#18 /home/hieutct/syn/parttime/yii/framework/web/CController.php(291): CFilterChain->run()
+#19 /home/hieutct/syn/parttime/yii/framework/web/CController.php(265): PrizeController->runActionWithFilters()
+#20 /home/hieutct/syn/parttime/yii/framework/web/CWebApplication.php(282): PrizeController->run()
+#21 /home/hieutct/syn/parttime/yii/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#22 /home/hieutct/syn/parttime/yii/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#23 /home/hieutct/syn/parttime/yii/index.php(11): CWebApplication->run()
+REQUEST_URI=/yii/index.php/prize/create?action=_miniForm
+2017/11/12 08:32:31 [error] [php] Illegal string offset 'url' (/home/hieutct/syn/parttime/yii/framework/web/helpers/CHtml.php:1362)
+Stack trace:
+#0 /home/hieutct/syn/parttime/yii/framework/web/widgets/CActiveForm.php(808): activeSearchField()
+#1 /home/hieutct/syn/parttime/yii/protected/views/prize/_miniForm.php(11): CActiveForm->searchField()
+#2 /home/hieutct/syn/parttime/yii/framework/web/CBaseController.php(126): require()
+#3 /home/hieutct/syn/parttime/yii/framework/web/CBaseController.php(95): PrizeController->renderInternal()
+#4 /home/hieutct/syn/parttime/yii/framework/web/CController.php(872): PrizeController->renderFile()
+#5 /home/hieutct/syn/parttime/yii/protected/views/prize/create.php(12): PrizeController->renderPartial()
+#6 /home/hieutct/syn/parttime/yii/framework/web/CBaseController.php(126): require()
+#7 /home/hieutct/syn/parttime/yii/framework/web/CBaseController.php(95): PrizeController->renderInternal()
+#8 /home/hieutct/syn/parttime/yii/framework/web/CController.php(872): PrizeController->renderFile()
+#9 /home/hieutct/syn/parttime/yii/framework/web/CController.php(785): PrizeController->renderPartial()
+#10 /home/hieutct/syn/parttime/yii/protected/controllers/PrizeController.php(28): PrizeController->render()
+#11 /home/hieutct/syn/parttime/yii/framework/web/actions/CInlineAction.php(49): PrizeController->actionCreate()
+#12 /home/hieutct/syn/parttime/yii/framework/web/CController.php(308): CInlineAction->runWithParams()
+#13 /home/hieutct/syn/parttime/yii/framework/web/filters/CFilterChain.php(134): PrizeController->runAction()
+#14 /home/hieutct/syn/parttime/yii/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#15 /home/hieutct/syn/parttime/yii/framework/web/CController.php(1148): CAccessControlFilter->filter()
+#16 /home/hieutct/syn/parttime/yii/framework/web/filters/CInlineFilter.php(58): PrizeController->filterAccessControl()
+#17 /home/hieutct/syn/parttime/yii/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter()
+#18 /home/hieutct/syn/parttime/yii/framework/web/CController.php(291): CFilterChain->run()
+#19 /home/hieutct/syn/parttime/yii/framework/web/CController.php(265): PrizeController->runActionWithFilters()
+#20 /home/hieutct/syn/parttime/yii/framework/web/CWebApplication.php(282): PrizeController->run()
+#21 /home/hieutct/syn/parttime/yii/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#22 /home/hieutct/syn/parttime/yii/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#23 /home/hieutct/syn/parttime/yii/index.php(11): CWebApplication->run()
+REQUEST_URI=/yii/index.php/prize/create?action=_miniForm
+2017/11/12 08:32:36 [error] [php] Illegal string offset 'url' (/home/hieutct/syn/parttime/yii/framework/web/helpers/CHtml.php:1362)
+Stack trace:
+#0 /home/hieutct/syn/parttime/yii/framework/web/widgets/CActiveForm.php(808): activeSearchField()
+#1 /home/hieutct/syn/parttime/yii/protected/views/prize/_miniForm.php(11): CActiveForm->searchField()
+#2 /home/hieutct/syn/parttime/yii/framework/web/CBaseController.php(126): require()
+#3 /home/hieutct/syn/parttime/yii/framework/web/CBaseController.php(95): PrizeController->renderInternal()
+#4 /home/hieutct/syn/parttime/yii/framework/web/CController.php(872): PrizeController->renderFile()
+#5 /home/hieutct/syn/parttime/yii/protected/views/prize/create.php(12): PrizeController->renderPartial()
+#6 /home/hieutct/syn/parttime/yii/framework/web/CBaseController.php(126): require()
+#7 /home/hieutct/syn/parttime/yii/framework/web/CBaseController.php(95): PrizeController->renderInternal()
+#8 /home/hieutct/syn/parttime/yii/framework/web/CController.php(872): PrizeController->renderFile()
+#9 /home/hieutct/syn/parttime/yii/framework/web/CController.php(785): PrizeController->renderPartial()
+#10 /home/hieutct/syn/parttime/yii/protected/controllers/PrizeController.php(28): PrizeController->render()
+#11 /home/hieutct/syn/parttime/yii/framework/web/actions/CInlineAction.php(49): PrizeController->actionCreate()
+#12 /home/hieutct/syn/parttime/yii/framework/web/CController.php(308): CInlineAction->runWithParams()
+#13 /home/hieutct/syn/parttime/yii/framework/web/filters/CFilterChain.php(134): PrizeController->runAction()
+#14 /home/hieutct/syn/parttime/yii/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#15 /home/hieutct/syn/parttime/yii/framework/web/CController.php(1148): CAccessControlFilter->filter()
+#16 /home/hieutct/syn/parttime/yii/framework/web/filters/CInlineFilter.php(58): PrizeController->filterAccessControl()
+#17 /home/hieutct/syn/parttime/yii/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter()
+#18 /home/hieutct/syn/parttime/yii/framework/web/CController.php(291): CFilterChain->run()
+#19 /home/hieutct/syn/parttime/yii/framework/web/CController.php(265): PrizeController->runActionWithFilters()
+#20 /home/hieutct/syn/parttime/yii/framework/web/CWebApplication.php(282): PrizeController->run()
+#21 /home/hieutct/syn/parttime/yii/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#22 /home/hieutct/syn/parttime/yii/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#23 /home/hieutct/syn/parttime/yii/index.php(11): CWebApplication->run()
+REQUEST_URI=/yii/index.php/prize/create?action=_miniForm
+2017/11/12 08:43:33 [error] [php] Object of class User could not be converted to string (/home/hieutct/syn/parttime/yii/framework/web/helpers/CHtml.php:2561)
+Stack trace:
+#0 /home/hieutct/syn/parttime/yii/protected/views/prize/_miniForm.php(11): CActiveForm->dropDownList()
+#1 /home/hieutct/syn/parttime/yii/framework/web/CBaseController.php(126): require()
+#2 /home/hieutct/syn/parttime/yii/framework/web/CBaseController.php(95): PrizeController->renderInternal()
+#3 /home/hieutct/syn/parttime/yii/framework/web/CController.php(872): PrizeController->renderFile()
+#4 /home/hieutct/syn/parttime/yii/protected/views/prize/create.php(12): PrizeController->renderPartial()
+#5 /home/hieutct/syn/parttime/yii/framework/web/CBaseController.php(126): require()
+#6 /home/hieutct/syn/parttime/yii/framework/web/CBaseController.php(95): PrizeController->renderInternal()
+#7 /home/hieutct/syn/parttime/yii/framework/web/CController.php(872): PrizeController->renderFile()
+#8 /home/hieutct/syn/parttime/yii/framework/web/CController.php(785): PrizeController->renderPartial()
+#9 /home/hieutct/syn/parttime/yii/protected/controllers/PrizeController.php(28): PrizeController->render()
+#10 /home/hieutct/syn/parttime/yii/framework/web/actions/CInlineAction.php(49): PrizeController->actionCreate()
+#11 /home/hieutct/syn/parttime/yii/framework/web/CController.php(308): CInlineAction->runWithParams()
+#12 /home/hieutct/syn/parttime/yii/framework/web/filters/CFilterChain.php(134): PrizeController->runAction()
+#13 /home/hieutct/syn/parttime/yii/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#14 /home/hieutct/syn/parttime/yii/framework/web/CController.php(1148): CAccessControlFilter->filter()
+#15 /home/hieutct/syn/parttime/yii/framework/web/filters/CInlineFilter.php(58): PrizeController->filterAccessControl()
+#16 /home/hieutct/syn/parttime/yii/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter()
+#17 /home/hieutct/syn/parttime/yii/framework/web/CController.php(291): CFilterChain->run()
+#18 /home/hieutct/syn/parttime/yii/framework/web/CController.php(265): PrizeController->runActionWithFilters()
+#19 /home/hieutct/syn/parttime/yii/framework/web/CWebApplication.php(282): PrizeController->run()
+#20 /home/hieutct/syn/parttime/yii/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#21 /home/hieutct/syn/parttime/yii/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#22 /home/hieutct/syn/parttime/yii/index.php(11): CWebApplication->run()
+REQUEST_URI=/yii/index.php/prize/create?action=_miniForm
+2017/11/12 08:50:22 [error] [php] Object of class User could not be converted to string (/home/hieutct/syn/parttime/yii/framework/web/helpers/CHtml.php:2561)
+Stack trace:
+#0 /home/hieutct/syn/parttime/yii/protected/views/prize/_miniForm.php(11): CActiveForm->dropDownList()
+#1 /home/hieutct/syn/parttime/yii/framework/web/CBaseController.php(126): require()
+#2 /home/hieutct/syn/parttime/yii/framework/web/CBaseController.php(95): PrizeController->renderInternal()
+#3 /home/hieutct/syn/parttime/yii/framework/web/CController.php(872): PrizeController->renderFile()
+#4 /home/hieutct/syn/parttime/yii/protected/views/prize/create.php(12): PrizeController->renderPartial()
+#5 /home/hieutct/syn/parttime/yii/framework/web/CBaseController.php(126): require()
+#6 /home/hieutct/syn/parttime/yii/framework/web/CBaseController.php(95): PrizeController->renderInternal()
+#7 /home/hieutct/syn/parttime/yii/framework/web/CController.php(872): PrizeController->renderFile()
+#8 /home/hieutct/syn/parttime/yii/framework/web/CController.php(785): PrizeController->renderPartial()
+#9 /home/hieutct/syn/parttime/yii/protected/controllers/PrizeController.php(28): PrizeController->render()
+#10 /home/hieutct/syn/parttime/yii/framework/web/actions/CInlineAction.php(49): PrizeController->actionCreate()
+#11 /home/hieutct/syn/parttime/yii/framework/web/CController.php(308): CInlineAction->runWithParams()
+#12 /home/hieutct/syn/parttime/yii/framework/web/filters/CFilterChain.php(134): PrizeController->runAction()
+#13 /home/hieutct/syn/parttime/yii/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#14 /home/hieutct/syn/parttime/yii/framework/web/CController.php(1148): CAccessControlFilter->filter()
+#15 /home/hieutct/syn/parttime/yii/framework/web/filters/CInlineFilter.php(58): PrizeController->filterAccessControl()
+#16 /home/hieutct/syn/parttime/yii/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter()
+#17 /home/hieutct/syn/parttime/yii/framework/web/CController.php(291): CFilterChain->run()
+#18 /home/hieutct/syn/parttime/yii/framework/web/CController.php(265): PrizeController->runActionWithFilters()
+#19 /home/hieutct/syn/parttime/yii/framework/web/CWebApplication.php(282): PrizeController->run()
+#20 /home/hieutct/syn/parttime/yii/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#21 /home/hieutct/syn/parttime/yii/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#22 /home/hieutct/syn/parttime/yii/index.php(11): CWebApplication->run()
+REQUEST_URI=/yii/index.php/prize/create?action=_miniForm
+2017/11/12 09:24:28 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'type' in 'where clause'. The SQL statement executed was: SELECT * FROM `tbl_user` `t` WHERE type=?.
+2017/11/12 09:24:28 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to execute the SQL statement: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'type' in 'where clause'. The SQL statement executed was: SELECT * FROM `tbl_user` `t` WHERE type=?' in /home/hieutct/syn/parttime/yii/framework/db/CDbCommand.php:543
+Stack trace:
+#0 /home/hieutct/syn/parttime/yii/framework/db/CDbCommand.php(396): CDbCommand->queryInternal('fetchAll', Array, Array)
+#1 /home/hieutct/syn/parttime/yii/framework/db/ar/CActiveRecord.php(1359): CDbCommand->queryAll()
+#2 /home/hieutct/syn/parttime/yii/framework/db/ar/CActiveRecord.php(1478): CActiveRecord->query(Object(CDbCriteria), true)
+#3 /home/hieutct/syn/parttime/yii/protected/models/User.php(136): CActiveRecord->findAll('type=?', Array)
+#4 /home/hieutct/syn/parttime/yii/protected/views/prize/_miniForm.php(14): User->getAllOptionUser()
+#5 /home/hieutct/syn/parttime/yii/framework/web/CBaseController.php(126): require('/home/hieutct/s...')
+#6 /home/hieutct/syn/parttime/yii/framework/web/CBaseController.php(95): CBaseController->renderInternal('/home/hieutct/s...', Array, true)
+#7 /home/hieutct/syn/parttime/yii/framework/web/CController.php(872): CBaseController->renderFile('/home/hieutct/s...', Array, true)
+#8 /home/hieutct/syn/parttime/yii/protected/views/prize/create.php(12): CController->renderPartial('_miniForm', Array)
+#9 /home/hieutct/syn/parttime/yii/framework/web/CBaseController.php(126): require('/home/hieutct/s...')
+#10 /home/hieutct/syn/parttime/yii/framework/web/CBaseController.php(95): CBaseController->renderInternal('/home/hieutct/s...', Array, true)
+#11 /home/hieutct/syn/parttime/yii/framework/web/CController.php(872): CBaseController->renderFile('/home/hieutct/s...', Array, true)
+#12 /home/hieutct/syn/parttime/yii/framework/web/CController.php(785): CController->renderPartial('create', Array, true)
+#13 /home/hieutct/syn/parttime/yii/protected/controllers/PrizeController.php(28): CController->render('create', Array)
+#14 /home/hieutct/syn/parttime/yii/framework/web/actions/CInlineAction.php(49): PrizeController->actionCreate()
+#15 /home/hieutct/syn/parttime/yii/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#16 /home/hieutct/syn/parttime/yii/framework/web/filters/CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#17 /home/hieutct/syn/parttime/yii/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#18 /home/hieutct/syn/parttime/yii/framework/web/CController.php(1148): CFilter->filter(Object(CFilterChain))
+#19 /home/hieutct/syn/parttime/yii/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#20 /home/hieutct/syn/parttime/yii/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#21 /home/hieutct/syn/parttime/yii/framework/web/CController.php(291): CFilterChain->run()
+#22 /home/hieutct/syn/parttime/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#23 /home/hieutct/syn/parttime/yii/framework/web/CWebApplication.php(282): CController->run('create')
+#24 /home/hieutct/syn/parttime/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('prize/create')
+#25 /home/hieutct/syn/parttime/yii/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#26 /home/hieutct/syn/parttime/yii/index.php(11): CApplication->run()
+#27 {main}
+REQUEST_URI=/yii/index.php/prize/create?action=_miniForm
+---
+2017/11/12 09:24:58 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'type' in 'where clause'. The SQL statement executed was: SELECT * FROM `tbl_user` `t` WHERE type=:type.
+2017/11/12 09:24:58 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to execute the SQL statement: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'type' in 'where clause'. The SQL statement executed was: SELECT * FROM `tbl_user` `t` WHERE type=:type' in /home/hieutct/syn/parttime/yii/framework/db/CDbCommand.php:543
+Stack trace:
+#0 /home/hieutct/syn/parttime/yii/framework/db/CDbCommand.php(396): CDbCommand->queryInternal('fetchAll', Array, Array)
+#1 /home/hieutct/syn/parttime/yii/framework/db/ar/CActiveRecord.php(1359): CDbCommand->queryAll()
+#2 /home/hieutct/syn/parttime/yii/framework/db/ar/CActiveRecord.php(1478): CActiveRecord->query(Object(CDbCriteria), true)
+#3 /home/hieutct/syn/parttime/yii/protected/models/User.php(136): CActiveRecord->findAll('type=:type', Array)
+#4 /home/hieutct/syn/parttime/yii/protected/views/prize/_miniForm.php(14): User->getAllOptionUser()
+#5 /home/hieutct/syn/parttime/yii/framework/web/CBaseController.php(126): require('/home/hieutct/s...')
+#6 /home/hieutct/syn/parttime/yii/framework/web/CBaseController.php(95): CBaseController->renderInternal('/home/hieutct/s...', Array, true)
+#7 /home/hieutct/syn/parttime/yii/framework/web/CController.php(872): CBaseController->renderFile('/home/hieutct/s...', Array, true)
+#8 /home/hieutct/syn/parttime/yii/protected/views/prize/create.php(12): CController->renderPartial('_miniForm', Array)
+#9 /home/hieutct/syn/parttime/yii/framework/web/CBaseController.php(126): require('/home/hieutct/s...')
+#10 /home/hieutct/syn/parttime/yii/framework/web/CBaseController.php(95): CBaseController->renderInternal('/home/hieutct/s...', Array, true)
+#11 /home/hieutct/syn/parttime/yii/framework/web/CController.php(872): CBaseController->renderFile('/home/hieutct/s...', Array, true)
+#12 /home/hieutct/syn/parttime/yii/framework/web/CController.php(785): CController->renderPartial('create', Array, true)
+#13 /home/hieutct/syn/parttime/yii/protected/controllers/PrizeController.php(28): CController->render('create', Array)
+#14 /home/hieutct/syn/parttime/yii/framework/web/actions/CInlineAction.php(49): PrizeController->actionCreate()
+#15 /home/hieutct/syn/parttime/yii/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#16 /home/hieutct/syn/parttime/yii/framework/web/filters/CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#17 /home/hieutct/syn/parttime/yii/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#18 /home/hieutct/syn/parttime/yii/framework/web/CController.php(1148): CFilter->filter(Object(CFilterChain))
+#19 /home/hieutct/syn/parttime/yii/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#20 /home/hieutct/syn/parttime/yii/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#21 /home/hieutct/syn/parttime/yii/framework/web/CController.php(291): CFilterChain->run()
+#22 /home/hieutct/syn/parttime/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#23 /home/hieutct/syn/parttime/yii/framework/web/CWebApplication.php(282): CController->run('create')
+#24 /home/hieutct/syn/parttime/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('prize/create')
+#25 /home/hieutct/syn/parttime/yii/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#26 /home/hieutct/syn/parttime/yii/index.php(11): CApplication->run()
+#27 {main}
+REQUEST_URI=/yii/index.php/prize/create?action=_miniForm
+---
+2017/11/12 09:38:10 [error] [php] Undefined index: option (/home/hieutct/syn/parttime/yii/protected/models/Prize.php:43)
+Stack trace:
+#0 /home/hieutct/syn/parttime/yii/framework/web/CController.php(308): CInlineAction->runWithParams()
+#1 /home/hieutct/syn/parttime/yii/framework/web/filters/CFilterChain.php(134): PrizeController->runAction()
+#2 /home/hieutct/syn/parttime/yii/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#3 /home/hieutct/syn/parttime/yii/framework/web/CController.php(1148): CAccessControlFilter->filter()
+#4 /home/hieutct/syn/parttime/yii/framework/web/filters/CInlineFilter.php(58): PrizeController->filterAccessControl()
+#5 /home/hieutct/syn/parttime/yii/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter()
+#6 /home/hieutct/syn/parttime/yii/framework/web/CController.php(291): CFilterChain->run()
+#7 /home/hieutct/syn/parttime/yii/framework/web/CController.php(265): PrizeController->runActionWithFilters()
+#8 /home/hieutct/syn/parttime/yii/framework/web/CWebApplication.php(282): PrizeController->run()
+#9 /home/hieutct/syn/parttime/yii/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#10 /home/hieutct/syn/parttime/yii/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#11 /home/hieutct/syn/parttime/yii/index.php(11): CWebApplication->run()
+REQUEST_URI=/yii/index.php/prize/create?action=_miniForm
+2017/11/12 09:39:34 [error] [php] Missing argument 2 for CActiveRecord::setAttribute(), called in /home/hieutct/syn/parttime/yii/framework/base/CComponent.php on line 152 and defined (/home/hieutct/syn/parttime/yii/framework/db/ar/CActiveRecord.php:712)
+Stack trace:
+#0 /home/hieutct/syn/parttime/yii/protected/models/Prize.php(44): Prize->__set()
+#1 /home/hieutct/syn/parttime/yii/protected/controllers/PrizeController.php(33): Prize->saveTypeMini()
+#2 /home/hieutct/syn/parttime/yii/framework/web/actions/CInlineAction.php(49): PrizeController->actionCreate()
+#3 /home/hieutct/syn/parttime/yii/framework/web/CController.php(308): CInlineAction->runWithParams()
+#4 /home/hieutct/syn/parttime/yii/framework/web/filters/CFilterChain.php(134): PrizeController->runAction()
+#5 /home/hieutct/syn/parttime/yii/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#6 /home/hieutct/syn/parttime/yii/framework/web/CController.php(1148): CAccessControlFilter->filter()
+#7 /home/hieutct/syn/parttime/yii/framework/web/filters/CInlineFilter.php(58): PrizeController->filterAccessControl()
+#8 /home/hieutct/syn/parttime/yii/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter()
+#9 /home/hieutct/syn/parttime/yii/framework/web/CController.php(291): CFilterChain->run()
+#10 /home/hieutct/syn/parttime/yii/framework/web/CController.php(265): PrizeController->runActionWithFilters()
+#11 /home/hieutct/syn/parttime/yii/framework/web/CWebApplication.php(282): PrizeController->run()
+#12 /home/hieutct/syn/parttime/yii/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#13 /home/hieutct/syn/parttime/yii/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#14 /home/hieutct/syn/parttime/yii/index.php(11): CWebApplication->run()
+REQUEST_URI=/yii/index.php/prize/create?action=_miniForm
+2017/11/12 09:56:04 [error] [php] Missing argument 2 for CHtml::label(), called in /home/hieutct/syn/parttime/yii/protected/views/prize/_mediumForm.php on line 26 and defined (/home/hieutct/syn/parttime/yii/framework/web/helpers/CHtml.php:577)
+Stack trace:
+#0 /home/hieutct/syn/parttime/yii/framework/web/CBaseController.php(95): PrizeController->renderInternal()
+#1 /home/hieutct/syn/parttime/yii/framework/web/CController.php(872): PrizeController->renderFile()
+#2 /home/hieutct/syn/parttime/yii/protected/views/prize/create.php(12): PrizeController->renderPartial()
+#3 /home/hieutct/syn/parttime/yii/framework/web/CBaseController.php(126): require()
+#4 /home/hieutct/syn/parttime/yii/framework/web/CBaseController.php(95): PrizeController->renderInternal()
+#5 /home/hieutct/syn/parttime/yii/framework/web/CController.php(872): PrizeController->renderFile()
+#6 /home/hieutct/syn/parttime/yii/framework/web/CController.php(785): PrizeController->renderPartial()
+#7 /home/hieutct/syn/parttime/yii/protected/controllers/PrizeController.php(41): PrizeController->render()
+#8 /home/hieutct/syn/parttime/yii/framework/web/actions/CInlineAction.php(49): PrizeController->actionCreate()
+#9 /home/hieutct/syn/parttime/yii/framework/web/CController.php(308): CInlineAction->runWithParams()
+#10 /home/hieutct/syn/parttime/yii/framework/web/filters/CFilterChain.php(134): PrizeController->runAction()
+#11 /home/hieutct/syn/parttime/yii/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#12 /home/hieutct/syn/parttime/yii/framework/web/CController.php(1148): CAccessControlFilter->filter()
+#13 /home/hieutct/syn/parttime/yii/framework/web/filters/CInlineFilter.php(58): PrizeController->filterAccessControl()
+#14 /home/hieutct/syn/parttime/yii/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter()
+#15 /home/hieutct/syn/parttime/yii/framework/web/CController.php(291): CFilterChain->run()
+#16 /home/hieutct/syn/parttime/yii/framework/web/CController.php(265): PrizeController->runActionWithFilters()
+#17 /home/hieutct/syn/parttime/yii/framework/web/CWebApplication.php(282): PrizeController->run()
+#18 /home/hieutct/syn/parttime/yii/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#19 /home/hieutct/syn/parttime/yii/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#20 /home/hieutct/syn/parttime/yii/index.php(11): CWebApplication->run()
+REQUEST_URI=/yii/index.php/prize/create?action=_mediumForm
+2017/11/12 09:56:22 [error] [php] Undefined variable: typleselected (/home/hieutct/syn/parttime/yii/protected/views/prize/_mediumForm.php:28)
+Stack trace:
+#0 /home/hieutct/syn/parttime/yii/framework/web/CController.php(872): PrizeController->renderFile()
+#1 /home/hieutct/syn/parttime/yii/protected/views/prize/create.php(12): PrizeController->renderPartial()
+#2 /home/hieutct/syn/parttime/yii/framework/web/CBaseController.php(126): require()
+#3 /home/hieutct/syn/parttime/yii/framework/web/CBaseController.php(95): PrizeController->renderInternal()
+#4 /home/hieutct/syn/parttime/yii/framework/web/CController.php(872): PrizeController->renderFile()
+#5 /home/hieutct/syn/parttime/yii/framework/web/CController.php(785): PrizeController->renderPartial()
+#6 /home/hieutct/syn/parttime/yii/protected/controllers/PrizeController.php(41): PrizeController->render()
+#7 /home/hieutct/syn/parttime/yii/framework/web/actions/CInlineAction.php(49): PrizeController->actionCreate()
+#8 /home/hieutct/syn/parttime/yii/framework/web/CController.php(308): CInlineAction->runWithParams()
+#9 /home/hieutct/syn/parttime/yii/framework/web/filters/CFilterChain.php(134): PrizeController->runAction()
+#10 /home/hieutct/syn/parttime/yii/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#11 /home/hieutct/syn/parttime/yii/framework/web/CController.php(1148): CAccessControlFilter->filter()
+#12 /home/hieutct/syn/parttime/yii/framework/web/filters/CInlineFilter.php(58): PrizeController->filterAccessControl()
+#13 /home/hieutct/syn/parttime/yii/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter()
+#14 /home/hieutct/syn/parttime/yii/framework/web/CController.php(291): CFilterChain->run()
+#15 /home/hieutct/syn/parttime/yii/framework/web/CController.php(265): PrizeController->runActionWithFilters()
+#16 /home/hieutct/syn/parttime/yii/framework/web/CWebApplication.php(282): PrizeController->run()
+#17 /home/hieutct/syn/parttime/yii/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#18 /home/hieutct/syn/parttime/yii/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#19 /home/hieutct/syn/parttime/yii/index.php(11): CWebApplication->run()
+REQUEST_URI=/yii/index.php/prize/create?action=_mediumForm
+2017/11/12 10:09:33 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "index".' in /home/hieutct/syn/parttime/yii/framework/web/CController.php:486
+Stack trace:
+#0 /home/hieutct/syn/parttime/yii/framework/web/CController.php(270): CController->missingAction('')
+#1 /home/hieutct/syn/parttime/yii/framework/web/CWebApplication.php(282): CController->run('')
+#2 /home/hieutct/syn/parttime/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('prize')
+#3 /home/hieutct/syn/parttime/yii/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#4 /home/hieutct/syn/parttime/yii/index.php(11): CApplication->run()
+#5 {main}
+REQUEST_URI=/yii/index.php/prize/
+---
+2017/11/12 10:16:04 [error] [exception.CException] exception 'CException' with message 'CWebApplication and its behaviors do not have a method or closure named "dateFormatter".' in /home/hieutct/syn/parttime/yii/framework/base/CComponent.php:266
+Stack trace:
+#0 /home/hieutct/syn/parttime/yii/protected/views/prize/_mediumForm.php(12): CComponent->__call('dateFormatter', Array)
+#1 /home/hieutct/syn/parttime/yii/protected/views/prize/_mediumForm.php(12): CWebApplication->dateFormatter()
+#2 /home/hieutct/syn/parttime/yii/framework/web/CBaseController.php(126): require('/home/hieutct/s...')
+#3 /home/hieutct/syn/parttime/yii/framework/web/CBaseController.php(95): CBaseController->renderInternal('/home/hieutct/s...', Array, true)
+#4 /home/hieutct/syn/parttime/yii/framework/web/CController.php(872): CBaseController->renderFile('/home/hieutct/s...', Array, true)
+#5 /home/hieutct/syn/parttime/yii/protected/views/prize/create.php(13): CController->renderPartial('_mediumForm', Array)
+#6 /home/hieutct/syn/parttime/yii/framework/web/CBaseController.php(126): require('/home/hieutct/s...')
+#7 /home/hieutct/syn/parttime/yii/framework/web/CBaseController.php(95): CBaseController->renderInternal('/home/hieutct/s...', Array, true)
+#8 /home/hieutct/syn/parttime/yii/framework/web/CController.php(872): CBaseController->renderFile('/home/hieutct/s...', Array, true)
+#9 /home/hieutct/syn/parttime/yii/framework/web/CController.php(785): CController->renderPartial('create', Array, true)
+#10 /home/hieutct/syn/parttime/yii/protected/controllers/PrizeController.php(48): CController->render('create', Array)
+#11 /home/hieutct/syn/parttime/yii/framework/web/actions/CInlineAction.php(49): PrizeController->actionCreate()
+#12 /home/hieutct/syn/parttime/yii/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#13 /home/hieutct/syn/parttime/yii/framework/web/filters/CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#14 /home/hieutct/syn/parttime/yii/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#15 /home/hieutct/syn/parttime/yii/framework/web/CController.php(1148): CFilter->filter(Object(CFilterChain))
+#16 /home/hieutct/syn/parttime/yii/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#17 /home/hieutct/syn/parttime/yii/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#18 /home/hieutct/syn/parttime/yii/framework/web/CController.php(291): CFilterChain->run()
+#19 /home/hieutct/syn/parttime/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#20 /home/hieutct/syn/parttime/yii/framework/web/CWebApplication.php(282): CController->run('create')
+#21 /home/hieutct/syn/parttime/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('prize/create')
+#22 /home/hieutct/syn/parttime/yii/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#23 /home/hieutct/syn/parttime/yii/index.php(11): CApplication->run()
+#24 {main}
+REQUEST_URI=/yii/index.php/prize/create?action=_mediumForm
+HTTP_REFERER=http://localhost/yii/index.php/prize/create
+---
+2017/11/12 10:16:15 [error] [exception.CException] exception 'CException' with message 'CWebApplication and its behaviors do not have a method or closure named "dateFormatter".' in /home/hieutct/syn/parttime/yii/framework/base/CComponent.php:266
+Stack trace:
+#0 /home/hieutct/syn/parttime/yii/protected/views/prize/_mediumForm.php(12): CComponent->__call('dateFormatter', Array)
+#1 /home/hieutct/syn/parttime/yii/protected/views/prize/_mediumForm.php(12): CWebApplication->dateFormatter()
+#2 /home/hieutct/syn/parttime/yii/framework/web/CBaseController.php(126): require('/home/hieutct/s...')
+#3 /home/hieutct/syn/parttime/yii/framework/web/CBaseController.php(95): CBaseController->renderInternal('/home/hieutct/s...', Array, true)
+#4 /home/hieutct/syn/parttime/yii/framework/web/CController.php(872): CBaseController->renderFile('/home/hieutct/s...', Array, true)
+#5 /home/hieutct/syn/parttime/yii/protected/views/prize/create.php(13): CController->renderPartial('_mediumForm', Array)
+#6 /home/hieutct/syn/parttime/yii/framework/web/CBaseController.php(126): require('/home/hieutct/s...')
+#7 /home/hieutct/syn/parttime/yii/framework/web/CBaseController.php(95): CBaseController->renderInternal('/home/hieutct/s...', Array, true)
+#8 /home/hieutct/syn/parttime/yii/framework/web/CController.php(872): CBaseController->renderFile('/home/hieutct/s...', Array, true)
+#9 /home/hieutct/syn/parttime/yii/framework/web/CController.php(785): CController->renderPartial('create', Array, true)
+#10 /home/hieutct/syn/parttime/yii/protected/controllers/PrizeController.php(48): CController->render('create', Array)
+#11 /home/hieutct/syn/parttime/yii/framework/web/actions/CInlineAction.php(49): PrizeController->actionCreate()
+#12 /home/hieutct/syn/parttime/yii/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#13 /home/hieutct/syn/parttime/yii/framework/web/filters/CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#14 /home/hieutct/syn/parttime/yii/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#15 /home/hieutct/syn/parttime/yii/framework/web/CController.php(1148): CFilter->filter(Object(CFilterChain))
+#16 /home/hieutct/syn/parttime/yii/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#17 /home/hieutct/syn/parttime/yii/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#18 /home/hieutct/syn/parttime/yii/framework/web/CController.php(291): CFilterChain->run()
+#19 /home/hieutct/syn/parttime/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#20 /home/hieutct/syn/parttime/yii/framework/web/CWebApplication.php(282): CController->run('create')
+#21 /home/hieutct/syn/parttime/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('prize/create')
+#22 /home/hieutct/syn/parttime/yii/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#23 /home/hieutct/syn/parttime/yii/index.php(11): CApplication->run()
+#24 {main}
+REQUEST_URI=/yii/index.php/prize/create?action=_mediumForm
+HTTP_REFERER=http://localhost/yii/index.php/prize/create
+---
+2017/11/12 10:16:17 [error] [exception.CException] exception 'CException' with message 'CWebApplication and its behaviors do not have a method or closure named "dateFormatter".' in /home/hieutct/syn/parttime/yii/framework/base/CComponent.php:266
+Stack trace:
+#0 /home/hieutct/syn/parttime/yii/protected/views/prize/_mediumForm.php(12): CComponent->__call('dateFormatter', Array)
+#1 /home/hieutct/syn/parttime/yii/protected/views/prize/_mediumForm.php(12): CWebApplication->dateFormatter()
+#2 /home/hieutct/syn/parttime/yii/framework/web/CBaseController.php(126): require('/home/hieutct/s...')
+#3 /home/hieutct/syn/parttime/yii/framework/web/CBaseController.php(95): CBaseController->renderInternal('/home/hieutct/s...', Array, true)
+#4 /home/hieutct/syn/parttime/yii/framework/web/CController.php(872): CBaseController->renderFile('/home/hieutct/s...', Array, true)
+#5 /home/hieutct/syn/parttime/yii/protected/views/prize/create.php(13): CController->renderPartial('_mediumForm', Array)
+#6 /home/hieutct/syn/parttime/yii/framework/web/CBaseController.php(126): require('/home/hieutct/s...')
+#7 /home/hieutct/syn/parttime/yii/framework/web/CBaseController.php(95): CBaseController->renderInternal('/home/hieutct/s...', Array, true)
+#8 /home/hieutct/syn/parttime/yii/framework/web/CController.php(872): CBaseController->renderFile('/home/hieutct/s...', Array, true)
+#9 /home/hieutct/syn/parttime/yii/framework/web/CController.php(785): CController->renderPartial('create', Array, true)
+#10 /home/hieutct/syn/parttime/yii/protected/controllers/PrizeController.php(48): CController->render('create', Array)
+#11 /home/hieutct/syn/parttime/yii/framework/web/actions/CInlineAction.php(49): PrizeController->actionCreate()
+#12 /home/hieutct/syn/parttime/yii/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#13 /home/hieutct/syn/parttime/yii/framework/web/filters/CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#14 /home/hieutct/syn/parttime/yii/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#15 /home/hieutct/syn/parttime/yii/framework/web/CController.php(1148): CFilter->filter(Object(CFilterChain))
+#16 /home/hieutct/syn/parttime/yii/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#17 /home/hieutct/syn/parttime/yii/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#18 /home/hieutct/syn/parttime/yii/framework/web/CController.php(291): CFilterChain->run()
+#19 /home/hieutct/syn/parttime/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#20 /home/hieutct/syn/parttime/yii/framework/web/CWebApplication.php(282): CController->run('create')
+#21 /home/hieutct/syn/parttime/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('prize/create')
+#22 /home/hieutct/syn/parttime/yii/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#23 /home/hieutct/syn/parttime/yii/index.php(11): CApplication->run()
+#24 {main}
+REQUEST_URI=/yii/index.php/prize/create?action=_mediumForm
+HTTP_REFERER=http://localhost/yii/index.php/prize/create
+---
+2017/11/12 10:21:03 [error] [php] Missing argument 1 for CLocale::getInstance(), called in /home/hieutct/syn/parttime/yii/protected/views/prize/_mediumForm.php on line 12 and defined (/home/hieutct/syn/parttime/yii/framework/i18n/CLocale.php:58)
+Stack trace:
+#0 /home/hieutct/syn/parttime/yii/framework/web/CBaseController.php(95): PrizeController->renderInternal()
+#1 /home/hieutct/syn/parttime/yii/framework/web/CController.php(872): PrizeController->renderFile()
+#2 /home/hieutct/syn/parttime/yii/protected/views/prize/create.php(13): PrizeController->renderPartial()
+#3 /home/hieutct/syn/parttime/yii/framework/web/CBaseController.php(126): require()
+#4 /home/hieutct/syn/parttime/yii/framework/web/CBaseController.php(95): PrizeController->renderInternal()
+#5 /home/hieutct/syn/parttime/yii/framework/web/CController.php(872): PrizeController->renderFile()
+#6 /home/hieutct/syn/parttime/yii/framework/web/CController.php(785): PrizeController->renderPartial()
+#7 /home/hieutct/syn/parttime/yii/protected/controllers/PrizeController.php(48): PrizeController->render()
+#8 /home/hieutct/syn/parttime/yii/framework/web/actions/CInlineAction.php(49): PrizeController->actionCreate()
+#9 /home/hieutct/syn/parttime/yii/framework/web/CController.php(308): CInlineAction->runWithParams()
+#10 /home/hieutct/syn/parttime/yii/framework/web/filters/CFilterChain.php(134): PrizeController->runAction()
+#11 /home/hieutct/syn/parttime/yii/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#12 /home/hieutct/syn/parttime/yii/framework/web/CController.php(1148): CAccessControlFilter->filter()
+#13 /home/hieutct/syn/parttime/yii/framework/web/filters/CInlineFilter.php(58): PrizeController->filterAccessControl()
+#14 /home/hieutct/syn/parttime/yii/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter()
+#15 /home/hieutct/syn/parttime/yii/framework/web/CController.php(291): CFilterChain->run()
+#16 /home/hieutct/syn/parttime/yii/framework/web/CController.php(265): PrizeController->runActionWithFilters()
+#17 /home/hieutct/syn/parttime/yii/framework/web/CWebApplication.php(282): PrizeController->run()
+#18 /home/hieutct/syn/parttime/yii/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#19 /home/hieutct/syn/parttime/yii/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#20 /home/hieutct/syn/parttime/yii/index.php(11): CWebApplication->run()
+REQUEST_URI=/yii/index.php/prize/create?action=_mediumForm
+2017/11/12 10:21:18 [error] [exception.CException] exception 'CException' with message 'Unrecognized locale "12-11-2017".' in /home/hieutct/syn/parttime/yii/framework/i18n/CLocale.php:105
+Stack trace:
+#0 /home/hieutct/syn/parttime/yii/framework/i18n/CLocale.php(64): CLocale->__construct('12-11-2017')
+#1 /home/hieutct/syn/parttime/yii/protected/views/prize/_mediumForm.php(12): CLocale::getInstance('12-11-2017')
+#2 /home/hieutct/syn/parttime/yii/framework/web/CBaseController.php(126): require('/home/hieutct/s...')
+#3 /home/hieutct/syn/parttime/yii/framework/web/CBaseController.php(95): CBaseController->renderInternal('/home/hieutct/s...', Array, true)
+#4 /home/hieutct/syn/parttime/yii/framework/web/CController.php(872): CBaseController->renderFile('/home/hieutct/s...', Array, true)
+#5 /home/hieutct/syn/parttime/yii/protected/views/prize/create.php(13): CController->renderPartial('_mediumForm', Array)
+#6 /home/hieutct/syn/parttime/yii/framework/web/CBaseController.php(126): require('/home/hieutct/s...')
+#7 /home/hieutct/syn/parttime/yii/framework/web/CBaseController.php(95): CBaseController->renderInternal('/home/hieutct/s...', Array, true)
+#8 /home/hieutct/syn/parttime/yii/framework/web/CController.php(872): CBaseController->renderFile('/home/hieutct/s...', Array, true)
+#9 /home/hieutct/syn/parttime/yii/framework/web/CController.php(785): CController->renderPartial('create', Array, true)
+#10 /home/hieutct/syn/parttime/yii/protected/controllers/PrizeController.php(48): CController->render('create', Array)
+#11 /home/hieutct/syn/parttime/yii/framework/web/actions/CInlineAction.php(49): PrizeController->actionCreate()
+#12 /home/hieutct/syn/parttime/yii/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#13 /home/hieutct/syn/parttime/yii/framework/web/filters/CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#14 /home/hieutct/syn/parttime/yii/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#15 /home/hieutct/syn/parttime/yii/framework/web/CController.php(1148): CFilter->filter(Object(CFilterChain))
+#16 /home/hieutct/syn/parttime/yii/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#17 /home/hieutct/syn/parttime/yii/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#18 /home/hieutct/syn/parttime/yii/framework/web/CController.php(291): CFilterChain->run()
+#19 /home/hieutct/syn/parttime/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#20 /home/hieutct/syn/parttime/yii/framework/web/CWebApplication.php(282): CController->run('create')
+#21 /home/hieutct/syn/parttime/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('prize/create')
+#22 /home/hieutct/syn/parttime/yii/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#23 /home/hieutct/syn/parttime/yii/index.php(11): CApplication->run()
+#24 {main}
+REQUEST_URI=/yii/index.php/prize/create?action=_mediumForm
+HTTP_REFERER=http://localhost/yii/index.php/prize/create
+---
+2017/11/12 10:21:32 [error] [php] Missing argument 1 for CLocale::getInstance(), called in /home/hieutct/syn/parttime/yii/protected/views/prize/_mediumForm.php on line 12 and defined (/home/hieutct/syn/parttime/yii/framework/i18n/CLocale.php:58)
+Stack trace:
+#0 /home/hieutct/syn/parttime/yii/framework/web/CBaseController.php(95): PrizeController->renderInternal()
+#1 /home/hieutct/syn/parttime/yii/framework/web/CController.php(872): PrizeController->renderFile()
+#2 /home/hieutct/syn/parttime/yii/protected/views/prize/create.php(13): PrizeController->renderPartial()
+#3 /home/hieutct/syn/parttime/yii/framework/web/CBaseController.php(126): require()
+#4 /home/hieutct/syn/parttime/yii/framework/web/CBaseController.php(95): PrizeController->renderInternal()
+#5 /home/hieutct/syn/parttime/yii/framework/web/CController.php(872): PrizeController->renderFile()
+#6 /home/hieutct/syn/parttime/yii/framework/web/CController.php(785): PrizeController->renderPartial()
+#7 /home/hieutct/syn/parttime/yii/protected/controllers/PrizeController.php(48): PrizeController->render()
+#8 /home/hieutct/syn/parttime/yii/framework/web/actions/CInlineAction.php(49): PrizeController->actionCreate()
+#9 /home/hieutct/syn/parttime/yii/framework/web/CController.php(308): CInlineAction->runWithParams()
+#10 /home/hieutct/syn/parttime/yii/framework/web/filters/CFilterChain.php(134): PrizeController->runAction()
+#11 /home/hieutct/syn/parttime/yii/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#12 /home/hieutct/syn/parttime/yii/framework/web/CController.php(1148): CAccessControlFilter->filter()
+#13 /home/hieutct/syn/parttime/yii/framework/web/filters/CInlineFilter.php(58): PrizeController->filterAccessControl()
+#14 /home/hieutct/syn/parttime/yii/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter()
+#15 /home/hieutct/syn/parttime/yii/framework/web/CController.php(291): CFilterChain->run()
+#16 /home/hieutct/syn/parttime/yii/framework/web/CController.php(265): PrizeController->runActionWithFilters()
+#17 /home/hieutct/syn/parttime/yii/framework/web/CWebApplication.php(282): PrizeController->run()
+#18 /home/hieutct/syn/parttime/yii/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#19 /home/hieutct/syn/parttime/yii/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#20 /home/hieutct/syn/parttime/yii/index.php(11): CWebApplication->run()
+REQUEST_URI=/yii/index.php/prize/create?action=_mediumForm
+2017/11/12 10:21:39 [error] [php] Missing argument 1 for CLocale::getInstance(), called in /home/hieutct/syn/parttime/yii/protected/views/prize/_mediumForm.php on line 12 and defined (/home/hieutct/syn/parttime/yii/framework/i18n/CLocale.php:58)
+Stack trace:
+#0 /home/hieutct/syn/parttime/yii/framework/web/CBaseController.php(95): PrizeController->renderInternal()
+#1 /home/hieutct/syn/parttime/yii/framework/web/CController.php(872): PrizeController->renderFile()
+#2 /home/hieutct/syn/parttime/yii/protected/views/prize/create.php(13): PrizeController->renderPartial()
+#3 /home/hieutct/syn/parttime/yii/framework/web/CBaseController.php(126): require()
+#4 /home/hieutct/syn/parttime/yii/framework/web/CBaseController.php(95): PrizeController->renderInternal()
+#5 /home/hieutct/syn/parttime/yii/framework/web/CController.php(872): PrizeController->renderFile()
+#6 /home/hieutct/syn/parttime/yii/framework/web/CController.php(785): PrizeController->renderPartial()
+#7 /home/hieutct/syn/parttime/yii/protected/controllers/PrizeController.php(48): PrizeController->render()
+#8 /home/hieutct/syn/parttime/yii/framework/web/actions/CInlineAction.php(49): PrizeController->actionCreate()
+#9 /home/hieutct/syn/parttime/yii/framework/web/CController.php(308): CInlineAction->runWithParams()
+#10 /home/hieutct/syn/parttime/yii/framework/web/filters/CFilterChain.php(134): PrizeController->runAction()
+#11 /home/hieutct/syn/parttime/yii/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#12 /home/hieutct/syn/parttime/yii/framework/web/CController.php(1148): CAccessControlFilter->filter()
+#13 /home/hieutct/syn/parttime/yii/framework/web/filters/CInlineFilter.php(58): PrizeController->filterAccessControl()
+#14 /home/hieutct/syn/parttime/yii/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter()
+#15 /home/hieutct/syn/parttime/yii/framework/web/CController.php(291): CFilterChain->run()
+#16 /home/hieutct/syn/parttime/yii/framework/web/CController.php(265): PrizeController->runActionWithFilters()
+#17 /home/hieutct/syn/parttime/yii/framework/web/CWebApplication.php(282): PrizeController->run()
+#18 /home/hieutct/syn/parttime/yii/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#19 /home/hieutct/syn/parttime/yii/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#20 /home/hieutct/syn/parttime/yii/index.php(11): CWebApplication->run()
+REQUEST_URI=/yii/index.php/prize/create?action=_mediumForm
+2017/11/12 10:39:57 [error] [php] Missing argument 1 for CLocale::getInstance(), called in /home/hieutct/syn/parttime/yii/protected/views/prize/_mediumForm.php on line 12 and defined (/home/hieutct/syn/parttime/yii/framework/i18n/CLocale.php:58)
+Stack trace:
+#0 /home/hieutct/syn/parttime/yii/framework/web/CBaseController.php(95): PrizeController->renderInternal()
+#1 /home/hieutct/syn/parttime/yii/framework/web/CController.php(872): PrizeController->renderFile()
+#2 /home/hieutct/syn/parttime/yii/protected/views/prize/create.php(13): PrizeController->renderPartial()
+#3 /home/hieutct/syn/parttime/yii/framework/web/CBaseController.php(126): require()
+#4 /home/hieutct/syn/parttime/yii/framework/web/CBaseController.php(95): PrizeController->renderInternal()
+#5 /home/hieutct/syn/parttime/yii/framework/web/CController.php(872): PrizeController->renderFile()
+#6 /home/hieutct/syn/parttime/yii/framework/web/CController.php(785): PrizeController->renderPartial()
+#7 /home/hieutct/syn/parttime/yii/protected/controllers/PrizeController.php(48): PrizeController->render()
+#8 /home/hieutct/syn/parttime/yii/framework/web/actions/CInlineAction.php(49): PrizeController->actionCreate()
+#9 /home/hieutct/syn/parttime/yii/framework/web/CController.php(308): CInlineAction->runWithParams()
+#10 /home/hieutct/syn/parttime/yii/framework/web/filters/CFilterChain.php(134): PrizeController->runAction()
+#11 /home/hieutct/syn/parttime/yii/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#12 /home/hieutct/syn/parttime/yii/framework/web/CController.php(1148): CAccessControlFilter->filter()
+#13 /home/hieutct/syn/parttime/yii/framework/web/filters/CInlineFilter.php(58): PrizeController->filterAccessControl()
+#14 /home/hieutct/syn/parttime/yii/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter()
+#15 /home/hieutct/syn/parttime/yii/framework/web/CController.php(291): CFilterChain->run()
+#16 /home/hieutct/syn/parttime/yii/framework/web/CController.php(265): PrizeController->runActionWithFilters()
+#17 /home/hieutct/syn/parttime/yii/framework/web/CWebApplication.php(282): PrizeController->run()
+#18 /home/hieutct/syn/parttime/yii/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#19 /home/hieutct/syn/parttime/yii/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#20 /home/hieutct/syn/parttime/yii/index.php(11): CWebApplication->run()
+REQUEST_URI=/yii/index.php/prize/create?action=_mediumForm
+2017/11/12 10:44:05 [error] [php] Missing argument 1 for CLocale::getInstance(), called in /home/hieutct/syn/parttime/yii/protected/views/prize/_mediumForm.php on line 12 and defined (/home/hieutct/syn/parttime/yii/framework/i18n/CLocale.php:58)
+Stack trace:
+#0 /home/hieutct/syn/parttime/yii/framework/web/CBaseController.php(95): PrizeController->renderInternal()
+#1 /home/hieutct/syn/parttime/yii/framework/web/CController.php(872): PrizeController->renderFile()
+#2 /home/hieutct/syn/parttime/yii/protected/views/prize/create.php(13): PrizeController->renderPartial()
+#3 /home/hieutct/syn/parttime/yii/framework/web/CBaseController.php(126): require()
+#4 /home/hieutct/syn/parttime/yii/framework/web/CBaseController.php(95): PrizeController->renderInternal()
+#5 /home/hieutct/syn/parttime/yii/framework/web/CController.php(872): PrizeController->renderFile()
+#6 /home/hieutct/syn/parttime/yii/framework/web/CController.php(785): PrizeController->renderPartial()
+#7 /home/hieutct/syn/parttime/yii/protected/controllers/PrizeController.php(48): PrizeController->render()
+#8 /home/hieutct/syn/parttime/yii/framework/web/actions/CInlineAction.php(49): PrizeController->actionCreate()
+#9 /home/hieutct/syn/parttime/yii/framework/web/CController.php(308): CInlineAction->runWithParams()
+#10 /home/hieutct/syn/parttime/yii/framework/web/filters/CFilterChain.php(134): PrizeController->runAction()
+#11 /home/hieutct/syn/parttime/yii/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#12 /home/hieutct/syn/parttime/yii/framework/web/CController.php(1148): CAccessControlFilter->filter()
+#13 /home/hieutct/syn/parttime/yii/framework/web/filters/CInlineFilter.php(58): PrizeController->filterAccessControl()
+#14 /home/hieutct/syn/parttime/yii/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter()
+#15 /home/hieutct/syn/parttime/yii/framework/web/CController.php(291): CFilterChain->run()
+#16 /home/hieutct/syn/parttime/yii/framework/web/CController.php(265): PrizeController->runActionWithFilters()
+#17 /home/hieutct/syn/parttime/yii/framework/web/CWebApplication.php(282): PrizeController->run()
+#18 /home/hieutct/syn/parttime/yii/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#19 /home/hieutct/syn/parttime/yii/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#20 /home/hieutct/syn/parttime/yii/index.php(11): CWebApplication->run()
+REQUEST_URI=/yii/index.php/prize/create?action=_mediumForm
+2017/11/12 11:05:04 [error] [php] Missing argument 3 for CHtml::dropDownList(), called in /home/hieutct/syn/parttime/yii/protected/views/prize/_mediumForm.php on line 25 and defined (/home/hieutct/syn/parttime/yii/framework/web/helpers/CHtml.php:1018)
+Stack trace:
+#0 /home/hieutct/syn/parttime/yii/framework/web/CBaseController.php(95): PrizeController->renderInternal()
+#1 /home/hieutct/syn/parttime/yii/framework/web/CController.php(872): PrizeController->renderFile()
+#2 /home/hieutct/syn/parttime/yii/protected/views/prize/create.php(13): PrizeController->renderPartial()
+#3 /home/hieutct/syn/parttime/yii/framework/web/CBaseController.php(126): require()
+#4 /home/hieutct/syn/parttime/yii/framework/web/CBaseController.php(95): PrizeController->renderInternal()
+#5 /home/hieutct/syn/parttime/yii/framework/web/CController.php(872): PrizeController->renderFile()
+#6 /home/hieutct/syn/parttime/yii/framework/web/CController.php(785): PrizeController->renderPartial()
+#7 /home/hieutct/syn/parttime/yii/protected/controllers/PrizeController.php(48): PrizeController->render()
+#8 /home/hieutct/syn/parttime/yii/framework/web/actions/CInlineAction.php(49): PrizeController->actionCreate()
+#9 /home/hieutct/syn/parttime/yii/framework/web/CController.php(308): CInlineAction->runWithParams()
+#10 /home/hieutct/syn/parttime/yii/framework/web/filters/CFilterChain.php(134): PrizeController->runAction()
+#11 /home/hieutct/syn/parttime/yii/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#12 /home/hieutct/syn/parttime/yii/framework/web/CController.php(1148): CAccessControlFilter->filter()
+#13 /home/hieutct/syn/parttime/yii/framework/web/filters/CInlineFilter.php(58): PrizeController->filterAccessControl()
+#14 /home/hieutct/syn/parttime/yii/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter()
+#15 /home/hieutct/syn/parttime/yii/framework/web/CController.php(291): CFilterChain->run()
+#16 /home/hieutct/syn/parttime/yii/framework/web/CController.php(265): PrizeController->runActionWithFilters()
+#17 /home/hieutct/syn/parttime/yii/framework/web/CWebApplication.php(282): PrizeController->run()
+#18 /home/hieutct/syn/parttime/yii/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#19 /home/hieutct/syn/parttime/yii/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#20 /home/hieutct/syn/parttime/yii/index.php(11): CWebApplication->run()
+REQUEST_URI=/yii/index.php/prize/create?action=_mediumForm
+2017/11/12 11:07:00 [error] [php] Illegal string offset 'week' (/home/hieutct/syn/parttime/yii/protected/models/Prize.php:52)
+Stack trace:
+#0 /home/hieutct/syn/parttime/yii/framework/web/CController.php(308): CInlineAction->runWithParams()
+#1 /home/hieutct/syn/parttime/yii/framework/web/filters/CFilterChain.php(134): PrizeController->runAction()
+#2 /home/hieutct/syn/parttime/yii/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#3 /home/hieutct/syn/parttime/yii/framework/web/CController.php(1148): CAccessControlFilter->filter()
+#4 /home/hieutct/syn/parttime/yii/framework/web/filters/CInlineFilter.php(58): PrizeController->filterAccessControl()
+#5 /home/hieutct/syn/parttime/yii/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter()
+#6 /home/hieutct/syn/parttime/yii/framework/web/CController.php(291): CFilterChain->run()
+#7 /home/hieutct/syn/parttime/yii/framework/web/CController.php(265): PrizeController->runActionWithFilters()
+#8 /home/hieutct/syn/parttime/yii/framework/web/CWebApplication.php(282): PrizeController->run()
+#9 /home/hieutct/syn/parttime/yii/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#10 /home/hieutct/syn/parttime/yii/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#11 /home/hieutct/syn/parttime/yii/index.php(11): CWebApplication->run()
+REQUEST_URI=/yii/index.php/prize/create?action=_mediumForm

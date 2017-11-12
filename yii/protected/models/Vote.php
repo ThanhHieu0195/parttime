@@ -1,14 +1,13 @@
 <?php
+
 /**
- * The followings are the available columns in table 'tbl_post':
+ * Class Vote
  * @property integer $id
- * @property string $title
+ * @property string $code
  * @property string $content
- * @property string $tags
- * @property integer $status
- * @property integer $create_time
- * @property integer $update_time
- * @property integer $author_id
+ * @property string $author
+ * @property string $product
+ * @property integer $date_create
  */
 class Vote extends CActiveRecord {
 
@@ -23,12 +22,13 @@ class Vote extends CActiveRecord {
 	 * Returns the static model of the specified AR class.
 	 * @return static the static model class
 	 */
-	public static function model( $className = __CLASS__ ) {
-		return parent::model( $className );
+	public static function model($className=__CLASS__)
+	{
+		return parent::model($className);
 	}
 
 	/**
-	 * @return string the associated database table name
+	 * @return string the associated databpase table name
 	 */
 	public function tableName() {
 		return '{{vote}}';
@@ -43,14 +43,18 @@ class Vote extends CActiveRecord {
 			'code' => 'Code',
 			'content'     => 'Content',
 			'product' => 'Product',
+			'author' => 'Author',
+			'date_create' => 'Date Create',
 		);
 	}
 
 	protected function beforeSave() {
-		/** @var  $SM CSecurityManager */
+		/** @var  $SM CSecuNrityManager */
 		if ( parent::beforeSave() ) {
 			$SM = Yii::app()->getSecurityManager();
 			$this->code = $SM->generateRandomString(10);
+			$this->date_create = time();
+			$this->author = Yii::app()->user->id;
 			return true;
 		}
 		return false;

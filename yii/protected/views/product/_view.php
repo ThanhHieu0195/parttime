@@ -17,6 +17,9 @@
 		    $this->endWidget();
 		    ?>
         </div>
+        <div class="row button">
+            <?php echo CHtml::submitButton('Bình chọn') ?>
+        </div>
     </div>
 </div>
 
