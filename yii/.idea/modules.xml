@@ -2,6 +2,9 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/../wp-education/wp-content/themes/educhain/.idea/educhain.iml" filepath="$PROJECT_DIR$/../wp-education/wp-content/themes/educhain/.idea/educhain.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../wp-education/wp-content/plugins/learnmaster/.idea/learnmaster.iml" filepath="$PROJECT_DIR$/../wp-education/wp-content/plugins/learnmaster/.idea/learnmaster.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../wp-education/wp-content/plugins/lema-maketplace-instructor/.idea/lema-maketplace-instructor.iml" filepath="$PROJECT_DIR$/../wp-education/wp-content/plugins/lema-maketplace-instructor/.idea/lema-maketplace-instructor.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/yii.iml" filepath="$PROJECT_DIR$/.idea/yii.iml" />
     </modules>
   </component>

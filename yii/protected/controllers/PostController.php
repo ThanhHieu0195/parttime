@@ -2,8 +2,6 @@
 
 class PostController extends Controller
 {
-	public $layout='column2';
-
 	/**
 	 * @var CActiveRecord the currently loaded data model instance.
 	 */
@@ -131,14 +129,17 @@ class PostController extends Controller
 			'order'=>'update_time DESC',
 		));
 
+
 		$dataProvider=new CActiveDataProvider('Post', array(
 			'pagination'=>array(
-				'pageSize'=>Yii::app()->params['postsPerPage'],
+//				'pageSize'=>Yii::app()->params['postsPerPage'],
+				'pageSize'=>3,
 			),
 			'criteria'=>$criteria,
 		));
+
 		$this->render('index',array(
-			'dataProvider'=>$dataProvider,
+			'dataProvider'=>$dataProvider
 		));
 	}
 
