@@ -25,6 +25,11 @@
 		<?php echo CHtml::link('quên mật khẩu', '#') ?>
 		<?php echo CHtml::checkBox('autologin') ?>
 	</div>
+
+    <div class="row">
+        <?php echo CHtml::tag('a', ['href' => $this->createUrl('create')], 'Đăng ký') ?>
+    </div>
+
 	<div class="row buttons">
 		<?php echo CHtml::submitButton('Đăng Nhập'); ?>
 	</div>

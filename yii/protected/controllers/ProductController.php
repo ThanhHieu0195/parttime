@@ -1,8 +1,6 @@
 <?php
 
 class ProductController extends Controller {
-	public $layout = 'column2';
-
 	/**
 	 * @var CActiveRecord the currently loaded data model instance.
 	 */
@@ -26,7 +24,7 @@ class ProductController extends Controller {
 		return array(
 			array(
 				'allow',
-				'actions' => ['create', 'update', 'admin'],
+				'actions' => ['create', 'update', 'admin', 'ajax'],
 				'users'=>array('@'),
 				'expression'=>'Yii::app()->user->isAdmin()',
 			),

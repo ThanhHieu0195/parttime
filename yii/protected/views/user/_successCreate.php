@@ -1,0 +1,1 @@
+<p>Bạn đã đăng ký tài khoản thành công với email <?php echo $data['email'] ?></p>

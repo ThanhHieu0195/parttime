@@ -69,6 +69,9 @@ return array(
 				*/
 			),
 		),
+		'swiftMailer' => array(
+			'class' => 'ext.swiftMailer.SwiftMailer',
+		),
 	),
 
 	// application-level parameters that can be accessed

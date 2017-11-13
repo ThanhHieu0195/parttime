@@ -45,4 +45,19 @@ class Helper implements HelperTemplate {
 	public static function getThumnailDefault() {
 		return Helper::getPathUpload() . '/imgs/thumbnail-default.jpg';
 	}
+
+	public static function getFirstDateInWeek() {
+		$i = 0;
+		$w = 0;
+		while($w != 1) {
+			$i++;
+			$w = (int) date('w', strtotime(date($i.'-m-Y')));
+		}
+		return $i;
+	}
+
+	public static function getDateInWeek($index=1) {
+		$date = self::getFirstDateInWeek() + 7*($index-1);
+		return $date;
+	}
 }
