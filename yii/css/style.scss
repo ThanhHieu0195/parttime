@@ -357,3 +357,148 @@ table {
 .tab-account.tab-custom ul > li.active > a	{
 	color: #fff;
 }
+
+
+.vote_product .product-info {
+	display: block;
+	width: 100%;
+	font-size: 0;
+}
+
+.vote_product .product-info .img-product {
+	display: inline-block;
+	vertical-align: top;
+	width: 270px;
+}
+
+.vote_product .product-info .detail-product {
+	display: inline-block;
+	vertical-align: top;
+	width: calc(100% - 270px);
+	font-size: 14px;
+	padding-left: 20px;
+}
+
+.vote_product .product-info + .product-info {
+	margin-top: 30px;
+}
+
+.vote_product .product-info .detail-product .title-product {
+	font-size: 30px;
+	font-weight: 700;
+	color: #333;
+}
+
+.vote_product .product-info .detail-product .title {
+	font-size: 20px;
+	font-weight: 600;
+}
+
+.detail-product .detail-abstract {
+	margin-top: 10px;
+}
+
+.detail-product .detail-abstract .description {
+	margin-top: 5px;
+}
+
+.detail-product .configuration {
+	margin-top: 20px;
+}
+
+.configuration span {
+	font-weight: 600;
+	font-size: 14px;
+	color: #333;
+}
+
+.list-configuration td {
+	padding: 10px 0;
+}
+
+.configuration button {
+	background-color: #e23326;
+	color: #fff;
+	height: 35px;
+	border-radius: 35px;
+	padding: 0 20px;
+	border: none;
+	margin-top: 20px;
+	font-weight: 700;
+}
+
+.vote_product {
+	padding: 75px 0 250px 0;
+	text-align: center;
+}
+
+.vote_product > .tab-content {
+	text-align: left;
+}
+
+.vote_product .tab-vote-product {
+	margin-top: 40px;
+}
+
+
+.configuration button:focus {
+	border: none;
+	outline: none;
+}
+
+
+.tab-level.tab-custom ul > li > a:hover,
+.tab-level.tab-custom ul > li > a:focus,
+.tab-level.tab-custom ul > li.active > a:hover,
+.tab-level.tab-custom ul > li.active > a:focus,
+.tab-level.tab-custom ul > li.active > a {
+  background-color: transparent;
+  color: #11a9ec;
+ border-left: 1px solid #333;
+}
+
+.tab-level.tab-custom ul > li > a {
+	padding: 0 10px;
+	border-left: 1px solid #333;
+	line-height: 1;
+}
+
+.tab-level.tab-custom ul > li:first-child > a:hover,
+.tab-level.tab-custom ul > li:first-child > a:focus,
+.tab-level.tab-custom ul > li:first-child.active > a:hover,
+.tab-level.tab-custom ul > li:first-child.active > a:focus,
+.tab-level.tab-custom ul > li:first-child.active > a ,
+.tab-level.tab-custom ul > li:first-child > a {
+	border-left: none;
+}
+
+.tab-level.tab-custom  {
+	margin-top: 25px;
+}
+
+.tab-level.tab-custom + .tab-content {
+	margin-top: 35px;
+}
+
+
+.tab-vote-product.tab-custom ul {
+	width: 100%;
+	font-size: 0;
+}
+
+.tab-vote-product.tab-custom ul li {
+	width: 20%;
+	font-size: 14px;
+}
+
+.tab-vote-product.tab-custom ul li a {
+	margin: 0 20px;
+}
+
+.tab-vote-product.tab-custom ul li:first-child a {
+	margin-left: 0;
+}
+
+.tab-vote-product.tab-custom ul li:last-child a {
+	margin-right: 0;
+}
