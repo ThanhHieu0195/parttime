@@ -17,16 +17,15 @@
 					array('label'=>'Trang chủ', 'url'=>array('site/page', 'view' => 'home')),
 					array('label'=>'Tham gia bình chọn', 'url'=>array('site/page', 'view'=>'about')),
 					array('label'=>'Đọc giả đánh giá', 'url'=>array('site/page','view'=>'value-product')),
-					array('label'=>'Thông tin sản phẩm', 'url'=> Yii::app()->createUrl('post')),
+					array('label'=>'Thông tin sản phẩm', 'url'=> array('post/news')),
                     array('label'=>'Tỉ lệ & giải thưởng', 'url'=>array('site/page','view' => 'ratio')),
                     array('label'=>'Danh sách trúng giải', 'url'=>array('site/page', 'view' => 'winnings')),
-					array('label'=>'', 'url'=>array('site/login'), 'visible'=>Yii::app()->user->isGuest, 'items'=>array(
-                        array('label'=>'Thông tin tài khoản', 'url'=>array('site/page', 'view' => 'account')),
-                        array('label'=>'Danh sách bình chọn', 'url'=>array('site/contact')),
-                        array('label'=>'Thoát', 'url'=>array('site/contact')),
+					array('label'=>'Đặng nhập', 'url'=>array('user/login'), 'visible' => Yii::app()->user->isGuest),
+					array('label'=>'', 'url'=>array('site/login'), 'visible'=>!Yii::app()->user->isGuest, 'items'=>array(
+                        array('label'=>'Thông tin tài khoản', 'url'=>array('user/profile')),
+                        array('label'=>'Danh sách bình chọn', 'url'=>array('vote/listvote')),
+                        array('label'=>'Thoát', 'url'=>array('site/logout')),
                     )),
-					array('label'=>'Dashboard ('.Yii::app()->user->name.')', 'url'=>array('site/dashboard'), 'visible'=>!Yii::app()->user->isGuest),
-					array('label'=>'Logout ('.Yii::app()->user->name.')', 'url'=>array('site/logout'), 'visible'=>!Yii::app()->user->isGuest)
 				),
 			)); ?>
         </div>

@@ -122,7 +122,7 @@ class PostController extends Controller
 	/**
 	 * Lists all models.
 	 */
-	public function actionIndex()
+	public function actionNews()
 	{
 		$criteria=new CDbCriteria(array(
 			'condition'=>'status='.Post::STATUS_PUBLISHED,
@@ -138,7 +138,7 @@ class PostController extends Controller
 			'criteria'=>$criteria,
 		));
 
-		$this->render('index',array(
+		$this->render('news',array(
 			'dataProvider'=>$dataProvider
 		));
 	}

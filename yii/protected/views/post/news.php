@@ -7,7 +7,7 @@
 			<?php
 			$this->widget('zii.widgets.CListView', array(
 				'dataProvider'=>$dataProvider,
-				'itemView'=>'_itemIndex',
+				'itemView'=>'_itemNew',
 				'template'=>"{items}\n{pager}",
 			));
 			?>

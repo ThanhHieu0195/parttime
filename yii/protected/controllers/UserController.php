@@ -119,7 +119,7 @@ class UserController extends Controller {
 		$this->render('resetMail', ['model' => $model]);
 	}
 
-	public function actionUpdate() {
+	public function actionProfile() {
 		/** @var  $model User */
 		$model = new User();
 		if ( !Yii::app()->user->isGuest ) {
@@ -153,7 +153,7 @@ class UserController extends Controller {
 					}
 				}
 			}
-			$this->render('update', ['model' => $model, 'msgPassword' => $messagePasswrord]);
+			$this->render('profile', ['model' => $model, 'msgPassword' => $messagePasswrord]);
 		}
 	}
 
