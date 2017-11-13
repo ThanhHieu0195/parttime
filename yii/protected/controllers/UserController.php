@@ -156,6 +156,10 @@ class UserController extends Controller {
 			$this->render('update', ['model' => $model, 'msgPassword' => $messagePasswrord]);
 		}
 	}
+
+	public function actionFacebook() {
+		$this->render('_facebookForm');
+	}
 // 	extra
 
 	public function loadUser($user_id = null) {
