@@ -17,7 +17,7 @@
 					array('label'=>'Trang chủ', 'url'=>array('site/page', 'view' => 'home')),
 					array('label'=>'Tham gia bình chọn', 'url'=>array('site/page', 'view'=>'vote_product')),
 					array('label'=>'Đọc giả đánh giá', 'url'=>array('site/page','view'=>'value-product')),
-					array('label'=>'Thông tin sản phẩm', 'url'=>array('site/page', 'view' => 'product')),
+					array('label'=>'Thông tin sản phẩm', 'url'=> Yii::app()->createUrl('post')),
                     array('label'=>'Tỉ lệ & giải thưởng', 'url'=>array('site/page','view' => 'ratio')),
                     array('label'=>'Danh sách trúng giải', 'url'=>array('site/page', 'view' => 'winnings')),
 					array('label'=>'', 'url'=>array('site/login'), 'visible'=>Yii::app()->user->isGuest, 'items'=>array(

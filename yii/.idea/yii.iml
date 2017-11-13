@@ -4,5 +4,8 @@
     <content url="file://$MODULE_DIR$" />
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="module" module-name="lema-maketplace-instructor" />
+    <orderEntry type="module" module-name="learnmaster" />
+    <orderEntry type="module" module-name="educhain" />
   </component>
 </module>

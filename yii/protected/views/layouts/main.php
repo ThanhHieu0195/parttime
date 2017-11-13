@@ -23,6 +23,7 @@
     <link rel="stylesheet" href="<?php echo Yii::app()->request->baseUrl; ?>/css/font-awesome-4.7.0/css/font-awesome.min.css">
 
 
+
 <!--    <link rel="stylesheet" type="text/css" href="--><?php //echo Yii::app()->request->baseUrl; ?><!--/libs/bootstrap/css/bootstrap.css" />-->
 <!--    <script src="--><?php //echo Yii::app()->request->baseUrl; ?><!--/libs/bootstrap/js/bootstrap.js"></script>-->
     <?php if ( method_exists($this, 'getAssets') ) $this->getAssets() ?>

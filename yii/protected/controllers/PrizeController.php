@@ -43,6 +43,13 @@ class PrizeController extends Controller {
 						$this->render('failCreate', ['model' => $model]);
 					}
 					exit();
+				case '_specialForm':
+					if ($model->saveTypeSpecial($data)) {
+						$this->render('successCreate', ['model' => $model]);
+					} else {
+						$this->render('failCreate', ['model' => $model]);
+					}
+					exit();
 			}
 		}
 		$this->render('create', ['model' => $model]);

@@ -60,4 +60,11 @@ class Helper implements HelperTemplate {
 		$date = self::getFirstDateInWeek() + 7*($index-1);
 		return $date;
 	}
+
+	public static function cutText($text, $length) {
+		if (strlen($text) > $length ) {
+			$text = substr($text, $length). '...';
+		}
+		return $text;
+	}
 }

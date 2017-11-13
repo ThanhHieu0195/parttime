@@ -54,4 +54,11 @@ class Prize extends CActiveRecord {
 		return $this->save();
 	}
 
+	public function saveTypeSpecial($data) {
+		$data['option'] = json_encode($data['option']);
+		$this->attributes = $data;
+		$this->date_create = time();
+		return $this->save();
+	}
+
 }
