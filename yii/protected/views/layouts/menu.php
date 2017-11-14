@@ -16,7 +16,7 @@
 				'items'=>array(
 					array('label'=>'Trang chủ', 'url'=>array('site/page', 'view' => 'home')),
 					array('label'=>'Tham gia bình chọn', 'url'=>array('site/page', 'view'=>'vote_product')),
-					array('label'=>'Đọc giả đánh giá', 'url'=>array('site/page','view'=>'value-product')),
+					array('label'=>'Đọc giả đánh giá', 'url'=>array('product/index')),
 					array('label'=>'Thông tin sản phẩm', 'url'=> array('post/news')),
                     array('label'=>'Tỉ lệ & giải thưởng', 'url'=>array('site/page','view' => 'ratio')),
                     array('label'=>'Danh sách trúng giải', 'url'=>array('site/page', 'view' => 'winnings')),

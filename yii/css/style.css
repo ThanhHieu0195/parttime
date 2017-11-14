@@ -478,6 +478,7 @@ table {
 .tab-vote-product.tab-custom ul li {
   width: 20%;
   font-size: 14px;
+  text-transform: uppercase;
 }
 
 .tab-vote-product.tab-custom ul li a {

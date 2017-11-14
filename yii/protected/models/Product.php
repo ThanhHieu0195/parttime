@@ -6,6 +6,8 @@
  * @property string $content
  * @property string $tags
  * @property integer $status
+ * @property string $thumnail
+ * @property string $config
  * @property integer $create_time
  * @property integer $update_time
  * @property integer $author_id
@@ -132,5 +134,13 @@ class Product extends CActiveRecord
 				'defaultOrder'=>'status, update_time DESC',
 			),
 		));
+	}
+
+	public function getDataConfig() {
+		$arr = [];
+		if ( !empty( $this->config) ) {
+			$arr = json_decode($this->config, true);
+		}
+		return $arr;
 	}
 }

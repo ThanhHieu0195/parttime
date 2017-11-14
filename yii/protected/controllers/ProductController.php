@@ -145,18 +145,15 @@ class ProductController extends Controller {
 	}
 
 	public function actionIndex() {
-		$criteria=new CDbCriteria(array(
-			'condition'=>'status='.Product::STATUS_PUBLISHED,
-			'order'=>'update_time DESC',
-		));
-		$dataProvider=new CActiveDataProvider('Product', array(
-			'pagination'=>array(
-				'pageSize'=>Yii::app()->params['postsPerPage'],
-			),
-			'criteria'=>$criteria,
-		));
+		$listCat = Category::model()->getOptionByParent();
+		$catCurrent = key($listCat);
+		if ( isset($_GET['cat']) ) {
+			$catCurrent = $_GET['cat'];
+		}
+
 		$this->render('index',array(
-			'dataProvider'=>$dataProvider,
+			'listCat' => $listCat,
+			'catCurrent' => $catCurrent,
 		));
 	}
 }
