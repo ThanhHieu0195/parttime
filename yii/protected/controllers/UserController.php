@@ -17,7 +17,7 @@ class UserController extends Controller {
 			$userForm = new UserLoginForm();
 			$userForm->attributes = $user;
 			if ($userForm->validate() && $userForm->login()) {
-				$this->redirect(array('dashboard'));
+				$this->redirect(array('profile'));
 			}
 			if ( !$model->checkEmail($user['email']) ) {
 				$model->addError('email', 'Email không tồn tại');
@@ -26,13 +26,6 @@ class UserController extends Controller {
 			}
 		}
 		$this->render('login', ['model' => $model]);
-	}
-
-	public function actionDashboard() {
-		if ( !Yii::app()->user->isGuest ) {
-			$model = $this->loadUser();
-			$this->render('dashboard', ['model' => $model]);
-		}
 	}
 
 	public function actionCreate() {
@@ -69,7 +62,7 @@ class UserController extends Controller {
 			$model = new UserLoginForm();
 			$model->attributes = $user;
 			if($model->validate() && $model->login()) {
-				$this->redirect( array( 'view') );
+				$this->redirect( array( 'profile') );
 			}
 		}
 		if ( isset($_GET['type']) ) {
@@ -159,6 +152,63 @@ class UserController extends Controller {
 
 	public function actionFacebook() {
 		$this->render('_facebookForm');
+	}
+
+	public function actionAjax() {
+		if ( isset($_GET['action']) ) {
+			switch ($_GET['action']) {
+				case 'loginModal':
+					if ( Yii::app()->user->isGuest ) {
+						$model  = new User();
+						$result = array( 'status' => 0 );
+						if ( isset( $_POST['data'] ) ) {
+							parse_str( $_POST['data'], $arr );
+							$user              = $arr['User'];
+							$model             = new UserLoginForm();
+							$model->attributes = $user;
+							if ( $model->validate() && $model->login() ) {
+								$result['status'] = 1;
+								$result['href']   = $this->createUrl( 'profile' );
+								echo json_encode( $result );
+								Yii::app()->end();
+							}
+						}
+						$result['html'] = $this->renderPartial( '_formLoginModal', array( 'model' => $model ) );
+						echo json_encode( $result );
+					}
+					break;
+				case 'registerModal':
+					if ( Yii::app()->user->isGuest ) {
+						$model  = new User();
+						if ( isset( $_POST['data'] ) ) {
+							parse_str( $_POST['data'], $arr );
+							$user              = $arr['User'];
+							$model->attributes = $user;
+							$is_check = 1;
+							if ( $user['password'] != $user['repassword'] ) {
+								$is_check = 0;
+								$model->addError('password', 'Mật khẩu không trùng');
+							}
+
+							if ( $model->checkEmail($model->email) ) {
+								$is_check = 0;
+								$model->addError('email', 'Email đã được dùng');
+							}
+
+							if ($is_check) {
+								if ( $model->save() ) {
+									$this->renderPartial('_successCreate', ['data' => $model]);
+									Yii::app()->end();
+
+								}
+							}
+						}
+						echo $this->renderPartial( '_formRegisterModal', array( 'model' => $model ) );
+					}
+					break;
+			}
+		}
+		Yii::app()->end();
 	}
 // 	extra
 

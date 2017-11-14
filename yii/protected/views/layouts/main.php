@@ -91,11 +91,10 @@
 	</div><!-- footer -->
 
     <!--    modal-->
-    <div id="modal-controller">
-        <div id="modal-form"></div>
-        <div id="background"></div>
+    <div class="modal fade" id="modalController" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+
     </div>
 </div><!-- page -->
-
+<script src="<?php echo Yii::app()->request->baseUrl; ?>/javascripts/modal.js"></script>
 </body>
 </html>

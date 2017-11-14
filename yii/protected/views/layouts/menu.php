@@ -20,10 +20,11 @@
 					array('label'=>'Thông tin sản phẩm', 'url'=> array('post/news')),
                     array('label'=>'Tỉ lệ & giải thưởng', 'url'=>array('site/page','view' => 'ratio')),
                     array('label'=>'Danh sách trúng giải', 'url'=>array('site/page', 'view' => 'winnings')),
-					array('label'=>'Đặng nhập', 'url'=>array('user/login'), 'visible' => Yii::app()->user->isGuest),
+					array('label'=>'Đặng nhập', 'url'=>array('user/login'), 'visible' => Yii::app()->user->isGuest, 'itemOptions' => array('class' => 'btn-modal', 'data-action' => 'login', 'data-ajax' => Yii::app()->createUrl('user/ajax'))),
 					array('label'=>'', 'url'=>array('site/login'), 'visible'=>!Yii::app()->user->isGuest, 'items'=>array(
                         array('label'=>'Thông tin tài khoản', 'url'=>array('user/profile')),
-                        array('label'=>'Danh sách bình chọn', 'url'=>array('vote/listvote')),
+						array('label'=>'Danh sách bình chọn', 'url'=>array('vote/listvote')),
+						array('label'=>'Quản lý', 'url'=>array('site/dashboard'), 'visible'=>Yii::app()->user->isAdmin()),
                         array('label'=>'Thoát', 'url'=>array('site/logout')),
                     )),
 				),
