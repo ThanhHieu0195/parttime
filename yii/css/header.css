@@ -1,3 +1,16 @@
+#mainmenu ul li.no-login:last-child a {
+  background-color: transparent;
+}
+
+#mainmenu ul li.no-login:last-child a:hover {
+  color: #fff;
+}
+
+#mainmenu ul li.no-login:last-child a:before {
+  margin-right: 5px;
+  color: #fff;
+}
+
 #mainmenu ul li:last-child {
   margin-left: 80px;
   padding: 0;
