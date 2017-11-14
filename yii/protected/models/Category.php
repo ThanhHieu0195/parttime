@@ -86,4 +86,18 @@ class Category extends CActiveRecord
 		}
 		return '';
 	}
+
+	public static function getNameCategory($catId) {
+		$cat = self::model()->findByPk($catId);
+		$catParent = self::model()->findByPk($cat->parent);
+		$name = '';
+		if ( isset($catParent->name) ) {
+			$name .= $catParent->name . ' ';
+		}
+
+		if ( isset($cat->name) ) {
+			$name .= $cat->name;
+		}
+		return $name;
+	}
 }

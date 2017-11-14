@@ -67,3 +67,11 @@ $(document).on('submit', '#form-modal-vote', function () {
     });
     return false;
 })
+
+var w_href = window.location.href;
+var scrolls = w_href.match('auto_scroll=(.*)$');
+if (scrolls.length > 0) {
+    $('html,body').animate({
+            scrollTop: $('#'+scrolls[1]).offset().top},
+        'slow');
+}

@@ -48,17 +48,15 @@ class VoteController extends Controller {
 		$condition = '';
 		$listCat = Category::model()->getOptionByParent();
 		$catId = '';
-		if ( isset($_GET['cat']) ) {
+		if ( isset($_GET['cat']) && !empty($_GET['cat']) ) {
 			$catId = $_GET['cat'];
+			$listCCat = Category::model()->getOptionByParent($catId);
 			/** @var  $command CDbCommand */
 			$command = Yii::app()->db->createCommand()
 				->select('id')
 				->from('tbl_product')
-				->where('category=:category', array(
-					':category' => $catId
-				));
+				->where(array('in', 'category', array_keys($listCCat)));
 			$products_id = $command->queryColumn();
-
 //			not result
 			if ( empty($products_id) ) {
 				$products_id[] = self::PRODUCT_EMPTY;
