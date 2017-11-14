@@ -48,6 +48,15 @@ class VoteController extends Controller {
 		$condition = '';
 		$listCat = Category::model()->getOptionByParent();
 		$catId = '';
+
+		if ( isset($_GET['search']) ) {
+			$userIds = User::findUsersLikeName($_GET['search']);
+			if (empty($userIds)) {
+				$userIds[] = User::USER_EMPTY;
+			}
+			$condition = 'author in ('.implode(',', $userIds).')';
+		}
+
 		if ( isset($_GET['cat']) && !empty($_GET['cat']) ) {
 			$catId = $_GET['cat'];
 			$listCCat = Category::model()->getOptionByParent($catId);
@@ -61,10 +70,11 @@ class VoteController extends Controller {
 			if ( empty($products_id) ) {
 				$products_id[] = self::PRODUCT_EMPTY;
 			}
-
-			$condition = 'product in ('.implode(',', $products_id).')';
+			if ( !empty($condition) ) {
+				$condition .= ' and ';
+			}
+			$condition .= 'product in ('.implode(',', $products_id).')';
 		}
-
 		$criteria=new CDbCriteria(array(
 			'condition' => $condition,
 			'order'=>'id DESC',

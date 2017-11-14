@@ -18,9 +18,9 @@
 				<li><a href="#">Tìm kiếm</a></li>
 				<li>
 					<div class="search">
-						<form action="#" method="post" class="f">
+						<form action="" method="get" class="f">
 							<label class="is-vishidden">Tìm bằng số điện thoại</label>
-							<input type="search">
+							<input type="search" name="search" value="">
 							<button type="submit" class="btn search-submit" value="Search"> </button>
 						</form>
 					</div>

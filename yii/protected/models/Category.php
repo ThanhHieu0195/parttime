@@ -87,7 +87,7 @@ class Category extends CActiveRecord
 		return '';
 	}
 
-	public static function getNameCategory($catId) {
+	public static function getNameFullCategory($catId) {
 		$cat = self::model()->findByPk($catId);
 		$catParent = self::model()->findByPk($cat->parent);
 		$name = '';

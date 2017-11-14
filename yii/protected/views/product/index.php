@@ -8,11 +8,11 @@ $listCatChild = Category::model()->getOptionByParent($catCurrent);
 
 <div class="vote_product">
     <div class="main-title">BÌNH CHỌN SẢN PHẨM</div>
-    <div class="tab-vote-product tab-custom">
+    <div class="tab-vote-product tab-custom" id="product-session">
         <ul class="nav nav-tabs" role="tablist">
             <?php foreach ($listCat as $cat => $nameCat): ?>
             <li role="presentation" class="<?php echo ($cat==$catCurrent ? 'active' : '') ?>">
-                <a href="?cat=<?php echo $cat ?>"><?php echo $nameCat ?></a>
+                <a href="?cat=<?php echo $cat ?>&auto_scroll=product-session"><?php echo $nameCat ?></a>
             </li>
             <?php endforeach; ?>
         </ul>

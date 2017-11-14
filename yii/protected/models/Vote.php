@@ -10,7 +10,7 @@
  * @property integer $date_create
  */
 class Vote extends CActiveRecord {
-
+	public $_product;
 	public function rules() {
 		return array(
 			array('content, product', 'required'),
@@ -59,4 +59,5 @@ class Vote extends CActiveRecord {
 		}
 		return false;
 	}
+
 }
