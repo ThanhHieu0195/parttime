@@ -1,1 +1,4 @@
 ./protected/runtime/application.log
+.node_modules
+./css/header.scss
+./css/base.scss

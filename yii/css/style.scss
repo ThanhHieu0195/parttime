@@ -505,3 +505,62 @@ table {
 .tab-vote-product.tab-custom ul li:last-child a {
 	margin-right: 0;
 }
+ul.yiiPager .page a
+{
+	font-weight:normal;
+	font-size: 16px;
+	border: 0;
+	padding: 0 10px 10px;
+	position: relative;
+}
+ul.yiiPager .page a:after {
+	position: absolute;
+	content: "";
+	bottom: -2px;
+	left: 50%;
+	transform: translateX(-50%);
+	height: 5px;
+	width: 100%;
+	background-color: #11a9ec;
+	opacity: 0;
+	transition: all 0.3s ease;
+}
+ul.yiiPager .page a:hover:after {
+	opacity: 1;
+}
+ul.yiiPager .page a:hover {
+	background-color: transparent;
+	border: 0;
+}
+ul.yiiPager .next,
+ul.yiiPager .previous{
+	line-height: 16px;
+}
+ul.yiiPager .previous a,
+ul.yiiPager .next a {
+	font-size: 16px;
+	border: 0;
+	color: #16abed;
+}
+ul.yiiPager .previous a:hover,
+ul.yiiPager .next a:hover {
+	background-color: transparent;
+	border: 0;
+	color: #16abed;
+}
+ul.yiiPager a:hover
+{
+	border:solid 1px #0e509e;
+}
+ul.yiiPager .page.selected a:after {
+	opacity: 1;
+}
+
+ul.yiiPager .selected a
+{
+	background:transparent;
+	color:#333;
+	font-size: 16px;
+	font-weight:bold;
+	border: 0;
+}

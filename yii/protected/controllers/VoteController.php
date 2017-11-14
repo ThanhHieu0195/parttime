@@ -46,14 +46,16 @@ class VoteController extends Controller {
 
 	public function actionIndex() {
 		$condition = '';
+		$listCat = Category::model()->getOptionByParent();
+		$catId = '';
 		if ( isset($_GET['cat']) ) {
-			$id_cat = $_GET['cat'];
+			$catId = $_GET['cat'];
 			/** @var  $command CDbCommand */
 			$command = Yii::app()->db->createCommand()
 				->select('id')
 				->from('tbl_product')
 				->where('category=:category', array(
-					':category' => $id_cat
+					':category' => $catId
 				));
 			$products_id = $command->queryColumn();
 
@@ -76,8 +78,10 @@ class VoteController extends Controller {
 			),
 			'criteria'=>$criteria,
 		));
-		$this->render('listvote',array(
+		$this->render('filterVote',array(
 			'dataProvider'=>$dataProvider,
+			'listCat' => $listCat,
+			'catCurrent' => $catId
 		));
 	}
 
@@ -88,8 +92,9 @@ class VoteController extends Controller {
 					$product_id = $_GET['product_id'];
 					$mProduct = Product::model()->findByPk($product_id);
 					if ( !Yii::app()->user->isGuest ) {
-						if (isset($_POST['Vote'])) {
-							$data = $_POST['Vote'];
+						if (isset($_POST['data'])) {
+							parse_str($_POST['data'], $arr);
+							$data = $arr['Vote'];
 							$data['product'] = $product_id;
 							$mVote = new Vote();
 							$mVote->attributes = $data;

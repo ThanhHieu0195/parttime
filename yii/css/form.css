@@ -500,12 +500,17 @@ div.wide form .errorMessage
 }
 .form-group.text-vote textarea {
     height: 80px;
+	width: 100%;
+	padding: 15px;
+}
+#content {
+	padding: 10px 15px;
 }
 .form-group.submit.conform {
     width: fit-content;
     margin: 0 auto;
     border: 0;
-    padding: 10px 30px;
+    padding: 10px 45px;
     -webkit-border-radius: 50px;
     -moz-border-radius: 50px;
     border-radius: 50px;

@@ -276,3 +276,17 @@ Stack trace:
 REQUEST_URI=/yii/index.php/vote/ajax?action=voteModal&product_id=5
 HTTP_REFERER=http://localhost/yii/index.php/product/index?view=vote_product
 ---
+2017/11/14 18:35:09 [error] [php] Undefined variable: id_cat (/home/hieutct/syn/parttime/yii/protected/controllers/VoteController.php:84)
+Stack trace:
+#0 /home/hieutct/syn/parttime/yii/framework/web/filters/CFilterChain.php(134): VoteController->runAction()
+#1 /home/hieutct/syn/parttime/yii/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#2 /home/hieutct/syn/parttime/yii/framework/web/CController.php(1148): CAccessControlFilter->filter()
+#3 /home/hieutct/syn/parttime/yii/framework/web/filters/CInlineFilter.php(58): VoteController->filterAccessControl()
+#4 /home/hieutct/syn/parttime/yii/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter()
+#5 /home/hieutct/syn/parttime/yii/framework/web/CController.php(291): CFilterChain->run()
+#6 /home/hieutct/syn/parttime/yii/framework/web/CController.php(265): VoteController->runActionWithFilters()
+#7 /home/hieutct/syn/parttime/yii/framework/web/CWebApplication.php(282): VoteController->run()
+#8 /home/hieutct/syn/parttime/yii/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#9 /home/hieutct/syn/parttime/yii/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#10 /home/hieutct/syn/parttime/yii/index.php(11): CWebApplication->run()
+REQUEST_URI=/yii/index.php/vote/index

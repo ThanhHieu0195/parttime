@@ -57,7 +57,7 @@ $(document).on('submit', '#form-modal-register', function () {
     return false;
 })
 
-$('document').on('submit', '#form-modal-vote', function () {
+$(document).on('submit', '#form-modal-vote', function () {
     var form = $('#form-modal-vote');
     var data = form.serialize();
     var ajax = form.attr('action');
