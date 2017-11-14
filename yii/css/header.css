@@ -902,10 +902,10 @@
 .block-product-three .left-big {
   padding: 0 15px;
   height: auto;
+  width: 65%;
 }
 
 .block-product-three .left-big .block-image {
-  width: 100%;
   height: 100%;
 }
 
@@ -941,7 +941,7 @@
 }
 
 .block-product-three .block-image img {
-  width: auto;
+  width: 100%;
   height: 100%;
   object-position: center;
   object-fit: cover;

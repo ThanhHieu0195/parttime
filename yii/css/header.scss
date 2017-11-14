@@ -782,8 +782,8 @@
   .left-big {
     padding: 0 15px;
     height: auto;
+    width: 65%;
     .block-image {
-      width: 100%;
       height: 100%;
     }
   }
@@ -816,7 +816,7 @@
   .block-image {
     position: relative;
     img {
-      width: auto;
+      width: 100%;
       height: 100%;
       object-position: center;
       object-fit: cover;
