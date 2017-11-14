@@ -12,13 +12,5 @@
 			));
 			?>
 		</div>
-		<div class="wp-pagenavi">
-			<a class="first" rel="prev" href="#">Pre</a>
-			<a class="page current">1</a>
-			<a class="page larger" href="#">2</a>
-			<a class="page larger" href="#">3</a>
-			<a class="page larger" href="#">4</a>
-			<a class=" last opa" rel="next" href="#">Next</a>
-		</div>
 	</div>
 </div>

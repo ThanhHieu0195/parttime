@@ -470,7 +470,7 @@
   }
   .block-image {
     img {
-      width: 100%;
+      width: auto;
       height: 100%;
       object-fit: cover;
       object-position: center;
@@ -768,7 +768,7 @@
     font-size: 20px;
     font-weight: 700;
     position: absolute;
-    bottom: 30%;
+    bottom: 40%;
     color: #fff;
     padding: 15px 60px 15px 10px;
     background-color: rgba(11,30,43, 0.8);
@@ -793,7 +793,7 @@
   .block-image {
     position: relative;
     img {
-      width: 100%;
+      width: auto;
       height: 100%;
       object-position: center;
       object-fit: cover;
@@ -804,5 +804,13 @@
     .block-image + .block-image {
       margin-top: 20px;
     }
+  }
+}
+.ul.yiiPager .page a {
+  font-size: 16px !important;
+  background-color: transparent !important;
+  color: #333 !important;
+  &:hover {
+    background-color: transparent !important;
   }
 }

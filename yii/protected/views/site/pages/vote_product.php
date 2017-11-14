@@ -463,7 +463,6 @@
                 </div>
                 <div class="modal-body">
                     <div class="title-sucess">Đăng ký tài khoản thành công! Vui lòng xác nhận mail để hoàn tất</div>
-
                 </div>
             </div>
         </div>
