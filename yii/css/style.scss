@@ -360,21 +360,24 @@ table {
 
 
 .vote_product .product-info {
-	display: block;
-	width: 100%;
-	font-size: 0;
+	display: -webkit-flex;
+	display: flex;
+	-webkit-flex-wrap: nowrap;
+	flex-wrap: nowrap;
+	justify-content: center;
+	padding: 0;
+	list-style-type: none;
 }
+
 
 .vote_product .product-info .img-product {
 	display: inline-block;
 	vertical-align: top;
-	width: 270px;
 }
 
 .vote_product .product-info .detail-product {
 	display: inline-block;
 	vertical-align: top;
-	width: calc(100% - 270px);
 	font-size: 14px;
 	padding-left: 20px;
 }
