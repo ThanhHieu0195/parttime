@@ -19,13 +19,7 @@
     <link href="https://fonts.googleapis.com/css?family=Roboto:400,400i,500,500i,700" rel="stylesheet">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-    <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="<?php echo Yii::app()->request->baseUrl; ?>/css/font-awesome-4.7.0/css/font-awesome.min.css">
-
-
-
-<!--    <link rel="stylesheet" type="text/css" href="--><?php //echo Yii::app()->request->baseUrl; ?><!--/libs/bootstrap/css/bootstrap.css" />-->
-<!--    <script src="--><?php //echo Yii::app()->request->baseUrl; ?><!--/libs/bootstrap/js/bootstrap.js"></script>-->
     <?php if ( method_exists($this, 'getAssets') ) $this->getAssets() ?>
     <title><?php echo CHtml::encode($this->pageTitle); ?></title>
 </head>
@@ -97,4 +91,5 @@
 </div><!-- page -->
 <script src="<?php echo Yii::app()->request->baseUrl; ?>/javascripts/modal.js"></script>
 </body>
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
 </html>
