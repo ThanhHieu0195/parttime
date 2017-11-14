@@ -10,7 +10,7 @@ $configs = $data->getDataConfig();
         <div class="title-product"><?php echo $data->title ?></div>
         <div class="detail-abstract">
             <div class="title">Thông tin sản phẩm:</div>
-            <div class="description"><?php echo Helper::cutText($data->content, 100) ?></div>
+            <div class="description"><?php echo Helper::cutText($data->content, 200) ?></div>
         </div>
 
         <div class="configuration">
@@ -36,7 +36,7 @@ $configs = $data->getDataConfig();
                 </table>
             </div>
 
-            <button type="button" data-action="vote" data-url="<?php echo Yii::app()->createUrl('vote/ajax') ?>" data-product="<?php echo $data->id  ?>">BÌNH CHỌN NGAY</button>
+            <button class="btn-modal" type="button" data-action="vote" data-ajax="<?php echo Yii::app()->createUrl('vote/ajax') ?>" data-product="<?php echo $data->id  ?>">BÌNH CHỌN NGAY</button>
         </div>
 
 

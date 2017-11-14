@@ -12,7 +12,7 @@ if ( count($topPosts) == 3):
 		<div class="block-image">
 			<?php echo CHtml::image(Helper::getPathUpload() . $topPosts[0]->thumnail, $topPosts[0]->title)?>
 			<?php echo CHtml::link(CHtml::encode($topPosts[0]->title), $topPosts[0]->url, array('class' => 'title')); ?>
-			<div class="description"><?php echo Helper::cutText($topPosts[0]->content, 100) ?></div>
+			<div class="description"><?php echo Helper::cutText($topPosts[0]->content, 200) ?></div>
 		</div>
 	</div>
 	<div class="right-small">

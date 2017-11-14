@@ -9,3 +9,245 @@ Stack trace:
 REQUEST_URI=/yii/index.php/site/login
 HTTP_REFERER=http://localhost/yii/index.php/post/news
 ---
+2017/11/14 17:21:04 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "undefined".' in /home/hieutct/syn/parttime/yii/framework/web/CController.php:486
+Stack trace:
+#0 /home/hieutct/syn/parttime/yii/framework/web/CController.php(270): CController->missingAction('undefined')
+#1 /home/hieutct/syn/parttime/yii/framework/web/CWebApplication.php(282): CController->run('undefined')
+#2 /home/hieutct/syn/parttime/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('product/undefin...')
+#3 /home/hieutct/syn/parttime/yii/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#4 /home/hieutct/syn/parttime/yii/index.php(11): CApplication->run()
+#5 {main}
+REQUEST_URI=/yii/index.php/product/undefined?action=voteModal
+HTTP_REFERER=http://localhost/yii/index.php/product/index?view=vote_product
+---
+2017/11/14 17:21:09 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "undefined".' in /home/hieutct/syn/parttime/yii/framework/web/CController.php:486
+Stack trace:
+#0 /home/hieutct/syn/parttime/yii/framework/web/CController.php(270): CController->missingAction('undefined')
+#1 /home/hieutct/syn/parttime/yii/framework/web/CWebApplication.php(282): CController->run('undefined')
+#2 /home/hieutct/syn/parttime/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('product/undefin...')
+#3 /home/hieutct/syn/parttime/yii/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#4 /home/hieutct/syn/parttime/yii/index.php(11): CApplication->run()
+#5 {main}
+REQUEST_URI=/yii/index.php/product/undefined?action=voteModal
+HTTP_REFERER=http://localhost/yii/index.php/product/index?view=vote_product
+---
+2017/11/14 17:21:09 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "undefined".' in /home/hieutct/syn/parttime/yii/framework/web/CController.php:486
+Stack trace:
+#0 /home/hieutct/syn/parttime/yii/framework/web/CController.php(270): CController->missingAction('undefined')
+#1 /home/hieutct/syn/parttime/yii/framework/web/CWebApplication.php(282): CController->run('undefined')
+#2 /home/hieutct/syn/parttime/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('product/undefin...')
+#3 /home/hieutct/syn/parttime/yii/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#4 /home/hieutct/syn/parttime/yii/index.php(11): CApplication->run()
+#5 {main}
+REQUEST_URI=/yii/index.php/product/undefined?action=voteModal
+HTTP_REFERER=http://localhost/yii/index.php/product/index?view=vote_product
+---
+2017/11/14 17:21:09 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "undefined".' in /home/hieutct/syn/parttime/yii/framework/web/CController.php:486
+Stack trace:
+#0 /home/hieutct/syn/parttime/yii/framework/web/CController.php(270): CController->missingAction('undefined')
+#1 /home/hieutct/syn/parttime/yii/framework/web/CWebApplication.php(282): CController->run('undefined')
+#2 /home/hieutct/syn/parttime/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('product/undefin...')
+#3 /home/hieutct/syn/parttime/yii/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#4 /home/hieutct/syn/parttime/yii/index.php(11): CApplication->run()
+#5 {main}
+REQUEST_URI=/yii/index.php/product/undefined?action=voteModal
+HTTP_REFERER=http://localhost/yii/index.php/product/index?view=vote_product
+---
+2017/11/14 17:21:10 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "undefined".' in /home/hieutct/syn/parttime/yii/framework/web/CController.php:486
+Stack trace:
+#0 /home/hieutct/syn/parttime/yii/framework/web/CController.php(270): CController->missingAction('undefined')
+#1 /home/hieutct/syn/parttime/yii/framework/web/CWebApplication.php(282): CController->run('undefined')
+#2 /home/hieutct/syn/parttime/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('product/undefin...')
+#3 /home/hieutct/syn/parttime/yii/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#4 /home/hieutct/syn/parttime/yii/index.php(11): CApplication->run()
+#5 {main}
+REQUEST_URI=/yii/index.php/product/undefined?action=voteModal
+HTTP_REFERER=http://localhost/yii/index.php/product/index?view=vote_product
+---
+2017/11/14 17:21:10 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "undefined".' in /home/hieutct/syn/parttime/yii/framework/web/CController.php:486
+Stack trace:
+#0 /home/hieutct/syn/parttime/yii/framework/web/CController.php(270): CController->missingAction('undefined')
+#1 /home/hieutct/syn/parttime/yii/framework/web/CWebApplication.php(282): CController->run('undefined')
+#2 /home/hieutct/syn/parttime/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('product/undefin...')
+#3 /home/hieutct/syn/parttime/yii/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#4 /home/hieutct/syn/parttime/yii/index.php(11): CApplication->run()
+#5 {main}
+REQUEST_URI=/yii/index.php/product/undefined?action=voteModal
+HTTP_REFERER=http://localhost/yii/index.php/product/index?view=vote_product
+---
+2017/11/14 17:21:10 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "undefined".' in /home/hieutct/syn/parttime/yii/framework/web/CController.php:486
+Stack trace:
+#0 /home/hieutct/syn/parttime/yii/framework/web/CController.php(270): CController->missingAction('undefined')
+#1 /home/hieutct/syn/parttime/yii/framework/web/CWebApplication.php(282): CController->run('undefined')
+#2 /home/hieutct/syn/parttime/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('product/undefin...')
+#3 /home/hieutct/syn/parttime/yii/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#4 /home/hieutct/syn/parttime/yii/index.php(11): CApplication->run()
+#5 {main}
+REQUEST_URI=/yii/index.php/product/undefined?action=voteModal
+HTTP_REFERER=http://localhost/yii/index.php/product/index?view=vote_product
+---
+2017/11/14 17:21:10 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "undefined".' in /home/hieutct/syn/parttime/yii/framework/web/CController.php:486
+Stack trace:
+#0 /home/hieutct/syn/parttime/yii/framework/web/CController.php(270): CController->missingAction('undefined')
+#1 /home/hieutct/syn/parttime/yii/framework/web/CWebApplication.php(282): CController->run('undefined')
+#2 /home/hieutct/syn/parttime/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('product/undefin...')
+#3 /home/hieutct/syn/parttime/yii/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#4 /home/hieutct/syn/parttime/yii/index.php(11): CApplication->run()
+#5 {main}
+REQUEST_URI=/yii/index.php/product/undefined?action=voteModal
+HTTP_REFERER=http://localhost/yii/index.php/product/index?view=vote_product
+---
+2017/11/14 17:21:10 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "undefined".' in /home/hieutct/syn/parttime/yii/framework/web/CController.php:486
+Stack trace:
+#0 /home/hieutct/syn/parttime/yii/framework/web/CController.php(270): CController->missingAction('undefined')
+#1 /home/hieutct/syn/parttime/yii/framework/web/CWebApplication.php(282): CController->run('undefined')
+#2 /home/hieutct/syn/parttime/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('product/undefin...')
+#3 /home/hieutct/syn/parttime/yii/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#4 /home/hieutct/syn/parttime/yii/index.php(11): CApplication->run()
+#5 {main}
+REQUEST_URI=/yii/index.php/product/undefined?action=voteModal
+HTTP_REFERER=http://localhost/yii/index.php/product/index?view=vote_product
+---
+2017/11/14 17:23:46 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "ajax".' in /home/hieutct/syn/parttime/yii/framework/web/CController.php:486
+Stack trace:
+#0 /home/hieutct/syn/parttime/yii/framework/web/CController.php(270): CController->missingAction('ajax')
+#1 /home/hieutct/syn/parttime/yii/framework/web/CWebApplication.php(282): CController->run('ajax')
+#2 /home/hieutct/syn/parttime/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('vote/ajax')
+#3 /home/hieutct/syn/parttime/yii/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#4 /home/hieutct/syn/parttime/yii/index.php(11): CApplication->run()
+#5 {main}
+REQUEST_URI=/yii/index.php/vote/ajax?action=voteModal
+HTTP_REFERER=http://localhost/yii/index.php/product/index?view=vote_product
+---
+2017/11/14 17:23:53 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "ajax".' in /home/hieutct/syn/parttime/yii/framework/web/CController.php:486
+Stack trace:
+#0 /home/hieutct/syn/parttime/yii/framework/web/CController.php(270): CController->missingAction('ajax')
+#1 /home/hieutct/syn/parttime/yii/framework/web/CWebApplication.php(282): CController->run('ajax')
+#2 /home/hieutct/syn/parttime/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('vote/ajax')
+#3 /home/hieutct/syn/parttime/yii/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#4 /home/hieutct/syn/parttime/yii/index.php(11): CApplication->run()
+#5 {main}
+REQUEST_URI=/yii/index.php/vote/ajax?action=voteModal
+HTTP_REFERER=http://localhost/yii/index.php/product/index?view=vote_product
+---
+2017/11/14 17:24:37 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "ajax".' in /home/hieutct/syn/parttime/yii/framework/web/CController.php:486
+Stack trace:
+#0 /home/hieutct/syn/parttime/yii/framework/web/CController.php(270): CController->missingAction('ajax')
+#1 /home/hieutct/syn/parttime/yii/framework/web/CWebApplication.php(282): CController->run('ajax')
+#2 /home/hieutct/syn/parttime/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('vote/ajax')
+#3 /home/hieutct/syn/parttime/yii/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#4 /home/hieutct/syn/parttime/yii/index.php(11): CApplication->run()
+#5 {main}
+REQUEST_URI=/yii/index.php/vote/ajax?action=voteModal
+HTTP_REFERER=http://localhost/yii/index.php/product/index?view=vote_product
+---
+2017/11/14 17:24:37 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "ajax".' in /home/hieutct/syn/parttime/yii/framework/web/CController.php:486
+Stack trace:
+#0 /home/hieutct/syn/parttime/yii/framework/web/CController.php(270): CController->missingAction('ajax')
+#1 /home/hieutct/syn/parttime/yii/framework/web/CWebApplication.php(282): CController->run('ajax')
+#2 /home/hieutct/syn/parttime/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('vote/ajax')
+#3 /home/hieutct/syn/parttime/yii/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#4 /home/hieutct/syn/parttime/yii/index.php(11): CApplication->run()
+#5 {main}
+REQUEST_URI=/yii/index.php/vote/ajax?action=voteModal
+HTTP_REFERER=http://localhost/yii/index.php/product/index?view=vote_product
+---
+2017/11/14 17:24:48 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "ajax".' in /home/hieutct/syn/parttime/yii/framework/web/CController.php:486
+Stack trace:
+#0 /home/hieutct/syn/parttime/yii/framework/web/CController.php(270): CController->missingAction('ajax')
+#1 /home/hieutct/syn/parttime/yii/framework/web/CWebApplication.php(282): CController->run('ajax')
+#2 /home/hieutct/syn/parttime/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('vote/ajax')
+#3 /home/hieutct/syn/parttime/yii/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#4 /home/hieutct/syn/parttime/yii/index.php(11): CApplication->run()
+#5 {main}
+REQUEST_URI=/yii/index.php/vote/ajax?action=voteModal
+HTTP_REFERER=http://localhost/yii/index.php/product/index?view=vote_product
+---
+2017/11/14 17:48:47 [error] [php] Undefined index: product_id (/home/hieutct/syn/parttime/yii/protected/controllers/VoteController.php:119)
+Stack trace:
+#0 /home/hieutct/syn/parttime/yii/framework/web/filters/CFilterChain.php(134): VoteController->runAction()
+#1 /home/hieutct/syn/parttime/yii/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#2 /home/hieutct/syn/parttime/yii/framework/web/CController.php(1148): CAccessControlFilter->filter()
+#3 /home/hieutct/syn/parttime/yii/framework/web/filters/CInlineFilter.php(58): VoteController->filterAccessControl()
+#4 /home/hieutct/syn/parttime/yii/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter()
+#5 /home/hieutct/syn/parttime/yii/framework/web/CController.php(291): CFilterChain->run()
+#6 /home/hieutct/syn/parttime/yii/framework/web/CController.php(265): VoteController->runActionWithFilters()
+#7 /home/hieutct/syn/parttime/yii/framework/web/CWebApplication.php(282): VoteController->run()
+#8 /home/hieutct/syn/parttime/yii/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#9 /home/hieutct/syn/parttime/yii/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#10 /home/hieutct/syn/parttime/yii/index.php(11): CWebApplication->run()
+REQUEST_URI=/yii/index.php/vote/ajax?action=voteModal&product_id5
+2017/11/14 17:48:56 [error] [php] Undefined index: product_id (/home/hieutct/syn/parttime/yii/protected/controllers/VoteController.php:119)
+Stack trace:
+#0 /home/hieutct/syn/parttime/yii/framework/web/filters/CFilterChain.php(134): VoteController->runAction()
+#1 /home/hieutct/syn/parttime/yii/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#2 /home/hieutct/syn/parttime/yii/framework/web/CController.php(1148): CAccessControlFilter->filter()
+#3 /home/hieutct/syn/parttime/yii/framework/web/filters/CInlineFilter.php(58): VoteController->filterAccessControl()
+#4 /home/hieutct/syn/parttime/yii/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter()
+#5 /home/hieutct/syn/parttime/yii/framework/web/CController.php(291): CFilterChain->run()
+#6 /home/hieutct/syn/parttime/yii/framework/web/CController.php(265): VoteController->runActionWithFilters()
+#7 /home/hieutct/syn/parttime/yii/framework/web/CWebApplication.php(282): VoteController->run()
+#8 /home/hieutct/syn/parttime/yii/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#9 /home/hieutct/syn/parttime/yii/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#10 /home/hieutct/syn/parttime/yii/index.php(11): CWebApplication->run()
+REQUEST_URI=/yii/index.php/vote/ajax?action=voteModal&product_id5
+2017/11/14 17:49:17 [error] [php] Undefined variable: model (/home/hieutct/syn/parttime/yii/protected/views/vote/_ModalVote.php:23)
+Stack trace:
+#0 /home/hieutct/syn/parttime/yii/framework/web/CController.php(872): VoteController->renderFile()
+#1 /home/hieutct/syn/parttime/yii/protected/controllers/VoteController.php(129): VoteController->renderPartial()
+#2 /home/hieutct/syn/parttime/yii/framework/web/actions/CInlineAction.php(49): VoteController->actionAjax()
+#3 /home/hieutct/syn/parttime/yii/framework/web/CController.php(308): CInlineAction->runWithParams()
+#4 /home/hieutct/syn/parttime/yii/framework/web/filters/CFilterChain.php(134): VoteController->runAction()
+#5 /home/hieutct/syn/parttime/yii/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#6 /home/hieutct/syn/parttime/yii/framework/web/CController.php(1148): CAccessControlFilter->filter()
+#7 /home/hieutct/syn/parttime/yii/framework/web/filters/CInlineFilter.php(58): VoteController->filterAccessControl()
+#8 /home/hieutct/syn/parttime/yii/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter()
+#9 /home/hieutct/syn/parttime/yii/framework/web/CController.php(291): CFilterChain->run()
+#10 /home/hieutct/syn/parttime/yii/framework/web/CController.php(265): VoteController->runActionWithFilters()
+#11 /home/hieutct/syn/parttime/yii/framework/web/CWebApplication.php(282): VoteController->run()
+#12 /home/hieutct/syn/parttime/yii/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#13 /home/hieutct/syn/parttime/yii/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#14 /home/hieutct/syn/parttime/yii/index.php(11): CWebApplication->run()
+REQUEST_URI=/yii/index.php/vote/ajax?action=voteModal&product_id=8
+2017/11/14 17:53:49 [error] [php] htmlspecialchars() expects parameter 1 to be string, array given (/home/hieutct/syn/parttime/yii/framework/web/helpers/CHtml.php:108)
+Stack trace:
+#0 /home/hieutct/syn/parttime/yii/protected/views/vote/_modalVote.php(23): textArea()
+#1 /home/hieutct/syn/parttime/yii/framework/web/CBaseController.php(126): require()
+#2 /home/hieutct/syn/parttime/yii/framework/web/CBaseController.php(95): VoteController->renderInternal()
+#3 /home/hieutct/syn/parttime/yii/framework/web/CController.php(872): VoteController->renderFile()
+#4 /home/hieutct/syn/parttime/yii/protected/controllers/VoteController.php(125): VoteController->renderPartial()
+#5 /home/hieutct/syn/parttime/yii/framework/web/actions/CInlineAction.php(49): VoteController->actionAjax()
+#6 /home/hieutct/syn/parttime/yii/framework/web/CController.php(308): CInlineAction->runWithParams()
+#7 /home/hieutct/syn/parttime/yii/framework/web/filters/CFilterChain.php(134): VoteController->runAction()
+#8 /home/hieutct/syn/parttime/yii/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#9 /home/hieutct/syn/parttime/yii/framework/web/CController.php(1148): CAccessControlFilter->filter()
+#10 /home/hieutct/syn/parttime/yii/framework/web/filters/CInlineFilter.php(58): VoteController->filterAccessControl()
+#11 /home/hieutct/syn/parttime/yii/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter()
+#12 /home/hieutct/syn/parttime/yii/framework/web/CController.php(291): CFilterChain->run()
+#13 /home/hieutct/syn/parttime/yii/framework/web/CController.php(265): VoteController->runActionWithFilters()
+#14 /home/hieutct/syn/parttime/yii/framework/web/CWebApplication.php(282): VoteController->run()
+#15 /home/hieutct/syn/parttime/yii/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#16 /home/hieutct/syn/parttime/yii/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#17 /home/hieutct/syn/parttime/yii/index.php(11): CWebApplication->run()
+REQUEST_URI=/yii/index.php/vote/ajax?action=voteModal&product_id=5
+2017/11/14 17:53:53 [error] [php] htmlspecialchars() expects parameter 1 to be string, array given (/home/hieutct/syn/parttime/yii/framework/web/helpers/CHtml.php:108)
+Stack trace:
+#0 /home/hieutct/syn/parttime/yii/protected/views/vote/_modalVote.php(23): textArea()
+#1 /home/hieutct/syn/parttime/yii/framework/web/CBaseController.php(126): require()
+#2 /home/hieutct/syn/parttime/yii/framework/web/CBaseController.php(95): VoteController->renderInternal()
+#3 /home/hieutct/syn/parttime/yii/framework/web/CController.php(872): VoteController->renderFile()
+#4 /home/hieutct/syn/parttime/yii/protected/controllers/VoteController.php(125): VoteController->renderPartial()
+#5 /home/hieutct/syn/parttime/yii/framework/web/actions/CInlineAction.php(49): VoteController->actionAjax()
+#6 /home/hieutct/syn/parttime/yii/framework/web/CController.php(308): CInlineAction->runWithParams()
+#7 /home/hieutct/syn/parttime/yii/framework/web/filters/CFilterChain.php(134): VoteController->runAction()
+#8 /home/hieutct/syn/parttime/yii/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#9 /home/hieutct/syn/parttime/yii/framework/web/CController.php(1148): CAccessControlFilter->filter()
+#10 /home/hieutct/syn/parttime/yii/framework/web/filters/CInlineFilter.php(58): VoteController->filterAccessControl()
+#11 /home/hieutct/syn/parttime/yii/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter()
+#12 /home/hieutct/syn/parttime/yii/framework/web/CController.php(291): CFilterChain->run()
+#13 /home/hieutct/syn/parttime/yii/framework/web/CController.php(265): VoteController->runActionWithFilters()
+#14 /home/hieutct/syn/parttime/yii/framework/web/CWebApplication.php(282): VoteController->run()
+#15 /home/hieutct/syn/parttime/yii/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#16 /home/hieutct/syn/parttime/yii/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#17 /home/hieutct/syn/parttime/yii/index.php(11): CWebApplication->run()
+REQUEST_URI=/yii/index.php/vote/ajax?action=voteModal&product_id=5

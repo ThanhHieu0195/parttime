@@ -7,9 +7,9 @@
 		<?php echo CHtml::link(CHtml::encode($data->title), $data->url, array('class' => 'title')); ?>
 		<div class="content">
 			<?php
-			$this->beginWidget('CMarkdown', array('purifyOutput'=>true));
-			echo $data->content;
-			$this->endWidget();
+//			$this->beginWidget('CMarkdown', array('purifyOutput'=>true));
+			echo Helper::cutText($data->content, 500);
+//			$this->endWidget();
 			?>
 		</div>
 		<div class="link-detail">

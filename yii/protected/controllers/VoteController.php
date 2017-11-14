@@ -15,7 +15,7 @@ class VoteController extends Controller {
 				'users' => array('@')
 			),
 			array('allow',
-				'actions' => array('index'),
+				'actions' => array('index', 'ajax'),
 				'users' => array('*')
 			),
 			array('deny',  // deny all users
@@ -106,9 +106,27 @@ class VoteController extends Controller {
 							echo $this->renderPartial('_createFail');
 						}
 					}
-					break;
+				break;
 			}
 		}
 		exit();
+	}
+
+	public function actionAjax() {
+		if ( isset( $_GET['action'] ) ) {
+			switch ( $_GET['action'] ) {
+				case 'voteModal':
+					$product_id = $_GET['product_id'];
+					$model = Product::model()->findByPk($product_id);
+					if ( !Yii::app()->user->isGuest ) {
+						$result['status'] = 1;
+						$result['html'] = $this->renderPartial('_modalVote', array(
+							'product' => $model
+						));
+					}
+				break;
+			}
+		}
+		exit;
 	}
 }

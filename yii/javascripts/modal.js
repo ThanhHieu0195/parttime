@@ -15,6 +15,18 @@ $(document).on('click', '.btn-modal', function () {
                 $('#modalController').modal('show');
             });
             break;
+
+        case 'vote':
+            var product_id = current.data('product');
+            $.get(ajax+'?action=voteModal&product_id='+product_id, function (res) {
+                if (res.length > 0) {
+                    $('#modalController').html(res);
+                    $('#modalController').modal('show');
+                } else {
+                   $('.btn-modal[data-action=login]').click();
+                }
+            });
+            break;
     }
     return false;
 })
@@ -43,4 +55,8 @@ $(document).on('submit', '#form-modal-register', function () {
         form.parents('#modalController').html(res);
     });
     return false;
+})
+
+$('document').on('submit', '#form-modal-vote', function () {
+
 })
