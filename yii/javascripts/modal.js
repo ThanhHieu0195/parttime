@@ -58,5 +58,12 @@ $(document).on('submit', '#form-modal-register', function () {
 })
 
 $('document').on('submit', '#form-modal-vote', function () {
-
+    var form = $('#form-modal-vote');
+    var data = form.serialize();
+    var ajax = form.attr('action');
+    var dataAjax = {data:data};
+    $.post(ajax, dataAjax, function (res) {
+        form.parents('#modalController').html(res);
+    });
+    return false;
 })

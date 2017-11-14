@@ -535,3 +535,8 @@ div.wide form .errorMessage
 #exampleModalvotesuccess .form-group .btn {
     width: 85%;
 }
+
+.form-guess #exampleModalvotesuccess .modal-body .title-fail {
+	color: #e33326;
+	margin-bottom: 25px;
+}

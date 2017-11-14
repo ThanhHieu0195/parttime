@@ -27,15 +27,6 @@ class VoteController extends Controller {
 		);
 	}
 
-	public function actionCreate() {
-		if ( isset($_GET['product_id']) ) {
-			$product_id = $_GET['product_id'];
-			$product = Product::model()->findByPk($product_id);
-			$model = Vote::model();
-			$this->render('create', ['model' => $model, 'product' => $product]);
-		}
-	}
-
 	public function actionListvote() {
 		$criteria=new CDbCriteria(array(
 			'condition' => 'author='.Yii::app()->user->id,
@@ -90,38 +81,28 @@ class VoteController extends Controller {
 		));
 	}
 
-	public function actionAjaxForm() {
-		if ( !Yii::app()->user->isGuest && isset($_POST['action']) ) {
-			$action = $_POST['action'];
-			switch ($action) {
-				case 'createVote':
-					if ( isset($_POST['data']) ) {
-						$data = $_POST['data'];
-						$model = new Vote();
-						$model->attributes = $data;
-						$result = $model->save();
-						if ( $result ) {
-							echo $this->renderPartial('_createSuccess', ['code' => $model->code]);
-						}else {
-							echo $this->renderPartial('_createFail');
-						}
-					}
-				break;
-			}
-		}
-		exit();
-	}
-
 	public function actionAjax() {
 		if ( isset( $_GET['action'] ) ) {
 			switch ( $_GET['action'] ) {
 				case 'voteModal':
 					$product_id = $_GET['product_id'];
-					$model = Product::model()->findByPk($product_id);
+					$mProduct = Product::model()->findByPk($product_id);
 					if ( !Yii::app()->user->isGuest ) {
-						$result['status'] = 1;
-						$result['html'] = $this->renderPartial('_modalVote', array(
-							'product' => $model
+						if (isset($_POST['Vote'])) {
+							$data = $_POST['Vote'];
+							$data['product'] = $product_id;
+							$mVote = new Vote();
+							$mVote->attributes = $data;
+							$result = $mVote->save();
+							if ( $result ) {
+								$this->renderPartial('_voteSuccess', ['code' => $mVote->code]);
+							}else {
+								$this->renderPartial('_voteFail');
+							}
+							exit();
+						}
+						$this->renderPartial('_modalVote', array(
+							'product' => $mProduct
 						));
 					}
 				break;
