@@ -892,6 +892,7 @@
 }
 
 .block-product-three .left-big {
+  width: 65%;
   padding: 0 15px;
   height: auto;
 }
