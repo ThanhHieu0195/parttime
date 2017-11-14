@@ -35,11 +35,21 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="header.css" pinned="false" current-in-tab="true">
+      <file leaf-file-name="header.css" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/css/header.css">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="230">
               <caret line="881" column="13" lean-forward="false" selection-start-line="881" selection-start-column="13" selection-end-line="881" selection-end-column="13" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="application.log" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/protected/runtime/application.log">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -115,7 +125,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/protected/views/post/view.php" />
         <option value="$PROJECT_DIR$/protected/components/Helper.php" />
         <option value="$PROJECT_DIR$/protected/views/post/_topPosts.php" />
         <option value="$PROJECT_DIR$/protected/views/post/index.php" />
@@ -166,6 +175,7 @@
         <option value="$PROJECT_DIR$/protected/data/2017-14-06.sql" />
         <option value="$PROJECT_DIR$/protected/views/layouts/main.php" />
         <option value="$PROJECT_DIR$/css/header.css" />
+        <option value="$PROJECT_DIR$/protected/runtime/application.log" />
       </list>
     </option>
   </component>
@@ -299,12 +309,12 @@
       <workItem from="1510579255224" duration="16051000" />
       <workItem from="1510625280883" duration="12199000" />
       <workItem from="1510644028271" duration="13085000" />
-      <workItem from="1510664490820" duration="7142000" />
+      <workItem from="1510664490820" duration="7316000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="131757000" />
+    <option name="totallyTimeSpent" value="131931000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-378" y="-38" width="1368" height="780" extended-state="6" />
@@ -366,13 +376,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/protected/components/views/prizeMenu.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="36">
-          <caret line="2" column="0" lean-forward="false" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/protected/components/views/postMenu.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="54">
@@ -771,6 +774,14 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="230">
           <caret line="881" column="13" lean-forward="false" selection-start-line="881" selection-start-column="13" selection-end-line="881" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/protected/runtime/application.log">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
