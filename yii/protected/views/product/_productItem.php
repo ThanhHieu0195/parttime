@@ -36,7 +36,7 @@ $configs = $data->getDataConfig();
                 </table>
             </div>
 
-            <button type="submit">BÌNH CHỌN NGAY</button>
+            <button type="button" data-action="vote" data-url="<?php echo Yii::app()->createUrl('vote/ajax') ?>" data-product="<?php echo $data->id  ?>">BÌNH CHỌN NGAY</button>
         </div>
 
 
