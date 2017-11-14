@@ -63,7 +63,7 @@ class Helper implements HelperTemplate {
 
 	public static function cutText($text, $length) {
 		if (strlen($text) > $length ) {
-			$text = substr($text, $length). '...';
+			$text = substr($text, 0, $length). '...';
 		}
 		return $text;
 	}
