@@ -924,3 +924,5 @@ Stack trace:
 #3 {main}
 REQUEST_URI=/yii/index.php/s
 ---
+2017/11/14 16:27:11 [warning] [application] Failed to set unsafe attribute "repassword" of "User".
+2017/11/14 16:27:13 [warning] [application] Failed to set unsafe attribute "repassword" of "User".
