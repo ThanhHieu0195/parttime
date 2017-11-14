@@ -15,9 +15,9 @@
 			<?php $this->widget('zii.widgets.CMenu',array(
 				'items'=>array(
 					array('label'=>'Trang chủ', 'url'=>array('site/page', 'view' => 'home')),
-					array('label'=>'Tham gia bình chọn', 'url'=>array('site/page', 'view'=>'vote_product')),
-					array('label'=>'Đọc giả đánh giá', 'url'=>array('product/index')),
-					array('label'=>'Thông tin sản phẩm', 'url'=> array('post/news')),
+					array('label'=>'Tham gia bình chọn', 'url'=>array('product/index', 'view'=>'vote_product')),
+					array('label'=>'Đọc giả đánh giá', 'url'=>array('vote/index')),
+					array('label'=>'Thông tin sản phẩm', 'url'=> array('post/news/')),
                     array('label'=>'Tỉ lệ & giải thưởng', 'url'=>array('site/page','view' => 'ratio')),
                     array('label'=>'Danh sách trúng giải', 'url'=>array('site/page', 'view' => 'winnings')),
 					array('label'=>'Đặng nhập', 'url'=>array('user/login'), 'visible' => Yii::app()->user->isGuest, 'itemOptions' => array('class' => 'btn-modal', 'data-action' => 'login', 'data-ajax' => Yii::app()->createUrl('user/ajax'))),

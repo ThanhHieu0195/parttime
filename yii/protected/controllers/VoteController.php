@@ -36,7 +36,7 @@ class VoteController extends Controller {
 		}
 	}
 
-	public function actionListVote() {
+	public function actionListvote() {
 		$criteria=new CDbCriteria(array(
 			'condition' => 'author='.Yii::app()->user->id,
 			'order'=>'id DESC',
@@ -85,7 +85,7 @@ class VoteController extends Controller {
 			),
 			'criteria'=>$criteria,
 		));
-		$this->render('lisvote',array(
+		$this->render('listvote',array(
 			'dataProvider'=>$dataProvider,
 		));
 	}

@@ -26,7 +26,7 @@ class PostController extends Controller
 	{
 		return array(
 			array('allow',  // allow all users to access 'index' and 'view' actions.
-				'actions'=>array('index','view'),
+				'actions'=>array('index','news'),
 				'users'=>array('*'),
 			),
 			array('allow', // allow authenticated users to access all actions

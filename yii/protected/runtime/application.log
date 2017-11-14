@@ -412,3 +412,507 @@ REQUEST_URI=/project/parttime/yii/index.php/site/login
 HTTP_REFERER=http://localhost/project/parttime/yii/index.php/site/page?view=ratio
 ---
 2017/11/14 15:12:46 [warning] [application] Failed to set unsafe attribute "repassword" of "User".
+2017/11/14 15:45:18 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "login".' in /home/hieutct/syn/parttime/yii/framework/web/CController.php:486
+Stack trace:
+#0 /home/hieutct/syn/parttime/yii/framework/web/CController.php(270): CController->missingAction('login')
+#1 /home/hieutct/syn/parttime/yii/framework/web/CWebApplication.php(282): CController->run('login')
+#2 /home/hieutct/syn/parttime/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('site/login')
+#3 /home/hieutct/syn/parttime/yii/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#4 /home/hieutct/syn/parttime/yii/index.php(11): CApplication->run()
+#5 {main}
+REQUEST_URI=/yii/index.php/site/login
+HTTP_REFERER=http://localhost/yii/index.php/product/index
+---
+2017/11/14 15:45:29 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "login".' in /home/hieutct/syn/parttime/yii/framework/web/CController.php:486
+Stack trace:
+#0 /home/hieutct/syn/parttime/yii/framework/web/CController.php(270): CController->missingAction('login')
+#1 /home/hieutct/syn/parttime/yii/framework/web/CWebApplication.php(282): CController->run('login')
+#2 /home/hieutct/syn/parttime/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('site/login')
+#3 /home/hieutct/syn/parttime/yii/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#4 /home/hieutct/syn/parttime/yii/index.php(11): CApplication->run()
+#5 {main}
+REQUEST_URI=/yii/index.php/site/login
+HTTP_REFERER=http://localhost/yii/index.php/product/index
+---
+2017/11/14 15:45:33 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "login".' in /home/hieutct/syn/parttime/yii/framework/web/CController.php:486
+Stack trace:
+#0 /home/hieutct/syn/parttime/yii/framework/web/CController.php(270): CController->missingAction('login')
+#1 /home/hieutct/syn/parttime/yii/framework/web/CWebApplication.php(282): CController->run('login')
+#2 /home/hieutct/syn/parttime/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('site/login')
+#3 /home/hieutct/syn/parttime/yii/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#4 /home/hieutct/syn/parttime/yii/index.php(11): CApplication->run()
+#5 {main}
+REQUEST_URI=/yii/index.php/site/login
+HTTP_REFERER=http://localhost/yii/index.php/site/login
+---
+2017/11/14 15:45:34 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "login".' in /home/hieutct/syn/parttime/yii/framework/web/CController.php:486
+Stack trace:
+#0 /home/hieutct/syn/parttime/yii/framework/web/CController.php(270): CController->missingAction('login')
+#1 /home/hieutct/syn/parttime/yii/framework/web/CWebApplication.php(282): CController->run('login')
+#2 /home/hieutct/syn/parttime/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('site/login')
+#3 /home/hieutct/syn/parttime/yii/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#4 /home/hieutct/syn/parttime/yii/index.php(11): CApplication->run()
+#5 {main}
+REQUEST_URI=/yii/index.php/site/login
+HTTP_REFERER=http://localhost/yii/index.php/site/login
+---
+2017/11/14 15:45:34 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "login".' in /home/hieutct/syn/parttime/yii/framework/web/CController.php:486
+Stack trace:
+#0 /home/hieutct/syn/parttime/yii/framework/web/CController.php(270): CController->missingAction('login')
+#1 /home/hieutct/syn/parttime/yii/framework/web/CWebApplication.php(282): CController->run('login')
+#2 /home/hieutct/syn/parttime/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('site/login')
+#3 /home/hieutct/syn/parttime/yii/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#4 /home/hieutct/syn/parttime/yii/index.php(11): CApplication->run()
+#5 {main}
+REQUEST_URI=/yii/index.php/site/login
+HTTP_REFERER=http://localhost/yii/index.php/site/login
+---
+2017/11/14 15:45:34 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "login".' in /home/hieutct/syn/parttime/yii/framework/web/CController.php:486
+Stack trace:
+#0 /home/hieutct/syn/parttime/yii/framework/web/CController.php(270): CController->missingAction('login')
+#1 /home/hieutct/syn/parttime/yii/framework/web/CWebApplication.php(282): CController->run('login')
+#2 /home/hieutct/syn/parttime/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('site/login')
+#3 /home/hieutct/syn/parttime/yii/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#4 /home/hieutct/syn/parttime/yii/index.php(11): CApplication->run()
+#5 {main}
+REQUEST_URI=/yii/index.php/site/login
+HTTP_REFERER=http://localhost/yii/index.php/site/login
+---
+2017/11/14 15:45:35 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "login".' in /home/hieutct/syn/parttime/yii/framework/web/CController.php:486
+Stack trace:
+#0 /home/hieutct/syn/parttime/yii/framework/web/CController.php(270): CController->missingAction('login')
+#1 /home/hieutct/syn/parttime/yii/framework/web/CWebApplication.php(282): CController->run('login')
+#2 /home/hieutct/syn/parttime/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('site/login')
+#3 /home/hieutct/syn/parttime/yii/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#4 /home/hieutct/syn/parttime/yii/index.php(11): CApplication->run()
+#5 {main}
+REQUEST_URI=/yii/index.php/site/login
+HTTP_REFERER=http://localhost/yii/index.php/site/login
+---
+2017/11/14 15:45:35 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "login".' in /home/hieutct/syn/parttime/yii/framework/web/CController.php:486
+Stack trace:
+#0 /home/hieutct/syn/parttime/yii/framework/web/CController.php(270): CController->missingAction('login')
+#1 /home/hieutct/syn/parttime/yii/framework/web/CWebApplication.php(282): CController->run('login')
+#2 /home/hieutct/syn/parttime/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('site/login')
+#3 /home/hieutct/syn/parttime/yii/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#4 /home/hieutct/syn/parttime/yii/index.php(11): CApplication->run()
+#5 {main}
+REQUEST_URI=/yii/index.php/site/login
+HTTP_REFERER=http://localhost/yii/index.php/site/login
+---
+2017/11/14 15:45:35 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "login".' in /home/hieutct/syn/parttime/yii/framework/web/CController.php:486
+Stack trace:
+#0 /home/hieutct/syn/parttime/yii/framework/web/CController.php(270): CController->missingAction('login')
+#1 /home/hieutct/syn/parttime/yii/framework/web/CWebApplication.php(282): CController->run('login')
+#2 /home/hieutct/syn/parttime/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('site/login')
+#3 /home/hieutct/syn/parttime/yii/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#4 /home/hieutct/syn/parttime/yii/index.php(11): CApplication->run()
+#5 {main}
+REQUEST_URI=/yii/index.php/site/login
+HTTP_REFERER=http://localhost/yii/index.php/site/login
+---
+2017/11/14 15:45:35 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "login".' in /home/hieutct/syn/parttime/yii/framework/web/CController.php:486
+Stack trace:
+#0 /home/hieutct/syn/parttime/yii/framework/web/CController.php(270): CController->missingAction('login')
+#1 /home/hieutct/syn/parttime/yii/framework/web/CWebApplication.php(282): CController->run('login')
+#2 /home/hieutct/syn/parttime/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('site/login')
+#3 /home/hieutct/syn/parttime/yii/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#4 /home/hieutct/syn/parttime/yii/index.php(11): CApplication->run()
+#5 {main}
+REQUEST_URI=/yii/index.php/site/login
+HTTP_REFERER=http://localhost/yii/index.php/site/login
+---
+2017/11/14 15:45:36 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "login".' in /home/hieutct/syn/parttime/yii/framework/web/CController.php:486
+Stack trace:
+#0 /home/hieutct/syn/parttime/yii/framework/web/CController.php(270): CController->missingAction('login')
+#1 /home/hieutct/syn/parttime/yii/framework/web/CWebApplication.php(282): CController->run('login')
+#2 /home/hieutct/syn/parttime/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('site/login')
+#3 /home/hieutct/syn/parttime/yii/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#4 /home/hieutct/syn/parttime/yii/index.php(11): CApplication->run()
+#5 {main}
+REQUEST_URI=/yii/index.php/site/login
+HTTP_REFERER=http://localhost/yii/index.php/site/login
+---
+2017/11/14 15:45:36 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "login".' in /home/hieutct/syn/parttime/yii/framework/web/CController.php:486
+Stack trace:
+#0 /home/hieutct/syn/parttime/yii/framework/web/CController.php(270): CController->missingAction('login')
+#1 /home/hieutct/syn/parttime/yii/framework/web/CWebApplication.php(282): CController->run('login')
+#2 /home/hieutct/syn/parttime/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('site/login')
+#3 /home/hieutct/syn/parttime/yii/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#4 /home/hieutct/syn/parttime/yii/index.php(11): CApplication->run()
+#5 {main}
+REQUEST_URI=/yii/index.php/site/login
+HTTP_REFERER=http://localhost/yii/index.php/site/login
+---
+2017/11/14 15:45:36 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "login".' in /home/hieutct/syn/parttime/yii/framework/web/CController.php:486
+Stack trace:
+#0 /home/hieutct/syn/parttime/yii/framework/web/CController.php(270): CController->missingAction('login')
+#1 /home/hieutct/syn/parttime/yii/framework/web/CWebApplication.php(282): CController->run('login')
+#2 /home/hieutct/syn/parttime/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('site/login')
+#3 /home/hieutct/syn/parttime/yii/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#4 /home/hieutct/syn/parttime/yii/index.php(11): CApplication->run()
+#5 {main}
+REQUEST_URI=/yii/index.php/site/login
+HTTP_REFERER=http://localhost/yii/index.php/site/login
+---
+2017/11/14 15:45:50 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "login".' in /home/hieutct/syn/parttime/yii/framework/web/CController.php:486
+Stack trace:
+#0 /home/hieutct/syn/parttime/yii/framework/web/CController.php(270): CController->missingAction('login')
+#1 /home/hieutct/syn/parttime/yii/framework/web/CWebApplication.php(282): CController->run('login')
+#2 /home/hieutct/syn/parttime/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('site/login')
+#3 /home/hieutct/syn/parttime/yii/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#4 /home/hieutct/syn/parttime/yii/index.php(11): CApplication->run()
+#5 {main}
+REQUEST_URI=/yii/index.php/site/login
+HTTP_REFERER=http://localhost/yii/index.php/site/login
+---
+2017/11/14 15:46:13 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "login".' in /home/hieutct/syn/parttime/yii/framework/web/CController.php:486
+Stack trace:
+#0 /home/hieutct/syn/parttime/yii/framework/web/CController.php(270): CController->missingAction('login')
+#1 /home/hieutct/syn/parttime/yii/framework/web/CWebApplication.php(282): CController->run('login')
+#2 /home/hieutct/syn/parttime/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('site/login')
+#3 /home/hieutct/syn/parttime/yii/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#4 /home/hieutct/syn/parttime/yii/index.php(11): CApplication->run()
+#5 {main}
+REQUEST_URI=/yii/index.php/site/login
+HTTP_REFERER=http://localhost/yii/index.php/site/login
+---
+2017/11/14 15:46:27 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "login".' in /home/hieutct/syn/parttime/yii/framework/web/CController.php:486
+Stack trace:
+#0 /home/hieutct/syn/parttime/yii/framework/web/CController.php(270): CController->missingAction('login')
+#1 /home/hieutct/syn/parttime/yii/framework/web/CWebApplication.php(282): CController->run('login')
+#2 /home/hieutct/syn/parttime/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('site/login')
+#3 /home/hieutct/syn/parttime/yii/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#4 /home/hieutct/syn/parttime/yii/index.php(11): CApplication->run()
+#5 {main}
+REQUEST_URI=/yii/index.php/site/login
+HTTP_REFERER=http://localhost/yii/index.php/
+---
+2017/11/14 15:47:45 [error] [exception.CException] exception 'CException' with message 'VoteController cannot find the requested view "lisvote".' in /home/hieutct/syn/parttime/yii/framework/web/CController.php:881
+Stack trace:
+#0 /home/hieutct/syn/parttime/yii/framework/web/CController.php(785): CController->renderPartial('lisvote', Array, true)
+#1 /home/hieutct/syn/parttime/yii/protected/controllers/VoteController.php(90): CController->render('lisvote', Array)
+#2 /home/hieutct/syn/parttime/yii/framework/web/actions/CInlineAction.php(49): VoteController->actionIndex()
+#3 /home/hieutct/syn/parttime/yii/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#4 /home/hieutct/syn/parttime/yii/framework/web/filters/CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#5 /home/hieutct/syn/parttime/yii/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#6 /home/hieutct/syn/parttime/yii/framework/web/CController.php(1148): CFilter->filter(Object(CFilterChain))
+#7 /home/hieutct/syn/parttime/yii/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#8 /home/hieutct/syn/parttime/yii/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#9 /home/hieutct/syn/parttime/yii/framework/web/CController.php(291): CFilterChain->run()
+#10 /home/hieutct/syn/parttime/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 /home/hieutct/syn/parttime/yii/framework/web/CWebApplication.php(282): CController->run('index')
+#12 /home/hieutct/syn/parttime/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('vote/index')
+#13 /home/hieutct/syn/parttime/yii/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#14 /home/hieutct/syn/parttime/yii/index.php(11): CApplication->run()
+#15 {main}
+REQUEST_URI=/yii/index.php/vote/index
+HTTP_REFERER=http://localhost/yii/index.php/product/index
+---
+2017/11/14 15:47:49 [error] [exception.CException] exception 'CException' with message 'VoteController cannot find the requested view "lisvote".' in /home/hieutct/syn/parttime/yii/framework/web/CController.php:881
+Stack trace:
+#0 /home/hieutct/syn/parttime/yii/framework/web/CController.php(785): CController->renderPartial('lisvote', Array, true)
+#1 /home/hieutct/syn/parttime/yii/protected/controllers/VoteController.php(90): CController->render('lisvote', Array)
+#2 /home/hieutct/syn/parttime/yii/framework/web/actions/CInlineAction.php(49): VoteController->actionIndex()
+#3 /home/hieutct/syn/parttime/yii/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#4 /home/hieutct/syn/parttime/yii/framework/web/filters/CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#5 /home/hieutct/syn/parttime/yii/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#6 /home/hieutct/syn/parttime/yii/framework/web/CController.php(1148): CFilter->filter(Object(CFilterChain))
+#7 /home/hieutct/syn/parttime/yii/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#8 /home/hieutct/syn/parttime/yii/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#9 /home/hieutct/syn/parttime/yii/framework/web/CController.php(291): CFilterChain->run()
+#10 /home/hieutct/syn/parttime/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 /home/hieutct/syn/parttime/yii/framework/web/CWebApplication.php(282): CController->run('')
+#12 /home/hieutct/syn/parttime/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('vote')
+#13 /home/hieutct/syn/parttime/yii/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#14 /home/hieutct/syn/parttime/yii/index.php(11): CApplication->run()
+#15 {main}
+REQUEST_URI=/yii/index.php/vote/
+---
+2017/11/14 15:48:47 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "lisvote".' in /home/hieutct/syn/parttime/yii/framework/web/CController.php:486
+Stack trace:
+#0 /home/hieutct/syn/parttime/yii/framework/web/CController.php(270): CController->missingAction('lisvote')
+#1 /home/hieutct/syn/parttime/yii/framework/web/CWebApplication.php(282): CController->run('lisvote')
+#2 /home/hieutct/syn/parttime/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('vote/lisvote')
+#3 /home/hieutct/syn/parttime/yii/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#4 /home/hieutct/syn/parttime/yii/index.php(11): CApplication->run()
+#5 {main}
+REQUEST_URI=/yii/index.php/vote/lisvote
+---
+2017/11/14 15:49:10 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "lisvote".' in /home/hieutct/syn/parttime/yii/framework/web/CController.php:486
+Stack trace:
+#0 /home/hieutct/syn/parttime/yii/framework/web/CController.php(270): CController->missingAction('lisvote')
+#1 /home/hieutct/syn/parttime/yii/framework/web/CWebApplication.php(282): CController->run('lisvote')
+#2 /home/hieutct/syn/parttime/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('vote/lisvote')
+#3 /home/hieutct/syn/parttime/yii/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#4 /home/hieutct/syn/parttime/yii/index.php(11): CApplication->run()
+#5 {main}
+REQUEST_URI=/yii/index.php/vote/lisvote
+---
+2017/11/14 15:49:11 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "lisvote".' in /home/hieutct/syn/parttime/yii/framework/web/CController.php:486
+Stack trace:
+#0 /home/hieutct/syn/parttime/yii/framework/web/CController.php(270): CController->missingAction('lisvote')
+#1 /home/hieutct/syn/parttime/yii/framework/web/CWebApplication.php(282): CController->run('lisvote')
+#2 /home/hieutct/syn/parttime/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('vote/lisvote')
+#3 /home/hieutct/syn/parttime/yii/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#4 /home/hieutct/syn/parttime/yii/index.php(11): CApplication->run()
+#5 {main}
+REQUEST_URI=/yii/index.php/vote/lisvote
+---
+2017/11/14 15:49:44 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "lisvote".' in /home/hieutct/syn/parttime/yii/framework/web/CController.php:486
+Stack trace:
+#0 /home/hieutct/syn/parttime/yii/framework/web/CController.php(270): CController->missingAction('lisvote')
+#1 /home/hieutct/syn/parttime/yii/framework/web/CWebApplication.php(282): CController->run('lisvote')
+#2 /home/hieutct/syn/parttime/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('vote/lisvote')
+#3 /home/hieutct/syn/parttime/yii/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#4 /home/hieutct/syn/parttime/yii/index.php(11): CApplication->run()
+#5 {main}
+REQUEST_URI=/yii/index.php/vote/lisvote
+---
+2017/11/14 15:49:49 [error] [system.db.CDbCommand] CDbCommand::fetchColumn() failed: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '' at line 1. The SQL statement executed was: SELECT COUNT(*) FROM `tbl_vote` `t` WHERE author=.
+2017/11/14 15:49:49 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to execute the SQL statement: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '' at line 1. The SQL statement executed was: SELECT COUNT(*) FROM `tbl_vote` `t` WHERE author=' in /home/hieutct/syn/parttime/yii/framework/db/CDbCommand.php:543
+Stack trace:
+#0 /home/hieutct/syn/parttime/yii/framework/db/CDbCommand.php(433): CDbCommand->queryInternal('fetchColumn', 0, Array)
+#1 /home/hieutct/syn/parttime/yii/framework/db/ar/CActiveRecord.php(1609): CDbCommand->queryScalar()
+#2 /home/hieutct/syn/parttime/yii/framework/web/CActiveDataProvider.php(228): CActiveRecord->count(Object(CDbCriteria))
+#3 /home/hieutct/syn/parttime/yii/framework/web/CDataProvider.php(224): CActiveDataProvider->calculateTotalItemCount()
+#4 /home/hieutct/syn/parttime/yii/framework/web/CActiveDataProvider.php(178): CDataProvider->getTotalItemCount()
+#5 /home/hieutct/syn/parttime/yii/framework/web/CDataProvider.php(168): CActiveDataProvider->fetchData()
+#6 /home/hieutct/syn/parttime/yii/framework/zii/widgets/CBaseListView.php(125): CDataProvider->getData()
+#7 /home/hieutct/syn/parttime/yii/framework/zii/widgets/CListView.php(211): CBaseListView->init()
+#8 /home/hieutct/syn/parttime/yii/framework/web/CBaseController.php(147): CListView->init()
+#9 /home/hieutct/syn/parttime/yii/framework/web/CBaseController.php(181): CBaseController->createWidget('zii.widgets.CLi...', Array)
+#10 /home/hieutct/syn/parttime/yii/protected/views/vote/listvote.php(7): CBaseController->widget('zii.widgets.CLi...', Array)
+#11 /home/hieutct/syn/parttime/yii/framework/web/CBaseController.php(126): require('/home/hieutct/s...')
+#12 /home/hieutct/syn/parttime/yii/framework/web/CBaseController.php(95): CBaseController->renderInternal('/home/hieutct/s...', Array, true)
+#13 /home/hieutct/syn/parttime/yii/framework/web/CController.php(872): CBaseController->renderFile('/home/hieutct/s...', Array, true)
+#14 /home/hieutct/syn/parttime/yii/framework/web/CController.php(785): CController->renderPartial('listvote', Array, true)
+#15 /home/hieutct/syn/parttime/yii/protected/controllers/VoteController.php(53): CController->render('listvote', Array)
+#16 /home/hieutct/syn/parttime/yii/framework/web/actions/CInlineAction.php(49): VoteController->actionListvote()
+#17 /home/hieutct/syn/parttime/yii/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#18 /home/hieutct/syn/parttime/yii/framework/web/filters/CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#19 /home/hieutct/syn/parttime/yii/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#20 /home/hieutct/syn/parttime/yii/framework/web/CController.php(1148): CFilter->filter(Object(CFilterChain))
+#21 /home/hieutct/syn/parttime/yii/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#22 /home/hieutct/syn/parttime/yii/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#23 /home/hieutct/syn/parttime/yii/framework/web/CController.php(291): CFilterChain->run()
+#24 /home/hieutct/syn/parttime/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#25 /home/hieutct/syn/parttime/yii/framework/web/CWebApplication.php(282): CController->run('listvote')
+#26 /home/hieutct/syn/parttime/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('vote/listvote')
+#27 /home/hieutct/syn/parttime/yii/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#28 /home/hieutct/syn/parttime/yii/index.php(11): CApplication->run()
+#29 {main}
+REQUEST_URI=/yii/index.php/vote/listvote
+---
+2017/11/14 15:50:06 [error] [exception.CException] exception 'CException' with message 'VoteController cannot find the requested view "lisvote".' in /home/hieutct/syn/parttime/yii/framework/web/CController.php:881
+Stack trace:
+#0 /home/hieutct/syn/parttime/yii/framework/web/CController.php(785): CController->renderPartial('lisvote', Array, true)
+#1 /home/hieutct/syn/parttime/yii/protected/controllers/VoteController.php(90): CController->render('lisvote', Array)
+#2 /home/hieutct/syn/parttime/yii/framework/web/actions/CInlineAction.php(49): VoteController->actionIndex()
+#3 /home/hieutct/syn/parttime/yii/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#4 /home/hieutct/syn/parttime/yii/framework/web/filters/CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#5 /home/hieutct/syn/parttime/yii/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#6 /home/hieutct/syn/parttime/yii/framework/web/CController.php(1148): CFilter->filter(Object(CFilterChain))
+#7 /home/hieutct/syn/parttime/yii/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#8 /home/hieutct/syn/parttime/yii/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#9 /home/hieutct/syn/parttime/yii/framework/web/CController.php(291): CFilterChain->run()
+#10 /home/hieutct/syn/parttime/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 /home/hieutct/syn/parttime/yii/framework/web/CWebApplication.php(282): CController->run('')
+#12 /home/hieutct/syn/parttime/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('vote')
+#13 /home/hieutct/syn/parttime/yii/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#14 /home/hieutct/syn/parttime/yii/index.php(11): CApplication->run()
+#15 {main}
+REQUEST_URI=/yii/index.php/vote/
+---
+2017/11/14 15:50:46 [error] [exception.CException] exception 'CException' with message 'VoteController cannot find the requested view "lisvote".' in /home/hieutct/syn/parttime/yii/framework/web/CController.php:881
+Stack trace:
+#0 /home/hieutct/syn/parttime/yii/framework/web/CController.php(785): CController->renderPartial('lisvote', Array, true)
+#1 /home/hieutct/syn/parttime/yii/protected/controllers/VoteController.php(90): CController->render('lisvote', Array)
+#2 /home/hieutct/syn/parttime/yii/framework/web/actions/CInlineAction.php(49): VoteController->actionIndex()
+#3 /home/hieutct/syn/parttime/yii/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#4 /home/hieutct/syn/parttime/yii/framework/web/filters/CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#5 /home/hieutct/syn/parttime/yii/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#6 /home/hieutct/syn/parttime/yii/framework/web/CController.php(1148): CFilter->filter(Object(CFilterChain))
+#7 /home/hieutct/syn/parttime/yii/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#8 /home/hieutct/syn/parttime/yii/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#9 /home/hieutct/syn/parttime/yii/framework/web/CController.php(291): CFilterChain->run()
+#10 /home/hieutct/syn/parttime/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 /home/hieutct/syn/parttime/yii/framework/web/CWebApplication.php(282): CController->run('')
+#12 /home/hieutct/syn/parttime/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('vote')
+#13 /home/hieutct/syn/parttime/yii/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#14 /home/hieutct/syn/parttime/yii/index.php(11): CApplication->run()
+#15 {main}
+REQUEST_URI=/yii/index.php/vote/
+---
+2017/11/14 15:51:38 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "login".' in /home/hieutct/syn/parttime/yii/framework/web/CController.php:486
+Stack trace:
+#0 /home/hieutct/syn/parttime/yii/framework/web/CController.php(270): CController->missingAction('login')
+#1 /home/hieutct/syn/parttime/yii/framework/web/CWebApplication.php(282): CController->run('login')
+#2 /home/hieutct/syn/parttime/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('site/login')
+#3 /home/hieutct/syn/parttime/yii/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#4 /home/hieutct/syn/parttime/yii/index.php(11): CApplication->run()
+#5 {main}
+REQUEST_URI=/yii/index.php/site/login
+HTTP_REFERER=http://localhost/yii/index.php/vote/
+---
+2017/11/14 15:51:43 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "login".' in /home/hieutct/syn/parttime/yii/framework/web/CController.php:486
+Stack trace:
+#0 /home/hieutct/syn/parttime/yii/framework/web/CController.php(270): CController->missingAction('login')
+#1 /home/hieutct/syn/parttime/yii/framework/web/CWebApplication.php(282): CController->run('login')
+#2 /home/hieutct/syn/parttime/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('site/login')
+#3 /home/hieutct/syn/parttime/yii/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#4 /home/hieutct/syn/parttime/yii/index.php(11): CApplication->run()
+#5 {main}
+REQUEST_URI=/yii/index.php/site/login
+HTTP_REFERER=http://localhost/yii/index.php/site/login
+---
+2017/11/14 15:52:11 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "login".' in /home/hieutct/syn/parttime/yii/framework/web/CController.php:486
+Stack trace:
+#0 /home/hieutct/syn/parttime/yii/framework/web/CController.php(270): CController->missingAction('login')
+#1 /home/hieutct/syn/parttime/yii/framework/web/CWebApplication.php(282): CController->run('login')
+#2 /home/hieutct/syn/parttime/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('site/login')
+#3 /home/hieutct/syn/parttime/yii/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#4 /home/hieutct/syn/parttime/yii/index.php(11): CApplication->run()
+#5 {main}
+REQUEST_URI=/yii/index.php/site/login
+---
+2017/11/14 15:52:21 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "login".' in /home/hieutct/syn/parttime/yii/framework/web/CController.php:486
+Stack trace:
+#0 /home/hieutct/syn/parttime/yii/framework/web/CController.php(270): CController->missingAction('login')
+#1 /home/hieutct/syn/parttime/yii/framework/web/CWebApplication.php(282): CController->run('login')
+#2 /home/hieutct/syn/parttime/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('site/login')
+#3 /home/hieutct/syn/parttime/yii/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#4 /home/hieutct/syn/parttime/yii/index.php(11): CApplication->run()
+#5 {main}
+REQUEST_URI=/yii/index.php/site/login
+HTTP_REFERER=http://localhost/yii/index.php/vote/index
+---
+2017/11/14 15:52:22 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "login".' in /home/hieutct/syn/parttime/yii/framework/web/CController.php:486
+Stack trace:
+#0 /home/hieutct/syn/parttime/yii/framework/web/CController.php(270): CController->missingAction('login')
+#1 /home/hieutct/syn/parttime/yii/framework/web/CWebApplication.php(282): CController->run('login')
+#2 /home/hieutct/syn/parttime/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('site/login')
+#3 /home/hieutct/syn/parttime/yii/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#4 /home/hieutct/syn/parttime/yii/index.php(11): CApplication->run()
+#5 {main}
+REQUEST_URI=/yii/index.php/site/login
+HTTP_REFERER=http://localhost/yii/index.php/site/login
+---
+2017/11/14 15:52:22 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "login".' in /home/hieutct/syn/parttime/yii/framework/web/CController.php:486
+Stack trace:
+#0 /home/hieutct/syn/parttime/yii/framework/web/CController.php(270): CController->missingAction('login')
+#1 /home/hieutct/syn/parttime/yii/framework/web/CWebApplication.php(282): CController->run('login')
+#2 /home/hieutct/syn/parttime/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('site/login')
+#3 /home/hieutct/syn/parttime/yii/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#4 /home/hieutct/syn/parttime/yii/index.php(11): CApplication->run()
+#5 {main}
+REQUEST_URI=/yii/index.php/site/login
+HTTP_REFERER=http://localhost/yii/index.php/site/login
+---
+2017/11/14 15:52:22 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "login".' in /home/hieutct/syn/parttime/yii/framework/web/CController.php:486
+Stack trace:
+#0 /home/hieutct/syn/parttime/yii/framework/web/CController.php(270): CController->missingAction('login')
+#1 /home/hieutct/syn/parttime/yii/framework/web/CWebApplication.php(282): CController->run('login')
+#2 /home/hieutct/syn/parttime/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('site/login')
+#3 /home/hieutct/syn/parttime/yii/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#4 /home/hieutct/syn/parttime/yii/index.php(11): CApplication->run()
+#5 {main}
+REQUEST_URI=/yii/index.php/site/login
+HTTP_REFERER=http://localhost/yii/index.php/site/login
+---
+2017/11/14 15:52:22 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "login".' in /home/hieutct/syn/parttime/yii/framework/web/CController.php:486
+Stack trace:
+#0 /home/hieutct/syn/parttime/yii/framework/web/CController.php(270): CController->missingAction('login')
+#1 /home/hieutct/syn/parttime/yii/framework/web/CWebApplication.php(282): CController->run('login')
+#2 /home/hieutct/syn/parttime/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('site/login')
+#3 /home/hieutct/syn/parttime/yii/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#4 /home/hieutct/syn/parttime/yii/index.php(11): CApplication->run()
+#5 {main}
+REQUEST_URI=/yii/index.php/site/login
+HTTP_REFERER=http://localhost/yii/index.php/site/login
+---
+2017/11/14 15:52:23 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "login".' in /home/hieutct/syn/parttime/yii/framework/web/CController.php:486
+Stack trace:
+#0 /home/hieutct/syn/parttime/yii/framework/web/CController.php(270): CController->missingAction('login')
+#1 /home/hieutct/syn/parttime/yii/framework/web/CWebApplication.php(282): CController->run('login')
+#2 /home/hieutct/syn/parttime/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('site/login')
+#3 /home/hieutct/syn/parttime/yii/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#4 /home/hieutct/syn/parttime/yii/index.php(11): CApplication->run()
+#5 {main}
+REQUEST_URI=/yii/index.php/site/login
+HTTP_REFERER=http://localhost/yii/index.php/site/login
+---
+2017/11/14 15:52:23 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "login".' in /home/hieutct/syn/parttime/yii/framework/web/CController.php:486
+Stack trace:
+#0 /home/hieutct/syn/parttime/yii/framework/web/CController.php(270): CController->missingAction('login')
+#1 /home/hieutct/syn/parttime/yii/framework/web/CWebApplication.php(282): CController->run('login')
+#2 /home/hieutct/syn/parttime/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('site/login')
+#3 /home/hieutct/syn/parttime/yii/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#4 /home/hieutct/syn/parttime/yii/index.php(11): CApplication->run()
+#5 {main}
+REQUEST_URI=/yii/index.php/site/login
+HTTP_REFERER=http://localhost/yii/index.php/site/login
+---
+2017/11/14 15:52:23 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "login".' in /home/hieutct/syn/parttime/yii/framework/web/CController.php:486
+Stack trace:
+#0 /home/hieutct/syn/parttime/yii/framework/web/CController.php(270): CController->missingAction('login')
+#1 /home/hieutct/syn/parttime/yii/framework/web/CWebApplication.php(282): CController->run('login')
+#2 /home/hieutct/syn/parttime/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('site/login')
+#3 /home/hieutct/syn/parttime/yii/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#4 /home/hieutct/syn/parttime/yii/index.php(11): CApplication->run()
+#5 {main}
+REQUEST_URI=/yii/index.php/site/login
+HTTP_REFERER=http://localhost/yii/index.php/site/login
+---
+2017/11/14 15:52:27 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "login".' in /home/hieutct/syn/parttime/yii/framework/web/CController.php:486
+Stack trace:
+#0 /home/hieutct/syn/parttime/yii/framework/web/CController.php(270): CController->missingAction('login')
+#1 /home/hieutct/syn/parttime/yii/framework/web/CWebApplication.php(282): CController->run('login')
+#2 /home/hieutct/syn/parttime/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('site/login')
+#3 /home/hieutct/syn/parttime/yii/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#4 /home/hieutct/syn/parttime/yii/index.php(11): CApplication->run()
+#5 {main}
+REQUEST_URI=/yii/index.php/site/login
+HTTP_REFERER=http://localhost/yii/index.php/site/login
+---
+2017/11/14 15:52:29 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "login".' in /home/hieutct/syn/parttime/yii/framework/web/CController.php:486
+Stack trace:
+#0 /home/hieutct/syn/parttime/yii/framework/web/CController.php(270): CController->missingAction('login')
+#1 /home/hieutct/syn/parttime/yii/framework/web/CWebApplication.php(282): CController->run('login')
+#2 /home/hieutct/syn/parttime/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('site/login')
+#3 /home/hieutct/syn/parttime/yii/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#4 /home/hieutct/syn/parttime/yii/index.php(11): CApplication->run()
+#5 {main}
+REQUEST_URI=/yii/index.php/site/login
+HTTP_REFERER=http://localhost/yii/index.php/site/login
+---
+2017/11/14 15:53:01 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "index".' in /home/hieutct/syn/parttime/yii/framework/web/CController.php:486
+Stack trace:
+#0 /home/hieutct/syn/parttime/yii/framework/web/CController.php(270): CController->missingAction('')
+#1 /home/hieutct/syn/parttime/yii/framework/web/CWebApplication.php(282): CController->run('')
+#2 /home/hieutct/syn/parttime/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('post')
+#3 /home/hieutct/syn/parttime/yii/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#4 /home/hieutct/syn/parttime/yii/index.php(11): CApplication->run()
+#5 {main}
+REQUEST_URI=/yii/index.php/post
+---
+2017/11/14 15:53:21 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "login".' in /home/hieutct/syn/parttime/yii/framework/web/CController.php:486
+Stack trace:
+#0 /home/hieutct/syn/parttime/yii/framework/web/CController.php(270): CController->missingAction('login')
+#1 /home/hieutct/syn/parttime/yii/framework/web/CWebApplication.php(282): CController->run('login')
+#2 /home/hieutct/syn/parttime/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('site/login')
+#3 /home/hieutct/syn/parttime/yii/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#4 /home/hieutct/syn/parttime/yii/index.php(11): CApplication->run()
+#5 {main}
+REQUEST_URI=/yii/index.php/site/login
+---
+2017/11/14 15:53:30 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "login".' in /home/hieutct/syn/parttime/yii/framework/web/CController.php:486
+Stack trace:
+#0 /home/hieutct/syn/parttime/yii/framework/web/CController.php(270): CController->missingAction('login')
+#1 /home/hieutct/syn/parttime/yii/framework/web/CWebApplication.php(282): CController->run('login')
+#2 /home/hieutct/syn/parttime/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('site/login')
+#3 /home/hieutct/syn/parttime/yii/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#4 /home/hieutct/syn/parttime/yii/index.php(11): CApplication->run()
+#5 {main}
+REQUEST_URI=/yii/index.php/site/login
+---
