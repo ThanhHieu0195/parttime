@@ -536,6 +536,10 @@
   padding: 75px 0 50px;
 }
 
+.detail-product {
+  padding: 40px 0 50px;
+}
+
 .block-content-product {
   display: -webkit-flex;
   display: flex;
@@ -544,6 +548,10 @@
   justify-content: center;
   padding: 0;
   list-style-type: none;
+}
+
+.block-content-product .nav a {
+  text-decoration: none;
 }
 
 .block-content-product .content {
@@ -892,7 +900,6 @@
 }
 
 .block-product-three .left-big {
-  width: 65%;
   padding: 0 15px;
   height: auto;
 }
