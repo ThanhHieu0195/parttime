@@ -9,6 +9,12 @@ $(document).on('click', '.btn-modal', function () {
                 $('#modalController').modal('show');
             });
             break;
+        case 'resetmail':
+            $.get(ajax+'?action=resetMailModal', function (res) {
+                $('#modalController').html(res);
+                $('#modalController').modal('show');
+            });
+            break;
         case 'register':
             $.get(ajax+'?action=registerModal', function (res) {
                 $('#modalController').html(res);
@@ -64,6 +70,18 @@ $(document).on('submit', '#form-modal-vote', function () {
     var dataAjax = {data:data};
     $.post(ajax, dataAjax, function (res) {
         form.parents('#modalController').html(res);
+    });
+    return false;
+})
+
+$(document).on('submit', '#form-modal-reset', function () {
+    var form = $('#form-modal-reset');
+    var data = form.serialize();
+    var ajax = form.attr('action');
+    var dataAjax = {data:data};
+    $.post(ajax, dataAjax, function (res) {
+        alert(res);
+        $('#modalController').modal('hide');
     });
     return false;
 })

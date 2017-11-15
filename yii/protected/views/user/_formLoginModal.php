@@ -18,7 +18,11 @@
 	                <?php echo $form->error($model,'password'); ?>
                 </div>
                 <div class="form-group">
-	                <?php echo CHtml::link('quên mật khẩu', '#') ?>
+	                <?php echo CHtml::link('quên mật khẩu', '#', array(
+	                        'class' => 'btn-modal',
+                            'data-action' => 'resetmail',
+                            'data-ajax' => Yii::app()->createUrl('user/ajax')
+                    )) ?>
 	                <?php echo CHtml::checkBox('autologin') ?>
                 </div>
                 <div class="form-group submit">
