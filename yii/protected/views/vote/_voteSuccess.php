@@ -10,7 +10,7 @@
             <div class="title-sucess">Chúc mừng bạn đã bình chọn thành công! Mã số bình chọn của bạn là:<span><?php echo $code ?></span></div>
             <form>
                 <div class="form-group facebook">
-                    <a href="#" class="btn">Chia sẻ<i class="fa fa-facebook" aria-hidden="true" style="margin-left: 8px;"></i></a>
+                    <a target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=<?php echo $linkProduct ?>" class="btn">Chia sẻ<i class="fa fa-facebook" aria-hidden="true" style="margin-left: 8px;"></i></a>
                 </div>
             </form>
         </div>

@@ -97,6 +97,7 @@ class VoteController extends Controller {
 		if ( isset( $_GET['action'] ) ) {
 			switch ( $_GET['action'] ) {
 				case 'voteModal':
+					/** @var  $mProduct Product*/
 					$product_id = $_GET['product_id'];
 					$mProduct = Product::model()->findByPk($product_id);
 					if ( !Yii::app()->user->isGuest ) {
@@ -108,7 +109,10 @@ class VoteController extends Controller {
 							$mVote->attributes = $data;
 							$result = $mVote->save();
 							if ( $result ) {
-								$this->renderPartial('_voteSuccess', ['code' => $mVote->code]);
+								$this->renderPartial('_voteSuccess', [
+									'code' => $mVote->code,
+									'linkProduct' => $mProduct->getUrl()
+								]);
 							}else {
 								$this->renderPartial('_voteFail');
 							}
