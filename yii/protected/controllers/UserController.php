@@ -130,6 +130,11 @@ class UserController extends Controller {
 			if ( isset($_GET['action']) && isset($_POST['Password']) && $_GET['action'] == 'password' ) {
 				$password = $_POST['Password'];
 				$is_check = 1;
+
+				if (empty($password)) {
+					$is_check = 0;
+				}
+
 				if ( $password['oldpassword'] == $model->password ) {
 					$messagePasswrord = 'Mat khau khong dung';
 					$is_check = 0;
@@ -173,8 +178,7 @@ class UserController extends Controller {
 								Yii::app()->end();
 							}
 						}
-						$result['html'] = $this->renderPartial( '_formLoginModal', array( 'model' => $model ) );
-						echo json_encode( $result );
+						$this->renderPartial( '_formLoginModal', array( 'model' => $model ) );
 					}
 					break;
 				case 'registerModal':
