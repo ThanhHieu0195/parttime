@@ -2408,3 +2408,7 @@ REQUEST_URI=/yii/index.php/social/user/profile
 HTTP_REFERER=http://localhost/yii/index.php/social/login
 ---
 2017/11/15 18:15:07 [warning] [application] Failed to set unsafe attribute "repassword" of "User".
+2017/11/15 18:50:02 [warning] [application] Failed to set unsafe attribute "id" of "UserLoginForm".
+2017/11/15 18:50:02 [warning] [application] Failed to set unsafe attribute "username" of "UserLoginForm".
+2017/11/15 18:50:02 [warning] [application] Failed to set unsafe attribute "profile" of "UserLoginForm".
+2017/11/15 18:50:02 [warning] [application] Failed to set unsafe attribute "role" of "UserLoginForm".

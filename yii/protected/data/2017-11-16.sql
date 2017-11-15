@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: localhost
--- Generation Time: Nov 14, 2017 at 04:13 PM
+-- Generation Time: Nov 15, 2017 at 06:51 PM
 -- Server version: 10.1.25-MariaDB
 -- PHP Version: 5.6.31
 
@@ -149,6 +149,25 @@ CREATE TABLE `tbl_prize` (
   `date_create` int(11) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
+--
+-- Dumping data for table `tbl_prize`
+--
+
+INSERT INTO `tbl_prize` (`id`, `user`, `option`, `type`, `date_create`) VALUES
+(1, 6, '{\"prize\":\"D\\u00e0n m\\u00e1y Samsung HW-J250\\/XV - KM\"}', 3, 1510704330),
+(2, 7, '{\"prize\":\"D\\u00e0n m\\u00e1y Samsung HW-J250\\/XV - KM\"}', 3, 1510704340),
+(3, 7, '{\"week\":\"1509922800\",\"prize\":\"D\\u00e0n m\\u00e1y Samsung HW-J250\\/XV - KM\", \"type\":\"1\",\"category\":\"6\"}', 2, 1509922800),
+(4, 6, '{\"week\":\"1510527600\",\"prize\":\"D\\u00e0n m\\u00e1y Samsung HW-J250\\/XV - KM\", \"type\":\"1\",\"category\":\"6\"}', 2, 1510527600),
+(5, 7, '{\"week\":\"1510527600\",\"prize\":\"D\\u00e0n m\\u00e1y Samsung HW-J250\\/XV - KM\", \"type\":\"1\",\"category\":\"6\"}', 2, 1510527600),
+(6, 7, '{\"week\":\"1510527600\",\"prize\":\"D\\u00e0n m\\u00e1y Samsung HW-J250\\/XV - KM\", \"type\":\"1\",\"category\":\"6\"}', 2, 1510527600),
+(7, 6, '{\"prize\":\"D\\u00e0n m\\u00e1y Samsung HW-J250\\/XV - KM\", \"type\":\"1\",\"category\":\"6\"}', 1, 1510704430),
+(8, 7, '{\"prize\":\"D\\u00e0n m\\u00e1y Samsung HW-J250\\/XV - KM\", \"type\":\"1\",\"category\":\"6\"}', 1, 1510704436),
+(9, 7, '{\"prize\":\"D\\u00e0n m\\u00e1y Samsung HW-J250\\/XV - KM\", \"type\":\"1\",\"category\":\"6\"}', 1, 1510704439),
+(10, 6, '{\"week\":\"1511737200\",\"prize\":\"100 C\\u00e2y v\\u00e0ng\",\"type\":\"3\"}', 2, 1511737200),
+(11, 6, '{\"week\":\"1511132400\",\"prize\":\"111\",\"type\":\"1\",\"category\":\"6\"}', 2, 1511737200),
+(12, 6, '{\"week\":\"1511132400\",\"prize\":\"111\",\"type\":\"1\",\"category\":\"6\"}', 2, 1511132400),
+(13, 6, '{\"week\":\"1511132400\",\"prize\":\"111\",\"type\":\"1\",\"category\":\"6\"}', 2, 1511132400);
+
 -- --------------------------------------------------------
 
 --
@@ -182,6 +201,25 @@ INSERT INTO `tbl_product` (`id`, `title`, `content`, `config`, `category`, `thum
 -- --------------------------------------------------------
 
 --
+-- Table structure for table `tbl_social`
+--
+
+CREATE TABLE `tbl_social` (
+  `id` int(11) NOT NULL,
+  `id_user` text CHARACTER SET utf8 COLLATE utf8_unicode_ci NOT NULL,
+  `config` text CHARACTER SET utf8 COLLATE utf8_unicode_ci NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table `tbl_social`
+--
+
+INSERT INTO `tbl_social` (`id`, `id_user`, `config`) VALUES
+(1, '864422863694475', '{\"action\":\"login\",\"type\":\"facebook\",\"username\":\"Hi\\u1ebfu Thanh\",\"id\":\"864422863694475\",\"session\":\"22qpdboagj78335k8fuk8lp2v0\"}');
+
+-- --------------------------------------------------------
+
+--
 -- Table structure for table `tbl_user`
 --
 
@@ -199,9 +237,10 @@ CREATE TABLE `tbl_user` (
 --
 
 INSERT INTO `tbl_user` (`id`, `username`, `password`, `email`, `profile`, `role`) VALUES
-(1, 'admin', '$2y$13$r1c4XDdtPLDqn.Uq9k39f.jCU9XFFhF.ZzTNoA.U.4NSADF49fH1K', 'admin@nghenhin.com', NULL, 1),
-(6, 'Hieutct', '$2y$13$r1c4XDdtPLDqn.Uq9k39f.jCU9XFFhF.ZzTNoA.U.4NSADF49fH1K', 'tcthanhhieu@gmail.com', '{\"username\":\"Hieutct\",\"phone\":\"0973334905\",\"email\":\"tcthanhhieu@gmail.com\",\"code\":\"273532118\",\"address\":\"606, 3\\/2\"}', 2),
-(7, 'thanhhieu0195', '$2y$13$MMnv1WJ8B0ksZh1NZbkUNe.1gSERJgXFJpleANG/0x.2pL/Ytwuce', 'thanhhieu0195@gmail.com', NULL, 2);
+(1, 'admin', '$2y$13$MMnv1WJ8B0ksZh1NZbkUNe.1gSERJgXFJpleANG/0x.2pL/Ytwuce', 'admin@nghenhin.com', NULL, 1),
+(6, 'Nguyễn Thế Anh', '$2y$13$8e9Zxx5E.1VuIKb6UVyvdepBj4WZ1NrprPWxuQ3YNN9p677AOH2U2', 'tcthanhhieu@gmail.com', '{\"username\":\"Hieutct\",\"phone\":\"016489879\",\"email\":\"tcthanhhieu@gmail.com\",\"code\":\"273532118\",\"address\":\"606, 3\\/2\"}', 2),
+(7, 'Trần Cao Thanh Hiếu', '$2y$13$MMnv1WJ8B0ksZh1NZbkUNe.1gSERJgXFJpleANG/0x.2pL/Ytwuce', 'thanhhieu0195@gmail.com', '{\"username\":\"Hieutct\",\"phone\":\"0973334905\",\"email\":\"tcthanhhieu@gmail.com\",\"code\":\"273532118\",\"address\":\"606, 3\\/2\"}', 2),
+(8, '864422863694475', '$2y$13$phBpR1y1m/KUAtu05ubBjeHsITzohBRZRtlFaDiwtvNXVkt/xI6Z2', '864422863694475@facebook.com', NULL, 2);
 
 -- --------------------------------------------------------
 
@@ -217,6 +256,18 @@ CREATE TABLE `tbl_vote` (
   `product` int(11) NOT NULL,
   `date_create` int(11) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table `tbl_vote`
+--
+
+INSERT INTO `tbl_vote` (`id`, `code`, `content`, `author`, `product`, `date_create`) VALUES
+(1, 'HTFvliPZ_x', 'dòng máy nhìn rất thời trang, trẻ trung, kiểu dáng sang trọng. Bộ nhớ trong lớn. Độ phân giải cao nên loát hình rất nhanh và\r\nsắc nét. Camera chụp ảnh rất đẹp.', 6, 5, 1510679203),
+(2, 'BdmmkoOmZG', 'dòng máy nhìn rất thời trang, trẻ trung, kiểu dáng sang trọng. Bộ nhớ trong lớn. Độ phân giải cao nên loát hình rất nhanh và\r\nsắc nét. Camera chụp ảnh rất đẹp.', 6, 5, 1510679273),
+(3, 'zhkLoBpus6', 'dòng máy nhìn rất thời trang, trẻ trung, kiểu dáng sang trọng. Bộ nhớ trong lớn. Độ phân giải cao nên loát hình rất nhanh và\r\nsắc nét. Camera chụp ảnh rất đẹp.', 7, 8, 1510679337),
+(4, 'foDG71SFIN', 'dòng máy nhìn rất thời trang, trẻ trung, kiểu dáng sang trọng. Bộ nhớ trong lớn. Độ phân giải cao nên loát hình rất nhanh và\r\nsắc nét. Camera chụp ảnh rất đẹp.', 7, 11, 1510679431),
+(5, 'Rykawd~~8G', 'dòng máy nhìn rất thời trang, trẻ trung, kiểu dáng sang trọng. Bộ nhớ trong lớn. Độ phân giải cao nên loát hình rất nhanh và\r\nsắc nét. Camera chụp ảnh rất đẹp.', 6, 5, 1510679787),
+(6, 'r12A9UeKf2', 'dòng máy nhìn rất thời trang, trẻ trung, kiểu dáng sang trọng. Bộ nhớ trong lớn. Độ phân giải cao nên loát hình rất nhanh và\r\nsắc nét. Camera chụp ảnh rất đẹp.', 7, 8, 1510680003);
 
 --
 -- Indexes for dumped tables
@@ -271,6 +322,12 @@ ALTER TABLE `tbl_product`
   ADD KEY `tbl_product_cat` (`category`);
 
 --
+-- Indexes for table `tbl_social`
+--
+ALTER TABLE `tbl_social`
+  ADD PRIMARY KEY (`id`);
+
+--
 -- Indexes for table `tbl_user`
 --
 ALTER TABLE `tbl_user`
@@ -317,22 +374,27 @@ ALTER TABLE `tbl_post`
 -- AUTO_INCREMENT for table `tbl_prize`
 --
 ALTER TABLE `tbl_prize`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=14;
 --
 -- AUTO_INCREMENT for table `tbl_product`
 --
 ALTER TABLE `tbl_product`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=12;
 --
+-- AUTO_INCREMENT for table `tbl_social`
+--
+ALTER TABLE `tbl_social`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+--
 -- AUTO_INCREMENT for table `tbl_user`
 --
 ALTER TABLE `tbl_user`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=8;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=9;
 --
 -- AUTO_INCREMENT for table `tbl_vote`
 --
 ALTER TABLE `tbl_vote`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
 --
 -- Constraints for dumped tables
 --

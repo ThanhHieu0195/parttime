@@ -11,7 +11,7 @@ class Facebook extends CWidget{
     public $xfbml  = true;
     public $oauth  = true;
     public $userSession;
-    public $facebookButtonTitle = "Facebook Connect";
+    public $facebookButtonTitle = "Kết Nối Với Facebook";
     public $fbLoginButtonId     = "fb_login_button_id";
     public $logoutButtonId      = "your_logout_button_id";
     public $facebookLoginUrl    = "social/login";
