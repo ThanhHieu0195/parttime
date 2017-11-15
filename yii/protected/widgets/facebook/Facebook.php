@@ -35,6 +35,7 @@ class Facebook extends CWidget{
     */
     private function renderJavascript()
     {
+    	$profileUrl = Yii::app()->createUrl('user/profile');
 $script=<<<EOL
         window.fbAsyncInit = function() {
             FB.init({   appId: '{$this->appId}', 
@@ -53,27 +54,24 @@ $script=<<<EOL
                                     if(response.authResponse) {
                                             FB.api('/me', function(user) {
                                                 console.log(user);
-                                                console.log(email);
                                                 $.ajax({
                                                     type : 'get',
                                                     url  : '{$this->facebookLoginUrl}',
                                                     data : ( { 
+                                                        action   : 'login',
+                                                        type   : 'facebook',
                                                         name     :   user.first_name, 
                                                         surname  :   user.last_name,
                                                         username :   user.name,
-                                                        id       :   user.userID, 
+                                                        id       :   user.id, 
                                                         email    :   user.email, 
                                                         session  :   "{$this->userSession}" 
                                                     } ),
                                                     dataType : 'json',
                                                     success : function( data ){
-                                                        console.log(data);
-//                                                        if( data.error == 0){
-//                                                            window.location.href = data.redirect;
-//                                                        }else{
-//                                                            alert( data.error );
-//                                                            FB.logout();
-//                                                        }
+                                                        if (data=1) {
+                                                            window.location="{$profileUrl}";
+                                                        }
                                                     }
                                                 });
 

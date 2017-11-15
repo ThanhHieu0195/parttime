@@ -3,12 +3,12 @@
 /**
  * Class Vote
  * @property integer $id
- * @property string $data
+ * @property string $config
  */
 class Social extends CActiveRecord {
 	public function rules() {
 		return array(
-			array('data', 'required'),
+			array('id_user, config', 'required'),
 		);
 	}
 
@@ -34,12 +34,22 @@ class Social extends CActiveRecord {
 	public function attributeLabels() {
 		return array(
 			'id'       => 'Id',
-			'data' => 'Data',
+			'id_user'       => 'Id User',
+			'config' => 'Config',
 		);
 	}
 
 	protected function beforeSave() {
-		$this->id = time();
+		return true;
+	}
+
+	public function save() {
+		$is_save = parent::save();
+		return $is_save;
+	}
+
+	public static function getAddress($id_user) {
+		return $id_user.'@facebook.com';
 	}
 
 }

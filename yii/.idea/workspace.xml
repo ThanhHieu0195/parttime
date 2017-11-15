@@ -24,41 +24,31 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="Facebook.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/protected/widgets/facebook/Facebook.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="288">
-              <caret line="16" column="41" lean-forward="false" selection-start-line="16" selection-start-column="41" selection-end-line="16" selection-end-column="41" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="SocialController.php" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/protected/controllers/SocialController.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="54">
-              <caret line="3" column="29" lean-forward="false" selection-start-line="3" selection-start-column="29" selection-end-line="3" selection-end-column="29" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="login.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/protected/views/social/login.php">
+        <entry file="file://$PROJECT_DIR$/protected/widgets/facebook/views/login.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="54">
-              <caret line="3" column="2" lean-forward="true" selection-start-line="3" selection-start-column="2" selection-end-line="3" selection-end-column="2" />
+            <state relative-caret-position="18">
+              <caret line="1" column="0" lean-forward="false" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Social.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/protected/models/Social.php">
+      <file leaf-file-name="_formLoginModal.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/protected/views/user/_formLoginModal.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="136">
-              <caret line="27" column="18" lean-forward="true" selection-start-line="27" selection-start-column="18" selection-end-line="27" selection-end-column="24" />
+            <state relative-caret-position="251">
+              <caret line="27" column="15" lean-forward="false" selection-start-line="27" selection-start-column="15" selection-end-line="29" selection-end-column="22" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="_formRegisterModal.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/protected/views/user/_formRegisterModal.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="273">
+              <caret line="34" column="18" lean-forward="false" selection-start-line="34" selection-start-column="18" selection-end-line="34" selection-end-column="18" />
               <folding />
             </state>
           </provider>
@@ -76,11 +66,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>checkoutSubcription</find>
-      <find>lema_payment_gateways</find>
-      <find>payment_gateway</find>
-      <find>function payAnything</find>
-      <find>$sandbox</find>
       <find>checkout_url</find>
       <find>lema-marketplace.css</find>
       <find>lema-maketplace-instructor</find>
@@ -106,6 +91,11 @@
       <find>nav nav-pills left</find>
       <find>category</find>
       <find>social</find>
+      <find>$data</find>
+      <find>userSession</find>
+      <find>validatePassword</find>
+      <find>hashPassword</find>
+      <find>fb_login_button_id</find>
     </findStrings>
     <replaceStrings>
       <replace>$product</replace>
@@ -115,6 +105,7 @@
       <replace>lema-marketplace-instructor</replace>
       <replace>$criteriaTab</replace>
       <replace>$$criteria</replace>
+      <replace>$config</replace>
     </replaceStrings>
     <dirStrings>
       <dir>$PROJECT_DIR$/protected/components</dir>
@@ -125,7 +116,6 @@
       <dir>$PROJECT_DIR$/protected/controllers</dir>
       <dir>/home/hieutct/syn/lema-maketplace-instructor</dir>
       <dir>$PROJECT_DIR$/protected/views</dir>
-      <dir>$PROJECT_DIR$</dir>
       <dir>$PROJECT_DIR$/../wp-education/wp-content/plugins/lema-maketplace-instructor</dir>
       <dir>$PROJECT_DIR$/../wp-education/wp-content/plugins/lema-maketplace-instructor/includes/classes/front/views/dashboard</dir>
       <dir>$PROJECT_DIR$/../wp-education/wp-content/plugins/lema-maketplace-instructor/includes/classes/front/views</dir>
@@ -134,6 +124,7 @@
       <dir>$PROJECT_DIR$/../wp-education/wp-content/plugins/learnmaster</dir>
       <dir>$PROJECT_DIR$/../wp-education/wp-content/plugins/lema-marketplace-instructor</dir>
       <dir>$PROJECT_DIR$/protected</dir>
+      <dir>$PROJECT_DIR$</dir>
     </dirStrings>
   </component>
   <component name="Git.Settings">
@@ -142,11 +133,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/protected/models/User.php" />
-        <option value="$PROJECT_DIR$/protected/views/product/index.php" />
-        <option value="$PROJECT_DIR$/protected/views/vote/_itemVote.php" />
-        <option value="$PROJECT_DIR$/protected/views/user/profile.php" />
-        <option value="$PROJECT_DIR$/protected/views/vote/listvote.php" />
         <option value="$PROJECT_DIR$/protected/controllers/UserController.php" />
         <option value="$PROJECT_DIR$/javascripts/modal.js" />
         <option value="$PROJECT_DIR$/../wp-education/wp-content/plugins/lema-maketplace-instructor/includes/classes/admin/views/paymentrequest/_box_instructor.php" />
@@ -190,9 +176,14 @@
         <option value="$PROJECT_DIR$/protected/views/product/view.php" />
         <option value="$PROJECT_DIR$/protected/models/Facebook.php" />
         <option value="$PROJECT_DIR$/protected/controllers/FacebookController.php" />
-        <option value="$PROJECT_DIR$/protected/widgets/facebook/Facebook.php" />
+        <option value="$PROJECT_DIR$/protected/views/social/login.php" />
         <option value="$PROJECT_DIR$/protected/models/Social.php" />
+        <option value="$PROJECT_DIR$/protected/models/UserLoginForm.php" />
         <option value="$PROJECT_DIR$/protected/controllers/SocialController.php" />
+        <option value="$PROJECT_DIR$/protected/widgets/facebook/Facebook.php" />
+        <option value="$PROJECT_DIR$/protected/widgets/facebook/views/login.php" />
+        <option value="$PROJECT_DIR$/protected/views/user/_formLoginModal.php" />
+        <option value="$PROJECT_DIR$/protected/views/user/_formRegisterModal.php" />
       </list>
     </option>
   </component>
@@ -256,18 +247,6 @@
               <item name="yii" type="b2602c69:ProjectViewProjectNode" />
               <item name="yii" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="protected" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="controllers" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="yii" type="b2602c69:ProjectViewProjectNode" />
-              <item name="yii" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="protected" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="models" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="yii" type="b2602c69:ProjectViewProjectNode" />
-              <item name="yii" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="protected" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="views" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
             <path>
@@ -275,7 +254,28 @@
               <item name="yii" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="protected" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="views" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="social" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="user" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="yii" type="b2602c69:ProjectViewProjectNode" />
+              <item name="yii" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="protected" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="widgets" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="yii" type="b2602c69:ProjectViewProjectNode" />
+              <item name="yii" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="protected" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="widgets" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="facebook" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="yii" type="b2602c69:ProjectViewProjectNode" />
+              <item name="yii" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="protected" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="widgets" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="facebook" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="views" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
           </expand>
           <select />
@@ -357,12 +357,12 @@
       <workItem from="1510625280883" duration="12199000" />
       <workItem from="1510644028271" duration="13085000" />
       <workItem from="1510664490820" duration="52150000" />
-      <workItem from="1510748338933" duration="11491000" />
+      <workItem from="1510748338933" duration="17005000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="188256000" />
+    <option name="totallyTimeSpent" value="193770000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-378" y="-38" width="1368" height="780" extended-state="6" />
@@ -387,6 +387,26 @@
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
+    <layout-to-restore>
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32882884" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Thumbnails" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32882884" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24963397" sideWeight="0.49401197" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24963397" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24963397" sideWeight="0.505988" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+    </layout-to-restore>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
@@ -404,62 +424,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/../wp-education/wp-content/plugins/learnmaster/vendor/paypal/merchant-sdk-php/lib/PayPal/Service/PayPalAPIInterfaceServiceService.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="18">
-          <caret line="79" column="20" lean-forward="false" selection-start-line="79" selection-start-column="20" selection-end-line="79" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../wp-education/wp-content/plugins/lema-marketplace-instructor/static/styles/lema-mkins.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-2539">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../wp-education/wp-content/plugins/learnmaster/extensions/paypal/PaypalExtension.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="175">
-          <caret line="112" column="56" lean-forward="false" selection-start-line="112" selection-start-column="56" selection-end-line="112" selection-end-column="56" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../wp-education/wp-content/plugins/learnmaster/functions.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="419">
-          <caret line="174" column="40" lean-forward="false" selection-start-line="174" selection-start-column="29" selection-end-line="174" selection-end-column="40" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../wp-education/wp-content/plugins/lema-subscription/includes/classes/Hooks.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="224">
-          <caret line="155" column="45" lean-forward="false" selection-start-line="155" selection-start-column="45" selection-end-line="155" selection-end-column="45" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../wp-education/wp-content/plugins/lema-subscription/includes/classes/templates/modalPrice.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../wp-education/wp-content/plugins/lema-marketplace-instructor/includes/classes/models/RequestPaymentModel.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-901">
-          <caret line="130" column="7" lean-forward="false" selection-start-line="130" selection-start-column="7" selection-end-line="130" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../wp-education/wp-content/plugins/lema-subscription/includes/classes/shortcodes/PriceShortcode/views/buttonItem.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="72">
-          <caret line="4" column="62" lean-forward="false" selection-start-line="4" selection-start-column="46" selection-end-line="4" selection-end-column="62" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/../wp-education/wp-content/plugins/lema-subscription/static/scripts/lema-subcription.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="355">
@@ -555,14 +519,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="283">
           <caret line="287" column="28" lean-forward="false" selection-start-line="287" selection-start-column="23" selection-end-line="287" selection-end-column="28" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/protected/models/User.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="144">
-          <caret line="8" column="21" lean-forward="false" selection-start-line="8" selection-start-column="21" selection-end-line="8" selection-end-column="28" />
           <folding />
         </state>
       </provider>
@@ -759,34 +715,124 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/protected/widgets/facebook/Facebook.php">
+    <entry file="file://$PROJECT_DIR$/framework/yiilite.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="288">
-          <caret line="16" column="41" lean-forward="false" selection-start-line="16" selection-start-column="41" selection-end-line="16" selection-end-column="41" />
+        <state relative-caret-position="176">
+          <caret line="8113" column="5" lean-forward="true" selection-start-line="8113" selection-start-column="5" selection-end-line="8113" selection-end-column="5" />
+          <folding>
+            <marker date="1510389358946" expanded="true" signature="266426:266503" ph="CREATE TABLE... ${$this-&gt;quoteTableName($table)}" />
+            <marker date="1510389358946" expanded="true" signature="266763:266774" ph="DROP TABLE $... " />
+            <marker date="1510389358946" expanded="true" signature="266975:267072" ph="ALTER TABLE ${$this-&gt;quoteTableName($table)}... " />
+            <marker date="1510389358946" expanded="true" signature="267168:267230" ph="ALTER TABLE ${$this-&gt;quoteTableName($table)}... " />
+            <marker date="1510389358946" expanded="true" signature="267334:267441" ph="ALTER TABLE ${$this-&gt;quoteTableName($table)}... " />
+            <marker date="1510389358946" expanded="true" signature="267544:267687" ph="ALTER TABLE ${$this-&gt;quoteTableName($table)}... " />
+            <marker date="1510389358946" expanded="true" signature="268200:268434" ph="ALTER TABLE ${$this-&gt;quoteTableName($table)}... " />
+            <marker date="1510389358946" expanded="true" signature="268620:268686" ph="ALTER TABLE ${$this-&gt;quoteTableName($table)}... " />
+            <marker date="1510389358946" expanded="true" signature="269587:269741" ph="ALTER TABLE ${$this-&gt;quoteTableName($table)}... " />
+            <marker date="1510389358946" expanded="true" signature="269806:269872" ph="ALTER TABLE ${$this-&gt;quoteTableName($table)}... " />
+            <marker date="1510389358946" expanded="true" signature="270644:270684" ph="SELECT MAX(`... $" />
+            <marker date="1510389358946" expanded="true" signature="270842:270909" ph="UPDATE sqlit... " />
+            <marker date="1510389358946" expanded="true" signature="271176:271253" ph="SELECT DISTI... sqlite_master" />
+            <marker date="1510389358946" expanded="true" signature="273315:273375" ph="ALTER TABLE ${$this-&gt;quoteTableName($table)}... " />
+            <marker date="1510389358946" expanded="true" signature="273467:273479" ph="DELETE FROM " />
+            <marker date="1510389358946" expanded="true" signature="292029:292174" ph="INSERT INTO ${$this-&gt;_connection-&gt;quoteTableName($table)}... " />
+            <marker date="1510389358946" expanded="true" signature="292998:293010" ph="DELETE FROM " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/framework/utils/CPasswordHelper.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="247">
+          <caret line="91" column="27" lean-forward="false" selection-start-line="91" selection-start-column="27" selection-end-line="91" selection-end-column="27" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/protected/views/social/login.php">
+    <entry file="file://$PROJECT_DIR$/protected/controllers/UserController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="54">
-          <caret line="3" column="2" lean-forward="true" selection-start-line="3" selection-start-column="2" selection-end-line="3" selection-end-column="2" />
+        <state relative-caret-position="597">
+          <caret line="175" column="50" lean-forward="true" selection-start-line="175" selection-start-column="50" selection-end-line="175" selection-end-column="50" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/protected/widgets/facebook/Facebook.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="152">
+          <caret line="70" column="79" lean-forward="true" selection-start-line="70" selection-start-column="79" selection-end-line="70" selection-end-column="79" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/protected/models/Social.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="27" column="18" lean-forward="true" selection-start-line="27" selection-start-column="18" selection-end-line="27" selection-end-column="24" />
+        <state relative-caret-position="810">
+          <caret line="45" column="28" lean-forward="true" selection-start-line="45" selection-start-column="28" selection-end-line="45" selection-end-column="28" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/protected/views/social/login.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="36">
+          <caret line="2" column="0" lean-forward="false" selection-start-line="2" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/protected/models/User.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1512">
+          <caret line="84" column="40" lean-forward="false" selection-start-line="84" selection-start-column="40" selection-end-line="84" selection-end-column="40" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/protected/components/UserIdentity.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="486">
+          <caret line="27" column="20" lean-forward="false" selection-start-line="27" selection-start-column="20" selection-end-line="27" selection-end-column="20" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/protected/models/UserLoginForm.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1044">
+          <caret line="67" column="37" lean-forward="false" selection-start-line="67" selection-start-column="37" selection-end-line="67" selection-end-column="37" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/protected/controllers/SocialController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="54">
-          <caret line="3" column="29" lean-forward="false" selection-start-line="3" selection-start-column="29" selection-end-line="3" selection-end-column="29" />
+        <state relative-caret-position="810">
+          <caret line="45" column="0" lean-forward="false" selection-start-line="45" selection-start-column="0" selection-end-line="45" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/protected/widgets/facebook/views/login.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="18">
+          <caret line="1" column="0" lean-forward="false" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/protected/views/user/_formLoginModal.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="251">
+          <caret line="27" column="15" lean-forward="false" selection-start-line="27" selection-start-column="15" selection-end-line="29" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/protected/views/user/_formRegisterModal.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="273">
+          <caret line="34" column="18" lean-forward="false" selection-start-line="34" selection-start-column="18" selection-end-line="34" selection-end-column="18" />
           <folding />
         </state>
       </provider>
