@@ -37,9 +37,9 @@
 					'template'=>"{items}\n{pager}",
 				)); ?>
 
-				<div class="button">
-					<a href="#" class="btn-c">xem ngay<i class="fa fa-angle-down" aria-hidden="true"></i></a>
-				</div>
+<!--				<div class="button">-->
+<!--					<a href="#" class="btn-c">xem ngay<i class="fa fa-angle-down" aria-hidden="true"></i></a>-->
+<!--				</div>-->
 			</div>
 		</div>
 	</div>

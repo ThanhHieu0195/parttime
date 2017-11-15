@@ -89,7 +89,9 @@ class Category extends CActiveRecord
 
 	public static function getNameFullCategory($catId) {
 		$cat = self::model()->findByPk($catId);
-		$catParent = self::model()->findByPk($cat->parent);
+		if ( !empty($cat) ) {
+			$catParent = self::model()->findByPk($cat->parent);
+		}
 		$name = '';
 		if ( isset($catParent->name) ) {
 			$name .= $catParent->name . ' ';

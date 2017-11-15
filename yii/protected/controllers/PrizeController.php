@@ -32,6 +32,14 @@ class PrizeController extends Controller {
 		if ( isset($_GET['action']) && isset($_POST['Prize']) ) {
 			$action = $_GET['action'];
 			$data = $_POST['Prize'];
+			if ( isset($_POST['type']) && $_POST['type'] ) {
+				$data['option']['type'] = $_POST['type'];
+			}
+
+			if ( isset($_POST['category']) && $_POST['category'] ) {
+				$data['option']['category'] = $_POST['category'];
+			}
+
 			switch ($action) {
 				case '_miniForm':
 					if ($model->saveTypeMini($data)) {
@@ -92,12 +100,12 @@ class PrizeController extends Controller {
 		}
 		$params[':type'] =$typeCurrent;
 
-//
-//		if ($typeCurrent == Prize::TYPE_MEDIUM || $typeCurrent == Prize::TYPE_SPECIAL) {
-//			$criteria->addCondition('date_create > :time');
-//			$day = Helper::getDateInWeek();
-//			$params[':time'] = strtotime(date($day.'/m/Y'));
-//		}
+
+		if ($typeCurrent == Prize::TYPE_MEDIUM || $typeCurrent == Prize::TYPE_SPECIAL) {
+			$criteria->addCondition('date_create >= :time');
+			$day = Helper::getDateInWeek();
+			$params[':time'] = strtotime(date($day.'/m/Y'));
+		}
 		$criteria->params = $params;
 		$dataProvider=new CActiveDataProvider('Prize', array(
 			'pagination'=>array(

@@ -6,18 +6,21 @@
 			<button type="submit" class="btn search-submit" value="Search"> </button>
 		</form>
 	</div>
-
+    <div class="represent-img">
+        <div class="block-image"><?php echo CHtml::image(Yii::app()->request->BaseUrl . '/uploads/imgs/group-3.png')?></div>
+    </div>
 	<div class="list-winner">
 		<table style="width:100%">
 			<tr>
 				<th>STT</th>
 				<th>HỌ VÀ TÊN</th>
 				<th>SỐ ĐIỆN THOẠI</th>
-				<th>GIẢI THƯỞNG</th>
+                <th>HẠNG MỤC</th>
+                <th>GIẢI THƯỞNG</th>
 			</tr>
 			<?php $this->widget('zii.widgets.CListView', array(
 				'dataProvider'=>$dataProvider,
-				'itemView'=>'_itemPrize',
+				'itemView'=>'_itemSpecial',
 				'template'=>"{items}\n{pager}",
 			)); ?>
 		</table>

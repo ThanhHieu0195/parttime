@@ -24,7 +24,7 @@ if ($week == 1) {
                 <td><?php echo $i+1 ?></td>
                 <td><?php echo $prize->getDataUser('username') ?></td>
                 <td><?php echo isset($optionUser['phone']) ? $optionUser['phone'] : '' ?></td>
-                <td>Điện thoại cao cấp tốt nhất</td>
+                <td><?php echo Category::getNameFullCategory($prize->getDataOption('category')) ?></td>
                 <td><?php echo $prize->getDataOption('prize') ?></td>
             </tr>
             <?php endfor;?>

@@ -14,7 +14,7 @@ class Facebook extends CWidget{
     public $facebookButtonTitle = "Facebook Connect";
     public $fbLoginButtonId     = "fb_login_button_id";
     public $logoutButtonId      = "your_logout_button_id";
-    public $facebookLoginUrl    = "facebook/login";
+    public $facebookLoginUrl    = "social/login";
     public $facebookPermissions = "email, public_profile, user_friends";
     
 	
