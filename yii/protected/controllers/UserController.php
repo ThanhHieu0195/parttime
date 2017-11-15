@@ -172,9 +172,7 @@ class UserController extends Controller {
 							$model             = new UserLoginForm();
 							$model->attributes = $user;
 							if ( $model->validate() && $model->login() ) {
-								$result['status'] = 1;
-								$result['href']   = $this->createUrl( 'profile' );
-								echo json_encode( $result );
+								echo '1'.$this->createUrl( 'profile' );
 								Yii::app()->end();
 							}
 						}

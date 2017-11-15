@@ -4,5 +4,6 @@
     <mapping directory="/home/hieutct/syn/lema-maketplace-instructor" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/../wp-education/wp-content/plugins/learnmaster" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/../wp-education/wp-content/plugins/lema-maketplace-instructor" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/../wp-education/wp-content/plugins/lema-subscription" vcs="Git" />
   </component>
 </project>

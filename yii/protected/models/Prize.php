@@ -61,4 +61,31 @@ class Prize extends CActiveRecord {
 		return $this->save();
 	}
 
+	public function getDataUser($field='all', $default='') {
+		$user = User::model()->findByPk($this->user);
+		if ($field == 'all') {
+			return $user;
+		}
+		if ( isset($user->{$field}) && $user->{$field} ) {
+			return $user->{$field};
+		}
+		return $default;
+	}
+
+	public function getDataOption($field='all', $default='') {
+		if ( empty($this->option) ) {
+			return $default;
+		}
+
+		$option = json_decode($this->option, true);
+
+		if ( $field == 'all') {
+			return $option;
+		}
+
+		if ( key_exists($field, $option) ) {
+			return $option[$field];
+		}
+		return $default;
+	}
 }

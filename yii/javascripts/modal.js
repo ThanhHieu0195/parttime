@@ -37,11 +37,11 @@ $(document).on('submit', '#form-modal-login', function () {
     var ajax = form.attr('action');
     var dataAjax = {data:data};
     $.post(ajax, dataAjax, function (res) {
-        var json = $.parseJSON(res);
-        if (json.status == 1) {
-            window.location = json.href;
+        var data = res.match('^1(.*)');
+        if (data != null ) {
+            window.location = data[1];
         }
-        form.parents('#modalController').html(json.html);
+        form.parents('#modalController').html(res);
     });
     return false;
 })
