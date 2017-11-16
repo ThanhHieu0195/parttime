@@ -559,3 +559,27 @@ ul.yiiPager .selected a {
   font-weight: bold;
   border: 0;
 }
+
+/*----------  custom  ----------*/
+.pager ul.yiiPager a:link,
+.pager ul.yiiPager a:visited {
+  border: none;
+  color: #333;
+}
+
+.pager ul.yiiPager .selected a {
+  background-color: transparent;
+  color: #333;
+}
+
+.pager ul.yiiPager .page a:after {
+  bottom: -10px;
+}
+
+.pager ul.yiiPager li {
+  margin: 0 7px;
+}
+
+.pager ul.yiiPager .page a:after {
+  left: calc(50% + 1px);
+}

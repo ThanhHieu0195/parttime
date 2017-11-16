@@ -2,7 +2,10 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file:///home/hieutct/syn/learn-master/.idea/learnmaster.iml" filepath="/home/hieutct/syn/learn-master/.idea/learnmaster.iml" />
+      <module fileurl="file:///home/hieutct/syn/lema-maketplace-instructor/.idea/lema-maketplace-instructor.iml" filepath="/home/hieutct/syn/lema-maketplace-instructor/.idea/lema-maketplace-instructor.iml" />
       <module fileurl="file://$PROJECT_DIR$/../test/.idea/test.iml" filepath="$PROJECT_DIR$/../test/.idea/test.iml" />
+      <module fileurl="file:///home/hieutct/syn/wordpress/.idea/wordpress.iml" filepath="/home/hieutct/syn/wordpress/.idea/wordpress.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/yii.iml" filepath="$PROJECT_DIR$/.idea/yii.iml" />
     </modules>
   </component>
