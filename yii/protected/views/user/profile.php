@@ -41,7 +41,7 @@ $this->breadcrumbs = array(
 	            <?php $this->endWidget() ?>
             </div>
 
-
+            <?php if ($model->haveResetPassword() ):  ?>
             <div class="changePass">
                 <div class="sub-title">Thay đổi mật khẩu</div>
 	            <?php $this->beginWidget('CActiveForm', ['action' => $this->createUrl('profile', array('action' => 'password'))]) ?>
@@ -56,6 +56,7 @@ $this->breadcrumbs = array(
                     <button type="submit">Lưu thay đổi</button>
 	            <?php $this->endWidget() ?>
             </div>
+            <?php endif; ?>
         </div>
 
         <div role="tabpanel" class="tab-pane" id="vote">

@@ -157,4 +157,13 @@ class User extends CActiveRecord
 		}
 		return $userIds;
 	}
+
+	public function isAccountFacebook() {
+		$email = $this->email;
+		return preg_match('/(.*)@facebook.com/', $email);
+	}
+
+	public function haveResetPassword() {
+		return !$this->isAccountFacebook();
+	}
 }
