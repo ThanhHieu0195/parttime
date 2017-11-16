@@ -293,6 +293,17 @@ padding: 5px 0;
 .portlet-content li a:hover {
 	text-decoration: none;
 }
+#form-modal-reset input {
+	width: 100%;
+	height: 30px;
+	padding: 5px;
+}
+#content h1 {
+	text-align: center;
+	text-transform: uppercase;
+	color: #4285F4;
+	font-weight: 700;
+}
 /*
 .form-toggle:before, .form-toggle:after {
 	content: '';
