@@ -9,6 +9,12 @@ $(document).on('click', '.btn-modal', function () {
                 $('#modalController').modal('show');
             });
             break;
+        case 'resetmail':
+            $.get(ajax+'?action=resetMailModal', function (res) {
+                $('#modalController').html(res);
+                $('#modalController').modal('show');
+            });
+            break;
         case 'register':
             $.get(ajax+'?action=registerModal', function (res) {
                 $('#modalController').html(res);
@@ -37,11 +43,11 @@ $(document).on('submit', '#form-modal-login', function () {
     var ajax = form.attr('action');
     var dataAjax = {data:data};
     $.post(ajax, dataAjax, function (res) {
-        var json = $.parseJSON(res);
-        if (json.status == 1) {
-            window.location = json.href;
+        var data = res.match('^1(.*)');
+        if (data != null ) {
+            window.location = data[1];
         }
-        form.parents('#modalController').html(json.html);
+        form.parents('#modalController').html(res);
     });
     return false;
 })
@@ -57,6 +63,33 @@ $(document).on('submit', '#form-modal-register', function () {
     return false;
 })
 
-$('document').on('submit', '#form-modal-vote', function () {
-
+$(document).on('submit', '#form-modal-vote', function () {
+    var form = $('#form-modal-vote');
+    var data = form.serialize();
+    var ajax = form.attr('action');
+    var dataAjax = {data:data};
+    $.post(ajax, dataAjax, function (res) {
+        form.parents('#modalController').html(res);
+    });
+    return false;
 })
+
+$(document).on('submit', '#form-modal-reset', function () {
+    var form = $('#form-modal-reset');
+    var data = form.serialize();
+    var ajax = form.attr('action');
+    var dataAjax = {data:data};
+    $.post(ajax, dataAjax, function (res) {
+        alert(res);
+        $('#modalController').modal('hide');
+    });
+    return false;
+})
+
+var w_href = window.location.href;
+var scrolls = w_href.match('auto_scroll=(.*)$');
+if (scrolls != null) {
+    $('html,body').animate({
+            scrollTop: $('#'+scrolls[1]).offset().top},
+        'slow');
+}

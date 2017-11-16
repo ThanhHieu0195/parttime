@@ -30,15 +30,15 @@
 					<input type="submit" name="register" value="Đăng ký">
 				</div>
 				<div class="form-group or">Hoặc</div>
-				<div class="form-group facebook">
-					<a href="#" class="btn"><i class="fa fa-facebook" aria-hidden="true"></i>Đăng nhập bằng Facebook</a>
-				</div>
+            <div class="form-group facebook">
+                <a href="<?php echo Yii::app()->createUrl('social/login?auto_scroll=content') ?>" class="btn"><i class="fa fa-facebook" aria-hidden="true"></i>Đăng nhập bằng Facebook</a>
+            </div>
 				<div class="form-group google">
 					<a href="#" class="btn"><i class="fa fa-google-plus" aria-hidden="true"></i>Đăng nhập bằng Google</a>
 				</div>
 				<div class="form-group or">Đã có tài khoản</div>
 				<div class="form-group submit">
-					<input type="submit" name="yt0" value="Đăng ký">
+					<input class="btn-modal" type="submit" name="yt0" value="Đăng nhập" data-action="login" data-ajax="<?php echo Yii::app()->createUrl('user/ajax') ?>">
 				</div>
 			<?php $this->endWidget(); ?>
 		</div>

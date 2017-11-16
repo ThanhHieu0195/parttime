@@ -67,4 +67,8 @@ class Helper implements HelperTemplate {
 		}
 		return $text;
 	}
+
+	public static function getLogo() {
+		return CHtml::image(Yii::app()->request->BaseUrl . '/uploads/imgs/logo-1.png');
+	}
 }

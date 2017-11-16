@@ -14,6 +14,8 @@ class User extends CActiveRecord
 	const ROLE_ADMIN = 1;
 	const ROLE_MEMBER = 2;
 
+	const USER_EMPTY = -1;
+
 	/**
 	 * Returns the static model of the specified AR class.
 	 * @return static the static model class
@@ -141,5 +143,18 @@ class User extends CActiveRecord
 			}
 		}
 		return $arr;
+	}
+
+	public static function findUsersLikeName($username) {
+		/** @var  $criteria CDbCriteria */
+		$criteria = new CDbCriteria();
+		$userIds = [];
+		$criteria->addCondition('username like :username');
+		$criteria->params = array(':username' => '%' . $username . '%');
+		$users = self::model()->findAll($criteria);
+		foreach ($users as $user) {
+			$userIds[] = $user->id;
+		}
+		return $userIds;
 	}
 }

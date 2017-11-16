@@ -2,23 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="516af46f-08dd-4fad-8021-6308e84ea778" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="/home/hieutct/syn/lema-maketplace-instructor/includes/classes/front/views/instructorpayment/managerView.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../wp-education/wp-content/plugins/lema-maketplace-instructor/includes/classes/front/views/instructorpayment/managerView.php" />
-      <change type="MOVED" beforePath="/home/hieutct/syn/lema-maketplace-instructor/includes/classes/front/views/instructorpayment/view.php" afterPath="/home/hieutct/syn/lema-maketplace-instructor/includes/classes/front/views/instructorpayment/createView.php" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/../wp-education/wp-content/plugins/lema-maketplace-instructor/includes/classes/front/views/instructorpayment/view.php" afterPath="$PROJECT_DIR$/../wp-education/wp-content/plugins/lema-maketplace-instructor/includes/classes/front/views/instructorpayment/createView.php" />
-      <change type="MODIFICATION" beforePath="/home/hieutct/syn/lema-maketplace-instructor/includes/classes/Hooks.php" afterPath="/home/hieutct/syn/lema-maketplace-instructor/includes/classes/Hooks.php" />
-      <change type="MODIFICATION" beforePath="/home/hieutct/syn/lema-maketplace-instructor/includes/classes/components/Helper.php" afterPath="/home/hieutct/syn/lema-maketplace-instructor/includes/classes/components/Helper.php" />
-      <change type="MODIFICATION" beforePath="/home/hieutct/syn/lema-maketplace-instructor/includes/classes/front/controllers/InstructorPaymentController.php" afterPath="/home/hieutct/syn/lema-maketplace-instructor/includes/classes/front/controllers/InstructorPaymentController.php" />
-      <change type="MODIFICATION" beforePath="/home/hieutct/syn/lema-maketplace-instructor/includes/classes/front/views/instructorpayment/success.php" afterPath="/home/hieutct/syn/lema-maketplace-instructor/includes/classes/front/views/instructorpayment/success.php" />
-      <change type="MODIFICATION" beforePath="/home/hieutct/syn/lema-maketplace-instructor/includes/classes/models/AccountModel.php" afterPath="/home/hieutct/syn/lema-maketplace-instructor/includes/classes/models/AccountModel.php" />
-      <change type="MODIFICATION" beforePath="/home/hieutct/syn/lema-maketplace-instructor/includes/classes/models/RequestPaymentModel.php" afterPath="/home/hieutct/syn/lema-maketplace-instructor/includes/classes/models/RequestPaymentModel.php" />
+      <change type="DELETED" beforePath="/home/hieutct/syn/lema-maketplace-instructor/lema-maketplace-instructor.php" afterPath="" />
+      <change type="MODIFICATION" beforePath="/home/hieutct/syn/lema-maketplace-instructor/includes/classes/LemaPlugin.php" afterPath="/home/hieutct/syn/lema-maketplace-instructor/includes/classes/LemaPlugin.php" />
+      <change type="MODIFICATION" beforePath="/home/hieutct/syn/lema-maketplace-instructor/includes/classes/front/controllers/DashboardController.php" afterPath="/home/hieutct/syn/lema-maketplace-instructor/includes/classes/front/controllers/DashboardController.php" />
+      <change type="MODIFICATION" beforePath="/home/hieutct/syn/lema-maketplace-instructor/includes/classes/front/views/dashboard/index.php" afterPath="/home/hieutct/syn/lema-maketplace-instructor/includes/classes/front/views/dashboard/index.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../wp-education/wp-content/plugins/learnmaster/functions.php" afterPath="$PROJECT_DIR$/../wp-education/wp-content/plugins/learnmaster/functions.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../wp-education/wp-content/plugins/learnmaster/shortcodes/course/CourseShortcode.php" afterPath="$PROJECT_DIR$/../wp-education/wp-content/plugins/learnmaster/shortcodes/course/CourseShortcode.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../wp-education/wp-content/plugins/lema-maketplace-instructor/includes/classes/Hooks.php" afterPath="$PROJECT_DIR$/../wp-education/wp-content/plugins/lema-maketplace-instructor/includes/classes/Hooks.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../wp-education/wp-content/plugins/lema-maketplace-instructor/includes/classes/components/Helper.php" afterPath="$PROJECT_DIR$/../wp-education/wp-content/plugins/lema-maketplace-instructor/includes/classes/components/Helper.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../wp-education/wp-content/plugins/lema-maketplace-instructor/includes/classes/front/controllers/InstructorPaymentController.php" afterPath="$PROJECT_DIR$/../wp-education/wp-content/plugins/lema-maketplace-instructor/includes/classes/front/controllers/InstructorPaymentController.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../wp-education/wp-content/plugins/lema-maketplace-instructor/includes/classes/front/views/instructorpayment/success.php" afterPath="$PROJECT_DIR$/../wp-education/wp-content/plugins/lema-maketplace-instructor/includes/classes/front/views/instructorpayment/success.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../wp-education/wp-content/plugins/lema-maketplace-instructor/includes/classes/models/AccountModel.php" afterPath="$PROJECT_DIR$/../wp-education/wp-content/plugins/lema-maketplace-instructor/includes/classes/models/AccountModel.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../wp-education/wp-content/plugins/lema-maketplace-instructor/includes/classes/models/RequestPaymentModel.php" afterPath="$PROJECT_DIR$/../wp-education/wp-content/plugins/lema-maketplace-instructor/includes/classes/models/RequestPaymentModel.php" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -34,61 +23,7 @@
     <favorites_list name="yii" />
   </component>
   <component name="FileEditorManager">
-    <leaf>
-      <file leaf-file-name="_productItem.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/protected/views/product/_productItem.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="413">
-              <caret line="38" column="80" lean-forward="false" selection-start-line="38" selection-start-column="80" selection-end-line="38" selection-end-column="80" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="_itemNew.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/protected/views/post/_itemNew.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="180">
-              <caret line="10" column="50" lean-forward="false" selection-start-line="10" selection-start-column="50" selection-end-line="10" selection-end-column="50" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="modal.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/javascripts/modal.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="342">
-              <caret line="19" column="33" lean-forward="false" selection-start-line="19" selection-start-column="33" selection-end-line="19" selection-end-column="33" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="VoteController.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/protected/controllers/VoteController.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="215">
-              <caret line="115" column="39" lean-forward="true" selection-start-line="115" selection-start-column="39" selection-end-line="115" selection-end-column="39" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="_modalVote.php" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/protected/views/vote/_modalVote.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="345">
-              <caret line="22" column="62" lean-forward="false" selection-start-line="22" selection-start-column="62" selection-end-line="22" selection-end-column="62" />
-              <folding>
-                <element signature="e#6#64#0#PHP" expanded="true" />
-                <marker date="1510678447968" expanded="true" signature="1041:1107" ph="..." />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <leaf />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -100,41 +35,46 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>lema_after_save_request_payment</find>
-      <find>details'</find>
-      <find>renderManagerView</find>
-      <find>form-payment</find>
-      <find>checkPermisson</find>
-      <find>$conds</find>
-      <find>page-payment-instructor</find>
-      <find>curr</find>
-      <find>$currency</find>
-      <find>find</find>
-      <find>currency</find>
-      <find>value</find>
-      <find>admin</find>
-      <find>CListView</find>
-      <find>$config</find>
-      <find>config</find>
-      <find>actionInde</find>
-      <find>active</find>
-      <find>.tab-vote-product.tab-custom ul li</find>
-      <find>$classFirst</find>
-      <find>actionIndex</find>
-      <find>lisvote</find>
-      <find>New</find>
-      <find>News</find>
-      <find>mode;</find>
-      <find>'jquery</find>
-      <find>.block-product-three .left-big</find>
-      <find>'cache'</find>
-      <find>ajax</find>
-      <find>$model</find>
+      <find>'front' =&gt; [</find>
+      <find>Create new course</find>
+      <find>option</find>
+      <find>$field</find>
+      <find>$typeCurrent</find>
+      <find>$users</find>
+      <find>tab-1</find>
+      <find>data'</find>
+      <find>start</find>
+      <find>end</find>
+      <find>$prize</find>
+      <find>$criteria</find>
+      <find>$criteriaTab</find>
+      <find>$start</find>
+      <find>nav nav-pills left</find>
+      <find>category</find>
+      <find>social</find>
+      <find>$data</find>
+      <find>userSession</find>
+      <find>validatePassword</find>
+      <find>hashPassword</find>
+      <find>fb_login_button_id</find>
+      <find>quên mật khẩu</find>
+      <find>$args</find>
+      <find>$result</find>
+      <find>$message</find>
+      <find>form-modal-reset</find>
+      <find>Chúc mừng bạn đã bình chọn thành công! Mã số bình</find>
+      <find>$mProduct</find>
+      <find>DD</find>
     </findStrings>
     <replaceStrings>
       <replace>$product</replace>
       <replace>form-payment-dashboard</replace>
       <replace>page-payment-dashboard</replace>
+      <replace>lema-tb-request</replace>
+      <replace>lema-marketplace-instructor</replace>
+      <replace>$criteriaTab</replace>
+      <replace>$$criteria</replace>
+      <replace>$config</replace>
     </replaceStrings>
     <dirStrings>
       <dir>$PROJECT_DIR$/protected/components</dir>
@@ -143,72 +83,76 @@
       <dir>$PROJECT_DIR$/protected/extensions/swiftMailer</dir>
       <dir>$PROJECT_DIR$/protected/extensions</dir>
       <dir>$PROJECT_DIR$/protected/controllers</dir>
-      <dir>$PROJECT_DIR$/protected</dir>
       <dir>/home/hieutct/syn/lema-maketplace-instructor</dir>
-      <dir>$PROJECT_DIR$/../wp-education/wp-content/plugins/lema-maketplace-instructor/includes/classes/front/views/dashboard</dir>
-      <dir>$PROJECT_DIR$/protected/views</dir>
-      <dir>$PROJECT_DIR$/../wp-education/wp-content/plugins/learnmaster</dir>
       <dir>$PROJECT_DIR$/../wp-education/wp-content/plugins/lema-maketplace-instructor</dir>
+      <dir>$PROJECT_DIR$/../wp-education/wp-content/plugins/lema-maketplace-instructor/includes/classes/front/views/dashboard</dir>
+      <dir>$PROJECT_DIR$/../wp-education/wp-content/plugins/lema-maketplace-instructor/includes/classes/front/views</dir>
+      <dir>$PROJECT_DIR$/../wp-education/wp-content/plugins/lema-maketplace-instructor/includes/classes</dir>
+      <dir>$PROJECT_DIR$/../wp-education/wp-content/plugins/lema-subscription</dir>
+      <dir>$PROJECT_DIR$/../wp-education/wp-content/plugins/learnmaster</dir>
+      <dir>$PROJECT_DIR$/../wp-education/wp-content/plugins/lema-marketplace-instructor</dir>
+      <dir>$PROJECT_DIR$/protected</dir>
       <dir>$PROJECT_DIR$</dir>
+      <dir>$PROJECT_DIR$/protected/views</dir>
     </dirStrings>
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../wp-education/wp-content/plugins/lema-maketplace-instructor" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../wp-education/wp-content/plugins/lema-subscription" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/protected/views/vote/listvote.php" />
-        <option value="$PROJECT_DIR$/protected/views/user/profile.php" />
-        <option value="$PROJECT_DIR$/protected/views/post/news.php" />
-        <option value="$PROJECT_DIR$/protected/views/user/_formLogin.php" />
-        <option value="$PROJECT_DIR$/protected/views/user/login.php" />
-        <option value="$PROJECT_DIR$/protected/views/user/_formLoginModal.php" />
-        <option value="$PROJECT_DIR$/protected/views/user/_successCreate.php" />
-        <option value="$PROJECT_DIR$/protected/views/user/_formCreate.php" />
-        <option value="$PROJECT_DIR$/protected/views/user/_formRegisterModal.php" />
-        <option value="$PROJECT_DIR$/protected/controllers/UserController.php" />
-        <option value="$PROJECT_DIR$/protected/data/2017-14-06.xsl" />
-        <option value="$PROJECT_DIR$/protected/views/site/dashboard.php" />
-        <option value="$PROJECT_DIR$/protected/components/PrizeMenu.php" />
-        <option value="$PROJECT_DIR$/protected/components/views/prizeMenu.php" />
-        <option value="$PROJECT_DIR$/protected/components/views/productMenu.php" />
-        <option value="$PROJECT_DIR$/protected/controllers/SiteController.php" />
-        <option value="$PROJECT_DIR$/../wp-education/wp-content/plugins/lema-maketplace-instructor/lema-maketplace-instructor.php" />
-        <option value="$PROJECT_DIR$/../wp-education/wp-content/plugins/lema-maketplace-instructor/includes/Bootstrap.php" />
-        <option value="$PROJECT_DIR$/../wp-education/wp-content/plugins/lema-maketplace-instructor/includes/classes/LemaPlugin.php" />
-        <option value="$PROJECT_DIR$/../wp-education/wp-content/plugins/lema-maketplace-instructor/includes/classes/front/views/instructorpayment/404.php" />
-        <option value="$PROJECT_DIR$/../wp-education/wp-content/plugins/learnmaster/core/CustomModel.php" />
-        <option value="$PROJECT_DIR$/../wp-education/wp-content/plugins/lema-maketplace-instructor/includes/classes/components/Helper.php" />
-        <option value="$PROJECT_DIR$/../wp-education/wp-content/plugins/lema-maketplace-instructor/includes/classes/front/views/instructorpayment/view.php" />
-        <option value="$PROJECT_DIR$/../wp-education/wp-content/plugins/lema-maketplace-instructor/includes/classes/Hooks.php" />
-        <option value="$PROJECT_DIR$/../wp-education/wp-content/plugins/lema-maketplace-instructor/includes/classes/admin/controllers/PaymentRequestController.php" />
         <option value="$PROJECT_DIR$/../wp-education/wp-content/plugins/lema-maketplace-instructor/includes/classes/models/AccountModel.php" />
-        <option value="$PROJECT_DIR$/../wp-education/wp-content/plugins/lema-maketplace-instructor/includes/classes/front/views/instructorpayment/success.php" />
-        <option value="$PROJECT_DIR$/../wp-education/wp-content/plugins/lema-maketplace-instructor/includes/classes/front/views/instructorpayment/_itemRequest.php" />
-        <option value="$PROJECT_DIR$/../wp-education/wp-content/plugins/lema-maketplace-instructor/includes/classes/front/views/instructorpayment/managerView.php" />
-        <option value="$PROJECT_DIR$/../wp-education/wp-content/plugins/lema-maketplace-instructor/includes/classes/front/controllers/InstructorPaymentController.php" />
+        <option value="$PROJECT_DIR$/../wp-education/wp-content/plugins/lema-maketplace-instructor/includes/classes/admin/views/paymentrequest/_box_action.php" />
+        <option value="$PROJECT_DIR$/../wp-education/wp-content/plugins/lema-maketplace-instructor/includes/classes/admin/views/paymentrequest/_box_info.php" />
+        <option value="$PROJECT_DIR$/../wp-education/wp-content/plugins/lema-maketplace-instructor/static/styles/lema-marketplace.css" />
+        <option value="$PROJECT_DIR$/../wp-education/wp-content/plugins/lema-maketplace-instructor/includes/classes/admin/controllers/PaymentRequestController.php" />
         <option value="$PROJECT_DIR$/../wp-education/wp-content/plugins/lema-maketplace-instructor/includes/classes/models/RequestPaymentModel.php" />
-        <option value="$PROJECT_DIR$/protected/models/Product.php" />
-        <option value="$PROJECT_DIR$/css/style.css" />
-        <option value="$PROJECT_DIR$/protected/controllers/ProductController.php" />
-        <option value="$PROJECT_DIR$/protected/views/product/index.php" />
+        <option value="$PROJECT_DIR$/../wp-education/wp-content/plugins/learnmaster/functions.php" />
+        <option value="$PROJECT_DIR$/../wp-education/wp-content/plugins/lema-marketplace-instructor/static/styles/lema-mkins.css" />
+        <option value="$PROJECT_DIR$/../wp-education/wp-content/plugins/lema-marketplace-instructor/includes/classes/models/RequestPaymentModel.php" />
+        <option value="$PROJECT_DIR$/../wp-education/wp-content/plugins/lema-marketplace-instructor/includes/classes/Hooks.php" />
+        <option value="$PROJECT_DIR$/../wp-education/wp-content/plugins/lema-marketplace-instructor/includes/classes/components/Helper.php" />
+        <option value="$PROJECT_DIR$/../wp-education/wp-content/plugins/lema-marketplace-instructor/includes/classes/front/controllers/InstructorManagementController.php" />
+        <option value="$PROJECT_DIR$/../wp-education/wp-content/plugins/lema-marketplace-instructor/includes/classes/LemaPlugin.php" />
+        <option value="$PROJECT_DIR$/../wp-education/wp-content/plugins/lema-marketplace-instructor/includes/Bootstrap.php" />
+        <option value="$PROJECT_DIR$/../wp-education/wp-content/plugins/lema-marketplace-instructor/lema-marketplace-instructor.php" />
+        <option value="$PROJECT_DIR$/../wp-education/wp-content/plugins/lema-marketplace-instructor/includes/classes/front/controllers/DashboardController.php" />
+        <option value="$PROJECT_DIR$/../wp-education/wp-includes/nav-menu.php" />
+        <option value="$PROJECT_DIR$/../wp-education/wp-content/plugins/lema-marketplace-instructor/includes/classes/front/views/dashboard/index.php" />
+        <option value="$PROJECT_DIR$/protected/models/Prize.php" />
+        <option value="$PROJECT_DIR$/protected/views/prize/_itemPrize.php" />
+        <option value="$PROJECT_DIR$/protected/views/prize/listprize.php" />
+        <option value="$PROJECT_DIR$/protected/views/site/pages/winnings.php" />
+        <option value="$PROJECT_DIR$/protected/views/prize/tabMini.php" />
+        <option value="$PROJECT_DIR$/protected/views/prize/_itemPrizeMedium.php" />
+        <option value="$PROJECT_DIR$/protected/views/prize/tabMedium.php" />
+        <option value="$PROJECT_DIR$/protected/views/vote/filterVote.php" />
+        <option value="$PROJECT_DIR$/protected/views/prize/_mediumForm.php" />
+        <option value="$PROJECT_DIR$/protected/views/prize/_week.php" />
+        <option value="$PROJECT_DIR$/protected/models/Category.php" />
+        <option value="$PROJECT_DIR$/protected/views/prize/tabSpecial.php" />
+        <option value="$PROJECT_DIR$/protected/controllers/PrizeController.php" />
+        <option value="$PROJECT_DIR$/protected/views/prize/_itemSpecial.php" />
         <option value="$PROJECT_DIR$/protected/views/layouts/menu.php" />
-        <option value="$PROJECT_DIR$/protected/data/2017-14-06.sql" />
-        <option value="$PROJECT_DIR$/protected/views/layouts/main.php" />
-        <option value="$PROJECT_DIR$/css/header.css" />
-        <option value="$PROJECT_DIR$/protected/runtime/application.log" />
-        <option value="$PROJECT_DIR$/index.php" />
-        <option value="$PROJECT_DIR$/protected/controllers/PostController.php" />
-        <option value="$PROJECT_DIR$/protected/components/Helper.php" />
-        <option value="$PROJECT_DIR$/protected/views/post/_itemNew.php" />
-        <option value="$PROJECT_DIR$/protected/views/post/_topPosts.php" />
-        <option value="$PROJECT_DIR$/protected/views/product/_productItem.php" />
-        <option value="$PROJECT_DIR$/protected/views/vote/_form.php" />
-        <option value="$PROJECT_DIR$/protected/views/vote/_ModalVote.php" />
-        <option value="$PROJECT_DIR$/protected/controllers/VoteController.php" />
+        <option value="$PROJECT_DIR$/protected/views/product/_detail.php" />
+        <option value="$PROJECT_DIR$/protected/views/product/view.php" />
+        <option value="$PROJECT_DIR$/protected/models/Facebook.php" />
+        <option value="$PROJECT_DIR$/protected/controllers/FacebookController.php" />
+        <option value="$PROJECT_DIR$/protected/views/social/login.php" />
+        <option value="$PROJECT_DIR$/protected/models/Social.php" />
+        <option value="$PROJECT_DIR$/protected/models/UserLoginForm.php" />
+        <option value="$PROJECT_DIR$/protected/controllers/SocialController.php" />
+        <option value="$PROJECT_DIR$/protected/views/user/_formResetMail.php" />
         <option value="$PROJECT_DIR$/javascripts/modal.js" />
-        <option value="$PROJECT_DIR$/protected/views/vote/_modalVote.php" />
+        <option value="$PROJECT_DIR$/protected/controllers/UserController.php" />
+        <option value="$PROJECT_DIR$/protected/widgets/facebook/Facebook.php" />
+        <option value="$PROJECT_DIR$/protected/data/2017-11-16" />
+        <option value="$PROJECT_DIR$/protected/views/user/_formRegisterModal.php" />
+        <option value="$PROJECT_DIR$/protected/views/user/_formLoginModal.php" />
+        <option value="$PROJECT_DIR$/protected/widgets/facebook/views/login.php" />
+        <option value="$PROJECT_DIR$/protected/views/vote/_voteSuccess.php" />
+        <option value="$PROJECT_DIR$/protected/controllers/VoteController.php" />
       </list>
     </option>
   </component>
@@ -255,6 +199,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -265,25 +210,19 @@
             <path>
               <item name="yii" type="b2602c69:ProjectViewProjectNode" />
               <item name="yii" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="css" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="protected" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
             <path>
               <item name="yii" type="b2602c69:ProjectViewProjectNode" />
               <item name="yii" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="protected" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="controllers" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
             <path>
               <item name="yii" type="b2602c69:ProjectViewProjectNode" />
               <item name="yii" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="protected" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="views" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="yii" type="b2602c69:ProjectViewProjectNode" />
-              <item name="yii" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="protected" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="views" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="user" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
             <path>
               <item name="yii" type="b2602c69:ProjectViewProjectNode" />
@@ -292,28 +231,48 @@
               <item name="views" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="vote" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
+            <path>
+              <item name="yii" type="b2602c69:ProjectViewProjectNode" />
+              <item name="yii" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="protected" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="widgets" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="yii" type="b2602c69:ProjectViewProjectNode" />
+              <item name="yii" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="protected" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="widgets" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="facebook" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="yii" type="b2602c69:ProjectViewProjectNode" />
+              <item name="yii" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="protected" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="widgets" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="facebook" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="views" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
           </expand>
           <select />
         </subPane>
       </pane>
       <pane id="Scratches" />
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../wp-education/wp-content/plugins/lema-maketplace-instructor" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../wp-education" />
     <property name="settings.editor.selected.configurable" value="settings.php.frameworks" />
     <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
     <property name="nodejs_interpreter_path" value="/usr/bin/node" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/protected/views/prize" />
+      <recent name="$PROJECT_DIR$/../wp-education/wp-content/plugins/lema-maketplace-instructor/includes/classes/admin/views/paymentrequest" />
       <recent name="$PROJECT_DIR$/protected/components/views" />
       <recent name="$PROJECT_DIR$/protected/components" />
-      <recent name="$PROJECT_DIR$/protected/views/prize" />
       <recent name="$PROJECT_DIR$/protected/views/vote" />
-      <recent name="$PROJECT_DIR$/protected/models" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/framework" />
@@ -334,8 +293,8 @@
     </option>
   </component>
   <component name="RunManager" selected="PHPUnit.vote">
-    <configuration name="lema-maketplace-instructor" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
-      <TestRunner directory="$PROJECT_DIR$/../wp-education/wp-content/plugins/lema-maketplace-instructor" />
+    <configuration name="lema-marketplace-instructor" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
+      <TestRunner directory="$PROJECT_DIR$/../wp-education/wp-content/plugins/lema-marketplace-instructor" />
     </configuration>
     <configuration name="post" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
       <TestRunner directory="$PROJECT_DIR$/protected/views/post" />
@@ -346,11 +305,11 @@
     <list size="3">
       <item index="0" class="java.lang.String" itemvalue="PHPUnit.vote" />
       <item index="1" class="java.lang.String" itemvalue="PHPUnit.post" />
-      <item index="2" class="java.lang.String" itemvalue="PHPUnit.lema-maketplace-instructor" />
+      <item index="2" class="java.lang.String" itemvalue="PHPUnit.lema-marketplace-instructor" />
     </list>
     <recent_temporary>
       <list size="3">
-        <item index="0" class="java.lang.String" itemvalue="PHPUnit.lema-maketplace-instructor" />
+        <item index="0" class="java.lang.String" itemvalue="PHPUnit.lema-marketplace-instructor" />
         <item index="1" class="java.lang.String" itemvalue="PHPUnit.post" />
         <item index="2" class="java.lang.String" itemvalue="PHPUnit.vote" />
       </list>
@@ -372,33 +331,33 @@
       <workItem from="1510579255224" duration="16051000" />
       <workItem from="1510625280883" duration="12199000" />
       <workItem from="1510644028271" duration="13085000" />
-      <workItem from="1510664490820" duration="10700000" />
+      <workItem from="1510664490820" duration="52150000" />
+      <workItem from="1510748338933" duration="20332000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="135315000" />
+    <option name="totallyTimeSpent" value="197097000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-378" y="-38" width="1368" height="780" extended-state="6" />
-    <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24963397" sideWeight="0.49401197" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24963397" sideWeight="0.49401197" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32882884" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24963397" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24963397" sideWeight="0.505988" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Thumbnails" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32882884" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Thumbnails" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32882884" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
@@ -409,10 +368,10 @@
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32882884" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Thumbnails" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32882884" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24963397" sideWeight="0.49401197" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -439,436 +398,121 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/../wp-education/wp-content/plugins/learnmaster/core/BaseObject.php">
+    <entry file="file://$PROJECT_DIR$/../wp-education/wp-content/plugins/lema-marketplace-instructor/includes/classes/Hooks.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="203">
-          <caret line="49" column="20" lean-forward="false" selection-start-line="49" selection-start-column="20" selection-end-line="49" selection-end-column="20" />
+        <state relative-caret-position="323">
+          <caret line="113" column="25" lean-forward="false" selection-start-line="113" selection-start-column="25" selection-end-line="113" selection-end-column="25" />
         </state>
       </provider>
     </entry>
-    <entry file="file:///home/hieutct/syn/wordpress/wp-includes/rest-api.php">
+    <entry file="file://$PROJECT_DIR$/../wp-education/wp-includes/nav-menu.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="247">
-          <caret line="320" column="46" lean-forward="true" selection-start-line="320" selection-start-column="46" selection-end-line="320" selection-end-column="46" />
-          <folding />
+        <state relative-caret-position="334">
+          <caret line="712" column="32" lean-forward="true" selection-start-line="712" selection-start-column="32" selection-end-line="712" selection-end-column="32" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../wp-education/wp-content/plugins/lema-maketplace-instructor/includes/classes/components/Helper.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="251">
-          <caret line="96" column="35" lean-forward="false" selection-start-line="96" selection-start-column="35" selection-end-line="96" selection-end-column="35" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file:///home/hieutct/syn/wordpress/wp-includes/class-wp-rewrite.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="230">
-          <caret line="393" column="42" lean-forward="false" selection-start-line="393" selection-start-column="42" selection-end-line="393" selection-end-column="42" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/protected/views/site/pages/vote_product.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="485">
-          <caret line="463" column="40" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="470" selection-end-column="6" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../wp-education/wp-content/plugins/learnmaster/core/CustomModel.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="252">
-          <caret line="14" column="51" lean-forward="false" selection-start-line="14" selection-start-column="49" selection-end-line="14" selection-end-column="51" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../wp-education/wp-content/plugins/lema-maketplace-instructor/includes/classes/front/views/instructorpayment/success.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="72">
-          <caret line="4" column="6" lean-forward="true" selection-start-line="4" selection-start-column="6" selection-end-line="4" selection-end-column="6" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../wp-education/wp-content/plugins/lema-maketplace-instructor/includes/classes/models/AccountModel.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="72">
-          <caret line="9" column="45" lean-forward="true" selection-start-line="9" selection-start-column="45" selection-end-line="9" selection-end-column="45" />
-          <folding>
-            <marker date="1510649518403" expanded="true" signature="1240:1808" ph="CREATE TABLE... ${{$tableName}}" />
-            <marker date="1510649518403" expanded="true" signature="2705:2716" ph="DROP TABLE $... " />
-            <marker date="1510649518403" expanded="true" signature="6534:6594" ph="SELECT * FRO... $" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../wp-education/wp-content/plugins/lema-maketplace-instructor/includes/classes/Hooks.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="126">
-          <caret line="46" column="119" lean-forward="true" selection-start-line="46" selection-start-column="119" selection-end-line="46" selection-end-column="119" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../wp-education/wp-content/plugins/lema-maketplace-instructor/includes/classes/front/controllers/InstructorManagementController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1242">
-          <caret line="77" column="28" lean-forward="true" selection-start-line="77" selection-start-column="28" selection-end-line="77" selection-end-column="28" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../wp-education/wp-content/plugins/lema-maketplace-instructor/includes/classes/front/views/instructorpayment/createView.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="108">
-          <caret line="78" column="0" lean-forward="true" selection-start-line="78" selection-start-column="0" selection-end-line="78" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file:///home/hieutct/syn/wordpress/wp-includes/user.php">
+    <entry file="file://$PROJECT_DIR$/../wp-education/wp-content/plugins/lema-marketplace-instructor/includes/classes/front/controllers/InstructorManagementController.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="212">
-          <caret line="424" column="9" lean-forward="false" selection-start-line="424" selection-start-column="9" selection-end-line="424" selection-end-column="9" />
-          <folding>
-            <marker date="1493532222000" expanded="true" signature="11089:11123" ph="SELECT COUNT... wp_posts" />
-            <marker date="1493532222000" expanded="true" signature="12536:12641" ph="SELECT post_... wp_posts" />
-            <marker date="1493532222000" expanded="true" signature="26752:26904" ph="SELECT ${{$s... " />
-            <marker date="1493532222000" expanded="true" signature="27508:27645" ph="SELECT meta_... $" />
-            <marker date="1493532222000" expanded="true" signature="54053:54134" ph="SELECT ID FR... wp_users" />
-            <marker date="1493532222000" expanded="true" signature="54530:54611" ph="SELECT ID FR... wp_users" />
-            <marker date="1493532222000" expanded="true" signature="73887:73957" ph="SELECT ID, u... wp_users" />
-            <marker date="1493532222000" expanded="true" signature="78599:78606" ph="..." />
-            <marker date="1493532222000" expanded="true" signature="80531:80538" ph="..." />
-            <marker date="1493532222000" expanded="true" signature="80552:80560" ph="…" />
-            <marker date="1493532222000" expanded="true" signature="83583:83694" ph="SELECT user_... wp_usermeta" />
-          </folding>
+          <caret line="170" column="16" lean-forward="false" selection-start-line="170" selection-start-column="16" selection-end-line="170" selection-end-column="16" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../wp-education/wp-content/plugins/learnmaster/core/Model.php">
+    <entry file="file://$PROJECT_DIR$/../wp-education/wp-content/plugins/lema-marketplace-instructor/includes/classes/front/controllers/DashboardController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-4608">
-          <caret line="16" column="15" lean-forward="false" selection-start-line="16" selection-start-column="15" selection-end-line="16" selection-end-column="15" />
-          <folding>
-            <marker date="1508384599083" expanded="true" signature="8240:8272" ph="SELECT * FRO... $" />
-          </folding>
+        <state relative-caret-position="273">
+          <caret line="243" column="28" lean-forward="false" selection-start-line="242" selection-start-column="12" selection-end-line="243" selection-end-column="28" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../wp-education/wp-content/plugins/learnmaster/vendor/adamwathan/form/src/AdamWathan/Form/FormBuilder.php">
+    <entry file="file://$PROJECT_DIR$/../wp-education/wp-content/plugins/lema-marketplace-instructor/includes/classes/front/controllers/InstructorPaymentController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-4645">
-          <caret line="22" column="6" lean-forward="false" selection-start-line="22" selection-start-column="6" selection-end-line="22" selection-end-column="6" />
+        <state relative-caret-position="93">
+          <caret line="98" column="46" lean-forward="false" selection-start-line="98" selection-start-column="21" selection-end-line="98" selection-end-column="46" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../wp-education/wp-content/plugins/learnmaster/core/components/Form.php">
+    <entry file="file://$PROJECT_DIR$/../wp-education/wp-content/plugins/lema-marketplace-instructor/includes/classes/front/views/dashboard/index.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="176">
-          <caret line="19" column="42" lean-forward="true" selection-start-line="19" selection-start-column="42" selection-end-line="19" selection-end-column="42" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../wp-education/wp-content/plugins/learnmaster/helpers/GeneralHelper.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="217">
-          <caret line="242" column="53" lean-forward="false" selection-start-line="242" selection-start-column="40" selection-end-line="242" selection-end-column="53" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../wp-education/wp-content/plugins/lema-maketplace-instructor/includes/classes/front/views/instructorpayment/_itemRequest.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="10" column="51" lean-forward="true" selection-start-line="10" selection-start-column="51" selection-end-line="10" selection-end-column="51" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../wp-education/wp-content/plugins/lema-maketplace-instructor/includes/classes/models/RequestPaymentModel.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="381">
-          <caret line="240" column="46" lean-forward="false" selection-start-line="240" selection-start-column="32" selection-end-line="240" selection-end-column="46" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../wp-education/wp-content/plugins/lema-maketplace-instructor/includes/classes/front/controllers/InstructorPaymentController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="327">
-          <caret line="78" column="5" lean-forward="true" selection-start-line="78" selection-start-column="5" selection-end-line="78" selection-end-column="5" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../wp-education/wp-content/plugins/lema-maketplace-instructor/includes/classes/admin/controllers/PaymentRequestController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="8">
-          <caret line="22" column="11" lean-forward="false" selection-start-line="22" selection-start-column="11" selection-end-line="22" selection-end-column="11" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../wp-education/wp-content/plugins/lema-maketplace-instructor/includes/classes/front/views/instructorpayment/managerView.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="396">
-          <caret line="22" column="39" lean-forward="false" selection-start-line="22" selection-start-column="34" selection-end-line="22" selection-end-column="39" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/protected/views/product/view.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
+        <state relative-caret-position="90">
+          <caret line="5" column="17" lean-forward="false" selection-start-line="5" selection-start-column="17" selection-end-line="5" selection-end-column="17" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/framework/zii/widgets/CListView.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-4662">
-          <caret line="2" column="3" lean-forward="false" selection-start-line="2" selection-start-column="3" selection-end-line="2" selection-end-column="3" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/protected/models/Product.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="251">
-          <caret line="101" column="28" lean-forward="true" selection-start-line="101" selection-start-column="28" selection-end-line="101" selection-end-column="28" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/css/style.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="301">
-          <caret line="486" column="0" lean-forward="true" selection-start-line="486" selection-start-column="0" selection-end-line="486" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/protected/views/product/index.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="126">
-          <caret line="7" column="0" lean-forward="true" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/protected/views/vote/listvote.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/protected/views/site/pages/home.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="489">
-          <caret line="28" column="6" lean-forward="true" selection-start-line="28" selection-start-column="6" selection-end-line="28" selection-end-column="6" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/protected/data/2017-14-06.sql">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="450">
-          <caret line="376" column="7" lean-forward="true" selection-start-line="376" selection-start-column="7" selection-end-line="376" selection-end-column="7" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/protected/config/main.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/protected/views/layouts/menu.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="396">
-          <caret line="22" column="63" lean-forward="false" selection-start-line="22" selection-start-column="63" selection-end-line="22" selection-end-column="63" />
-          <folding>
-            <marker date="1510675371470" expanded="true" signature="1937:2331" ph="..." />
-            <marker date="1510675371470" expanded="true" signature="1969:2048" ph="..." />
-            <marker date="1510675371470" expanded="true" signature="2078:2221" ph="..." />
-            <marker date="1510675371470" expanded="true" signature="2250:2320" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/protected/views/layouts/main.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="468">
-          <caret line="26" column="0" lean-forward="false" selection-start-line="26" selection-start-column="0" selection-end-line="26" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/protected/controllers/SiteController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1854">
-          <caret line="103" column="1" lean-forward="true" selection-start-line="103" selection-start-column="1" selection-end-line="103" selection-end-column="1" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/index.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="10" column="42" lean-forward="false" selection-start-line="10" selection-start-column="42" selection-end-line="10" selection-end-column="42" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/protected/runtime/application.log">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/css/header.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="230">
-          <caret line="894" column="13" lean-forward="false" selection-start-line="894" selection-start-column="13" selection-end-line="894" selection-end-column="13" />
-          <folding>
-            <marker date="1510675371470" expanded="true" signature="322:451" ph="{...}" />
-            <marker date="1510675371470" expanded="true" signature="552:569" ph="{...}" />
-            <marker date="1510675371470" expanded="true" signature="604:645" ph="{...}" />
-            <marker date="1510675371470" expanded="true" signature="672:689" ph="{...}" />
-            <marker date="1510675371470" expanded="true" signature="712:1010" ph="{...}" />
-            <marker date="1510675371470" expanded="true" signature="1040:1248" ph="{...}" />
-            <marker date="1510675371470" expanded="true" signature="1276:1297" ph="{...}" />
-            <marker date="1510675371470" expanded="true" signature="1323:1344" ph="{...}" />
-            <marker date="1510675371470" expanded="true" signature="1372:1413" ph="{...}" />
-            <marker date="1510675371470" expanded="true" signature="1448:1489" ph="{...}" />
-            <marker date="1510675371470" expanded="true" signature="1535:1598" ph="{...}" />
-            <marker date="1510675371470" expanded="true" signature="1635:1676" ph="{...}" />
-            <marker date="1510675371470" expanded="true" signature="1715:1778" ph="{...}" />
-            <marker date="1510675371470" expanded="true" signature="1898:1917" ph="{...}" />
-            <marker date="1510675371470" expanded="true" signature="1956:2155" ph="{...}" />
-            <marker date="1510675371470" expanded="true" signature="2167:2386" ph="{...}" />
-            <marker date="1510675371470" expanded="true" signature="2401:2537" ph="{...}" />
-            <marker date="1510675371470" expanded="true" signature="2620:2637" ph="{...}" />
-            <marker date="1510675371470" expanded="true" signature="2657:2814" ph="{...}" />
-            <marker date="1510675371470" expanded="true" signature="2840:3110" ph="{...}" />
-            <marker date="1510675371470" expanded="true" signature="3136:3154" ph="{...}" />
-            <marker date="1510675371470" expanded="true" signature="3186:3203" ph="{...}" />
-            <marker date="1510675371470" expanded="true" signature="3216:3286" ph="{...}" />
-            <marker date="1510675371470" expanded="true" signature="3301:3495" ph="{...}" />
-            <marker date="1510675371470" expanded="true" signature="3516:3562" ph="{...}" />
-            <marker date="1510675371470" expanded="true" signature="3623:3810" ph="{...}" />
-            <marker date="1510675371470" expanded="true" signature="3821:4021" ph="{...}" />
-            <marker date="1510675371470" expanded="true" signature="4038:4131" ph="{...}" />
-            <marker date="1510675371470" expanded="true" signature="4139:4197" ph="{...}" />
-            <marker date="1510675371470" expanded="true" signature="4207:4232" ph="{...}" />
-            <marker date="1510675371470" expanded="true" signature="4247:4619" ph="{...}" />
-            <marker date="1510675371470" expanded="true" signature="4640:4827" ph="{...}" />
-            <marker date="1510675371470" expanded="true" signature="4844:5216" ph="{...}" />
-            <marker date="1510675371470" expanded="true" signature="5294:5481" ph="{...}" />
-            <marker date="1510675371470" expanded="true" signature="5491:5615" ph="{...}" />
-            <marker date="1510675371470" expanded="true" signature="5633:5809" ph="{...}" />
-            <marker date="1510675371470" expanded="true" signature="5834:5914" ph="{...}" />
-            <marker date="1510675371470" expanded="true" signature="5944:6060" ph="{...}" />
-            <marker date="1510675371470" expanded="true" signature="6074:6250" ph="{...}" />
-            <marker date="1510675371470" expanded="true" signature="6265:6381" ph="{...}" />
-            <marker date="1510675371470" expanded="true" signature="6400:6434" ph="{...}" />
-            <marker date="1510675371470" expanded="true" signature="6452:6648" ph="{...}" />
-            <marker date="1510675371470" expanded="true" signature="6673:6753" ph="{...}" />
-            <marker date="1510675371470" expanded="true" signature="6784:6801" ph="{...}" />
-            <marker date="1510675371470" expanded="true" signature="6832:6948" ph="{...}" />
-            <marker date="1510675371470" expanded="true" signature="6965:7162" ph="{...}" />
-            <marker date="1510675371470" expanded="true" signature="7184:7419" ph="{...}" />
-            <marker date="1510675371470" expanded="true" signature="7444:7466" ph="{...}" />
-            <marker date="1510675371470" expanded="true" signature="7503:7525" ph="{...}" />
-            <marker date="1510675371470" expanded="true" signature="7569:7719" ph="{...}" />
-            <marker date="1510675371470" expanded="true" signature="7747:7941" ph="{...}" />
-            <marker date="1510675371470" expanded="true" signature="7961:8029" ph="{...}" />
-            <marker date="1510675371470" expanded="true" signature="8060:8198" ph="{...}" />
-            <marker date="1510675371470" expanded="true" signature="8235:8286" ph="{...}" />
-            <marker date="1510675371470" expanded="true" signature="8302:8365" ph="{...}" />
-            <marker date="1510675371470" expanded="true" signature="8388:8517" ph="{...}" />
-            <marker date="1510675371470" expanded="true" signature="8595:8833" ph="{...}" />
-            <marker date="1510675371470" expanded="true" signature="8867:9006" ph="{...}" />
-            <marker date="1510675371470" expanded="true" signature="9044:9078" ph="{...}" />
-            <marker date="1510675371470" expanded="true" signature="9165:9229" ph="{...}" />
-            <marker date="1510675371470" expanded="true" signature="9269:9342" ph="{...}" />
-            <marker date="1510675371470" expanded="true" signature="9292:9340" ph="{...}" />
-            <marker date="1510675371470" expanded="true" signature="9359:9465" ph="{...}" />
-            <marker date="1510675371470" expanded="true" signature="9486:9724" ph="{...}" />
-            <marker date="1510675371470" expanded="true" signature="9749:9866" ph="{...}" />
-            <marker date="1510675371470" expanded="true" signature="9891:10052" ph="{...}" />
-            <marker date="1510675371470" expanded="true" signature="10086:10109" ph="{...}" />
-            <marker date="1510675371470" expanded="true" signature="10151:10233" ph="{...}" />
-            <marker date="1510675371470" expanded="true" signature="10283:10306" ph="{...}" />
-            <marker date="1510675371470" expanded="true" signature="10346:10371" ph="{...}" />
-            <marker date="1510675371470" expanded="true" signature="10418:10503" ph="{...}" />
-            <marker date="1510675371470" expanded="true" signature="10835:10903" ph="{...}" />
-            <marker date="1510675371470" expanded="true" signature="10965:11160" ph="{...}" />
-            <marker date="1510675371470" expanded="true" signature="11177:11435" ph="{...}" />
-            <marker date="1510675371470" expanded="true" signature="11459:11732" ph="{...}" />
-            <marker date="1510675371470" expanded="true" signature="11852:11900" ph="{...}" />
-            <marker date="1510675371470" expanded="true" signature="11930:11947" ph="{...}" />
-            <marker date="1510675371470" expanded="true" signature="11972:11999" ph="{...}" />
-            <marker date="1510675371470" expanded="true" signature="12022:12048" ph="{...}" />
-            <marker date="1510675371470" expanded="true" signature="12063:12289" ph="{...}" />
-            <marker date="1510675371470" expanded="true" signature="12310:12453" ph="{...}" />
-            <marker date="1510675371470" expanded="true" signature="12489:12506" ph="{...}" />
-            <marker date="1510675371470" expanded="true" signature="12529:12686" ph="{...}" />
-            <marker date="1510675371470" expanded="true" signature="12722:12786" ph="{...}" />
-            <marker date="1510675371470" expanded="true" signature="12811:12834" ph="{...}" />
-            <marker date="1510675371470" expanded="true" signature="12858:12879" ph="{...}" />
-            <marker date="1510675371470" expanded="true" signature="12909:12937" ph="{...}" />
-            <marker date="1510675371470" expanded="true" signature="12961:13012" ph="{...}" />
-            <marker date="1510675371470" expanded="true" signature="13030:13082" ph="{...}" />
-            <marker date="1510675371470" expanded="true" signature="13753:13796" ph="{...}" />
-            <marker date="1510675371470" expanded="true" signature="14047:14080" ph="{...}" />
-            <marker date="1510675371470" expanded="true" signature="14124:14208" ph="{...}" />
-            <marker date="1510675371470" expanded="true" signature="14259:14531" ph="{...}" />
-            <marker date="1510675371470" expanded="true" signature="14582:14624" ph="{...}" />
-            <marker date="1510675371470" expanded="true" signature="14850:14985" ph="{...}" />
-            <marker date="1510675371470" expanded="true" signature="15040:15057" ph="{...}" />
-            <marker date="1510675371470" expanded="true" signature="15110:15161" ph="{...}" />
-            <marker date="1510675371470" expanded="true" signature="15179:15235" ph="{...}" />
-            <marker date="1510675371470" expanded="true" signature="15269:15493" ph="{...}" />
-            <marker date="1510675371470" expanded="true" signature="15534:15656" ph="{...}" />
-            <marker date="1510675371470" expanded="true" signature="15696:15747" ph="{...}" />
-            <marker date="1510675371470" expanded="true" signature="15787:15838" ph="{...}" />
-            <marker date="1510675371470" expanded="true" signature="15855:15878" ph="{...}" />
-            <marker date="1510675371470" expanded="true" signature="15901:16037" ph="{...}" />
-            <marker date="1510675371470" expanded="true" signature="16070:16122" ph="{...}" />
-            <marker date="1510675371470" expanded="true" signature="16232:16426" ph="{...}" />
-            <marker date="1510675371470" expanded="true" signature="16585:16715" ph="{...}" />
-            <marker date="1510675371470" expanded="true" signature="16751:16776" ph="{...}" />
-            <marker date="1510675371470" expanded="true" signature="16816:16898" ph="{...}" />
-            <marker date="1510675371470" expanded="true" signature="16934:16956" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/protected/controllers/PostController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="28" column="54" lean-forward="false" selection-start-line="28" selection-start-column="54" selection-end-line="28" selection-end-column="54" />
+        <state relative-caret-position="283">
+          <caret line="287" column="28" lean-forward="false" selection-start-line="287" selection-start-column="23" selection-end-line="287" selection-end-column="28" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/protected/components/Helper.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="402">
-          <caret line="62" column="0" lean-forward="true" selection-start-line="62" selection-start-column="0" selection-end-line="62" selection-end-column="0" />
+        <state relative-caret-position="383">
+          <caret line="58" column="40" lean-forward="false" selection-start-line="58" selection-start-column="27" selection-end-line="58" selection-end-column="40" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/framework/cli/views/shell/model/model.php">
+    <entry file="file://$PROJECT_DIR$/protected/views/prize/tabMini.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="378">
+          <caret line="21" column="18" lean-forward="true" selection-start-line="17" selection-start-column="12" selection-end-line="21" selection-end-column="18" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$APPLICATION_HOME_DIR$/plugins/php/lib/php.jar!/stubs/date/date.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="50">
+          <caret line="794" column="9" lean-forward="false" selection-start-line="794" selection-start-column="9" selection-end-line="794" selection-end-column="9" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/protected/views/prize/listprize.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="252">
+          <caret line="14" column="17" lean-forward="false" selection-start-line="14" selection-start-column="12" selection-end-line="14" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/protected/views/prize/tabMedium.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="288">
+          <caret line="43" column="51" lean-forward="false" selection-start-line="43" selection-start-column="48" selection-end-line="43" selection-end-column="51" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/framework/web/CActiveDataProvider.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1443">
+          <caret line="162" column="31" lean-forward="false" selection-start-line="162" selection-start-column="23" selection-end-line="162" selection-end-column="31" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/protected/views/vote/filterVote.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="345">
+          <caret line="37" column="22" lean-forward="true" selection-start-line="37" selection-start-column="22" selection-end-line="37" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/protected/views/prize/_week.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="449">
+          <caret line="29" column="27" lean-forward="true" selection-start-line="29" selection-start-column="27" selection-end-line="29" selection-end-column="27" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/protected/views/prize/create.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -876,39 +520,95 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/protected/views/post/_topPosts.php">
+    <entry file="file://$PROJECT_DIR$/protected/models/Prize.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="197">
-          <caret line="14" column="88" lean-forward="false" selection-start-line="14" selection-start-column="88" selection-end-line="14" selection-end-column="88" />
+        <state relative-caret-position="239">
+          <caret line="50" column="37" lean-forward="false" selection-start-line="50" selection-start-column="26" selection-end-line="50" selection-end-column="37" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/protected/controllers/UserController.php">
+    <entry file="file://$PROJECT_DIR$/protected/views/prize/_mediumForm.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="399">
-          <caret line="177" column="21" lean-forward="true" selection-start-line="160" selection-start-column="20" selection-end-line="177" selection-end-column="21" />
+        <state relative-caret-position="251">
+          <caret line="43" column="32" lean-forward="true" selection-start-line="43" selection-start-column="32" selection-end-line="43" selection-end-column="32" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/protected/views/post/_itemNew.php">
+    <entry file="file://$PROJECT_DIR$/protected/models/Category.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="92" column="32" lean-forward="true" selection-start-line="92" selection-start-column="32" selection-end-line="92" selection-end-column="32" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/protected/views/site/pages/winnings.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="471">
+          <caret line="351" column="27" lean-forward="true" selection-start-line="345" selection-start-column="22" selection-end-line="351" selection-end-column="27" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/protected/views/prize/_itemSpecial.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="180">
-          <caret line="10" column="50" lean-forward="false" selection-start-line="10" selection-start-column="50" selection-end-line="10" selection-end-column="50" />
+          <caret line="10" column="5" lean-forward="true" selection-start-line="10" selection-start-column="5" selection-end-line="10" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/protected/controllers/PrizeController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="215">
+          <caret line="104" column="51" lean-forward="false" selection-start-line="104" selection-start-column="51" selection-end-line="104" selection-end-column="51" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/protected/views/prize/tabSpecial.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="15" column="33" lean-forward="true" selection-start-line="15" selection-start-column="33" selection-end-line="15" selection-end-column="33" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/protected/views/prize/_itemPrizeMini.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="72">
+          <caret line="4" column="0" lean-forward="false" selection-start-line="4" selection-start-column="0" selection-end-line="9" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/protected/views/product/view.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="198">
+          <caret line="11" column="0" lean-forward="true" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/protected/views/layouts/menu.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="414">
+          <caret line="26" column="40" lean-forward="true" selection-start-line="26" selection-start-column="40" selection-end-line="26" selection-end-column="55" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/protected/views/product/_productItem.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="413">
-          <caret line="38" column="80" lean-forward="false" selection-start-line="38" selection-start-column="80" selection-end-line="38" selection-end-column="80" />
+        <state relative-caret-position="108">
+          <caret line="21" column="31" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="43" selection-end-column="6" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/protected/views/vote/_itemVote.php">
+    <entry file="file://$PROJECT_DIR$/protected/views/product/_form.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -916,61 +616,208 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/protected/views/vote/_form.php">
+    <entry file="file://$PROJECT_DIR$/protected/views/product/_detail.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="471">
-          <caret line="27" column="0" lean-forward="false" selection-start-line="27" selection-start-column="0" selection-end-line="40" selection-end-column="3" />
+        <state relative-caret-position="684">
+          <caret line="38" column="0" lean-forward="false" selection-start-line="38" selection-start-column="0" selection-end-line="38" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/protected/controllers/ProductController.php">
+    <entry file="file://$PROJECT_DIR$/protected/models/Vote.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="561">
-          <caret line="134" column="5" lean-forward="true" selection-start-line="121" selection-start-column="0" selection-end-line="134" selection-end-column="5" />
+        <state relative-caret-position="324">
+          <caret line="18" column="5" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="62" selection-end-column="1" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/protected/views/vote/create.php">
+    <entry file="file://$PROJECT_DIR$/framework/yiilite.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="126">
-          <caret line="7" column="36" lean-forward="false" selection-start-line="7" selection-start-column="36" selection-end-line="7" selection-end-column="36" />
+        <state relative-caret-position="176">
+          <caret line="8113" column="5" lean-forward="true" selection-start-line="8113" selection-start-column="5" selection-end-line="8113" selection-end-column="5" />
+          <folding>
+            <marker date="1510389358946" expanded="true" signature="266426:266503" ph="CREATE TABLE... ${$this-&gt;quoteTableName($table)}" />
+            <marker date="1510389358946" expanded="true" signature="266763:266774" ph="DROP TABLE $... " />
+            <marker date="1510389358946" expanded="true" signature="266975:267072" ph="ALTER TABLE ${$this-&gt;quoteTableName($table)}... " />
+            <marker date="1510389358946" expanded="true" signature="267168:267230" ph="ALTER TABLE ${$this-&gt;quoteTableName($table)}... " />
+            <marker date="1510389358946" expanded="true" signature="267334:267441" ph="ALTER TABLE ${$this-&gt;quoteTableName($table)}... " />
+            <marker date="1510389358946" expanded="true" signature="267544:267687" ph="ALTER TABLE ${$this-&gt;quoteTableName($table)}... " />
+            <marker date="1510389358946" expanded="true" signature="268200:268434" ph="ALTER TABLE ${$this-&gt;quoteTableName($table)}... " />
+            <marker date="1510389358946" expanded="true" signature="268620:268686" ph="ALTER TABLE ${$this-&gt;quoteTableName($table)}... " />
+            <marker date="1510389358946" expanded="true" signature="269587:269741" ph="ALTER TABLE ${$this-&gt;quoteTableName($table)}... " />
+            <marker date="1510389358946" expanded="true" signature="269806:269872" ph="ALTER TABLE ${$this-&gt;quoteTableName($table)}... " />
+            <marker date="1510389358946" expanded="true" signature="270644:270684" ph="SELECT MAX(`... $" />
+            <marker date="1510389358946" expanded="true" signature="270842:270909" ph="UPDATE sqlit... " />
+            <marker date="1510389358946" expanded="true" signature="271176:271253" ph="SELECT DISTI... sqlite_master" />
+            <marker date="1510389358946" expanded="true" signature="273315:273375" ph="ALTER TABLE ${$this-&gt;quoteTableName($table)}... " />
+            <marker date="1510389358946" expanded="true" signature="273467:273479" ph="DELETE FROM " />
+            <marker date="1510389358946" expanded="true" signature="292029:292174" ph="INSERT INTO ${$this-&gt;_connection-&gt;quoteTableName($table)}... " />
+            <marker date="1510389358946" expanded="true" signature="292998:293010" ph="DELETE FROM " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/framework/utils/CPasswordHelper.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="247">
+          <caret line="91" column="27" lean-forward="false" selection-start-line="91" selection-start-column="27" selection-end-line="91" selection-end-column="27" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/protected/views/user/_formLoginModal.php">
+    <entry file="file://$PROJECT_DIR$/protected/models/Social.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="810">
+          <caret line="45" column="28" lean-forward="true" selection-start-line="45" selection-start-column="28" selection-end-line="45" selection-end-column="28" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/protected/views/social/login.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="36">
+          <caret line="2" column="0" lean-forward="false" selection-start-line="2" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/protected/models/User.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1512">
+          <caret line="84" column="40" lean-forward="false" selection-start-line="84" selection-start-column="40" selection-end-line="84" selection-end-column="40" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/protected/components/UserIdentity.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="486">
+          <caret line="27" column="20" lean-forward="false" selection-start-line="27" selection-start-column="20" selection-end-line="27" selection-end-column="20" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/protected/models/UserLoginForm.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1044">
+          <caret line="67" column="37" lean-forward="false" selection-start-line="67" selection-start-column="37" selection-end-line="67" selection-end-column="37" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/protected/controllers/SocialController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="810">
+          <caret line="45" column="0" lean-forward="false" selection-start-line="45" selection-start-column="0" selection-end-line="45" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/protected/views/user/_formCreate.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
-          <caret line="0" column="25" lean-forward="true" selection-start-line="0" selection-start-column="25" selection-end-line="0" selection-end-column="35" />
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/protected/controllers/VoteController.php">
+    <entry file="file://$PROJECT_DIR$/protected/widgets/facebook/Facebook.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="215">
-          <caret line="115" column="39" lean-forward="true" selection-start-line="115" selection-start-column="39" selection-end-line="115" selection-end-column="39" />
+        <state relative-caret-position="234">
+          <caret line="13" column="48" lean-forward="false" selection-start-line="13" selection-start-column="48" selection-end-line="13" selection-end-column="48" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/protected/controllers/UserController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1349">
+          <caret line="231" column="106" lean-forward="false" selection-start-line="231" selection-start-column="106" selection-end-line="231" selection-end-column="106" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/javascripts/modal.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="342">
-          <caret line="19" column="33" lean-forward="false" selection-start-line="19" selection-start-column="33" selection-end-line="19" selection-end-column="33" />
+        <state relative-caret-position="328">
+          <caret line="77" column="35" lean-forward="false" selection-start-line="77" selection-start-column="35" selection-end-line="77" selection-end-column="35" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/protected/views/vote/_modalVote.php">
+    <entry file="file://$PROJECT_DIR$/protected/views/user/_formResetMail.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="345">
-          <caret line="22" column="62" lean-forward="false" selection-start-line="22" selection-start-column="62" selection-end-line="22" selection-end-column="62" />
+        <state relative-caret-position="342">
+          <caret line="23" column="0" lean-forward="false" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/protected/data/2017-11-16.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="288">
+          <caret line="16" column="54" lean-forward="true" selection-start-line="16" selection-start-column="54" selection-end-line="16" selection-end-column="54" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/protected/controllers/ProductController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-126">
+          <caret line="77" column="29" lean-forward="false" selection-start-line="77" selection-start-column="27" selection-end-line="77" selection-end-column="29" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/protected/controllers/VoteController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="310">
+          <caret line="113" column="72" lean-forward="false" selection-start-line="113" selection-start-column="64" selection-end-line="113" selection-end-column="72" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/protected/views/vote/_voteSuccess.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="216">
+          <caret line="12" column="37" lean-forward="false" selection-start-line="12" selection-start-column="37" selection-end-line="12" selection-end-column="37" />
           <folding>
-            <element signature="e#6#64#0#PHP" expanded="true" />
-            <marker date="1510678447968" expanded="true" signature="1041:1107" ph="..." />
+            <element signature="n#style#0;n#i#0;n#a#0;n#div#0;n#form#0;n#div#1;n#div#0;n#div#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/protected/views/user/_formLoginModal.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="32" column="95" lean-forward="false" selection-start-line="32" selection-start-column="95" selection-end-line="32" selection-end-column="95" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/protected/views/user/_formRegisterModal.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="332">
+          <caret line="33" column="71" lean-forward="true" selection-start-line="33" selection-start-column="71" selection-end-line="33" selection-end-column="91" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/protected/models/Product.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1855">
+          <caret line="14" column="6" lean-forward="false" selection-start-line="14" selection-start-column="6" selection-end-line="14" selection-end-column="6" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/protected/widgets/facebook/views/login.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="52" lean-forward="false" selection-start-line="0" selection-start-column="52" selection-end-line="0" selection-end-column="52" />
+          <folding>
+            <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
           </folding>
         </state>
       </provider>

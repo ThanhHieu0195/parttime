@@ -12,64 +12,64 @@ class UserController extends Controller {
 	public function actionLogin() {
 		$model = new User();
 
-		if ( isset($_POST['User']) ) {
-			$user = $_POST['User'];
-			$userForm = new UserLoginForm();
+		if ( isset( $_POST['User'] ) ) {
+			$user                 = $_POST['User'];
+			$userForm             = new UserLoginForm();
 			$userForm->attributes = $user;
-			if ($userForm->validate() && $userForm->login()) {
-				$this->redirect(array('profile'));
+			if ( $userForm->validate() && $userForm->login() ) {
+				$this->redirect( array( 'profile' ) );
 			}
-			if ( !$model->checkEmail($user['email']) ) {
-				$model->addError('email', 'Email không tồn tại');
+			if ( ! $model->checkEmail( $user['email'] ) ) {
+				$model->addError( 'email', 'Email không tồn tại' );
 			} else {
-				$model->addError('password', 'Mật khẩu không đúng');
+				$model->addError( 'password', 'Mật khẩu không đúng' );
 			}
 		}
-		$this->render('login', ['model' => $model]);
+		$this->render( 'login', [ 'model' => $model ] );
 	}
 
 	public function actionCreate() {
 		$model = new User();
-		if ( isset($_POST['User']) ) {
-			$user = $_POST['User'];
+		if ( isset( $_POST['User'] ) ) {
+			$user              = $_POST['User'];
 			$model->attributes = $user;
-			$is_check = 1;
+			$is_check          = 1;
 			if ( $user['password'] != $user['repassword'] ) {
 				$is_check = 0;
-				$model->addError('password', 'Mật khẩu không trùng');
+				$model->addError( 'password', 'Mật khẩu không trùng' );
 			}
 
-			if ( $model->checkEmail($model->email) ) {
+			if ( $model->checkEmail( $model->email ) ) {
 				$is_check = 0;
-				$model->addError('email', 'Email đã được dùng');
+				$model->addError( 'email', 'Email đã được dùng' );
 			}
 
-			if ($is_check) {
+			if ( $is_check ) {
 				if ( $model->save() ) {
-					$this->renderPartial('_successCreate', ['data' => $model]);
+					$this->renderPartial( '_successCreate', [ 'data' => $model ] );
 					exit();
 				}
 			}
 		}
-		$this->render('create', ['model' => $model]);
+		$this->render( 'create', [ 'model' => $model ] );
 	}
 
 // 	action
 	public function actionForm() {
 
-		if ( isset($_POST['User']) ) {
-			$user = $_POST['User'];
-			$model = new UserLoginForm();
+		if ( isset( $_POST['User'] ) ) {
+			$user              = $_POST['User'];
+			$model             = new UserLoginForm();
 			$model->attributes = $user;
-			if($model->validate() && $model->login()) {
-				$this->redirect( array( 'profile') );
+			if ( $model->validate() && $model->login() ) {
+				$this->redirect( array( 'profile' ) );
 			}
 		}
-		if ( isset($_GET['type']) ) {
-			switch ($_GET['type']) {
+		if ( isset( $_GET['type'] ) ) {
+			switch ( $_GET['type'] ) {
 				case 'login':
 					$model = new User();
-					echo $this->renderPartial('_formLogin', ['model' => $model]);
+					echo $this->renderPartial( '_formLogin', [ 'model' => $model ] );
 					break;
 			}
 		}
@@ -78,25 +78,25 @@ class UserController extends Controller {
 	public function actionResetMail() {
 		/** @var  $model User */
 		$model = new User();
-		if ( isset($_POST['User']) ) {
-			$user = $_POST['User'];
+		if ( isset( $_POST['User'] ) ) {
+			$user              = $_POST['User'];
 			$model->attributes = $user;
-			if ( $model->checkEmail($user['email']) ) {
-				$number = Yii::app()->params['lentPassword'];
-				$newPassword = Yii::app()->getSecurityManager()->generateRandomString($number);
+			if ( $model->checkEmail( $user['email'] ) ) {
+				$number      = Yii::app()->params['lentPassword'];
+				$newPassword = Yii::app()->getSecurityManager()->generateRandomString( $number );
 //				sendMail
 				$args = array(
-					'subject' => 'Lấy lại mật khẩu',
-					'content' => 'Mật khẩu mới của bạn là: <span>'.$newPassword.'</span>',
-					'mailTo' => $user['email'],
+					'subject'          => 'Lấy lại mật khẩu',
+					'content'          => 'Mật khẩu mới của bạn là: <span>' . $newPassword . '</span>',
+					'mailTo'           => $user['email'],
 					'plainTextContent' => ''
 				);
 //				$result = 2 - Mail::sendMail($args);
 				$result = 1;
-				if ($result == 1) {
+				if ( $result == 1 ) {
 //					update password
-					if ( $result = $model->resetPassword($user['email'], $newPassword) ) {
-						$message = 'Kiểm tra mail để lấy mật khẩu mới ('.CHtml::tag('a', array('href' => 'https://mail.google.com/mail'), $user['email']).')';
+					if ( $result = $model->resetPassword( $user['email'], $newPassword ) ) {
+						$message = 'Kiểm tra mail để lấy mật khẩu mới (' . CHtml::tag( 'a', array( 'href' => 'https://mail.google.com/mail' ), $user['email'] ) . ')';
 					} else {
 						$message = 'Quá trình lấy mật khẩu thất bại. Liên hệ admin để được hổ trợ';
 					}
@@ -104,59 +104,64 @@ class UserController extends Controller {
 					$message = 'Quá trình gửi mail đã thất bại. Liên hệ admin để được hổ trợ';
 				}
 
-				$this->render('info', ['message' => $message, 'type' => $result]);
+				$this->render( 'info', [ 'message' => $message, 'type' => $result ] );
 				exit();
 			}
-			$model->addError('email', 'Email không tồn tại');
+			$model->addError( 'email', 'Email không tồn tại' );
 		}
-		$this->render('resetMail', ['model' => $model]);
+		$this->render( 'resetMail', [ 'model' => $model ] );
 	}
 
 	public function actionProfile() {
 		/** @var  $model User */
 		$model = new User();
-		if ( !Yii::app()->user->isGuest ) {
+		if ( ! Yii::app()->user->isGuest ) {
 			$model = $this->loadUser();
-			if ( isset($_GET['action']) && isset($_POST['Profile']) && $_GET['action'] == 'profile' ) {
+			if ( isset( $_GET['action'] ) && isset( $_POST['Profile'] ) && $_GET['action'] == 'profile' ) {
 				$profile = $_POST['Profile'];
-				if ( isset($profile['username']) && $profile['username']) {
+				if ( isset( $profile['username'] ) && $profile['username'] ) {
 					$model->username = $profile['username'];
 				}
-				$model->profile = json_encode($profile);
+				$model->profile = json_encode( $profile );
 				$model->save();
 			}
 
 			$messagePasswrord = '';
-			if ( isset($_GET['action']) && isset($_POST['Password']) && $_GET['action'] == 'password' ) {
+			if ( isset( $_GET['action'] ) && isset( $_POST['Password'] ) && $_GET['action'] == 'password' ) {
 				$password = $_POST['Password'];
 				$is_check = 1;
+
+				if ( empty( $password ) ) {
+					$is_check = 0;
+				}
+
 				if ( $password['oldpassword'] == $model->password ) {
 					$messagePasswrord = 'Mat khau khong dung';
-					$is_check = 0;
+					$is_check         = 0;
 				}
 
-				if ($password['repassword'] != $password['password']) {
+				if ( $password['repassword'] != $password['password'] ) {
 					$messagePasswrord = 'Khong trung mat khau';
-					$is_check = 0;
+					$is_check         = 0;
 				}
 
-				if ($is_check) {
-					if ($model->resetPassword($model->email, $password['password'])) {
+				if ( $is_check ) {
+					if ( $model->resetPassword( $model->email, $password['password'] ) ) {
 						$messagePasswrord = 'Cap nhat thanh cong';
 					}
 				}
 			}
-			$this->render('profile', ['model' => $model, 'msgPassword' => $messagePasswrord]);
+			$this->render( 'profile', [ 'model' => $model, 'msgPassword' => $messagePasswrord ] );
 		}
 	}
 
 	public function actionFacebook() {
-		$this->render('_facebookForm');
+		$this->render( '_facebookForm' );
 	}
 
 	public function actionAjax() {
-		if ( isset($_GET['action']) ) {
-			switch ($_GET['action']) {
+		if ( isset( $_GET['action'] ) ) {
+			switch ( $_GET['action'] ) {
 				case 'loginModal':
 					if ( Yii::app()->user->isGuest ) {
 						$model  = new User();
@@ -167,37 +172,34 @@ class UserController extends Controller {
 							$model             = new UserLoginForm();
 							$model->attributes = $user;
 							if ( $model->validate() && $model->login() ) {
-								$result['status'] = 1;
-								$result['href']   = $this->createUrl( 'profile' );
-								echo json_encode( $result );
+								echo '1' . $this->createUrl( 'profile' );
 								Yii::app()->end();
 							}
 						}
-						$result['html'] = $this->renderPartial( '_formLoginModal', array( 'model' => $model ) );
-						echo json_encode( $result );
+						$this->renderPartial( '_formLoginModal', array( 'model' => $model ) );
 					}
 					break;
 				case 'registerModal':
 					if ( Yii::app()->user->isGuest ) {
-						$model  = new User();
+						$model = new User();
 						if ( isset( $_POST['data'] ) ) {
 							parse_str( $_POST['data'], $arr );
 							$user              = $arr['User'];
 							$model->attributes = $user;
-							$is_check = 1;
+							$is_check          = 1;
 							if ( $user['password'] != $user['repassword'] ) {
 								$is_check = 0;
-								$model->addError('password', 'Mật khẩu không trùng');
+								$model->addError( 'password', 'Mật khẩu không trùng' );
 							}
 
-							if ( $model->checkEmail($model->email) ) {
+							if ( $model->checkEmail( $model->email ) ) {
 								$is_check = 0;
-								$model->addError('email', 'Email đã được dùng');
+								$model->addError( 'email', 'Email đã được dùng' );
 							}
 
-							if ($is_check) {
+							if ( $is_check ) {
 								if ( $model->save() ) {
-									$this->renderPartial('_successCreate', ['data' => $model]);
+									$this->renderPartial( '_successCreate', [ 'data' => $model ] );
 									Yii::app()->end();
 
 								}
@@ -206,17 +208,58 @@ class UserController extends Controller {
 						echo $this->renderPartial( '_formRegisterModal', array( 'model' => $model ) );
 					}
 					break;
+				case 'resetMailModal':
+					if ( Yii::app()->user->isGuest ) {
+						$model = new User();
+						$message = '';
+						if ( isset( $_POST['data'] ) ) {
+							parse_str( $_POST['data'], $arr );
+							$user              = $arr['User'];
+							$model->attributes = $user;
+							if ( $model->checkEmail( $user['email'] ) ) {
+								$number      = Yii::app()->params['lentPassword'];
+								$newPassword = Yii::app()->getSecurityManager()->generateRandomString( $number );
+								$args = array(
+									'subject'          => 'Lấy lại mật khẩu',
+									'content'          => 'Mật khẩu mới của bạn là: <span>' . $newPassword . '</span>',
+									'mailTo'           => $user['email'],
+									'plainTextContent' => ''
+								);
+								$result = Mail::sendMail($args);
+								if ( $result ) {
+//					update password
+									if ( $result = $model->resetPassword( $user['email'], $newPassword ) ) {
+										$message = 'Kiểm tra mail để lấy mật khẩu mới (' . $user['email'] . ')';
+									} else {
+										$message = 'Quá trình lấy mật khẩu thất bại. Liên hệ admin để được hổ trợ';
+									}
+								} else {
+									$message = 'Quá trình gửi mail đã thất bại. Liên hệ admin để được hổ trợ';
+								}
+
+							} else {
+								$message = 'Email không tồn tại';
+							}
+
+							echo $message;
+							Yii::app()->end();
+						}
+						$this->renderPartial( '_formResetMail', array( 'model' => $model ) );
+					}
+					break;
 			}
 		}
 		Yii::app()->end();
 	}
+
 // 	extra
 
-	public function loadUser($user_id = null) {
-		if ( $user_id === null && !Yii::app()->user->isGuest ) {
+	public function loadUser( $user_id = null ) {
+		if ( $user_id === null && ! Yii::app()->user->isGuest ) {
 			$user_id = Yii::app()->user->id;
 		}
-		$this->_model = Yii::app()->user->loadUser($user_id);
+		$this->_model = Yii::app()->user->loadUser( $user_id );
+
 		return $this->_model;
 	}
 }

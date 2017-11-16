@@ -18,7 +18,11 @@
 	                <?php echo $form->error($model,'password'); ?>
                 </div>
                 <div class="form-group">
-	                <?php echo CHtml::link('quên mật khẩu', '#') ?>
+	                <?php echo CHtml::link('quên mật khẩu', '#', array(
+	                        'class' => 'btn-modal',
+                            'data-action' => 'resetmail',
+                            'data-ajax' => Yii::app()->createUrl('user/ajax')
+                    )) ?>
 	                <?php echo CHtml::checkBox('autologin') ?>
                 </div>
                 <div class="form-group submit">
@@ -26,7 +30,7 @@
                 </div>
                 <div class="form-group or">Hoặc</div>
                 <div class="form-group facebook">
-                    <a href="#" class="btn"><i class="fa fa-facebook" aria-hidden="true"></i>Đăng nhập bằng Facebook</a>
+                    <a href="<?php echo Yii::app()->createUrl('social/login?auto_scroll=content') ?>" class="btn"><i class="fa fa-facebook" aria-hidden="true"></i>Đăng nhập bằng Facebook</a>
                 </div>
                 <div class="form-group google">
                     <a href="#" class="btn"><i class="fa fa-google-plus" aria-hidden="true"></i>Đăng nhập bằng

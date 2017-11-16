@@ -174,7 +174,7 @@
 				  			<table style="width:100%">
 							  <tr>
 							    <th>STT</th>
-							    <th>HỌ VÀ TÊN</th> 
+							    <th>HỌ VÀ TÊN</th>
 							    <th>SỐ ĐIỆN THOẠI</th>
 							    <th>HẠNG MỤC</th>
 							    <th>GIẢI THƯỞNG</th>
@@ -222,7 +222,7 @@
 				  			<table style="width:100%">
 							  <tr>
 							    <th>STT</th>
-							    <th>HỌ VÀ TÊN</th> 
+							    <th>HỌ VÀ TÊN</th>
 							    <th>SỐ ĐIỆN THOẠI</th>
 							    <th>HẠNG MỤC</th>
 							    <th>GIẢI THƯỞNG</th>
@@ -270,7 +270,7 @@
 				  			<table style="width:100%">
 							  <tr>
 							    <th>STT</th>
-							    <th>HỌ VÀ TÊN</th> 
+							    <th>HỌ VÀ TÊN</th>
 							    <th>SỐ ĐIỆN THOẠI</th>
 							    <th>HẠNG MỤC</th>
 							    <th>GIẢI THƯỞNG</th>
