@@ -203,6 +203,9 @@ div.wide form .errorMessage
 	border-bottom: 1px solid #333;
 	font-size: 16px;
 }
+.form-create select:focus {
+	outline: none;
+}
 .form-create #field-config table {
 	width: 100%;
 }
