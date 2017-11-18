@@ -8,6 +8,15 @@ body
 	background: #EFEFEF;
 	font-family: 'Roboto', sans-serif;
 }
+@font-face {
+	font-family: "Avo Bold";
+	src: url("./UTM AvoBold.ttf");
+}
+
+@font-face {
+	font-family: "Gothic Bold";
+	src: url("./UTM Alter Gothic.ttf");
+}
 
 #page
 {
@@ -40,20 +49,27 @@ body
 
 #logo
 {
-	padding: 10px 20px;
+	padding: 10px 0px;
 	font-size: 200%;
 }
 
 #mainmenu ul
 {
-	padding:6px 20px 5px 20px;
+	padding: 0;
 	margin:0px;
 }
 
-#mainmenu ul li
+#mainmenu ul > li
 {
 	display: inline;
-	padding:5px 8px;
+	padding-left: 25px;
+}
+#mainmenu ul > li ul li {
+	padding-left: 10px;
+	line-height: 1.5;
+}
+#mainmenu ul > li ul li a:last-child {
+	padding: 0;
 }
 
 #mainmenu ul li a
@@ -140,10 +156,14 @@ div.breadcrumbs span
 {
 	font-weight: bold;
 }
-
-.portlet
-{
-
+.portlet:first-child {
+	margin-top: 50px;
+}
+.portlet {
+	margin-top: 30px;
+}
+.portlet:last-child {
+	margin-bottom: 60px;
 }
 
 .portlet-decoration

@@ -12,9 +12,8 @@
         <div class="image-award center">
             <div class="images"><?php echo CHtml::image(Yii::app()->request->BaseUrl . '/uploads/imgs/home_1b.png')?></div>
             <div class="description-award">THAM GIA DỰ ĐOÁN NGAY ĐỂ SỞ HỮU<br>
-                NHỮNG GIẢI THƯỞNG HẤP DẪN<br>
-                VỚI TỔNG TRỊ GIÁ LÊN ĐẾN<br>
-                100.000.000 VNĐ</div>
+                <strong>NHỮNG GIẢI THƯỞNG HẤP DẪN</strong><br>
+                VỚI TỔNG TRỊ GIÁ LÊN ĐẾN<br><strong>100.000.000 VNĐ</strong></div>
         </div>
         <div class="image-award">
             <div class="images"><?php echo CHtml::image(Yii::app()->request->BaseUrl . '/uploads/imgs/home_1c.png')?></div>

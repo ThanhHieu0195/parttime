@@ -7,7 +7,7 @@
             </button>
         </div>
         <div class="modal-body">
-            <div class="title-form">Vui lòng nhập thông tin Đặng Nhập</div>
+            <div class="title-form">Vui lòng nhập thông tin Đăng Nhập</div>
 	        <?php $form=$this->beginWidget('CActiveForm', array('id' => 'form-modal-login')); ?>
                 <div class="form-group">
 	                <?php echo $form->emailField($model, 'email', array('placeholder' => 'Email', 'class' => 'form-control')) ?>
@@ -18,12 +18,12 @@
 	                <?php echo $form->error($model,'password'); ?>
                 </div>
                 <div class="form-group">
-	                <?php echo CHtml::link('quên mật khẩu', '#', array(
+                    <?php echo CHtml::checkBox('autologin') ?>
+	                <?php echo CHtml::link('Quên mật khẩu', '#', array(
 	                        'class' => 'btn-modal',
                             'data-action' => 'resetmail',
                             'data-ajax' => Yii::app()->createUrl('user/ajax')
                     )) ?>
-	                <?php echo CHtml::checkBox('autologin') ?>
                 </div>
                 <div class="form-group submit">
                     <input type="submit" name="login" value="Đăng Nhập">

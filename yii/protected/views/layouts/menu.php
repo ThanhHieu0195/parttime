@@ -36,7 +36,7 @@
             <a href="#" class="link">www.nghenhinvietnam.vn</a>
         </div>
         <div class="sologan">
-            <div class="title-solagan">Bình chọn sản phẩm công nghệ nổi bật nhất</div>
+            <div class="title-solagan">Bình chọn sản phẩm <br>công nghệ nổi bật nhất</div>
             <div class="year">2017</div>
         </div>
         <div class="button">
